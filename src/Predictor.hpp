@@ -1,10 +1,10 @@
 #pragma once
 
 #include <cstdint>
-#include "ContextModel.hpp"
+#include "./model/ContextModel.hpp"
 #include "Shared.hpp"
 #include "UpdateBroadcaster.hpp"
-#include "utils.hpp"
+#include "./util/utils.hpp"
 #include "Models.hpp"
 
 class Predictor{

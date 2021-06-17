@@ -1,12 +1,12 @@
 #ifndef PAQ8PX_INDIRECTMODEL_HPP
 #define PAQ8PX_INDIRECTMODEL_HPP
 
-#include "ContextMap.hpp"
+#include "../map/ContextMap.hpp"
 
 #include "IndirectContext.hpp"
-#include "Mixer.hpp"
-#include "RingBuffer.hpp"
-#include "Shared.hpp"
+#include "../Mixer.hpp"
+#include "../util/RingBuffer.hpp"
+#include "../Shared.hpp"
 #include <cctype>
 
 /**

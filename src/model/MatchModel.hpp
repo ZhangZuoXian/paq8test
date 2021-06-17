@@ -1,11 +1,11 @@
 #ifndef PAQ8PX_MATCHMODEL_HPP
 #define PAQ8PX_MATCHMODEL_HPP
 
-#include "Shared.hpp"
-#include "ContextMap2.hpp"
+#include "../Shared.hpp"
+#include "../map/ContextMap2.hpp"
 #include "IndirectContext.hpp"
-#include "SmallStationaryContextMap.hpp"
-#include "StationaryMap.hpp"
+#include "../map/SmallStationaryContextMap.hpp"
+#include "../map/StationaryMap.hpp"
 
 /**
  * Predict the next bit based on a preceding long matching byte sequence

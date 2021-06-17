@@ -13,5 +13,5 @@ include_directories(
 ${PROJECT_SOURCE_DIR}/src
 )
 
-add_executable(paq8test src/AdaptiveMap.cpp src/ArithmeticEncoder.cpp src/ContextModel.cpp src/ContextMap.cpp src/ContextMap2.cpp src/Encoder.cpp src/Ilog.cpp src/IndirectModel.cpp src/MatchModel.cpp src/Mixer.cpp src/Models.cpp src/NormalModel.cpp src/paq8test.cpp src/Predictor.cpp src/ProgramChecker.cpp src/Random.cpp src/Shared.cpp src/SmallStationaryContextMap.cpp src/StateMap.cpp src/StateTable.cpp src/StationaryMap.cpp src/UpdateBroadcaster.cpp )
+add_executable(paq8test src/map/AdaptiveMap.cpp src/ArithmeticEncoder.cpp src/model/ContextModel.cpp src/map/ContextMap.cpp src/map/ContextMap2.cpp src/Encoder.cpp src/util/Ilog.cpp src/model/IndirectModel.cpp src/model/MatchModel.cpp src/Mixer.cpp src/Models.cpp src/model/NormalModel.cpp src/paq8test.cpp src/Predictor.cpp src/util/ProgramChecker.cpp src/util/Random.cpp src/Shared.cpp src/map/SmallStationaryContextMap.cpp src/map/StateMap.cpp src/map/StateTable.cpp src/map/StationaryMap.cpp src/UpdateBroadcaster.cpp )
 

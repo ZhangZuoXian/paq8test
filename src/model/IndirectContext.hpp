@@ -1,7 +1,7 @@
 #ifndef PAQ8PX_INDIRECTCONTEXT_HPP
 #define PAQ8PX_INDIRECTCONTEXT_HPP
 
-#include "Array.hpp"
+#include "../util/Array.hpp"
 #include <cassert>
 #include <cstdint>
 

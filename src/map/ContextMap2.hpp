@@ -19,16 +19,16 @@ with the bit history states to provide additional states that are then
 mapped to predictions.
 */
 
-#include "IPredictor.hpp"
-#include "Bucket.hpp"
-#include "Hash.hpp"
-#include "Ilog.hpp"
-#include "Mixer.hpp"
-#include "Random.hpp"
+#include "../IPredictor.hpp"
+#include "../util/Bucket.hpp"
+#include "../util/Hash.hpp"
+#include "../util/Ilog.hpp"
+#include "../Mixer.hpp"
+#include "../util/Random.hpp"
 #include "StateMap.hpp"
 #include "StateTable.hpp"
-#include "Stretch.hpp"
-#include "UpdateBroadcaster.hpp"
+#include "../util/Stretch.hpp"
+#include "../UpdateBroadcaster.hpp"
 
 #define CM_USE_RUN_STATS 1U
 #define CM_USE_BYTE_HISTORY 2U

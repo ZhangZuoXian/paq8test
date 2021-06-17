@@ -1,10 +1,10 @@
 #ifndef PAQ8PX_STATEMAP_HPP
 #define PAQ8PX_STATEMAP_HPP
 
-#include "DivisionTable.hpp"
+#include "../util/DivisionTable.hpp"
 #include "AdaptiveMap.hpp"
 #include "StateTable.hpp"
-#include "UpdateBroadcaster.hpp"
+#include "../UpdateBroadcaster.hpp"
 
 /**
  * A @ref StateMap maps a context to a probability.

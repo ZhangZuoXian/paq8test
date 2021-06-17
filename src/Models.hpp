@@ -1,9 +1,8 @@
 #ifndef PAQ8PX_MODELS_HPP
 #define PAQ8PX_MODELS_HPP
 
-#include "MatchModel.hpp"
-
-#include "NormalModel.hpp"
+#include "./model/MatchModel.hpp"
+#include "./model/NormalModel.hpp"
 
 
 /**

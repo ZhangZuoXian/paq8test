@@ -123,33 +123,6 @@ paq8test/fast:
 	$(MAKE) -f CMakeFiles/paq8test.dir/build.make CMakeFiles/paq8test.dir/build
 .PHONY : paq8test/fast
 
-src/AdaptiveMap.o: src/AdaptiveMap.cpp.o
-
-.PHONY : src/AdaptiveMap.o
-
-# target to build an object file
-src/AdaptiveMap.cpp.o:
-	$(MAKE) -f CMakeFiles/paq8test.dir/build.make CMakeFiles/paq8test.dir/src/AdaptiveMap.cpp.o
-.PHONY : src/AdaptiveMap.cpp.o
-
-src/AdaptiveMap.i: src/AdaptiveMap.cpp.i
-
-.PHONY : src/AdaptiveMap.i
-
-# target to preprocess a source file
-src/AdaptiveMap.cpp.i:
-	$(MAKE) -f CMakeFiles/paq8test.dir/build.make CMakeFiles/paq8test.dir/src/AdaptiveMap.cpp.i
-.PHONY : src/AdaptiveMap.cpp.i
-
-src/AdaptiveMap.s: src/AdaptiveMap.cpp.s
-
-.PHONY : src/AdaptiveMap.s
-
-# target to generate assembly for a file
-src/AdaptiveMap.cpp.s:
-	$(MAKE) -f CMakeFiles/paq8test.dir/build.make CMakeFiles/paq8test.dir/src/AdaptiveMap.cpp.s
-.PHONY : src/AdaptiveMap.cpp.s
-
 src/ArithmeticEncoder.o: src/ArithmeticEncoder.cpp.o
 
 .PHONY : src/ArithmeticEncoder.o
@@ -177,87 +150,6 @@ src/ArithmeticEncoder.cpp.s:
 	$(MAKE) -f CMakeFiles/paq8test.dir/build.make CMakeFiles/paq8test.dir/src/ArithmeticEncoder.cpp.s
 .PHONY : src/ArithmeticEncoder.cpp.s
 
-src/ContextMap.o: src/ContextMap.cpp.o
-
-.PHONY : src/ContextMap.o
-
-# target to build an object file
-src/ContextMap.cpp.o:
-	$(MAKE) -f CMakeFiles/paq8test.dir/build.make CMakeFiles/paq8test.dir/src/ContextMap.cpp.o
-.PHONY : src/ContextMap.cpp.o
-
-src/ContextMap.i: src/ContextMap.cpp.i
-
-.PHONY : src/ContextMap.i
-
-# target to preprocess a source file
-src/ContextMap.cpp.i:
-	$(MAKE) -f CMakeFiles/paq8test.dir/build.make CMakeFiles/paq8test.dir/src/ContextMap.cpp.i
-.PHONY : src/ContextMap.cpp.i
-
-src/ContextMap.s: src/ContextMap.cpp.s
-
-.PHONY : src/ContextMap.s
-
-# target to generate assembly for a file
-src/ContextMap.cpp.s:
-	$(MAKE) -f CMakeFiles/paq8test.dir/build.make CMakeFiles/paq8test.dir/src/ContextMap.cpp.s
-.PHONY : src/ContextMap.cpp.s
-
-src/ContextMap2.o: src/ContextMap2.cpp.o
-
-.PHONY : src/ContextMap2.o
-
-# target to build an object file
-src/ContextMap2.cpp.o:
-	$(MAKE) -f CMakeFiles/paq8test.dir/build.make CMakeFiles/paq8test.dir/src/ContextMap2.cpp.o
-.PHONY : src/ContextMap2.cpp.o
-
-src/ContextMap2.i: src/ContextMap2.cpp.i
-
-.PHONY : src/ContextMap2.i
-
-# target to preprocess a source file
-src/ContextMap2.cpp.i:
-	$(MAKE) -f CMakeFiles/paq8test.dir/build.make CMakeFiles/paq8test.dir/src/ContextMap2.cpp.i
-.PHONY : src/ContextMap2.cpp.i
-
-src/ContextMap2.s: src/ContextMap2.cpp.s
-
-.PHONY : src/ContextMap2.s
-
-# target to generate assembly for a file
-src/ContextMap2.cpp.s:
-	$(MAKE) -f CMakeFiles/paq8test.dir/build.make CMakeFiles/paq8test.dir/src/ContextMap2.cpp.s
-.PHONY : src/ContextMap2.cpp.s
-
-src/ContextModel.o: src/ContextModel.cpp.o
-
-.PHONY : src/ContextModel.o
-
-# target to build an object file
-src/ContextModel.cpp.o:
-	$(MAKE) -f CMakeFiles/paq8test.dir/build.make CMakeFiles/paq8test.dir/src/ContextModel.cpp.o
-.PHONY : src/ContextModel.cpp.o
-
-src/ContextModel.i: src/ContextModel.cpp.i
-
-.PHONY : src/ContextModel.i
-
-# target to preprocess a source file
-src/ContextModel.cpp.i:
-	$(MAKE) -f CMakeFiles/paq8test.dir/build.make CMakeFiles/paq8test.dir/src/ContextModel.cpp.i
-.PHONY : src/ContextModel.cpp.i
-
-src/ContextModel.s: src/ContextModel.cpp.s
-
-.PHONY : src/ContextModel.s
-
-# target to generate assembly for a file
-src/ContextModel.cpp.s:
-	$(MAKE) -f CMakeFiles/paq8test.dir/build.make CMakeFiles/paq8test.dir/src/ContextModel.cpp.s
-.PHONY : src/ContextModel.cpp.s
-
 src/Encoder.o: src/Encoder.cpp.o
 
 .PHONY : src/Encoder.o
@@ -284,87 +176,6 @@ src/Encoder.s: src/Encoder.cpp.s
 src/Encoder.cpp.s:
 	$(MAKE) -f CMakeFiles/paq8test.dir/build.make CMakeFiles/paq8test.dir/src/Encoder.cpp.s
 .PHONY : src/Encoder.cpp.s
-
-src/Ilog.o: src/Ilog.cpp.o
-
-.PHONY : src/Ilog.o
-
-# target to build an object file
-src/Ilog.cpp.o:
-	$(MAKE) -f CMakeFiles/paq8test.dir/build.make CMakeFiles/paq8test.dir/src/Ilog.cpp.o
-.PHONY : src/Ilog.cpp.o
-
-src/Ilog.i: src/Ilog.cpp.i
-
-.PHONY : src/Ilog.i
-
-# target to preprocess a source file
-src/Ilog.cpp.i:
-	$(MAKE) -f CMakeFiles/paq8test.dir/build.make CMakeFiles/paq8test.dir/src/Ilog.cpp.i
-.PHONY : src/Ilog.cpp.i
-
-src/Ilog.s: src/Ilog.cpp.s
-
-.PHONY : src/Ilog.s
-
-# target to generate assembly for a file
-src/Ilog.cpp.s:
-	$(MAKE) -f CMakeFiles/paq8test.dir/build.make CMakeFiles/paq8test.dir/src/Ilog.cpp.s
-.PHONY : src/Ilog.cpp.s
-
-src/IndirectModel.o: src/IndirectModel.cpp.o
-
-.PHONY : src/IndirectModel.o
-
-# target to build an object file
-src/IndirectModel.cpp.o:
-	$(MAKE) -f CMakeFiles/paq8test.dir/build.make CMakeFiles/paq8test.dir/src/IndirectModel.cpp.o
-.PHONY : src/IndirectModel.cpp.o
-
-src/IndirectModel.i: src/IndirectModel.cpp.i
-
-.PHONY : src/IndirectModel.i
-
-# target to preprocess a source file
-src/IndirectModel.cpp.i:
-	$(MAKE) -f CMakeFiles/paq8test.dir/build.make CMakeFiles/paq8test.dir/src/IndirectModel.cpp.i
-.PHONY : src/IndirectModel.cpp.i
-
-src/IndirectModel.s: src/IndirectModel.cpp.s
-
-.PHONY : src/IndirectModel.s
-
-# target to generate assembly for a file
-src/IndirectModel.cpp.s:
-	$(MAKE) -f CMakeFiles/paq8test.dir/build.make CMakeFiles/paq8test.dir/src/IndirectModel.cpp.s
-.PHONY : src/IndirectModel.cpp.s
-
-src/MatchModel.o: src/MatchModel.cpp.o
-
-.PHONY : src/MatchModel.o
-
-# target to build an object file
-src/MatchModel.cpp.o:
-	$(MAKE) -f CMakeFiles/paq8test.dir/build.make CMakeFiles/paq8test.dir/src/MatchModel.cpp.o
-.PHONY : src/MatchModel.cpp.o
-
-src/MatchModel.i: src/MatchModel.cpp.i
-
-.PHONY : src/MatchModel.i
-
-# target to preprocess a source file
-src/MatchModel.cpp.i:
-	$(MAKE) -f CMakeFiles/paq8test.dir/build.make CMakeFiles/paq8test.dir/src/MatchModel.cpp.i
-.PHONY : src/MatchModel.cpp.i
-
-src/MatchModel.s: src/MatchModel.cpp.s
-
-.PHONY : src/MatchModel.s
-
-# target to generate assembly for a file
-src/MatchModel.cpp.s:
-	$(MAKE) -f CMakeFiles/paq8test.dir/build.make CMakeFiles/paq8test.dir/src/MatchModel.cpp.s
-.PHONY : src/MatchModel.cpp.s
 
 src/Mixer.o: src/Mixer.cpp.o
 
@@ -420,33 +231,6 @@ src/Models.cpp.s:
 	$(MAKE) -f CMakeFiles/paq8test.dir/build.make CMakeFiles/paq8test.dir/src/Models.cpp.s
 .PHONY : src/Models.cpp.s
 
-src/NormalModel.o: src/NormalModel.cpp.o
-
-.PHONY : src/NormalModel.o
-
-# target to build an object file
-src/NormalModel.cpp.o:
-	$(MAKE) -f CMakeFiles/paq8test.dir/build.make CMakeFiles/paq8test.dir/src/NormalModel.cpp.o
-.PHONY : src/NormalModel.cpp.o
-
-src/NormalModel.i: src/NormalModel.cpp.i
-
-.PHONY : src/NormalModel.i
-
-# target to preprocess a source file
-src/NormalModel.cpp.i:
-	$(MAKE) -f CMakeFiles/paq8test.dir/build.make CMakeFiles/paq8test.dir/src/NormalModel.cpp.i
-.PHONY : src/NormalModel.cpp.i
-
-src/NormalModel.s: src/NormalModel.cpp.s
-
-.PHONY : src/NormalModel.s
-
-# target to generate assembly for a file
-src/NormalModel.cpp.s:
-	$(MAKE) -f CMakeFiles/paq8test.dir/build.make CMakeFiles/paq8test.dir/src/NormalModel.cpp.s
-.PHONY : src/NormalModel.cpp.s
-
 src/Predictor.o: src/Predictor.cpp.o
 
 .PHONY : src/Predictor.o
@@ -473,60 +257,6 @@ src/Predictor.s: src/Predictor.cpp.s
 src/Predictor.cpp.s:
 	$(MAKE) -f CMakeFiles/paq8test.dir/build.make CMakeFiles/paq8test.dir/src/Predictor.cpp.s
 .PHONY : src/Predictor.cpp.s
-
-src/ProgramChecker.o: src/ProgramChecker.cpp.o
-
-.PHONY : src/ProgramChecker.o
-
-# target to build an object file
-src/ProgramChecker.cpp.o:
-	$(MAKE) -f CMakeFiles/paq8test.dir/build.make CMakeFiles/paq8test.dir/src/ProgramChecker.cpp.o
-.PHONY : src/ProgramChecker.cpp.o
-
-src/ProgramChecker.i: src/ProgramChecker.cpp.i
-
-.PHONY : src/ProgramChecker.i
-
-# target to preprocess a source file
-src/ProgramChecker.cpp.i:
-	$(MAKE) -f CMakeFiles/paq8test.dir/build.make CMakeFiles/paq8test.dir/src/ProgramChecker.cpp.i
-.PHONY : src/ProgramChecker.cpp.i
-
-src/ProgramChecker.s: src/ProgramChecker.cpp.s
-
-.PHONY : src/ProgramChecker.s
-
-# target to generate assembly for a file
-src/ProgramChecker.cpp.s:
-	$(MAKE) -f CMakeFiles/paq8test.dir/build.make CMakeFiles/paq8test.dir/src/ProgramChecker.cpp.s
-.PHONY : src/ProgramChecker.cpp.s
-
-src/Random.o: src/Random.cpp.o
-
-.PHONY : src/Random.o
-
-# target to build an object file
-src/Random.cpp.o:
-	$(MAKE) -f CMakeFiles/paq8test.dir/build.make CMakeFiles/paq8test.dir/src/Random.cpp.o
-.PHONY : src/Random.cpp.o
-
-src/Random.i: src/Random.cpp.i
-
-.PHONY : src/Random.i
-
-# target to preprocess a source file
-src/Random.cpp.i:
-	$(MAKE) -f CMakeFiles/paq8test.dir/build.make CMakeFiles/paq8test.dir/src/Random.cpp.i
-.PHONY : src/Random.cpp.i
-
-src/Random.s: src/Random.cpp.s
-
-.PHONY : src/Random.s
-
-# target to generate assembly for a file
-src/Random.cpp.s:
-	$(MAKE) -f CMakeFiles/paq8test.dir/build.make CMakeFiles/paq8test.dir/src/Random.cpp.s
-.PHONY : src/Random.cpp.s
 
 src/Shared.o: src/Shared.cpp.o
 
@@ -555,114 +285,6 @@ src/Shared.cpp.s:
 	$(MAKE) -f CMakeFiles/paq8test.dir/build.make CMakeFiles/paq8test.dir/src/Shared.cpp.s
 .PHONY : src/Shared.cpp.s
 
-src/SmallStationaryContextMap.o: src/SmallStationaryContextMap.cpp.o
-
-.PHONY : src/SmallStationaryContextMap.o
-
-# target to build an object file
-src/SmallStationaryContextMap.cpp.o:
-	$(MAKE) -f CMakeFiles/paq8test.dir/build.make CMakeFiles/paq8test.dir/src/SmallStationaryContextMap.cpp.o
-.PHONY : src/SmallStationaryContextMap.cpp.o
-
-src/SmallStationaryContextMap.i: src/SmallStationaryContextMap.cpp.i
-
-.PHONY : src/SmallStationaryContextMap.i
-
-# target to preprocess a source file
-src/SmallStationaryContextMap.cpp.i:
-	$(MAKE) -f CMakeFiles/paq8test.dir/build.make CMakeFiles/paq8test.dir/src/SmallStationaryContextMap.cpp.i
-.PHONY : src/SmallStationaryContextMap.cpp.i
-
-src/SmallStationaryContextMap.s: src/SmallStationaryContextMap.cpp.s
-
-.PHONY : src/SmallStationaryContextMap.s
-
-# target to generate assembly for a file
-src/SmallStationaryContextMap.cpp.s:
-	$(MAKE) -f CMakeFiles/paq8test.dir/build.make CMakeFiles/paq8test.dir/src/SmallStationaryContextMap.cpp.s
-.PHONY : src/SmallStationaryContextMap.cpp.s
-
-src/StateMap.o: src/StateMap.cpp.o
-
-.PHONY : src/StateMap.o
-
-# target to build an object file
-src/StateMap.cpp.o:
-	$(MAKE) -f CMakeFiles/paq8test.dir/build.make CMakeFiles/paq8test.dir/src/StateMap.cpp.o
-.PHONY : src/StateMap.cpp.o
-
-src/StateMap.i: src/StateMap.cpp.i
-
-.PHONY : src/StateMap.i
-
-# target to preprocess a source file
-src/StateMap.cpp.i:
-	$(MAKE) -f CMakeFiles/paq8test.dir/build.make CMakeFiles/paq8test.dir/src/StateMap.cpp.i
-.PHONY : src/StateMap.cpp.i
-
-src/StateMap.s: src/StateMap.cpp.s
-
-.PHONY : src/StateMap.s
-
-# target to generate assembly for a file
-src/StateMap.cpp.s:
-	$(MAKE) -f CMakeFiles/paq8test.dir/build.make CMakeFiles/paq8test.dir/src/StateMap.cpp.s
-.PHONY : src/StateMap.cpp.s
-
-src/StateTable.o: src/StateTable.cpp.o
-
-.PHONY : src/StateTable.o
-
-# target to build an object file
-src/StateTable.cpp.o:
-	$(MAKE) -f CMakeFiles/paq8test.dir/build.make CMakeFiles/paq8test.dir/src/StateTable.cpp.o
-.PHONY : src/StateTable.cpp.o
-
-src/StateTable.i: src/StateTable.cpp.i
-
-.PHONY : src/StateTable.i
-
-# target to preprocess a source file
-src/StateTable.cpp.i:
-	$(MAKE) -f CMakeFiles/paq8test.dir/build.make CMakeFiles/paq8test.dir/src/StateTable.cpp.i
-.PHONY : src/StateTable.cpp.i
-
-src/StateTable.s: src/StateTable.cpp.s
-
-.PHONY : src/StateTable.s
-
-# target to generate assembly for a file
-src/StateTable.cpp.s:
-	$(MAKE) -f CMakeFiles/paq8test.dir/build.make CMakeFiles/paq8test.dir/src/StateTable.cpp.s
-.PHONY : src/StateTable.cpp.s
-
-src/StationaryMap.o: src/StationaryMap.cpp.o
-
-.PHONY : src/StationaryMap.o
-
-# target to build an object file
-src/StationaryMap.cpp.o:
-	$(MAKE) -f CMakeFiles/paq8test.dir/build.make CMakeFiles/paq8test.dir/src/StationaryMap.cpp.o
-.PHONY : src/StationaryMap.cpp.o
-
-src/StationaryMap.i: src/StationaryMap.cpp.i
-
-.PHONY : src/StationaryMap.i
-
-# target to preprocess a source file
-src/StationaryMap.cpp.i:
-	$(MAKE) -f CMakeFiles/paq8test.dir/build.make CMakeFiles/paq8test.dir/src/StationaryMap.cpp.i
-.PHONY : src/StationaryMap.cpp.i
-
-src/StationaryMap.s: src/StationaryMap.cpp.s
-
-.PHONY : src/StationaryMap.s
-
-# target to generate assembly for a file
-src/StationaryMap.cpp.s:
-	$(MAKE) -f CMakeFiles/paq8test.dir/build.make CMakeFiles/paq8test.dir/src/StationaryMap.cpp.s
-.PHONY : src/StationaryMap.cpp.s
-
 src/UpdateBroadcaster.o: src/UpdateBroadcaster.cpp.o
 
 .PHONY : src/UpdateBroadcaster.o
@@ -689,6 +311,303 @@ src/UpdateBroadcaster.s: src/UpdateBroadcaster.cpp.s
 src/UpdateBroadcaster.cpp.s:
 	$(MAKE) -f CMakeFiles/paq8test.dir/build.make CMakeFiles/paq8test.dir/src/UpdateBroadcaster.cpp.s
 .PHONY : src/UpdateBroadcaster.cpp.s
+
+src/map/AdaptiveMap.o: src/map/AdaptiveMap.cpp.o
+
+.PHONY : src/map/AdaptiveMap.o
+
+# target to build an object file
+src/map/AdaptiveMap.cpp.o:
+	$(MAKE) -f CMakeFiles/paq8test.dir/build.make CMakeFiles/paq8test.dir/src/map/AdaptiveMap.cpp.o
+.PHONY : src/map/AdaptiveMap.cpp.o
+
+src/map/AdaptiveMap.i: src/map/AdaptiveMap.cpp.i
+
+.PHONY : src/map/AdaptiveMap.i
+
+# target to preprocess a source file
+src/map/AdaptiveMap.cpp.i:
+	$(MAKE) -f CMakeFiles/paq8test.dir/build.make CMakeFiles/paq8test.dir/src/map/AdaptiveMap.cpp.i
+.PHONY : src/map/AdaptiveMap.cpp.i
+
+src/map/AdaptiveMap.s: src/map/AdaptiveMap.cpp.s
+
+.PHONY : src/map/AdaptiveMap.s
+
+# target to generate assembly for a file
+src/map/AdaptiveMap.cpp.s:
+	$(MAKE) -f CMakeFiles/paq8test.dir/build.make CMakeFiles/paq8test.dir/src/map/AdaptiveMap.cpp.s
+.PHONY : src/map/AdaptiveMap.cpp.s
+
+src/map/ContextMap.o: src/map/ContextMap.cpp.o
+
+.PHONY : src/map/ContextMap.o
+
+# target to build an object file
+src/map/ContextMap.cpp.o:
+	$(MAKE) -f CMakeFiles/paq8test.dir/build.make CMakeFiles/paq8test.dir/src/map/ContextMap.cpp.o
+.PHONY : src/map/ContextMap.cpp.o
+
+src/map/ContextMap.i: src/map/ContextMap.cpp.i
+
+.PHONY : src/map/ContextMap.i
+
+# target to preprocess a source file
+src/map/ContextMap.cpp.i:
+	$(MAKE) -f CMakeFiles/paq8test.dir/build.make CMakeFiles/paq8test.dir/src/map/ContextMap.cpp.i
+.PHONY : src/map/ContextMap.cpp.i
+
+src/map/ContextMap.s: src/map/ContextMap.cpp.s
+
+.PHONY : src/map/ContextMap.s
+
+# target to generate assembly for a file
+src/map/ContextMap.cpp.s:
+	$(MAKE) -f CMakeFiles/paq8test.dir/build.make CMakeFiles/paq8test.dir/src/map/ContextMap.cpp.s
+.PHONY : src/map/ContextMap.cpp.s
+
+src/map/ContextMap2.o: src/map/ContextMap2.cpp.o
+
+.PHONY : src/map/ContextMap2.o
+
+# target to build an object file
+src/map/ContextMap2.cpp.o:
+	$(MAKE) -f CMakeFiles/paq8test.dir/build.make CMakeFiles/paq8test.dir/src/map/ContextMap2.cpp.o
+.PHONY : src/map/ContextMap2.cpp.o
+
+src/map/ContextMap2.i: src/map/ContextMap2.cpp.i
+
+.PHONY : src/map/ContextMap2.i
+
+# target to preprocess a source file
+src/map/ContextMap2.cpp.i:
+	$(MAKE) -f CMakeFiles/paq8test.dir/build.make CMakeFiles/paq8test.dir/src/map/ContextMap2.cpp.i
+.PHONY : src/map/ContextMap2.cpp.i
+
+src/map/ContextMap2.s: src/map/ContextMap2.cpp.s
+
+.PHONY : src/map/ContextMap2.s
+
+# target to generate assembly for a file
+src/map/ContextMap2.cpp.s:
+	$(MAKE) -f CMakeFiles/paq8test.dir/build.make CMakeFiles/paq8test.dir/src/map/ContextMap2.cpp.s
+.PHONY : src/map/ContextMap2.cpp.s
+
+src/map/SmallStationaryContextMap.o: src/map/SmallStationaryContextMap.cpp.o
+
+.PHONY : src/map/SmallStationaryContextMap.o
+
+# target to build an object file
+src/map/SmallStationaryContextMap.cpp.o:
+	$(MAKE) -f CMakeFiles/paq8test.dir/build.make CMakeFiles/paq8test.dir/src/map/SmallStationaryContextMap.cpp.o
+.PHONY : src/map/SmallStationaryContextMap.cpp.o
+
+src/map/SmallStationaryContextMap.i: src/map/SmallStationaryContextMap.cpp.i
+
+.PHONY : src/map/SmallStationaryContextMap.i
+
+# target to preprocess a source file
+src/map/SmallStationaryContextMap.cpp.i:
+	$(MAKE) -f CMakeFiles/paq8test.dir/build.make CMakeFiles/paq8test.dir/src/map/SmallStationaryContextMap.cpp.i
+.PHONY : src/map/SmallStationaryContextMap.cpp.i
+
+src/map/SmallStationaryContextMap.s: src/map/SmallStationaryContextMap.cpp.s
+
+.PHONY : src/map/SmallStationaryContextMap.s
+
+# target to generate assembly for a file
+src/map/SmallStationaryContextMap.cpp.s:
+	$(MAKE) -f CMakeFiles/paq8test.dir/build.make CMakeFiles/paq8test.dir/src/map/SmallStationaryContextMap.cpp.s
+.PHONY : src/map/SmallStationaryContextMap.cpp.s
+
+src/map/StateMap.o: src/map/StateMap.cpp.o
+
+.PHONY : src/map/StateMap.o
+
+# target to build an object file
+src/map/StateMap.cpp.o:
+	$(MAKE) -f CMakeFiles/paq8test.dir/build.make CMakeFiles/paq8test.dir/src/map/StateMap.cpp.o
+.PHONY : src/map/StateMap.cpp.o
+
+src/map/StateMap.i: src/map/StateMap.cpp.i
+
+.PHONY : src/map/StateMap.i
+
+# target to preprocess a source file
+src/map/StateMap.cpp.i:
+	$(MAKE) -f CMakeFiles/paq8test.dir/build.make CMakeFiles/paq8test.dir/src/map/StateMap.cpp.i
+.PHONY : src/map/StateMap.cpp.i
+
+src/map/StateMap.s: src/map/StateMap.cpp.s
+
+.PHONY : src/map/StateMap.s
+
+# target to generate assembly for a file
+src/map/StateMap.cpp.s:
+	$(MAKE) -f CMakeFiles/paq8test.dir/build.make CMakeFiles/paq8test.dir/src/map/StateMap.cpp.s
+.PHONY : src/map/StateMap.cpp.s
+
+src/map/StateTable.o: src/map/StateTable.cpp.o
+
+.PHONY : src/map/StateTable.o
+
+# target to build an object file
+src/map/StateTable.cpp.o:
+	$(MAKE) -f CMakeFiles/paq8test.dir/build.make CMakeFiles/paq8test.dir/src/map/StateTable.cpp.o
+.PHONY : src/map/StateTable.cpp.o
+
+src/map/StateTable.i: src/map/StateTable.cpp.i
+
+.PHONY : src/map/StateTable.i
+
+# target to preprocess a source file
+src/map/StateTable.cpp.i:
+	$(MAKE) -f CMakeFiles/paq8test.dir/build.make CMakeFiles/paq8test.dir/src/map/StateTable.cpp.i
+.PHONY : src/map/StateTable.cpp.i
+
+src/map/StateTable.s: src/map/StateTable.cpp.s
+
+.PHONY : src/map/StateTable.s
+
+# target to generate assembly for a file
+src/map/StateTable.cpp.s:
+	$(MAKE) -f CMakeFiles/paq8test.dir/build.make CMakeFiles/paq8test.dir/src/map/StateTable.cpp.s
+.PHONY : src/map/StateTable.cpp.s
+
+src/map/StationaryMap.o: src/map/StationaryMap.cpp.o
+
+.PHONY : src/map/StationaryMap.o
+
+# target to build an object file
+src/map/StationaryMap.cpp.o:
+	$(MAKE) -f CMakeFiles/paq8test.dir/build.make CMakeFiles/paq8test.dir/src/map/StationaryMap.cpp.o
+.PHONY : src/map/StationaryMap.cpp.o
+
+src/map/StationaryMap.i: src/map/StationaryMap.cpp.i
+
+.PHONY : src/map/StationaryMap.i
+
+# target to preprocess a source file
+src/map/StationaryMap.cpp.i:
+	$(MAKE) -f CMakeFiles/paq8test.dir/build.make CMakeFiles/paq8test.dir/src/map/StationaryMap.cpp.i
+.PHONY : src/map/StationaryMap.cpp.i
+
+src/map/StationaryMap.s: src/map/StationaryMap.cpp.s
+
+.PHONY : src/map/StationaryMap.s
+
+# target to generate assembly for a file
+src/map/StationaryMap.cpp.s:
+	$(MAKE) -f CMakeFiles/paq8test.dir/build.make CMakeFiles/paq8test.dir/src/map/StationaryMap.cpp.s
+.PHONY : src/map/StationaryMap.cpp.s
+
+src/model/ContextModel.o: src/model/ContextModel.cpp.o
+
+.PHONY : src/model/ContextModel.o
+
+# target to build an object file
+src/model/ContextModel.cpp.o:
+	$(MAKE) -f CMakeFiles/paq8test.dir/build.make CMakeFiles/paq8test.dir/src/model/ContextModel.cpp.o
+.PHONY : src/model/ContextModel.cpp.o
+
+src/model/ContextModel.i: src/model/ContextModel.cpp.i
+
+.PHONY : src/model/ContextModel.i
+
+# target to preprocess a source file
+src/model/ContextModel.cpp.i:
+	$(MAKE) -f CMakeFiles/paq8test.dir/build.make CMakeFiles/paq8test.dir/src/model/ContextModel.cpp.i
+.PHONY : src/model/ContextModel.cpp.i
+
+src/model/ContextModel.s: src/model/ContextModel.cpp.s
+
+.PHONY : src/model/ContextModel.s
+
+# target to generate assembly for a file
+src/model/ContextModel.cpp.s:
+	$(MAKE) -f CMakeFiles/paq8test.dir/build.make CMakeFiles/paq8test.dir/src/model/ContextModel.cpp.s
+.PHONY : src/model/ContextModel.cpp.s
+
+src/model/IndirectModel.o: src/model/IndirectModel.cpp.o
+
+.PHONY : src/model/IndirectModel.o
+
+# target to build an object file
+src/model/IndirectModel.cpp.o:
+	$(MAKE) -f CMakeFiles/paq8test.dir/build.make CMakeFiles/paq8test.dir/src/model/IndirectModel.cpp.o
+.PHONY : src/model/IndirectModel.cpp.o
+
+src/model/IndirectModel.i: src/model/IndirectModel.cpp.i
+
+.PHONY : src/model/IndirectModel.i
+
+# target to preprocess a source file
+src/model/IndirectModel.cpp.i:
+	$(MAKE) -f CMakeFiles/paq8test.dir/build.make CMakeFiles/paq8test.dir/src/model/IndirectModel.cpp.i
+.PHONY : src/model/IndirectModel.cpp.i
+
+src/model/IndirectModel.s: src/model/IndirectModel.cpp.s
+
+.PHONY : src/model/IndirectModel.s
+
+# target to generate assembly for a file
+src/model/IndirectModel.cpp.s:
+	$(MAKE) -f CMakeFiles/paq8test.dir/build.make CMakeFiles/paq8test.dir/src/model/IndirectModel.cpp.s
+.PHONY : src/model/IndirectModel.cpp.s
+
+src/model/MatchModel.o: src/model/MatchModel.cpp.o
+
+.PHONY : src/model/MatchModel.o
+
+# target to build an object file
+src/model/MatchModel.cpp.o:
+	$(MAKE) -f CMakeFiles/paq8test.dir/build.make CMakeFiles/paq8test.dir/src/model/MatchModel.cpp.o
+.PHONY : src/model/MatchModel.cpp.o
+
+src/model/MatchModel.i: src/model/MatchModel.cpp.i
+
+.PHONY : src/model/MatchModel.i
+
+# target to preprocess a source file
+src/model/MatchModel.cpp.i:
+	$(MAKE) -f CMakeFiles/paq8test.dir/build.make CMakeFiles/paq8test.dir/src/model/MatchModel.cpp.i
+.PHONY : src/model/MatchModel.cpp.i
+
+src/model/MatchModel.s: src/model/MatchModel.cpp.s
+
+.PHONY : src/model/MatchModel.s
+
+# target to generate assembly for a file
+src/model/MatchModel.cpp.s:
+	$(MAKE) -f CMakeFiles/paq8test.dir/build.make CMakeFiles/paq8test.dir/src/model/MatchModel.cpp.s
+.PHONY : src/model/MatchModel.cpp.s
+
+src/model/NormalModel.o: src/model/NormalModel.cpp.o
+
+.PHONY : src/model/NormalModel.o
+
+# target to build an object file
+src/model/NormalModel.cpp.o:
+	$(MAKE) -f CMakeFiles/paq8test.dir/build.make CMakeFiles/paq8test.dir/src/model/NormalModel.cpp.o
+.PHONY : src/model/NormalModel.cpp.o
+
+src/model/NormalModel.i: src/model/NormalModel.cpp.i
+
+.PHONY : src/model/NormalModel.i
+
+# target to preprocess a source file
+src/model/NormalModel.cpp.i:
+	$(MAKE) -f CMakeFiles/paq8test.dir/build.make CMakeFiles/paq8test.dir/src/model/NormalModel.cpp.i
+.PHONY : src/model/NormalModel.cpp.i
+
+src/model/NormalModel.s: src/model/NormalModel.cpp.s
+
+.PHONY : src/model/NormalModel.s
+
+# target to generate assembly for a file
+src/model/NormalModel.cpp.s:
+	$(MAKE) -f CMakeFiles/paq8test.dir/build.make CMakeFiles/paq8test.dir/src/model/NormalModel.cpp.s
+.PHONY : src/model/NormalModel.cpp.s
 
 src/paq8test.o: src/paq8test.cpp.o
 
@@ -717,6 +636,87 @@ src/paq8test.cpp.s:
 	$(MAKE) -f CMakeFiles/paq8test.dir/build.make CMakeFiles/paq8test.dir/src/paq8test.cpp.s
 .PHONY : src/paq8test.cpp.s
 
+src/util/Ilog.o: src/util/Ilog.cpp.o
+
+.PHONY : src/util/Ilog.o
+
+# target to build an object file
+src/util/Ilog.cpp.o:
+	$(MAKE) -f CMakeFiles/paq8test.dir/build.make CMakeFiles/paq8test.dir/src/util/Ilog.cpp.o
+.PHONY : src/util/Ilog.cpp.o
+
+src/util/Ilog.i: src/util/Ilog.cpp.i
+
+.PHONY : src/util/Ilog.i
+
+# target to preprocess a source file
+src/util/Ilog.cpp.i:
+	$(MAKE) -f CMakeFiles/paq8test.dir/build.make CMakeFiles/paq8test.dir/src/util/Ilog.cpp.i
+.PHONY : src/util/Ilog.cpp.i
+
+src/util/Ilog.s: src/util/Ilog.cpp.s
+
+.PHONY : src/util/Ilog.s
+
+# target to generate assembly for a file
+src/util/Ilog.cpp.s:
+	$(MAKE) -f CMakeFiles/paq8test.dir/build.make CMakeFiles/paq8test.dir/src/util/Ilog.cpp.s
+.PHONY : src/util/Ilog.cpp.s
+
+src/util/ProgramChecker.o: src/util/ProgramChecker.cpp.o
+
+.PHONY : src/util/ProgramChecker.o
+
+# target to build an object file
+src/util/ProgramChecker.cpp.o:
+	$(MAKE) -f CMakeFiles/paq8test.dir/build.make CMakeFiles/paq8test.dir/src/util/ProgramChecker.cpp.o
+.PHONY : src/util/ProgramChecker.cpp.o
+
+src/util/ProgramChecker.i: src/util/ProgramChecker.cpp.i
+
+.PHONY : src/util/ProgramChecker.i
+
+# target to preprocess a source file
+src/util/ProgramChecker.cpp.i:
+	$(MAKE) -f CMakeFiles/paq8test.dir/build.make CMakeFiles/paq8test.dir/src/util/ProgramChecker.cpp.i
+.PHONY : src/util/ProgramChecker.cpp.i
+
+src/util/ProgramChecker.s: src/util/ProgramChecker.cpp.s
+
+.PHONY : src/util/ProgramChecker.s
+
+# target to generate assembly for a file
+src/util/ProgramChecker.cpp.s:
+	$(MAKE) -f CMakeFiles/paq8test.dir/build.make CMakeFiles/paq8test.dir/src/util/ProgramChecker.cpp.s
+.PHONY : src/util/ProgramChecker.cpp.s
+
+src/util/Random.o: src/util/Random.cpp.o
+
+.PHONY : src/util/Random.o
+
+# target to build an object file
+src/util/Random.cpp.o:
+	$(MAKE) -f CMakeFiles/paq8test.dir/build.make CMakeFiles/paq8test.dir/src/util/Random.cpp.o
+.PHONY : src/util/Random.cpp.o
+
+src/util/Random.i: src/util/Random.cpp.i
+
+.PHONY : src/util/Random.i
+
+# target to preprocess a source file
+src/util/Random.cpp.i:
+	$(MAKE) -f CMakeFiles/paq8test.dir/build.make CMakeFiles/paq8test.dir/src/util/Random.cpp.i
+.PHONY : src/util/Random.cpp.i
+
+src/util/Random.s: src/util/Random.cpp.s
+
+.PHONY : src/util/Random.s
+
+# target to generate assembly for a file
+src/util/Random.cpp.s:
+	$(MAKE) -f CMakeFiles/paq8test.dir/build.make CMakeFiles/paq8test.dir/src/util/Random.cpp.s
+.PHONY : src/util/Random.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -726,72 +726,72 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... paq8test"
-	@echo "... src/AdaptiveMap.o"
-	@echo "... src/AdaptiveMap.i"
-	@echo "... src/AdaptiveMap.s"
 	@echo "... src/ArithmeticEncoder.o"
 	@echo "... src/ArithmeticEncoder.i"
 	@echo "... src/ArithmeticEncoder.s"
-	@echo "... src/ContextMap.o"
-	@echo "... src/ContextMap.i"
-	@echo "... src/ContextMap.s"
-	@echo "... src/ContextMap2.o"
-	@echo "... src/ContextMap2.i"
-	@echo "... src/ContextMap2.s"
-	@echo "... src/ContextModel.o"
-	@echo "... src/ContextModel.i"
-	@echo "... src/ContextModel.s"
 	@echo "... src/Encoder.o"
 	@echo "... src/Encoder.i"
 	@echo "... src/Encoder.s"
-	@echo "... src/Ilog.o"
-	@echo "... src/Ilog.i"
-	@echo "... src/Ilog.s"
-	@echo "... src/IndirectModel.o"
-	@echo "... src/IndirectModel.i"
-	@echo "... src/IndirectModel.s"
-	@echo "... src/MatchModel.o"
-	@echo "... src/MatchModel.i"
-	@echo "... src/MatchModel.s"
 	@echo "... src/Mixer.o"
 	@echo "... src/Mixer.i"
 	@echo "... src/Mixer.s"
 	@echo "... src/Models.o"
 	@echo "... src/Models.i"
 	@echo "... src/Models.s"
-	@echo "... src/NormalModel.o"
-	@echo "... src/NormalModel.i"
-	@echo "... src/NormalModel.s"
 	@echo "... src/Predictor.o"
 	@echo "... src/Predictor.i"
 	@echo "... src/Predictor.s"
-	@echo "... src/ProgramChecker.o"
-	@echo "... src/ProgramChecker.i"
-	@echo "... src/ProgramChecker.s"
-	@echo "... src/Random.o"
-	@echo "... src/Random.i"
-	@echo "... src/Random.s"
 	@echo "... src/Shared.o"
 	@echo "... src/Shared.i"
 	@echo "... src/Shared.s"
-	@echo "... src/SmallStationaryContextMap.o"
-	@echo "... src/SmallStationaryContextMap.i"
-	@echo "... src/SmallStationaryContextMap.s"
-	@echo "... src/StateMap.o"
-	@echo "... src/StateMap.i"
-	@echo "... src/StateMap.s"
-	@echo "... src/StateTable.o"
-	@echo "... src/StateTable.i"
-	@echo "... src/StateTable.s"
-	@echo "... src/StationaryMap.o"
-	@echo "... src/StationaryMap.i"
-	@echo "... src/StationaryMap.s"
 	@echo "... src/UpdateBroadcaster.o"
 	@echo "... src/UpdateBroadcaster.i"
 	@echo "... src/UpdateBroadcaster.s"
+	@echo "... src/map/AdaptiveMap.o"
+	@echo "... src/map/AdaptiveMap.i"
+	@echo "... src/map/AdaptiveMap.s"
+	@echo "... src/map/ContextMap.o"
+	@echo "... src/map/ContextMap.i"
+	@echo "... src/map/ContextMap.s"
+	@echo "... src/map/ContextMap2.o"
+	@echo "... src/map/ContextMap2.i"
+	@echo "... src/map/ContextMap2.s"
+	@echo "... src/map/SmallStationaryContextMap.o"
+	@echo "... src/map/SmallStationaryContextMap.i"
+	@echo "... src/map/SmallStationaryContextMap.s"
+	@echo "... src/map/StateMap.o"
+	@echo "... src/map/StateMap.i"
+	@echo "... src/map/StateMap.s"
+	@echo "... src/map/StateTable.o"
+	@echo "... src/map/StateTable.i"
+	@echo "... src/map/StateTable.s"
+	@echo "... src/map/StationaryMap.o"
+	@echo "... src/map/StationaryMap.i"
+	@echo "... src/map/StationaryMap.s"
+	@echo "... src/model/ContextModel.o"
+	@echo "... src/model/ContextModel.i"
+	@echo "... src/model/ContextModel.s"
+	@echo "... src/model/IndirectModel.o"
+	@echo "... src/model/IndirectModel.i"
+	@echo "... src/model/IndirectModel.s"
+	@echo "... src/model/MatchModel.o"
+	@echo "... src/model/MatchModel.i"
+	@echo "... src/model/MatchModel.s"
+	@echo "... src/model/NormalModel.o"
+	@echo "... src/model/NormalModel.i"
+	@echo "... src/model/NormalModel.s"
 	@echo "... src/paq8test.o"
 	@echo "... src/paq8test.i"
 	@echo "... src/paq8test.s"
+	@echo "... src/util/Ilog.o"
+	@echo "... src/util/Ilog.i"
+	@echo "... src/util/Ilog.s"
+	@echo "... src/util/ProgramChecker.o"
+	@echo "... src/util/ProgramChecker.i"
+	@echo "... src/util/ProgramChecker.s"
+	@echo "... src/util/Random.o"
+	@echo "... src/util/Random.i"
+	@echo "... src/util/Random.s"
 .PHONY : help
 
 

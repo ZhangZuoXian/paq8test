@@ -2,9 +2,9 @@
 #define PAQ8PX_CONTEXTMODEL_HPP
 
 
-#include "Mixer.hpp"
-#include "SimdMixer.hpp"
-#include "Models.hpp"
+#include "../Mixer.hpp"
+#include "../SimdMixer.hpp"
+#include "../Models.hpp"
 
 /**
  * This combines all the context models with a Mixer.

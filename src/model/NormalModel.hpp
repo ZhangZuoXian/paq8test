@@ -1,6 +1,6 @@
 #pragma once
 
-#include "ContextMap2.hpp"
+#include "../map/ContextMap2.hpp"
 
 /**
  * Model for order 0-14 contexts

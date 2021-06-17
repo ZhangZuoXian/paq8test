@@ -1,15 +1,16 @@
 #ifndef PAQ8PX_CONTEXTMAP_HPP
 #define PAQ8PX_CONTEXTMAP_HPP
 
-#include "IPredictor.hpp"
-#include "Bucket.hpp"
-#include "Hash.hpp"
-#include "Ilog.hpp"
-#include "Mixer.hpp"
-#include "Random.hpp"
+#include "../IPredictor.hpp"
+#include "../util/Bucket.hpp"
+#include "../util/Hash.hpp"
+#include "../util/Ilog.hpp"
+#include "../util/Stretch.hpp"
+#include "../Mixer.hpp"
+#include "../util/Random.hpp"
 #include "StateMap.hpp"
 #include "StateTable.hpp"
-#include "Stretch.hpp"
+
 
 /////////////////////////// ContextMap /////////////////////////
 // TODO(epsteina): update this documentation

@@ -1,7 +1,7 @@
 #ifndef PAQ8PX_STATETABLE_HPP
 #define PAQ8PX_STATETABLE_HPP
 
-#include "Random.hpp"
+#include "../util/Random.hpp"
 #include <cstdint>
 
 /**

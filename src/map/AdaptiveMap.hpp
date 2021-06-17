@@ -1,10 +1,10 @@
 #ifndef PAQ8PX_ADAPTIVEMAP_HPP
 #define PAQ8PX_ADAPTIVEMAP_HPP
 
-#include "IPredictor.hpp"
+#include "../IPredictor.hpp"
 #include <cstdint>
-#include "Shared.hpp"
-#include "DivisionTable.hpp"
+#include "../Shared.hpp"
+#include "../util/DivisionTable.hpp"
 
 /**
  * This is the base class for StateMap and APM.

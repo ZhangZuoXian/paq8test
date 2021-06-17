@@ -1,10 +1,10 @@
 #pragma once
 
 #include "UpdateBroadcaster.hpp"
-#include "BitCount.hpp"
-#include "Ilog.hpp"
+#include "./util/BitCount.hpp"
+#include "./util/Ilog.hpp"
 #include "Mixer.hpp"
-#include "Squash.hpp"
+#include "./util/Squash.hpp"
 
 template<SIMD simd>
 class SIMDMixer : public Mixer {

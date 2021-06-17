@@ -1,7 +1,7 @@
 #pragma once
 
 #include <cstdint>
-#include "RingBuffer.hpp"
+#include "./util/RingBuffer.hpp"
 #include "UpdateBroadcaster.hpp"
 
 // helper #defines to access shared variables

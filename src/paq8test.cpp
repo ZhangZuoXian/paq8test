@@ -15,7 +15,7 @@ typedef unsigned int   U32;
 U32 x1=0,x2=0xffffffff;
 
 // FILE* fp = fopen("/home/ghj/lpaq1/test/src/enwik8/enwik8","r");
-FILE* fp = fopen("/home/ghj/lpaq1/test/src/calgarycorpus/book1","r");
+FILE* fp = fopen("/home/ghj/lpaq1/test/src/calgarycorpus/paper1","r");
 FILE* out = fopen("/home/ghj/c++_project/compress/output.txt","w");
 
 int main(){

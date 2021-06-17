@@ -57,18 +57,18 @@ include CMakeFiles/paq8test.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/paq8test.dir/flags.make
 
-CMakeFiles/paq8test.dir/src/AdaptiveMap.cpp.o: CMakeFiles/paq8test.dir/flags.make
-CMakeFiles/paq8test.dir/src/AdaptiveMap.cpp.o: ../src/AdaptiveMap.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghj/c++_project/compress/paq8test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/paq8test.dir/src/AdaptiveMap.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/paq8test.dir/src/AdaptiveMap.cpp.o -c /home/ghj/c++_project/compress/paq8test/src/AdaptiveMap.cpp
+CMakeFiles/paq8test.dir/src/map/AdaptiveMap.cpp.o: CMakeFiles/paq8test.dir/flags.make
+CMakeFiles/paq8test.dir/src/map/AdaptiveMap.cpp.o: ../src/map/AdaptiveMap.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghj/c++_project/compress/paq8test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/paq8test.dir/src/map/AdaptiveMap.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/paq8test.dir/src/map/AdaptiveMap.cpp.o -c /home/ghj/c++_project/compress/paq8test/src/map/AdaptiveMap.cpp
 
-CMakeFiles/paq8test.dir/src/AdaptiveMap.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/paq8test.dir/src/AdaptiveMap.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ghj/c++_project/compress/paq8test/src/AdaptiveMap.cpp > CMakeFiles/paq8test.dir/src/AdaptiveMap.cpp.i
+CMakeFiles/paq8test.dir/src/map/AdaptiveMap.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/paq8test.dir/src/map/AdaptiveMap.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ghj/c++_project/compress/paq8test/src/map/AdaptiveMap.cpp > CMakeFiles/paq8test.dir/src/map/AdaptiveMap.cpp.i
 
-CMakeFiles/paq8test.dir/src/AdaptiveMap.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/paq8test.dir/src/AdaptiveMap.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ghj/c++_project/compress/paq8test/src/AdaptiveMap.cpp -o CMakeFiles/paq8test.dir/src/AdaptiveMap.cpp.s
+CMakeFiles/paq8test.dir/src/map/AdaptiveMap.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/paq8test.dir/src/map/AdaptiveMap.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ghj/c++_project/compress/paq8test/src/map/AdaptiveMap.cpp -o CMakeFiles/paq8test.dir/src/map/AdaptiveMap.cpp.s
 
 CMakeFiles/paq8test.dir/src/ArithmeticEncoder.cpp.o: CMakeFiles/paq8test.dir/flags.make
 CMakeFiles/paq8test.dir/src/ArithmeticEncoder.cpp.o: ../src/ArithmeticEncoder.cpp
@@ -83,44 +83,44 @@ CMakeFiles/paq8test.dir/src/ArithmeticEncoder.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/paq8test.dir/src/ArithmeticEncoder.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ghj/c++_project/compress/paq8test/src/ArithmeticEncoder.cpp -o CMakeFiles/paq8test.dir/src/ArithmeticEncoder.cpp.s
 
-CMakeFiles/paq8test.dir/src/ContextModel.cpp.o: CMakeFiles/paq8test.dir/flags.make
-CMakeFiles/paq8test.dir/src/ContextModel.cpp.o: ../src/ContextModel.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghj/c++_project/compress/paq8test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/paq8test.dir/src/ContextModel.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/paq8test.dir/src/ContextModel.cpp.o -c /home/ghj/c++_project/compress/paq8test/src/ContextModel.cpp
+CMakeFiles/paq8test.dir/src/model/ContextModel.cpp.o: CMakeFiles/paq8test.dir/flags.make
+CMakeFiles/paq8test.dir/src/model/ContextModel.cpp.o: ../src/model/ContextModel.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghj/c++_project/compress/paq8test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/paq8test.dir/src/model/ContextModel.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/paq8test.dir/src/model/ContextModel.cpp.o -c /home/ghj/c++_project/compress/paq8test/src/model/ContextModel.cpp
 
-CMakeFiles/paq8test.dir/src/ContextModel.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/paq8test.dir/src/ContextModel.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ghj/c++_project/compress/paq8test/src/ContextModel.cpp > CMakeFiles/paq8test.dir/src/ContextModel.cpp.i
+CMakeFiles/paq8test.dir/src/model/ContextModel.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/paq8test.dir/src/model/ContextModel.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ghj/c++_project/compress/paq8test/src/model/ContextModel.cpp > CMakeFiles/paq8test.dir/src/model/ContextModel.cpp.i
 
-CMakeFiles/paq8test.dir/src/ContextModel.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/paq8test.dir/src/ContextModel.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ghj/c++_project/compress/paq8test/src/ContextModel.cpp -o CMakeFiles/paq8test.dir/src/ContextModel.cpp.s
+CMakeFiles/paq8test.dir/src/model/ContextModel.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/paq8test.dir/src/model/ContextModel.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ghj/c++_project/compress/paq8test/src/model/ContextModel.cpp -o CMakeFiles/paq8test.dir/src/model/ContextModel.cpp.s
 
-CMakeFiles/paq8test.dir/src/ContextMap.cpp.o: CMakeFiles/paq8test.dir/flags.make
-CMakeFiles/paq8test.dir/src/ContextMap.cpp.o: ../src/ContextMap.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghj/c++_project/compress/paq8test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/paq8test.dir/src/ContextMap.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/paq8test.dir/src/ContextMap.cpp.o -c /home/ghj/c++_project/compress/paq8test/src/ContextMap.cpp
+CMakeFiles/paq8test.dir/src/map/ContextMap.cpp.o: CMakeFiles/paq8test.dir/flags.make
+CMakeFiles/paq8test.dir/src/map/ContextMap.cpp.o: ../src/map/ContextMap.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghj/c++_project/compress/paq8test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/paq8test.dir/src/map/ContextMap.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/paq8test.dir/src/map/ContextMap.cpp.o -c /home/ghj/c++_project/compress/paq8test/src/map/ContextMap.cpp
 
-CMakeFiles/paq8test.dir/src/ContextMap.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/paq8test.dir/src/ContextMap.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ghj/c++_project/compress/paq8test/src/ContextMap.cpp > CMakeFiles/paq8test.dir/src/ContextMap.cpp.i
+CMakeFiles/paq8test.dir/src/map/ContextMap.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/paq8test.dir/src/map/ContextMap.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ghj/c++_project/compress/paq8test/src/map/ContextMap.cpp > CMakeFiles/paq8test.dir/src/map/ContextMap.cpp.i
 
-CMakeFiles/paq8test.dir/src/ContextMap.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/paq8test.dir/src/ContextMap.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ghj/c++_project/compress/paq8test/src/ContextMap.cpp -o CMakeFiles/paq8test.dir/src/ContextMap.cpp.s
+CMakeFiles/paq8test.dir/src/map/ContextMap.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/paq8test.dir/src/map/ContextMap.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ghj/c++_project/compress/paq8test/src/map/ContextMap.cpp -o CMakeFiles/paq8test.dir/src/map/ContextMap.cpp.s
 
-CMakeFiles/paq8test.dir/src/ContextMap2.cpp.o: CMakeFiles/paq8test.dir/flags.make
-CMakeFiles/paq8test.dir/src/ContextMap2.cpp.o: ../src/ContextMap2.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghj/c++_project/compress/paq8test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/paq8test.dir/src/ContextMap2.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/paq8test.dir/src/ContextMap2.cpp.o -c /home/ghj/c++_project/compress/paq8test/src/ContextMap2.cpp
+CMakeFiles/paq8test.dir/src/map/ContextMap2.cpp.o: CMakeFiles/paq8test.dir/flags.make
+CMakeFiles/paq8test.dir/src/map/ContextMap2.cpp.o: ../src/map/ContextMap2.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghj/c++_project/compress/paq8test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/paq8test.dir/src/map/ContextMap2.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/paq8test.dir/src/map/ContextMap2.cpp.o -c /home/ghj/c++_project/compress/paq8test/src/map/ContextMap2.cpp
 
-CMakeFiles/paq8test.dir/src/ContextMap2.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/paq8test.dir/src/ContextMap2.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ghj/c++_project/compress/paq8test/src/ContextMap2.cpp > CMakeFiles/paq8test.dir/src/ContextMap2.cpp.i
+CMakeFiles/paq8test.dir/src/map/ContextMap2.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/paq8test.dir/src/map/ContextMap2.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ghj/c++_project/compress/paq8test/src/map/ContextMap2.cpp > CMakeFiles/paq8test.dir/src/map/ContextMap2.cpp.i
 
-CMakeFiles/paq8test.dir/src/ContextMap2.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/paq8test.dir/src/ContextMap2.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ghj/c++_project/compress/paq8test/src/ContextMap2.cpp -o CMakeFiles/paq8test.dir/src/ContextMap2.cpp.s
+CMakeFiles/paq8test.dir/src/map/ContextMap2.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/paq8test.dir/src/map/ContextMap2.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ghj/c++_project/compress/paq8test/src/map/ContextMap2.cpp -o CMakeFiles/paq8test.dir/src/map/ContextMap2.cpp.s
 
 CMakeFiles/paq8test.dir/src/Encoder.cpp.o: CMakeFiles/paq8test.dir/flags.make
 CMakeFiles/paq8test.dir/src/Encoder.cpp.o: ../src/Encoder.cpp
@@ -135,44 +135,44 @@ CMakeFiles/paq8test.dir/src/Encoder.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/paq8test.dir/src/Encoder.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ghj/c++_project/compress/paq8test/src/Encoder.cpp -o CMakeFiles/paq8test.dir/src/Encoder.cpp.s
 
-CMakeFiles/paq8test.dir/src/Ilog.cpp.o: CMakeFiles/paq8test.dir/flags.make
-CMakeFiles/paq8test.dir/src/Ilog.cpp.o: ../src/Ilog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghj/c++_project/compress/paq8test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/paq8test.dir/src/Ilog.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/paq8test.dir/src/Ilog.cpp.o -c /home/ghj/c++_project/compress/paq8test/src/Ilog.cpp
+CMakeFiles/paq8test.dir/src/util/Ilog.cpp.o: CMakeFiles/paq8test.dir/flags.make
+CMakeFiles/paq8test.dir/src/util/Ilog.cpp.o: ../src/util/Ilog.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghj/c++_project/compress/paq8test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/paq8test.dir/src/util/Ilog.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/paq8test.dir/src/util/Ilog.cpp.o -c /home/ghj/c++_project/compress/paq8test/src/util/Ilog.cpp
 
-CMakeFiles/paq8test.dir/src/Ilog.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/paq8test.dir/src/Ilog.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ghj/c++_project/compress/paq8test/src/Ilog.cpp > CMakeFiles/paq8test.dir/src/Ilog.cpp.i
+CMakeFiles/paq8test.dir/src/util/Ilog.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/paq8test.dir/src/util/Ilog.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ghj/c++_project/compress/paq8test/src/util/Ilog.cpp > CMakeFiles/paq8test.dir/src/util/Ilog.cpp.i
 
-CMakeFiles/paq8test.dir/src/Ilog.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/paq8test.dir/src/Ilog.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ghj/c++_project/compress/paq8test/src/Ilog.cpp -o CMakeFiles/paq8test.dir/src/Ilog.cpp.s
+CMakeFiles/paq8test.dir/src/util/Ilog.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/paq8test.dir/src/util/Ilog.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ghj/c++_project/compress/paq8test/src/util/Ilog.cpp -o CMakeFiles/paq8test.dir/src/util/Ilog.cpp.s
 
-CMakeFiles/paq8test.dir/src/IndirectModel.cpp.o: CMakeFiles/paq8test.dir/flags.make
-CMakeFiles/paq8test.dir/src/IndirectModel.cpp.o: ../src/IndirectModel.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghj/c++_project/compress/paq8test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/paq8test.dir/src/IndirectModel.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/paq8test.dir/src/IndirectModel.cpp.o -c /home/ghj/c++_project/compress/paq8test/src/IndirectModel.cpp
+CMakeFiles/paq8test.dir/src/model/IndirectModel.cpp.o: CMakeFiles/paq8test.dir/flags.make
+CMakeFiles/paq8test.dir/src/model/IndirectModel.cpp.o: ../src/model/IndirectModel.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghj/c++_project/compress/paq8test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/paq8test.dir/src/model/IndirectModel.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/paq8test.dir/src/model/IndirectModel.cpp.o -c /home/ghj/c++_project/compress/paq8test/src/model/IndirectModel.cpp
 
-CMakeFiles/paq8test.dir/src/IndirectModel.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/paq8test.dir/src/IndirectModel.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ghj/c++_project/compress/paq8test/src/IndirectModel.cpp > CMakeFiles/paq8test.dir/src/IndirectModel.cpp.i
+CMakeFiles/paq8test.dir/src/model/IndirectModel.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/paq8test.dir/src/model/IndirectModel.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ghj/c++_project/compress/paq8test/src/model/IndirectModel.cpp > CMakeFiles/paq8test.dir/src/model/IndirectModel.cpp.i
 
-CMakeFiles/paq8test.dir/src/IndirectModel.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/paq8test.dir/src/IndirectModel.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ghj/c++_project/compress/paq8test/src/IndirectModel.cpp -o CMakeFiles/paq8test.dir/src/IndirectModel.cpp.s
+CMakeFiles/paq8test.dir/src/model/IndirectModel.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/paq8test.dir/src/model/IndirectModel.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ghj/c++_project/compress/paq8test/src/model/IndirectModel.cpp -o CMakeFiles/paq8test.dir/src/model/IndirectModel.cpp.s
 
-CMakeFiles/paq8test.dir/src/MatchModel.cpp.o: CMakeFiles/paq8test.dir/flags.make
-CMakeFiles/paq8test.dir/src/MatchModel.cpp.o: ../src/MatchModel.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghj/c++_project/compress/paq8test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/paq8test.dir/src/MatchModel.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/paq8test.dir/src/MatchModel.cpp.o -c /home/ghj/c++_project/compress/paq8test/src/MatchModel.cpp
+CMakeFiles/paq8test.dir/src/model/MatchModel.cpp.o: CMakeFiles/paq8test.dir/flags.make
+CMakeFiles/paq8test.dir/src/model/MatchModel.cpp.o: ../src/model/MatchModel.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghj/c++_project/compress/paq8test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/paq8test.dir/src/model/MatchModel.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/paq8test.dir/src/model/MatchModel.cpp.o -c /home/ghj/c++_project/compress/paq8test/src/model/MatchModel.cpp
 
-CMakeFiles/paq8test.dir/src/MatchModel.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/paq8test.dir/src/MatchModel.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ghj/c++_project/compress/paq8test/src/MatchModel.cpp > CMakeFiles/paq8test.dir/src/MatchModel.cpp.i
+CMakeFiles/paq8test.dir/src/model/MatchModel.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/paq8test.dir/src/model/MatchModel.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ghj/c++_project/compress/paq8test/src/model/MatchModel.cpp > CMakeFiles/paq8test.dir/src/model/MatchModel.cpp.i
 
-CMakeFiles/paq8test.dir/src/MatchModel.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/paq8test.dir/src/MatchModel.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ghj/c++_project/compress/paq8test/src/MatchModel.cpp -o CMakeFiles/paq8test.dir/src/MatchModel.cpp.s
+CMakeFiles/paq8test.dir/src/model/MatchModel.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/paq8test.dir/src/model/MatchModel.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ghj/c++_project/compress/paq8test/src/model/MatchModel.cpp -o CMakeFiles/paq8test.dir/src/model/MatchModel.cpp.s
 
 CMakeFiles/paq8test.dir/src/Mixer.cpp.o: CMakeFiles/paq8test.dir/flags.make
 CMakeFiles/paq8test.dir/src/Mixer.cpp.o: ../src/Mixer.cpp
@@ -200,18 +200,18 @@ CMakeFiles/paq8test.dir/src/Models.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/paq8test.dir/src/Models.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ghj/c++_project/compress/paq8test/src/Models.cpp -o CMakeFiles/paq8test.dir/src/Models.cpp.s
 
-CMakeFiles/paq8test.dir/src/NormalModel.cpp.o: CMakeFiles/paq8test.dir/flags.make
-CMakeFiles/paq8test.dir/src/NormalModel.cpp.o: ../src/NormalModel.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghj/c++_project/compress/paq8test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/paq8test.dir/src/NormalModel.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/paq8test.dir/src/NormalModel.cpp.o -c /home/ghj/c++_project/compress/paq8test/src/NormalModel.cpp
+CMakeFiles/paq8test.dir/src/model/NormalModel.cpp.o: CMakeFiles/paq8test.dir/flags.make
+CMakeFiles/paq8test.dir/src/model/NormalModel.cpp.o: ../src/model/NormalModel.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghj/c++_project/compress/paq8test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/paq8test.dir/src/model/NormalModel.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/paq8test.dir/src/model/NormalModel.cpp.o -c /home/ghj/c++_project/compress/paq8test/src/model/NormalModel.cpp
 
-CMakeFiles/paq8test.dir/src/NormalModel.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/paq8test.dir/src/NormalModel.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ghj/c++_project/compress/paq8test/src/NormalModel.cpp > CMakeFiles/paq8test.dir/src/NormalModel.cpp.i
+CMakeFiles/paq8test.dir/src/model/NormalModel.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/paq8test.dir/src/model/NormalModel.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ghj/c++_project/compress/paq8test/src/model/NormalModel.cpp > CMakeFiles/paq8test.dir/src/model/NormalModel.cpp.i
 
-CMakeFiles/paq8test.dir/src/NormalModel.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/paq8test.dir/src/NormalModel.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ghj/c++_project/compress/paq8test/src/NormalModel.cpp -o CMakeFiles/paq8test.dir/src/NormalModel.cpp.s
+CMakeFiles/paq8test.dir/src/model/NormalModel.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/paq8test.dir/src/model/NormalModel.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ghj/c++_project/compress/paq8test/src/model/NormalModel.cpp -o CMakeFiles/paq8test.dir/src/model/NormalModel.cpp.s
 
 CMakeFiles/paq8test.dir/src/paq8test.cpp.o: CMakeFiles/paq8test.dir/flags.make
 CMakeFiles/paq8test.dir/src/paq8test.cpp.o: ../src/paq8test.cpp
@@ -239,31 +239,31 @@ CMakeFiles/paq8test.dir/src/Predictor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/paq8test.dir/src/Predictor.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ghj/c++_project/compress/paq8test/src/Predictor.cpp -o CMakeFiles/paq8test.dir/src/Predictor.cpp.s
 
-CMakeFiles/paq8test.dir/src/ProgramChecker.cpp.o: CMakeFiles/paq8test.dir/flags.make
-CMakeFiles/paq8test.dir/src/ProgramChecker.cpp.o: ../src/ProgramChecker.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghj/c++_project/compress/paq8test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/paq8test.dir/src/ProgramChecker.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/paq8test.dir/src/ProgramChecker.cpp.o -c /home/ghj/c++_project/compress/paq8test/src/ProgramChecker.cpp
+CMakeFiles/paq8test.dir/src/util/ProgramChecker.cpp.o: CMakeFiles/paq8test.dir/flags.make
+CMakeFiles/paq8test.dir/src/util/ProgramChecker.cpp.o: ../src/util/ProgramChecker.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghj/c++_project/compress/paq8test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/paq8test.dir/src/util/ProgramChecker.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/paq8test.dir/src/util/ProgramChecker.cpp.o -c /home/ghj/c++_project/compress/paq8test/src/util/ProgramChecker.cpp
 
-CMakeFiles/paq8test.dir/src/ProgramChecker.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/paq8test.dir/src/ProgramChecker.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ghj/c++_project/compress/paq8test/src/ProgramChecker.cpp > CMakeFiles/paq8test.dir/src/ProgramChecker.cpp.i
+CMakeFiles/paq8test.dir/src/util/ProgramChecker.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/paq8test.dir/src/util/ProgramChecker.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ghj/c++_project/compress/paq8test/src/util/ProgramChecker.cpp > CMakeFiles/paq8test.dir/src/util/ProgramChecker.cpp.i
 
-CMakeFiles/paq8test.dir/src/ProgramChecker.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/paq8test.dir/src/ProgramChecker.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ghj/c++_project/compress/paq8test/src/ProgramChecker.cpp -o CMakeFiles/paq8test.dir/src/ProgramChecker.cpp.s
+CMakeFiles/paq8test.dir/src/util/ProgramChecker.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/paq8test.dir/src/util/ProgramChecker.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ghj/c++_project/compress/paq8test/src/util/ProgramChecker.cpp -o CMakeFiles/paq8test.dir/src/util/ProgramChecker.cpp.s
 
-CMakeFiles/paq8test.dir/src/Random.cpp.o: CMakeFiles/paq8test.dir/flags.make
-CMakeFiles/paq8test.dir/src/Random.cpp.o: ../src/Random.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghj/c++_project/compress/paq8test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/paq8test.dir/src/Random.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/paq8test.dir/src/Random.cpp.o -c /home/ghj/c++_project/compress/paq8test/src/Random.cpp
+CMakeFiles/paq8test.dir/src/util/Random.cpp.o: CMakeFiles/paq8test.dir/flags.make
+CMakeFiles/paq8test.dir/src/util/Random.cpp.o: ../src/util/Random.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghj/c++_project/compress/paq8test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/paq8test.dir/src/util/Random.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/paq8test.dir/src/util/Random.cpp.o -c /home/ghj/c++_project/compress/paq8test/src/util/Random.cpp
 
-CMakeFiles/paq8test.dir/src/Random.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/paq8test.dir/src/Random.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ghj/c++_project/compress/paq8test/src/Random.cpp > CMakeFiles/paq8test.dir/src/Random.cpp.i
+CMakeFiles/paq8test.dir/src/util/Random.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/paq8test.dir/src/util/Random.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ghj/c++_project/compress/paq8test/src/util/Random.cpp > CMakeFiles/paq8test.dir/src/util/Random.cpp.i
 
-CMakeFiles/paq8test.dir/src/Random.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/paq8test.dir/src/Random.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ghj/c++_project/compress/paq8test/src/Random.cpp -o CMakeFiles/paq8test.dir/src/Random.cpp.s
+CMakeFiles/paq8test.dir/src/util/Random.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/paq8test.dir/src/util/Random.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ghj/c++_project/compress/paq8test/src/util/Random.cpp -o CMakeFiles/paq8test.dir/src/util/Random.cpp.s
 
 CMakeFiles/paq8test.dir/src/Shared.cpp.o: CMakeFiles/paq8test.dir/flags.make
 CMakeFiles/paq8test.dir/src/Shared.cpp.o: ../src/Shared.cpp
@@ -278,57 +278,57 @@ CMakeFiles/paq8test.dir/src/Shared.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/paq8test.dir/src/Shared.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ghj/c++_project/compress/paq8test/src/Shared.cpp -o CMakeFiles/paq8test.dir/src/Shared.cpp.s
 
-CMakeFiles/paq8test.dir/src/SmallStationaryContextMap.cpp.o: CMakeFiles/paq8test.dir/flags.make
-CMakeFiles/paq8test.dir/src/SmallStationaryContextMap.cpp.o: ../src/SmallStationaryContextMap.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghj/c++_project/compress/paq8test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/paq8test.dir/src/SmallStationaryContextMap.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/paq8test.dir/src/SmallStationaryContextMap.cpp.o -c /home/ghj/c++_project/compress/paq8test/src/SmallStationaryContextMap.cpp
+CMakeFiles/paq8test.dir/src/map/SmallStationaryContextMap.cpp.o: CMakeFiles/paq8test.dir/flags.make
+CMakeFiles/paq8test.dir/src/map/SmallStationaryContextMap.cpp.o: ../src/map/SmallStationaryContextMap.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghj/c++_project/compress/paq8test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/paq8test.dir/src/map/SmallStationaryContextMap.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/paq8test.dir/src/map/SmallStationaryContextMap.cpp.o -c /home/ghj/c++_project/compress/paq8test/src/map/SmallStationaryContextMap.cpp
 
-CMakeFiles/paq8test.dir/src/SmallStationaryContextMap.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/paq8test.dir/src/SmallStationaryContextMap.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ghj/c++_project/compress/paq8test/src/SmallStationaryContextMap.cpp > CMakeFiles/paq8test.dir/src/SmallStationaryContextMap.cpp.i
+CMakeFiles/paq8test.dir/src/map/SmallStationaryContextMap.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/paq8test.dir/src/map/SmallStationaryContextMap.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ghj/c++_project/compress/paq8test/src/map/SmallStationaryContextMap.cpp > CMakeFiles/paq8test.dir/src/map/SmallStationaryContextMap.cpp.i
 
-CMakeFiles/paq8test.dir/src/SmallStationaryContextMap.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/paq8test.dir/src/SmallStationaryContextMap.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ghj/c++_project/compress/paq8test/src/SmallStationaryContextMap.cpp -o CMakeFiles/paq8test.dir/src/SmallStationaryContextMap.cpp.s
+CMakeFiles/paq8test.dir/src/map/SmallStationaryContextMap.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/paq8test.dir/src/map/SmallStationaryContextMap.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ghj/c++_project/compress/paq8test/src/map/SmallStationaryContextMap.cpp -o CMakeFiles/paq8test.dir/src/map/SmallStationaryContextMap.cpp.s
 
-CMakeFiles/paq8test.dir/src/StateMap.cpp.o: CMakeFiles/paq8test.dir/flags.make
-CMakeFiles/paq8test.dir/src/StateMap.cpp.o: ../src/StateMap.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghj/c++_project/compress/paq8test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/paq8test.dir/src/StateMap.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/paq8test.dir/src/StateMap.cpp.o -c /home/ghj/c++_project/compress/paq8test/src/StateMap.cpp
+CMakeFiles/paq8test.dir/src/map/StateMap.cpp.o: CMakeFiles/paq8test.dir/flags.make
+CMakeFiles/paq8test.dir/src/map/StateMap.cpp.o: ../src/map/StateMap.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghj/c++_project/compress/paq8test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/paq8test.dir/src/map/StateMap.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/paq8test.dir/src/map/StateMap.cpp.o -c /home/ghj/c++_project/compress/paq8test/src/map/StateMap.cpp
 
-CMakeFiles/paq8test.dir/src/StateMap.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/paq8test.dir/src/StateMap.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ghj/c++_project/compress/paq8test/src/StateMap.cpp > CMakeFiles/paq8test.dir/src/StateMap.cpp.i
+CMakeFiles/paq8test.dir/src/map/StateMap.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/paq8test.dir/src/map/StateMap.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ghj/c++_project/compress/paq8test/src/map/StateMap.cpp > CMakeFiles/paq8test.dir/src/map/StateMap.cpp.i
 
-CMakeFiles/paq8test.dir/src/StateMap.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/paq8test.dir/src/StateMap.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ghj/c++_project/compress/paq8test/src/StateMap.cpp -o CMakeFiles/paq8test.dir/src/StateMap.cpp.s
+CMakeFiles/paq8test.dir/src/map/StateMap.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/paq8test.dir/src/map/StateMap.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ghj/c++_project/compress/paq8test/src/map/StateMap.cpp -o CMakeFiles/paq8test.dir/src/map/StateMap.cpp.s
 
-CMakeFiles/paq8test.dir/src/StateTable.cpp.o: CMakeFiles/paq8test.dir/flags.make
-CMakeFiles/paq8test.dir/src/StateTable.cpp.o: ../src/StateTable.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghj/c++_project/compress/paq8test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/paq8test.dir/src/StateTable.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/paq8test.dir/src/StateTable.cpp.o -c /home/ghj/c++_project/compress/paq8test/src/StateTable.cpp
+CMakeFiles/paq8test.dir/src/map/StateTable.cpp.o: CMakeFiles/paq8test.dir/flags.make
+CMakeFiles/paq8test.dir/src/map/StateTable.cpp.o: ../src/map/StateTable.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghj/c++_project/compress/paq8test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/paq8test.dir/src/map/StateTable.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/paq8test.dir/src/map/StateTable.cpp.o -c /home/ghj/c++_project/compress/paq8test/src/map/StateTable.cpp
 
-CMakeFiles/paq8test.dir/src/StateTable.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/paq8test.dir/src/StateTable.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ghj/c++_project/compress/paq8test/src/StateTable.cpp > CMakeFiles/paq8test.dir/src/StateTable.cpp.i
+CMakeFiles/paq8test.dir/src/map/StateTable.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/paq8test.dir/src/map/StateTable.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ghj/c++_project/compress/paq8test/src/map/StateTable.cpp > CMakeFiles/paq8test.dir/src/map/StateTable.cpp.i
 
-CMakeFiles/paq8test.dir/src/StateTable.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/paq8test.dir/src/StateTable.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ghj/c++_project/compress/paq8test/src/StateTable.cpp -o CMakeFiles/paq8test.dir/src/StateTable.cpp.s
+CMakeFiles/paq8test.dir/src/map/StateTable.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/paq8test.dir/src/map/StateTable.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ghj/c++_project/compress/paq8test/src/map/StateTable.cpp -o CMakeFiles/paq8test.dir/src/map/StateTable.cpp.s
 
-CMakeFiles/paq8test.dir/src/StationaryMap.cpp.o: CMakeFiles/paq8test.dir/flags.make
-CMakeFiles/paq8test.dir/src/StationaryMap.cpp.o: ../src/StationaryMap.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghj/c++_project/compress/paq8test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/paq8test.dir/src/StationaryMap.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/paq8test.dir/src/StationaryMap.cpp.o -c /home/ghj/c++_project/compress/paq8test/src/StationaryMap.cpp
+CMakeFiles/paq8test.dir/src/map/StationaryMap.cpp.o: CMakeFiles/paq8test.dir/flags.make
+CMakeFiles/paq8test.dir/src/map/StationaryMap.cpp.o: ../src/map/StationaryMap.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghj/c++_project/compress/paq8test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/paq8test.dir/src/map/StationaryMap.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/paq8test.dir/src/map/StationaryMap.cpp.o -c /home/ghj/c++_project/compress/paq8test/src/map/StationaryMap.cpp
 
-CMakeFiles/paq8test.dir/src/StationaryMap.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/paq8test.dir/src/StationaryMap.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ghj/c++_project/compress/paq8test/src/StationaryMap.cpp > CMakeFiles/paq8test.dir/src/StationaryMap.cpp.i
+CMakeFiles/paq8test.dir/src/map/StationaryMap.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/paq8test.dir/src/map/StationaryMap.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ghj/c++_project/compress/paq8test/src/map/StationaryMap.cpp > CMakeFiles/paq8test.dir/src/map/StationaryMap.cpp.i
 
-CMakeFiles/paq8test.dir/src/StationaryMap.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/paq8test.dir/src/StationaryMap.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ghj/c++_project/compress/paq8test/src/StationaryMap.cpp -o CMakeFiles/paq8test.dir/src/StationaryMap.cpp.s
+CMakeFiles/paq8test.dir/src/map/StationaryMap.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/paq8test.dir/src/map/StationaryMap.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ghj/c++_project/compress/paq8test/src/map/StationaryMap.cpp -o CMakeFiles/paq8test.dir/src/map/StationaryMap.cpp.s
 
 CMakeFiles/paq8test.dir/src/UpdateBroadcaster.cpp.o: CMakeFiles/paq8test.dir/flags.make
 CMakeFiles/paq8test.dir/src/UpdateBroadcaster.cpp.o: ../src/UpdateBroadcaster.cpp
@@ -345,53 +345,53 @@ CMakeFiles/paq8test.dir/src/UpdateBroadcaster.cpp.s: cmake_force
 
 # Object files for target paq8test
 paq8test_OBJECTS = \
-"CMakeFiles/paq8test.dir/src/AdaptiveMap.cpp.o" \
+"CMakeFiles/paq8test.dir/src/map/AdaptiveMap.cpp.o" \
 "CMakeFiles/paq8test.dir/src/ArithmeticEncoder.cpp.o" \
-"CMakeFiles/paq8test.dir/src/ContextModel.cpp.o" \
-"CMakeFiles/paq8test.dir/src/ContextMap.cpp.o" \
-"CMakeFiles/paq8test.dir/src/ContextMap2.cpp.o" \
+"CMakeFiles/paq8test.dir/src/model/ContextModel.cpp.o" \
+"CMakeFiles/paq8test.dir/src/map/ContextMap.cpp.o" \
+"CMakeFiles/paq8test.dir/src/map/ContextMap2.cpp.o" \
 "CMakeFiles/paq8test.dir/src/Encoder.cpp.o" \
-"CMakeFiles/paq8test.dir/src/Ilog.cpp.o" \
-"CMakeFiles/paq8test.dir/src/IndirectModel.cpp.o" \
-"CMakeFiles/paq8test.dir/src/MatchModel.cpp.o" \
+"CMakeFiles/paq8test.dir/src/util/Ilog.cpp.o" \
+"CMakeFiles/paq8test.dir/src/model/IndirectModel.cpp.o" \
+"CMakeFiles/paq8test.dir/src/model/MatchModel.cpp.o" \
 "CMakeFiles/paq8test.dir/src/Mixer.cpp.o" \
 "CMakeFiles/paq8test.dir/src/Models.cpp.o" \
-"CMakeFiles/paq8test.dir/src/NormalModel.cpp.o" \
+"CMakeFiles/paq8test.dir/src/model/NormalModel.cpp.o" \
 "CMakeFiles/paq8test.dir/src/paq8test.cpp.o" \
 "CMakeFiles/paq8test.dir/src/Predictor.cpp.o" \
-"CMakeFiles/paq8test.dir/src/ProgramChecker.cpp.o" \
-"CMakeFiles/paq8test.dir/src/Random.cpp.o" \
+"CMakeFiles/paq8test.dir/src/util/ProgramChecker.cpp.o" \
+"CMakeFiles/paq8test.dir/src/util/Random.cpp.o" \
 "CMakeFiles/paq8test.dir/src/Shared.cpp.o" \
-"CMakeFiles/paq8test.dir/src/SmallStationaryContextMap.cpp.o" \
-"CMakeFiles/paq8test.dir/src/StateMap.cpp.o" \
-"CMakeFiles/paq8test.dir/src/StateTable.cpp.o" \
-"CMakeFiles/paq8test.dir/src/StationaryMap.cpp.o" \
+"CMakeFiles/paq8test.dir/src/map/SmallStationaryContextMap.cpp.o" \
+"CMakeFiles/paq8test.dir/src/map/StateMap.cpp.o" \
+"CMakeFiles/paq8test.dir/src/map/StateTable.cpp.o" \
+"CMakeFiles/paq8test.dir/src/map/StationaryMap.cpp.o" \
 "CMakeFiles/paq8test.dir/src/UpdateBroadcaster.cpp.o"
 
 # External object files for target paq8test
 paq8test_EXTERNAL_OBJECTS =
 
-paq8test: CMakeFiles/paq8test.dir/src/AdaptiveMap.cpp.o
+paq8test: CMakeFiles/paq8test.dir/src/map/AdaptiveMap.cpp.o
 paq8test: CMakeFiles/paq8test.dir/src/ArithmeticEncoder.cpp.o
-paq8test: CMakeFiles/paq8test.dir/src/ContextModel.cpp.o
-paq8test: CMakeFiles/paq8test.dir/src/ContextMap.cpp.o
-paq8test: CMakeFiles/paq8test.dir/src/ContextMap2.cpp.o
+paq8test: CMakeFiles/paq8test.dir/src/model/ContextModel.cpp.o
+paq8test: CMakeFiles/paq8test.dir/src/map/ContextMap.cpp.o
+paq8test: CMakeFiles/paq8test.dir/src/map/ContextMap2.cpp.o
 paq8test: CMakeFiles/paq8test.dir/src/Encoder.cpp.o
-paq8test: CMakeFiles/paq8test.dir/src/Ilog.cpp.o
-paq8test: CMakeFiles/paq8test.dir/src/IndirectModel.cpp.o
-paq8test: CMakeFiles/paq8test.dir/src/MatchModel.cpp.o
+paq8test: CMakeFiles/paq8test.dir/src/util/Ilog.cpp.o
+paq8test: CMakeFiles/paq8test.dir/src/model/IndirectModel.cpp.o
+paq8test: CMakeFiles/paq8test.dir/src/model/MatchModel.cpp.o
 paq8test: CMakeFiles/paq8test.dir/src/Mixer.cpp.o
 paq8test: CMakeFiles/paq8test.dir/src/Models.cpp.o
-paq8test: CMakeFiles/paq8test.dir/src/NormalModel.cpp.o
+paq8test: CMakeFiles/paq8test.dir/src/model/NormalModel.cpp.o
 paq8test: CMakeFiles/paq8test.dir/src/paq8test.cpp.o
 paq8test: CMakeFiles/paq8test.dir/src/Predictor.cpp.o
-paq8test: CMakeFiles/paq8test.dir/src/ProgramChecker.cpp.o
-paq8test: CMakeFiles/paq8test.dir/src/Random.cpp.o
+paq8test: CMakeFiles/paq8test.dir/src/util/ProgramChecker.cpp.o
+paq8test: CMakeFiles/paq8test.dir/src/util/Random.cpp.o
 paq8test: CMakeFiles/paq8test.dir/src/Shared.cpp.o
-paq8test: CMakeFiles/paq8test.dir/src/SmallStationaryContextMap.cpp.o
-paq8test: CMakeFiles/paq8test.dir/src/StateMap.cpp.o
-paq8test: CMakeFiles/paq8test.dir/src/StateTable.cpp.o
-paq8test: CMakeFiles/paq8test.dir/src/StationaryMap.cpp.o
+paq8test: CMakeFiles/paq8test.dir/src/map/SmallStationaryContextMap.cpp.o
+paq8test: CMakeFiles/paq8test.dir/src/map/StateMap.cpp.o
+paq8test: CMakeFiles/paq8test.dir/src/map/StateTable.cpp.o
+paq8test: CMakeFiles/paq8test.dir/src/map/StationaryMap.cpp.o
 paq8test: CMakeFiles/paq8test.dir/src/UpdateBroadcaster.cpp.o
 paq8test: CMakeFiles/paq8test.dir/build.make
 paq8test: CMakeFiles/paq8test.dir/link.txt
