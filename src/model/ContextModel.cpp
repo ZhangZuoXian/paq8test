@@ -17,10 +17,15 @@ auto ContextModel::p() -> int {
   
   m->add(256); //network bias
 
+  clock_t t = clock();
   MatchModel &matchModel = models.matchModel();
   matchModel.mix(*m);
+  shared->MatchModelCostTime +=  clock()-t;
+
+  t = clock();
   NormalModel &normalModel = models.normalModel();
   normalModel.mix(*m);
+  shared->NormalModelCostTime += clock()-t;
 
   normalModel.mixPost(*m);
 
@@ -28,6 +33,15 @@ auto ContextModel::p() -> int {
   // return 2048;
   return m->p();
 
+}
+
+auto ContextModel::pWPar(uint8_t c) -> int*{
+  int pr[8];
+  //model的set、update、以及mix处理
+
+  //map的mix、update以及update处理
+
+  return pr;
 }
 
 ContextModel::~ContextModel() {

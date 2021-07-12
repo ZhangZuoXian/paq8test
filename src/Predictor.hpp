@@ -21,5 +21,5 @@ public:
     void update(uint8_t y);
     [[nodiscard]] auto p() -> int;
     
-    
+    [[nodiscard]] auto pWPar(uint8_t c) -> int*;
 };

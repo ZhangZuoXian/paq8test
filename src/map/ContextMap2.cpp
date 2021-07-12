@@ -140,7 +140,9 @@ void ContextMap2::mix(Mixer &m) {
   for( uint32_t i = 0; i < index; i++ ) {
     if(((validFlags >> (index - 1 - i)) & 1) != 0 ) {
       const int state = bitState[i] != nullptr ? *bitState[i] : 0;
+      //由状态表示的位历史中的零的个数
       const int n0 = StateTable::next(state, 2);
+      //由状态表示的位历史中的一的个数
       const int n1 = StateTable::next(state, 3);
       
       const int bitIsUncertain = int(n0 != 0 && n1 != 0);

@@ -27,6 +27,7 @@ void MatchModel::update() {
     const int expectedBit = (expectedByte >> ((8 - bpos) & 7U)) & 1U;
     INJECT_SHARED_y
     if( y != expectedBit ) {
+      //之前有过误匹配了或者匹配到的相同字节序列长度比较小的时候，放弃匹配
       if( lengthBak != 0 && length - lengthBak < MinLen ) { // mismatch too soon in recovery mode -> give up
         lengthBak = 0;
         indexBak = 0;
@@ -40,15 +41,16 @@ void MatchModel::update() {
   }
 
   //bytewise contexts
+  //预测一个字节的起始比特的时候执行
   if( bpos == 0 ) {
-    // update hashes
+    // update hashes 三个哈希函数：从高阶到低阶，分别为9、7、5阶的哈希
     for( uint32_t i = 0, minLen = MinLen + (numHashes - 1) * StepSize; i < numHashes; i++, minLen -= StepSize ) {
       uint64_t hash = 0;
       for( uint32_t j = minLen; j > 0; j-- ) {
         
-        hash = combine64(hash, buf(j));
+        hash = combine64(hash, buf(j)); //从buf(j)一直混合哈希到buf(1)：hash = hash(buf(j),buf(j-1),buf(j-2),...,buf(1) )
       }
-      hashes[i] = finalize64(hash, hashBits);
+      hashes[i] = finalize64(hash, hashBits);//限制在hashBits的范围内
     }
 
     // recover match after a 1-byte mismatch
@@ -65,6 +67,7 @@ void MatchModel::update() {
         lengthBak = indexBak = 0; // purge backup
       }
     }
+    
     // extend current match
     if( length != 0 ) {
       index++;
@@ -81,12 +84,12 @@ void MatchModel::update() {
       uint32_t bestIndex = 0;
       for( uint32_t i = 0; i < numHashes && length < minLen; i++, minLen -= StepSize ) {
         index = table[hashes[i]];
-        if( index > 0 ) {
+        if( index > 0 ) {//说明之前存在过哈希相同的高阶上下文
           length = 0;
           while( length < (minLen + MaxExtend) && buf(length + 1) == buf[index - length - 1] ) {
             length++;
           }
-          if( length > bestLen ) {
+          if( length > bestLen ) {//从各个高阶中选择最长得匹配
             bestLen = length;
             bestIndex = index;
           }
@@ -96,7 +99,7 @@ void MatchModel::update() {
         length = bestLen - (MinLen - 1); // rebase, a length of 1 actually means a length of MinLen
         index = bestIndex;
         lengthBak = indexBak = 0; // purge any backup
-      } else {
+      } else {  
         length = index = 0;
       }
     }

@@ -23,6 +23,7 @@ class ContextModel {
 public:
     ContextModel(Shared* const sh, Models &models);
     auto p() -> int;
+    auto pWPar(uint8_t c) -> int*;
     ~ContextModel();
 };
 

@@ -3,6 +3,7 @@
 #include <cstdint>
 #include "./util/RingBuffer.hpp"
 #include "UpdateBroadcaster.hpp"
+#include <time.h>
 
 // helper #defines to access shared variables
 #define INJECT_SHARED_buf   const RingBuffer<uint8_t> &buf=shared->buf;
@@ -31,6 +32,9 @@ public:
     uint8_t level = 0; /**< level=0: no compression (only transformations), level=1..12 compress using less..more RAM */
     uint64_t mem = 0; /**< pre-calculated value of 65536 * 2^level */
     bool toScreen = true;
+
+    clock_t MatchModelCostTime;
+    clock_t NormalModelCostTime;
 
     struct {
 

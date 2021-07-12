@@ -5,6 +5,10 @@ void Shared::init(uint8_t level) {
   mem = 65536ULL << level;
   buf.setSize(min(mem * 8, 1ULL << 30)); /**< no reason to go over 1 GB */
   toScreen = !isOutputDirected();
+
+  MatchModelCostTime = 0;
+  NormalModelCostTime = 0;
+
 }
 
 void Shared::update(int y) {
