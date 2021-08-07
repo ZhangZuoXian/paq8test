@@ -31,7 +31,7 @@ void NormalModel::mix(Mixer &m) {
     cm.set(cxt[14]);
   }
   cm.mix(m);
-  INJECT_SHARED_c0
+  INJECT_SHARED_c0 
   INJECT_SHARED_c1
   m.add((stretch(smOrder0Slow.p1(c0 - 1))) >> 2U); //order 0
   m.add((stretch(smOrder1Fast.p1((c0 - 1) << 8U | c1))) >> 2U); //order 1
@@ -69,3 +69,4 @@ void NormalModel::mixPost(Mixer &m) {
   }
   m.set(c, 1536);
 }
+

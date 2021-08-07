@@ -5,6 +5,8 @@
 #include "../Mixer.hpp"
 #include "../SimdMixer.hpp"
 #include "../Models.hpp"
+#include <thread>
+#include <vector>
 
 /**
  * This combines all the context models with a Mixer.
@@ -25,6 +27,12 @@ public:
     auto p() -> int;
     auto pWPar(uint8_t c) -> int*;
     ~ContextModel();
+
+    // std::thread tds[8];
+
+private:
+    
+    // std::vector<std::thread> tds;
 };
 
 #endif //PAQ8PX_CONTEXTMODEL_HPP

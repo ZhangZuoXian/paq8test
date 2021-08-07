@@ -156,6 +156,7 @@ public:
         dp = dotProductSimdNeon(&tx[0], &wx[cxt[0] * n], nx);
       }
       dp = (dp * scaleFactor) >> 16;
+      
       return pr[0] = squash(dp);
     }
 };

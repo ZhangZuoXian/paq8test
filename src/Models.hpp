@@ -3,7 +3,7 @@
 
 #include "./model/MatchModel.hpp"
 #include "./model/NormalModel.hpp"
-
+#include "./model/SparseModel.hpp"
 
 /**
  * This is a factory class for lazy object creation for models.
@@ -17,7 +17,8 @@ public:
   auto normalModel() -> NormalModel &;
 
   auto matchModel() -> MatchModel &;
- 
+
+  auto sparseModel() -> SparseModel &;
 };
 
 #endif //PAQ8PX_MODELS_HPP

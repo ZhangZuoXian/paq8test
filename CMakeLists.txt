@@ -13,5 +13,6 @@ include_directories(
 ${PROJECT_SOURCE_DIR}/src
 )
 
-add_executable(paq8test src/map/AdaptiveMap.cpp src/ArithmeticEncoder.cpp src/model/ContextModel.cpp src/map/ContextMap.cpp src/map/ContextMap2.cpp src/Encoder.cpp src/util/Ilog.cpp src/model/IndirectModel.cpp src/model/MatchModel.cpp src/Mixer.cpp src/Models.cpp src/model/NormalModel.cpp src/paq8test.cpp src/Predictor.cpp src/util/ProgramChecker.cpp src/util/Random.cpp src/Shared.cpp src/map/SmallStationaryContextMap.cpp src/map/StateMap.cpp src/map/StateTable.cpp src/map/StationaryMap.cpp src/UpdateBroadcaster.cpp )
+add_executable(paq8test src/map/AdaptiveMap.cpp src/ArithmeticEncoder.cpp src/model/ContextModel.cpp src/map/ContextMap.cpp src/map/ContextMap2.cpp src/Encoder.cpp src/util/Ilog.cpp src/model/IndirectModel.cpp src/model/MatchModel.cpp src/Mixer.cpp src/Models.cpp src/model/NormalModel.cpp src/paq8test.cpp src/Predictor.cpp src/util/ProgramChecker.cpp src/util/Random.cpp src/Shared.cpp src/map/SmallStationaryContextMap.cpp src/map/StateMap.cpp src/map/StateTable.cpp src/map/StationaryMap.cpp src/UpdateBroadcaster.cpp 
+src/model/SparseModel.cpp)
 

@@ -15,8 +15,8 @@ auto Predictor::p() -> int {
 }
 
 auto Predictor::pWPar(uint8_t c)->int* {
-  int pr[8] {contextModel.pWPar(c)};
-
+  int* pr {contextModel.pWPar(c)};
+  
   return pr;
 }
 

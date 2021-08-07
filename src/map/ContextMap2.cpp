@@ -149,10 +149,11 @@ void ContextMap2::mix(Mixer &m) {
 
       // predict from last byte(s) in context
       auto byteHistoryPtr = byteHistory[i];
-      uint8_t byteState = byteHistoryPtr[-3];
+      uint8_t byteState = byteHistoryPtr[-3]; //什么时候更新呢？
       const uint8_t byte1 = byteHistoryPtr[1];
       const uint8_t byte2 = byteHistoryPtr[2];
       const uint8_t byte3 = byteHistoryPtr[3];
+      //runmap之后存储三个候选的值
       const bool complete1 = (byteState >= 3) || (byteState >= 1 && bpos == 0);
       const bool complete2 = (byteState >= 7) || (byteState >= 3 && bpos == 0);
       const bool complete3 = (byteState >= 15) || (byteState >= 7 && bpos == 0);
@@ -160,6 +161,7 @@ void ContextMap2::mix(Mixer &m) {
         const int bp = (0xFEA4U >> (bpos << 1U)) & 3U; // {0}->0  {1}->1  {2,3,4}->2  {5,6,7}->3
         bool skipRunMap = true;
         if( complete1 ) {
+          //尝试前两个runmap value是否和当前预测匹配,第三个不怎么可信不做匹配
           if(((byte1 + 256) >> (8 - bpos)) == c0 ) { // 1st candidate (last byte seen) matches
             const int predictedBit = (byte1 >> (7 - bpos)) & 1U;
             const int byte1IsUncertain = static_cast<const int>(byte2 != byte1);

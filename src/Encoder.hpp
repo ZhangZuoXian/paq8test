@@ -19,10 +19,11 @@ private:
     const Shared * const shared;
     
 public:
-    explicit Encoder(Shared * const sh,Mode m,FILE* f);
+    explicit Encoder(Shared * const sh,Mode m,FILE* f,FILE* d);
     void compressByte(uint8_t c);
     void compressByteParallel(uint8_t c);
     auto decompressByte() ->uint8_t;
+    void flush();
     //Statistics
     clock_t modelTimeCost;
     clock_t mapUpdateCost;

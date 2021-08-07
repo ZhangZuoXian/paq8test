@@ -1,7 +1,8 @@
 #pragma once
 
 #include "../map/ContextMap2.hpp"
-
+#include <thread>
+#include <time.h>
 /**
  * Model for order 0-14 contexts
  * Contexts are hashes of previous 0..14 bytes.
@@ -38,5 +39,12 @@ public:
      * @param m
      */
     void mixPost(Mixer &m);
+
+    //-----------------
+    //并行处理
+    //-----------------
+    void pretreatment();
+    
+
 };
 

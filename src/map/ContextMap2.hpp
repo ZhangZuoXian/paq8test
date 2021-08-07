@@ -46,6 +46,7 @@ private:
     Array<Bucket, 64> table; /**< bit and byte histories (statistics) */
     Array<uint8_t *> bitState; /**< @ref C pointers to current bit history states */
     Array<uint8_t *> bitState0; /**< First element of 7 element array containing bitState[i] */
+    //字节级预测时使用
     Array<uint8_t *> byteHistory; /**< @ref C pointers to run stats plus byte history, 4 bytes, [RunStats,1..3] */
     Array<uint32_t> contexts; /**< @ref C whole byte context hashes */
     Array<uint16_t> checksums; /**< @ref C whole byte context checksums */

@@ -17,6 +17,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/paq8test.dir/src/model/IndirectModel.cpp.o"
   "CMakeFiles/paq8test.dir/src/model/MatchModel.cpp.o"
   "CMakeFiles/paq8test.dir/src/model/NormalModel.cpp.o"
+  "CMakeFiles/paq8test.dir/src/model/SparseModel.cpp.o"
   "CMakeFiles/paq8test.dir/src/paq8test.cpp.o"
   "CMakeFiles/paq8test.dir/src/util/Ilog.cpp.o"
   "CMakeFiles/paq8test.dir/src/util/ProgramChecker.cpp.o"

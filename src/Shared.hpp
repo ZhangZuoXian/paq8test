@@ -33,6 +33,9 @@ public:
     uint64_t mem = 0; /**< pre-calculated value of 65536 * 2^level */
     bool toScreen = true;
 
+    //predictions output
+    
+
     clock_t MatchModelCostTime;
     clock_t NormalModelCostTime;
 

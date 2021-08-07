@@ -31,3 +31,8 @@ auto Models::matchModel() -> MatchModel & {
   static MatchModel instance {shared, shared->mem * 4 /*buffermemorysize*/, shared->mem / 32 /*mapmemorysize*/ };
   return instance;
 }
+
+auto Models::sparseModel() -> SparseModel &{
+  static SparseModel instance {shared,shared->mem * 2};
+  return instance;
+}

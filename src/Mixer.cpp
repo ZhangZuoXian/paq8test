@@ -17,6 +17,7 @@ void Mixer::add(const int x) {
 #ifdef VERBOSE
   printf("Mixer::add(%d)\n", x);
 #endif
+  
   assert(nx < n);
   assert(x == short(x));
   tx[nx++] = static_cast<short>(x);

@@ -22,6 +22,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/ghj/c++_project/compress/paq8test/src/model/IndirectModel.cpp" "/home/ghj/c++_project/compress/paq8test/build/CMakeFiles/paq8test.dir/src/model/IndirectModel.cpp.o"
   "/home/ghj/c++_project/compress/paq8test/src/model/MatchModel.cpp" "/home/ghj/c++_project/compress/paq8test/build/CMakeFiles/paq8test.dir/src/model/MatchModel.cpp.o"
   "/home/ghj/c++_project/compress/paq8test/src/model/NormalModel.cpp" "/home/ghj/c++_project/compress/paq8test/build/CMakeFiles/paq8test.dir/src/model/NormalModel.cpp.o"
+  "/home/ghj/c++_project/compress/paq8test/src/model/SparseModel.cpp" "/home/ghj/c++_project/compress/paq8test/build/CMakeFiles/paq8test.dir/src/model/SparseModel.cpp.o"
   "/home/ghj/c++_project/compress/paq8test/src/paq8test.cpp" "/home/ghj/c++_project/compress/paq8test/build/CMakeFiles/paq8test.dir/src/paq8test.cpp.o"
   "/home/ghj/c++_project/compress/paq8test/src/util/Ilog.cpp" "/home/ghj/c++_project/compress/paq8test/build/CMakeFiles/paq8test.dir/src/util/Ilog.cpp.o"
   "/home/ghj/c++_project/compress/paq8test/src/util/ProgramChecker.cpp" "/home/ghj/c++_project/compress/paq8test/build/CMakeFiles/paq8test.dir/src/util/ProgramChecker.cpp.o"
