@@ -1,4 +1,4 @@
-#include "StationaryMap.hpp"
+#include "map/StationaryMap.hpp"
 
 StationaryMap::StationaryMap(const Shared* const sh, const int bitsOfContext, const int inputBits, const int scale, const uint16_t limit) : 
   shared(sh),

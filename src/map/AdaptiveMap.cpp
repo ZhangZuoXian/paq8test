@@ -1,4 +1,4 @@
-#include "AdaptiveMap.hpp"
+#include "map/AdaptiveMap.hpp"
 
 AdaptiveMap::AdaptiveMap(const Shared* const sh, const int n, const int lim) : shared(sh), t(n), limit(lim) {
 #ifdef VERBOSE

@@ -21,6 +21,13 @@ void Mixer::add(const int x) {
   assert(nx < n);
   assert(x == short(x));
   tx[nx++] = static_cast<short>(x);
+  
+  /////////////////////////
+  INJECT_SHARED_bpos bpos;
+  if(Stats::stat_flag){
+    Stats::record(x,bpos);
+    Stats::stat_flag = false;
+  }
 }
 
 void Mixer::set(const uint32_t cx, const uint32_t range, const int rate) {

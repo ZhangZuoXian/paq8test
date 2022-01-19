@@ -1,4 +1,4 @@
-#include "MatchModel.hpp"
+#include "model/MatchModel.hpp"
 
 MatchModel::MatchModel(Shared* const sh, const uint64_t buffermemorysize, const uint64_t mapmemorysize) : 
   shared(sh),
@@ -133,6 +133,8 @@ void MatchModel::mix(Mixer &m) {
     ctx[0] = ((ctx[0] << 8U) | c0);
     ctx[1] = ((expectedByte << 11U) | (bpos << 8U) | c1) + 1;
     const int sign = 2 * expectedBit - 1;
+    
+    Stats::stat_flag = true;
     m.add(sign * (min(length, 32) << 5U)); // +/- 32..1024
     m.add(sign * (ilog->log(min(length, 65535)) << 2U)); // +/-  0..1024
   } else { // no match at all or delta mode

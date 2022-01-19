@@ -1,4 +1,4 @@
-#include "NormalModel.hpp"
+#include "model/NormalModel.hpp"
 
 NormalModel::NormalModel(Shared* const sh, const uint64_t cmSize) : 
   shared(sh), cm(sh, cmSize, nCM, 64, CM_USE_RUN_STATS | CM_USE_BYTE_HISTORY),

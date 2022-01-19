@@ -1,4 +1,4 @@
-#include "ContextMap2.hpp"
+#include "map/ContextMap2.hpp"
 
 ContextMap2::ContextMap2(const Shared* const sh, const uint64_t size, const uint32_t contexts, const int scale, const uint32_t uw) : shared(sh), C(contexts), table(size / sizeof(Bucket)),
         bitState(contexts), bitState0(contexts), byteHistory(contexts), contexts(contexts), checksums(contexts),

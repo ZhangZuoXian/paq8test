@@ -1,5 +1,5 @@
-#include "SparseModel.hpp"
-#include "../util/Hash.hpp"
+#include "model/SparseModel.hpp"
+#include "util/Hash.hpp"
 
 SparseModel::SparseModel(const Shared* const sh, const uint64_t size) : shared(sh), cm(sh, size, nCM) {}
 

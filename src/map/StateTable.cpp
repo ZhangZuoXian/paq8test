@@ -1,4 +1,4 @@
-#include "StateTable.hpp"
+#include "map/StateTable.hpp"
 
 auto StateTable::next(uint8_t const state, const int y) -> uint8_t {
   return stateTable[state][y];

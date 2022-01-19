@@ -7,6 +7,7 @@
 #include"Shared.hpp"
 #include<getopt.h>
 #include<time.h>
+#include"Statistic.hpp"
 
 using namespace std;
 
@@ -20,12 +21,12 @@ U32 x1=0,x2=0xffffffff;
 
 // FILE* fp = fopen("/home/ghj/lpaq1/test/src/enwik8/enwik8","r");
 #ifdef DEBUG 
-    FILE* fp = fopen("/home/ghj/lpaq1/test/src/easy.txt","r");
+    FILE* fp = fopen("/home/ghj/paq8test/benchmarks/calgarycorpus/paper1","r");
 #else 
     FILE* fp = fopen("/home/ghj/lpaq1/test/src/calgarycorpus/book1","r");
 #endif
 
-FILE* deCom = fopen("/home/ghj/c++_project/compress/paq8test/decomress.txt","w");
+FILE* deCom = fopen("../result/paper1.txt","w");
 
 int main(int argc,char **argv){
     // ifstream file("/home/ghj/lpaq1/test/src/calgarycorpus/book1");
@@ -43,11 +44,13 @@ int main(int argc,char **argv){
     Mode mode(COMPRESS);
     mode = (argc == 1) ? COMPRESS : DECOMPRESS;
 
+    Stats stats;
+
     //生成压缩器
     //使用压缩器编码，并统计信息
     if(mode == COMPRESS){
 
-        FILE* out = fopen("/home/ghj/c++_project/compress/paq8test/output.txt","w");
+        FILE* out = fopen("../result/paper1.paq8test","w");
 
         printf("Begin compression:....\n");
         Encoder en(&shared, COMPRESS,out,deCom);
@@ -62,14 +65,13 @@ int main(int argc,char **argv){
         t = clock();
 
         while((c=getc(fp))!=EOF){
-            printf("%x\t",c);
+            // printf("%x\t",c);
             en.compressByte(c);
         }
         //多余小数刷新回压缩文件中
         en.flush();
         
         t = clock()-t;
-        
         //输出压缩统计信息
         size = ftell(out);
         std::cout<<" ---> "<<size<<"B"<<std::endl;
@@ -80,11 +82,14 @@ int main(int argc,char **argv){
         
         printf("map update cost time = %lf s\n", ((float) en.mapUpdateCost)/ CLOCKS_PER_SEC);
         fclose(out);
+
+        Stats::flush();
+
     } else {
-        FILE* out = fopen("/home/ghj/c++_project/compress/paq8test/output.txt","r");
+        FILE* out = fopen("../result/paper1.paq8test","r");
         Encoder en(&shared, DECOMPRESS,out,deCom);
         printf("Begin decompression:....\n");
-        for(int i=0;i<4;i++){
+        for(int i=0;i<1024;i++){
             putc(en.decompressByte(),deCom);
             // cout<<en.decompressByte();
         }

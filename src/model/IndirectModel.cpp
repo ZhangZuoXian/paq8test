@@ -1,4 +1,4 @@
-#include "IndirectModel.hpp"
+#include "model/IndirectModel.hpp"
 
 IndirectModel::IndirectModel(const Shared* const sh, const uint64_t size) : shared(sh), cm(sh, size, nCM) {}
 

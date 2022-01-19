@@ -14,12 +14,6 @@ auto Predictor::p() -> int {
   return pr;
 }
 
-auto Predictor::pWPar(uint8_t c)->int* {
-  int* pr {contextModel.pWPar(c)};
-  
-  return pr;
-}
-
 void Predictor::update(uint8_t y) {
   // update global context: y, pos, bitPosition, c0, c4, c8, buf
   shared->update(y);

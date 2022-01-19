@@ -1,4 +1,4 @@
-#include "SmallStationaryContextMap.hpp"
+#include "map/SmallStationaryContextMap.hpp"
 
 SmallStationaryContextMap::SmallStationaryContextMap(const Shared* const sh, const int bitsOfContext, const int inputBits, const int rate, const int scale) : 
   shared(sh),

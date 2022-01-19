@@ -1,4 +1,4 @@
-#include "Random.hpp"
+#include "util/Random.hpp"
 
 Random::Random() : table(64) {
   table[0] = 123456789;

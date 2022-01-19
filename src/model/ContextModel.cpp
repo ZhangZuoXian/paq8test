@@ -1,4 +1,4 @@
-#include "ContextModel.hpp"
+#include "model/ContextModel.hpp"
 
 ContextModel::ContextModel(Shared* const sh,Models& models):shared(sh),models(models){
     m = new SIMDMixer<SIMD_NONE>(sh, 
@@ -19,16 +19,16 @@ auto ContextModel::p() -> int {
 
   clock_t t = clock();
 
-  // MatchModel &matchModel = models.matchModel();
-  // matchModel.mix(*m);
-  // shared->MatchModelCostTime +=  clock()-t;
+  MatchModel &matchModel = models.matchModel();
+  matchModel.mix(*m);
+  shared->MatchModelCostTime +=  clock()-t;
 
-  // t = clock();
-  // NormalModel &normalModel = models.normalModel();
-  // normalModel.mix(*m);
+  t = clock();
+  NormalModel &normalModel = models.normalModel();
+  normalModel.mix(*m);
 
-  // normalModel.mixPost(*m);
-  // shared->NormalModelCostTime += clock()-t;
+  normalModel.mixPost(*m);
+  shared->NormalModelCostTime += clock()-t;
 
   SparseModel &sparseModel = models.sparseModel();
   sparseModel.mix(*m);
@@ -37,17 +37,6 @@ auto ContextModel::p() -> int {
   // return 2048;
   return m->p();
 
-}
-
-auto ContextModel::pWPar(uint8_t c) -> int*{
-  int pr[8]={2048};
-  //model的set、update、以及mix处理
-  
-  //map的mix、update以及update处理
-  
-    
-
-  return pr;
 }
 
 ContextModel::~ContextModel() {

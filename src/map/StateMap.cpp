@@ -1,4 +1,4 @@
-#include "StateMap.hpp"
+#include "map/StateMap.hpp"
 
 StateMap::StateMap(const Shared* const sh, const int s, const int n, const int lim, const StateMap::MAPTYPE mapType) :
   AdaptiveMap(sh, n * s, lim), numContextSets(s), numContextsPerSet(n), numContexts(0), cxt(s) {

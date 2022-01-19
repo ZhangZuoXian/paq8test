@@ -1,4 +1,4 @@
-#include "ContextMap.hpp"
+#include "map/ContextMap.hpp"
 
 ContextMap::ContextMap(const Shared* const sh, uint64_t m, const int contexts) : 
   shared(sh), C(contexts), t(m >> 6U), cp(contexts), cp0(contexts), cxt(contexts), chk(contexts), runP(contexts),
