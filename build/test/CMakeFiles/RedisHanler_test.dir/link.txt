@@ -1,0 +1,1 @@
+/usr/bin/c++  -O3 -floop-strip-mine -funroll-loops -ftree-vectorize -fgcse-sm -falign-loops=16 -ggdb -std=c++17 -L /lib/ -lhiredis  -O3 -DNDEBUG   CMakeFiles/RedisHanler_test.dir/util/RedisHanler_test.cpp.o  -o RedisHanler_test -Wl,-rpath,/home/ghj/paq8test/lib ../../lib/libpaq8_shared.so ../lib/libgtest.a ../lib/libgmock_main.a ../lib/libgmock.a ../lib/libgtest.a -lpthread 

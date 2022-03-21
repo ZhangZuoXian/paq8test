@@ -20,6 +20,7 @@ public:
     static void flush();
     static void record(uint32_t p, uint8_t bitposition) ;
     static bool stat_flag;
+    static bool record_flag;
 
 private:
     static uint32_t size;
@@ -28,5 +29,7 @@ private:
     static std::vector<std::fstream> fWrite;
     static std::vector<std::string> fileNames;
     static std::string dirPath;
+
+    static int average;
     
 };

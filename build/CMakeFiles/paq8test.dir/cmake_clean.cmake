@@ -23,6 +23,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/paq8test.dir/src/UpdateBroadcaster.cpp.o"
   "CMakeFiles/paq8test.dir/src/model/SparseModel.cpp.o"
   "CMakeFiles/paq8test.dir/src/Statistic.cpp.o"
+  "CMakeFiles/paq8test.dir/src/util/redisHandler.cpp.o"
   "paq8test.pdb"
   "paq8test"
 )

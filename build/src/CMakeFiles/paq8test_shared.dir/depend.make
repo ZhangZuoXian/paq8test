@@ -471,3 +471,6 @@ src/CMakeFiles/paq8test_shared.dir/util/Random.cpp.o: ../src/include/util/Random
 src/CMakeFiles/paq8test_shared.dir/util/Random.cpp.o: ../src/include/util/utils.hpp
 src/CMakeFiles/paq8test_shared.dir/util/Random.cpp.o: ../src/util/Random.cpp
 
+src/CMakeFiles/paq8test_shared.dir/util/redisHandler.cpp.o: ../src/include/util/redisHandler.hpp
+src/CMakeFiles/paq8test_shared.dir/util/redisHandler.cpp.o: ../src/util/redisHandler.cpp
+

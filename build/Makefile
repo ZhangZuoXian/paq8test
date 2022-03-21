@@ -222,17 +222,56 @@ gtest/fast:
 .PHONY : gtest/fast
 
 #=============================================================================
-# Target rules for targets named paq8test_shared
+# Target rules for targets named paq8_shared
 
 # Build rule for target.
-paq8test_shared: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 paq8test_shared
-.PHONY : paq8test_shared
+paq8_shared: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 paq8_shared
+.PHONY : paq8_shared
 
 # fast build rule for target.
-paq8test_shared/fast:
-	$(MAKE) -f src/CMakeFiles/paq8test_shared.dir/build.make src/CMakeFiles/paq8test_shared.dir/build
-.PHONY : paq8test_shared/fast
+paq8_shared/fast:
+	$(MAKE) -f src/CMakeFiles/paq8_shared.dir/build.make src/CMakeFiles/paq8_shared.dir/build
+.PHONY : paq8_shared/fast
+
+#=============================================================================
+# Target rules for targets named check-tests
+
+# Build rule for target.
+check-tests: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 check-tests
+.PHONY : check-tests
+
+# fast build rule for target.
+check-tests/fast:
+	$(MAKE) -f test/CMakeFiles/check-tests.dir/build.make test/CMakeFiles/check-tests.dir/build
+.PHONY : check-tests/fast
+
+#=============================================================================
+# Target rules for targets named build-tests
+
+# Build rule for target.
+build-tests: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 build-tests
+.PHONY : build-tests
+
+# fast build rule for target.
+build-tests/fast:
+	$(MAKE) -f test/CMakeFiles/build-tests.dir/build.make test/CMakeFiles/build-tests.dir/build
+.PHONY : build-tests/fast
+
+#=============================================================================
+# Target rules for targets named RedisHanler_test
+
+# Build rule for target.
+RedisHanler_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 RedisHanler_test
+.PHONY : RedisHanler_test
+
+# fast build rule for target.
+RedisHanler_test/fast:
+	$(MAKE) -f test/CMakeFiles/RedisHanler_test.dir/build.make test/CMakeFiles/RedisHanler_test.dir/build
+.PHONY : RedisHanler_test/fast
 
 src/ArithmeticEncoder.o: src/ArithmeticEncoder.cpp.o
 
@@ -882,6 +921,33 @@ src/util/Random.cpp.s:
 	$(MAKE) -f CMakeFiles/paq8test.dir/build.make CMakeFiles/paq8test.dir/src/util/Random.cpp.s
 .PHONY : src/util/Random.cpp.s
 
+src/util/redisHandler.o: src/util/redisHandler.cpp.o
+
+.PHONY : src/util/redisHandler.o
+
+# target to build an object file
+src/util/redisHandler.cpp.o:
+	$(MAKE) -f CMakeFiles/paq8test.dir/build.make CMakeFiles/paq8test.dir/src/util/redisHandler.cpp.o
+.PHONY : src/util/redisHandler.cpp.o
+
+src/util/redisHandler.i: src/util/redisHandler.cpp.i
+
+.PHONY : src/util/redisHandler.i
+
+# target to preprocess a source file
+src/util/redisHandler.cpp.i:
+	$(MAKE) -f CMakeFiles/paq8test.dir/build.make CMakeFiles/paq8test.dir/src/util/redisHandler.cpp.i
+.PHONY : src/util/redisHandler.cpp.i
+
+src/util/redisHandler.s: src/util/redisHandler.cpp.s
+
+.PHONY : src/util/redisHandler.s
+
+# target to generate assembly for a file
+src/util/redisHandler.cpp.s:
+	$(MAKE) -f CMakeFiles/paq8test.dir/build.make CMakeFiles/paq8test.dir/src/util/redisHandler.cpp.s
+.PHONY : src/util/redisHandler.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -899,7 +965,10 @@ help:
 	@echo "... gmock"
 	@echo "... gtest_main"
 	@echo "... gtest"
-	@echo "... paq8test_shared"
+	@echo "... paq8_shared"
+	@echo "... check-tests"
+	@echo "... build-tests"
+	@echo "... RedisHanler_test"
 	@echo "... src/ArithmeticEncoder.o"
 	@echo "... src/ArithmeticEncoder.i"
 	@echo "... src/ArithmeticEncoder.s"
@@ -972,6 +1041,9 @@ help:
 	@echo "... src/util/Random.o"
 	@echo "... src/util/Random.i"
 	@echo "... src/util/Random.s"
+	@echo "... src/util/redisHandler.o"
+	@echo "... src/util/redisHandler.i"
+	@echo "... src/util/redisHandler.s"
 .PHONY : help
 
 

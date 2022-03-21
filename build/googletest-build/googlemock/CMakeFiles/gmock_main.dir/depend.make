@@ -17,6 +17,7 @@ googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o: googl
 googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o: googletest-src/googlemock/include/gmock/internal/gmock-internal-utils.h
 googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o: googletest-src/googlemock/include/gmock/internal/gmock-port.h
 googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o: googletest-src/googlemock/include/gmock/internal/gmock-pp.h
+googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o: googletest-src/googletest/include/gtest/gtest-assertion-result.h
 googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o: googletest-src/googletest/include/gtest/gtest-death-test.h
 googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o: googletest-src/googletest/include/gtest/gtest-matchers.h
 googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o: googletest-src/googletest/include/gtest/gtest-message.h

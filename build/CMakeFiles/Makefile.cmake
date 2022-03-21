@@ -22,6 +22,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "googletest-src/googletest/cmake/internal_utils.cmake"
   "../build_support/gtest_CMakeLists.txt.in"
   "../src/CMakeLists.txt"
+  "../test/CMakeLists.txt"
   "/usr/share/cmake-3.10/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in"
   "/usr/share/cmake-3.10/Modules/CMakeCInformation.cmake"
   "/usr/share/cmake-3.10/Modules/CMakeCXXInformation.cmake"
@@ -66,6 +67,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "googletest-build/googlemock/CMakeFiles/CMakeDirectoryInformation.cmake"
   "googletest-build/googletest/CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "test/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -75,5 +77,8 @@ set(CMAKE_DEPEND_INFO_FILES
   "googletest-build/googlemock/CMakeFiles/gmock.dir/DependInfo.cmake"
   "googletest-build/googletest/CMakeFiles/gtest_main.dir/DependInfo.cmake"
   "googletest-build/googletest/CMakeFiles/gtest.dir/DependInfo.cmake"
-  "src/CMakeFiles/paq8test_shared.dir/DependInfo.cmake"
+  "src/CMakeFiles/paq8_shared.dir/DependInfo.cmake"
+  "test/CMakeFiles/check-tests.dir/DependInfo.cmake"
+  "test/CMakeFiles/build-tests.dir/DependInfo.cmake"
+  "test/CMakeFiles/RedisHanler_test.dir/DependInfo.cmake"
   )

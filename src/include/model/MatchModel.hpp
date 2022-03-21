@@ -1,6 +1,7 @@
 #ifndef PAQ8PX_MATCHMODEL_HPP
 #define PAQ8PX_MATCHMODEL_HPP
 
+
 #include "../Shared.hpp"
 #include "../map/ContextMap2.hpp"
 #include "IndirectContext.hpp"
@@ -45,6 +46,7 @@ private:
     Ilog *ilog = Ilog::getInstance();
 
 public:
+    std::string name = "MactchModel";
     static constexpr int MIXERINPUTS = 2 + nCM * (ContextMap2::MIXERINPUTS + ContextMap2::MIXERINPUTS_RUN_STATS) + nST +
                                        nSSM * SmallStationaryContextMap::MIXERINPUTS + nSM * StationaryMap::MIXERINPUTS; // 23
     static constexpr int MIXERCONTEXTS = 8;

@@ -23,6 +23,7 @@ googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o
  googletest-src/googlemock/src/gmock-matchers.cc
  googletest-src/googlemock/src/gmock-spec-builders.cc
  googletest-src/googlemock/src/gmock.cc
+ googletest-src/googletest/include/gtest/gtest-assertion-result.h
  googletest-src/googletest/include/gtest/gtest-death-test.h
  googletest-src/googletest/include/gtest/gtest-matchers.h
  googletest-src/googletest/include/gtest/gtest-message.h

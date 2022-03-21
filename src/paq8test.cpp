@@ -8,6 +8,7 @@
 #include<getopt.h>
 #include<time.h>
 #include"Statistic.hpp"
+#include "util/redisHandler.hpp"
 
 using namespace std;
 
@@ -29,8 +30,6 @@ U32 x1=0,x2=0xffffffff;
 FILE* deCom = fopen("../result/paper1.txt","w");
 
 int main(int argc,char **argv){
-    // ifstream file("/home/ghj/lpaq1/test/src/calgarycorpus/book1");
-
     Shared shared;
     clock_t t;
 
@@ -45,6 +44,20 @@ int main(int argc,char **argv){
     mode = (argc == 1) ? COMPRESS : DECOMPRESS;
 
     Stats stats;
+
+    // 测试redis接口
+    RedisHandler rds;
+    int rel = rds.connect("127.0.0.1",6379);
+    if(rel != M_REDIS_OK){
+        cout<<"connect redis fail\n";
+        exit(0);
+    } else {
+        cout<<"Connect to redisServer Success\n";
+    }
+    rds.setValue("gehujun","23");
+    string value;
+    rds.getValue("gehujun",value);
+    cout<<endl<<"value: "<<value<<endl;
 
     //生成压缩器
     //使用压缩器编码，并统计信息

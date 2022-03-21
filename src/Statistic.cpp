@@ -1,11 +1,13 @@
 #include "Statistic.hpp"
 
 bool Stats::stat_flag{false};
+bool Stats::record_flag{false};
 std::vector<std::string> Stats::fileNames{"bit1","bit2","bit3","bit4","bit5","bit6","bit7","bit8"};
 std::string Stats::dirPath{"../test/statistic/"};
 uint32_t Stats::prediction[8] = {0};
 std::vector<std::vector<uint32_t>> Stats::loss_stats = {};
 std::vector<std::fstream> Stats::fWrite = {};
+int Stats::average = 0;
 
 Stats::Stats(){
     loss_stats.resize(8);
@@ -32,10 +34,14 @@ void Stats::flush(){
 
     for(int i = 0; i < 8; i++){
         std::string filePath = dirPath + fileNames[i] + ".txt";
-        std::cout<<filePath<<std::endl;
+        std::cout<<filePath;
+        
+        long sum = 0;
         for(int j = 0; j < BLOCKSIZE; j++){
-          fWrite[i]<<loss_stats[i][j]<<" ";
+            sum += loss_stats[i][j];
+            fWrite[i]<<loss_stats[i][j]<<" ";
         }
+        std::cout<< "average: "<<(sum / BLOCKSIZE)<<std::endl;
         fWrite[i].close();
     }
 }

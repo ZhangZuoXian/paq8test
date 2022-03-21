@@ -79,17 +79,6 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target list_install_components
 list_install_components:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
@@ -111,6 +100,17 @@ install/local/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
 	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # Special rule for the target install
 install: preinstall
@@ -157,19 +157,19 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-src/CMakeFiles/paq8test_shared.dir/rule:
-	cd /home/ghj/paq8test/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/paq8test_shared.dir/rule
-.PHONY : src/CMakeFiles/paq8test_shared.dir/rule
+src/CMakeFiles/paq8_shared.dir/rule:
+	cd /home/ghj/paq8test/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/paq8_shared.dir/rule
+.PHONY : src/CMakeFiles/paq8_shared.dir/rule
 
 # Convenience name for target.
-paq8test_shared: src/CMakeFiles/paq8test_shared.dir/rule
+paq8_shared: src/CMakeFiles/paq8_shared.dir/rule
 
-.PHONY : paq8test_shared
+.PHONY : paq8_shared
 
 # fast build rule for target.
-paq8test_shared/fast:
-	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8test_shared.dir/build.make src/CMakeFiles/paq8test_shared.dir/build
-.PHONY : paq8test_shared/fast
+paq8_shared/fast:
+	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8_shared.dir/build.make src/CMakeFiles/paq8_shared.dir/build
+.PHONY : paq8_shared/fast
 
 ArithmeticEncoder.o: ArithmeticEncoder.cpp.o
 
@@ -177,7 +177,7 @@ ArithmeticEncoder.o: ArithmeticEncoder.cpp.o
 
 # target to build an object file
 ArithmeticEncoder.cpp.o:
-	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8test_shared.dir/build.make src/CMakeFiles/paq8test_shared.dir/ArithmeticEncoder.cpp.o
+	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8_shared.dir/build.make src/CMakeFiles/paq8_shared.dir/ArithmeticEncoder.cpp.o
 .PHONY : ArithmeticEncoder.cpp.o
 
 ArithmeticEncoder.i: ArithmeticEncoder.cpp.i
@@ -186,7 +186,7 @@ ArithmeticEncoder.i: ArithmeticEncoder.cpp.i
 
 # target to preprocess a source file
 ArithmeticEncoder.cpp.i:
-	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8test_shared.dir/build.make src/CMakeFiles/paq8test_shared.dir/ArithmeticEncoder.cpp.i
+	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8_shared.dir/build.make src/CMakeFiles/paq8_shared.dir/ArithmeticEncoder.cpp.i
 .PHONY : ArithmeticEncoder.cpp.i
 
 ArithmeticEncoder.s: ArithmeticEncoder.cpp.s
@@ -195,7 +195,7 @@ ArithmeticEncoder.s: ArithmeticEncoder.cpp.s
 
 # target to generate assembly for a file
 ArithmeticEncoder.cpp.s:
-	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8test_shared.dir/build.make src/CMakeFiles/paq8test_shared.dir/ArithmeticEncoder.cpp.s
+	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8_shared.dir/build.make src/CMakeFiles/paq8_shared.dir/ArithmeticEncoder.cpp.s
 .PHONY : ArithmeticEncoder.cpp.s
 
 Encoder.o: Encoder.cpp.o
@@ -204,7 +204,7 @@ Encoder.o: Encoder.cpp.o
 
 # target to build an object file
 Encoder.cpp.o:
-	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8test_shared.dir/build.make src/CMakeFiles/paq8test_shared.dir/Encoder.cpp.o
+	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8_shared.dir/build.make src/CMakeFiles/paq8_shared.dir/Encoder.cpp.o
 .PHONY : Encoder.cpp.o
 
 Encoder.i: Encoder.cpp.i
@@ -213,7 +213,7 @@ Encoder.i: Encoder.cpp.i
 
 # target to preprocess a source file
 Encoder.cpp.i:
-	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8test_shared.dir/build.make src/CMakeFiles/paq8test_shared.dir/Encoder.cpp.i
+	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8_shared.dir/build.make src/CMakeFiles/paq8_shared.dir/Encoder.cpp.i
 .PHONY : Encoder.cpp.i
 
 Encoder.s: Encoder.cpp.s
@@ -222,7 +222,7 @@ Encoder.s: Encoder.cpp.s
 
 # target to generate assembly for a file
 Encoder.cpp.s:
-	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8test_shared.dir/build.make src/CMakeFiles/paq8test_shared.dir/Encoder.cpp.s
+	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8_shared.dir/build.make src/CMakeFiles/paq8_shared.dir/Encoder.cpp.s
 .PHONY : Encoder.cpp.s
 
 Mixer.o: Mixer.cpp.o
@@ -231,7 +231,7 @@ Mixer.o: Mixer.cpp.o
 
 # target to build an object file
 Mixer.cpp.o:
-	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8test_shared.dir/build.make src/CMakeFiles/paq8test_shared.dir/Mixer.cpp.o
+	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8_shared.dir/build.make src/CMakeFiles/paq8_shared.dir/Mixer.cpp.o
 .PHONY : Mixer.cpp.o
 
 Mixer.i: Mixer.cpp.i
@@ -240,7 +240,7 @@ Mixer.i: Mixer.cpp.i
 
 # target to preprocess a source file
 Mixer.cpp.i:
-	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8test_shared.dir/build.make src/CMakeFiles/paq8test_shared.dir/Mixer.cpp.i
+	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8_shared.dir/build.make src/CMakeFiles/paq8_shared.dir/Mixer.cpp.i
 .PHONY : Mixer.cpp.i
 
 Mixer.s: Mixer.cpp.s
@@ -249,7 +249,7 @@ Mixer.s: Mixer.cpp.s
 
 # target to generate assembly for a file
 Mixer.cpp.s:
-	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8test_shared.dir/build.make src/CMakeFiles/paq8test_shared.dir/Mixer.cpp.s
+	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8_shared.dir/build.make src/CMakeFiles/paq8_shared.dir/Mixer.cpp.s
 .PHONY : Mixer.cpp.s
 
 Models.o: Models.cpp.o
@@ -258,7 +258,7 @@ Models.o: Models.cpp.o
 
 # target to build an object file
 Models.cpp.o:
-	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8test_shared.dir/build.make src/CMakeFiles/paq8test_shared.dir/Models.cpp.o
+	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8_shared.dir/build.make src/CMakeFiles/paq8_shared.dir/Models.cpp.o
 .PHONY : Models.cpp.o
 
 Models.i: Models.cpp.i
@@ -267,7 +267,7 @@ Models.i: Models.cpp.i
 
 # target to preprocess a source file
 Models.cpp.i:
-	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8test_shared.dir/build.make src/CMakeFiles/paq8test_shared.dir/Models.cpp.i
+	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8_shared.dir/build.make src/CMakeFiles/paq8_shared.dir/Models.cpp.i
 .PHONY : Models.cpp.i
 
 Models.s: Models.cpp.s
@@ -276,7 +276,7 @@ Models.s: Models.cpp.s
 
 # target to generate assembly for a file
 Models.cpp.s:
-	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8test_shared.dir/build.make src/CMakeFiles/paq8test_shared.dir/Models.cpp.s
+	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8_shared.dir/build.make src/CMakeFiles/paq8_shared.dir/Models.cpp.s
 .PHONY : Models.cpp.s
 
 Predictor.o: Predictor.cpp.o
@@ -285,7 +285,7 @@ Predictor.o: Predictor.cpp.o
 
 # target to build an object file
 Predictor.cpp.o:
-	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8test_shared.dir/build.make src/CMakeFiles/paq8test_shared.dir/Predictor.cpp.o
+	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8_shared.dir/build.make src/CMakeFiles/paq8_shared.dir/Predictor.cpp.o
 .PHONY : Predictor.cpp.o
 
 Predictor.i: Predictor.cpp.i
@@ -294,7 +294,7 @@ Predictor.i: Predictor.cpp.i
 
 # target to preprocess a source file
 Predictor.cpp.i:
-	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8test_shared.dir/build.make src/CMakeFiles/paq8test_shared.dir/Predictor.cpp.i
+	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8_shared.dir/build.make src/CMakeFiles/paq8_shared.dir/Predictor.cpp.i
 .PHONY : Predictor.cpp.i
 
 Predictor.s: Predictor.cpp.s
@@ -303,7 +303,7 @@ Predictor.s: Predictor.cpp.s
 
 # target to generate assembly for a file
 Predictor.cpp.s:
-	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8test_shared.dir/build.make src/CMakeFiles/paq8test_shared.dir/Predictor.cpp.s
+	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8_shared.dir/build.make src/CMakeFiles/paq8_shared.dir/Predictor.cpp.s
 .PHONY : Predictor.cpp.s
 
 Shared.o: Shared.cpp.o
@@ -312,7 +312,7 @@ Shared.o: Shared.cpp.o
 
 # target to build an object file
 Shared.cpp.o:
-	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8test_shared.dir/build.make src/CMakeFiles/paq8test_shared.dir/Shared.cpp.o
+	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8_shared.dir/build.make src/CMakeFiles/paq8_shared.dir/Shared.cpp.o
 .PHONY : Shared.cpp.o
 
 Shared.i: Shared.cpp.i
@@ -321,7 +321,7 @@ Shared.i: Shared.cpp.i
 
 # target to preprocess a source file
 Shared.cpp.i:
-	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8test_shared.dir/build.make src/CMakeFiles/paq8test_shared.dir/Shared.cpp.i
+	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8_shared.dir/build.make src/CMakeFiles/paq8_shared.dir/Shared.cpp.i
 .PHONY : Shared.cpp.i
 
 Shared.s: Shared.cpp.s
@@ -330,7 +330,7 @@ Shared.s: Shared.cpp.s
 
 # target to generate assembly for a file
 Shared.cpp.s:
-	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8test_shared.dir/build.make src/CMakeFiles/paq8test_shared.dir/Shared.cpp.s
+	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8_shared.dir/build.make src/CMakeFiles/paq8_shared.dir/Shared.cpp.s
 .PHONY : Shared.cpp.s
 
 Statistic.o: Statistic.cpp.o
@@ -339,7 +339,7 @@ Statistic.o: Statistic.cpp.o
 
 # target to build an object file
 Statistic.cpp.o:
-	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8test_shared.dir/build.make src/CMakeFiles/paq8test_shared.dir/Statistic.cpp.o
+	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8_shared.dir/build.make src/CMakeFiles/paq8_shared.dir/Statistic.cpp.o
 .PHONY : Statistic.cpp.o
 
 Statistic.i: Statistic.cpp.i
@@ -348,7 +348,7 @@ Statistic.i: Statistic.cpp.i
 
 # target to preprocess a source file
 Statistic.cpp.i:
-	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8test_shared.dir/build.make src/CMakeFiles/paq8test_shared.dir/Statistic.cpp.i
+	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8_shared.dir/build.make src/CMakeFiles/paq8_shared.dir/Statistic.cpp.i
 .PHONY : Statistic.cpp.i
 
 Statistic.s: Statistic.cpp.s
@@ -357,7 +357,7 @@ Statistic.s: Statistic.cpp.s
 
 # target to generate assembly for a file
 Statistic.cpp.s:
-	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8test_shared.dir/build.make src/CMakeFiles/paq8test_shared.dir/Statistic.cpp.s
+	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8_shared.dir/build.make src/CMakeFiles/paq8_shared.dir/Statistic.cpp.s
 .PHONY : Statistic.cpp.s
 
 UpdateBroadcaster.o: UpdateBroadcaster.cpp.o
@@ -366,7 +366,7 @@ UpdateBroadcaster.o: UpdateBroadcaster.cpp.o
 
 # target to build an object file
 UpdateBroadcaster.cpp.o:
-	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8test_shared.dir/build.make src/CMakeFiles/paq8test_shared.dir/UpdateBroadcaster.cpp.o
+	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8_shared.dir/build.make src/CMakeFiles/paq8_shared.dir/UpdateBroadcaster.cpp.o
 .PHONY : UpdateBroadcaster.cpp.o
 
 UpdateBroadcaster.i: UpdateBroadcaster.cpp.i
@@ -375,7 +375,7 @@ UpdateBroadcaster.i: UpdateBroadcaster.cpp.i
 
 # target to preprocess a source file
 UpdateBroadcaster.cpp.i:
-	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8test_shared.dir/build.make src/CMakeFiles/paq8test_shared.dir/UpdateBroadcaster.cpp.i
+	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8_shared.dir/build.make src/CMakeFiles/paq8_shared.dir/UpdateBroadcaster.cpp.i
 .PHONY : UpdateBroadcaster.cpp.i
 
 UpdateBroadcaster.s: UpdateBroadcaster.cpp.s
@@ -384,7 +384,7 @@ UpdateBroadcaster.s: UpdateBroadcaster.cpp.s
 
 # target to generate assembly for a file
 UpdateBroadcaster.cpp.s:
-	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8test_shared.dir/build.make src/CMakeFiles/paq8test_shared.dir/UpdateBroadcaster.cpp.s
+	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8_shared.dir/build.make src/CMakeFiles/paq8_shared.dir/UpdateBroadcaster.cpp.s
 .PHONY : UpdateBroadcaster.cpp.s
 
 map/AdaptiveMap.o: map/AdaptiveMap.cpp.o
@@ -393,7 +393,7 @@ map/AdaptiveMap.o: map/AdaptiveMap.cpp.o
 
 # target to build an object file
 map/AdaptiveMap.cpp.o:
-	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8test_shared.dir/build.make src/CMakeFiles/paq8test_shared.dir/map/AdaptiveMap.cpp.o
+	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8_shared.dir/build.make src/CMakeFiles/paq8_shared.dir/map/AdaptiveMap.cpp.o
 .PHONY : map/AdaptiveMap.cpp.o
 
 map/AdaptiveMap.i: map/AdaptiveMap.cpp.i
@@ -402,7 +402,7 @@ map/AdaptiveMap.i: map/AdaptiveMap.cpp.i
 
 # target to preprocess a source file
 map/AdaptiveMap.cpp.i:
-	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8test_shared.dir/build.make src/CMakeFiles/paq8test_shared.dir/map/AdaptiveMap.cpp.i
+	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8_shared.dir/build.make src/CMakeFiles/paq8_shared.dir/map/AdaptiveMap.cpp.i
 .PHONY : map/AdaptiveMap.cpp.i
 
 map/AdaptiveMap.s: map/AdaptiveMap.cpp.s
@@ -411,7 +411,7 @@ map/AdaptiveMap.s: map/AdaptiveMap.cpp.s
 
 # target to generate assembly for a file
 map/AdaptiveMap.cpp.s:
-	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8test_shared.dir/build.make src/CMakeFiles/paq8test_shared.dir/map/AdaptiveMap.cpp.s
+	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8_shared.dir/build.make src/CMakeFiles/paq8_shared.dir/map/AdaptiveMap.cpp.s
 .PHONY : map/AdaptiveMap.cpp.s
 
 map/ContextMap.o: map/ContextMap.cpp.o
@@ -420,7 +420,7 @@ map/ContextMap.o: map/ContextMap.cpp.o
 
 # target to build an object file
 map/ContextMap.cpp.o:
-	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8test_shared.dir/build.make src/CMakeFiles/paq8test_shared.dir/map/ContextMap.cpp.o
+	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8_shared.dir/build.make src/CMakeFiles/paq8_shared.dir/map/ContextMap.cpp.o
 .PHONY : map/ContextMap.cpp.o
 
 map/ContextMap.i: map/ContextMap.cpp.i
@@ -429,7 +429,7 @@ map/ContextMap.i: map/ContextMap.cpp.i
 
 # target to preprocess a source file
 map/ContextMap.cpp.i:
-	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8test_shared.dir/build.make src/CMakeFiles/paq8test_shared.dir/map/ContextMap.cpp.i
+	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8_shared.dir/build.make src/CMakeFiles/paq8_shared.dir/map/ContextMap.cpp.i
 .PHONY : map/ContextMap.cpp.i
 
 map/ContextMap.s: map/ContextMap.cpp.s
@@ -438,7 +438,7 @@ map/ContextMap.s: map/ContextMap.cpp.s
 
 # target to generate assembly for a file
 map/ContextMap.cpp.s:
-	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8test_shared.dir/build.make src/CMakeFiles/paq8test_shared.dir/map/ContextMap.cpp.s
+	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8_shared.dir/build.make src/CMakeFiles/paq8_shared.dir/map/ContextMap.cpp.s
 .PHONY : map/ContextMap.cpp.s
 
 map/ContextMap2.o: map/ContextMap2.cpp.o
@@ -447,7 +447,7 @@ map/ContextMap2.o: map/ContextMap2.cpp.o
 
 # target to build an object file
 map/ContextMap2.cpp.o:
-	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8test_shared.dir/build.make src/CMakeFiles/paq8test_shared.dir/map/ContextMap2.cpp.o
+	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8_shared.dir/build.make src/CMakeFiles/paq8_shared.dir/map/ContextMap2.cpp.o
 .PHONY : map/ContextMap2.cpp.o
 
 map/ContextMap2.i: map/ContextMap2.cpp.i
@@ -456,7 +456,7 @@ map/ContextMap2.i: map/ContextMap2.cpp.i
 
 # target to preprocess a source file
 map/ContextMap2.cpp.i:
-	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8test_shared.dir/build.make src/CMakeFiles/paq8test_shared.dir/map/ContextMap2.cpp.i
+	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8_shared.dir/build.make src/CMakeFiles/paq8_shared.dir/map/ContextMap2.cpp.i
 .PHONY : map/ContextMap2.cpp.i
 
 map/ContextMap2.s: map/ContextMap2.cpp.s
@@ -465,7 +465,7 @@ map/ContextMap2.s: map/ContextMap2.cpp.s
 
 # target to generate assembly for a file
 map/ContextMap2.cpp.s:
-	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8test_shared.dir/build.make src/CMakeFiles/paq8test_shared.dir/map/ContextMap2.cpp.s
+	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8_shared.dir/build.make src/CMakeFiles/paq8_shared.dir/map/ContextMap2.cpp.s
 .PHONY : map/ContextMap2.cpp.s
 
 map/SmallStationaryContextMap.o: map/SmallStationaryContextMap.cpp.o
@@ -474,7 +474,7 @@ map/SmallStationaryContextMap.o: map/SmallStationaryContextMap.cpp.o
 
 # target to build an object file
 map/SmallStationaryContextMap.cpp.o:
-	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8test_shared.dir/build.make src/CMakeFiles/paq8test_shared.dir/map/SmallStationaryContextMap.cpp.o
+	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8_shared.dir/build.make src/CMakeFiles/paq8_shared.dir/map/SmallStationaryContextMap.cpp.o
 .PHONY : map/SmallStationaryContextMap.cpp.o
 
 map/SmallStationaryContextMap.i: map/SmallStationaryContextMap.cpp.i
@@ -483,7 +483,7 @@ map/SmallStationaryContextMap.i: map/SmallStationaryContextMap.cpp.i
 
 # target to preprocess a source file
 map/SmallStationaryContextMap.cpp.i:
-	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8test_shared.dir/build.make src/CMakeFiles/paq8test_shared.dir/map/SmallStationaryContextMap.cpp.i
+	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8_shared.dir/build.make src/CMakeFiles/paq8_shared.dir/map/SmallStationaryContextMap.cpp.i
 .PHONY : map/SmallStationaryContextMap.cpp.i
 
 map/SmallStationaryContextMap.s: map/SmallStationaryContextMap.cpp.s
@@ -492,7 +492,7 @@ map/SmallStationaryContextMap.s: map/SmallStationaryContextMap.cpp.s
 
 # target to generate assembly for a file
 map/SmallStationaryContextMap.cpp.s:
-	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8test_shared.dir/build.make src/CMakeFiles/paq8test_shared.dir/map/SmallStationaryContextMap.cpp.s
+	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8_shared.dir/build.make src/CMakeFiles/paq8_shared.dir/map/SmallStationaryContextMap.cpp.s
 .PHONY : map/SmallStationaryContextMap.cpp.s
 
 map/StateMap.o: map/StateMap.cpp.o
@@ -501,7 +501,7 @@ map/StateMap.o: map/StateMap.cpp.o
 
 # target to build an object file
 map/StateMap.cpp.o:
-	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8test_shared.dir/build.make src/CMakeFiles/paq8test_shared.dir/map/StateMap.cpp.o
+	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8_shared.dir/build.make src/CMakeFiles/paq8_shared.dir/map/StateMap.cpp.o
 .PHONY : map/StateMap.cpp.o
 
 map/StateMap.i: map/StateMap.cpp.i
@@ -510,7 +510,7 @@ map/StateMap.i: map/StateMap.cpp.i
 
 # target to preprocess a source file
 map/StateMap.cpp.i:
-	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8test_shared.dir/build.make src/CMakeFiles/paq8test_shared.dir/map/StateMap.cpp.i
+	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8_shared.dir/build.make src/CMakeFiles/paq8_shared.dir/map/StateMap.cpp.i
 .PHONY : map/StateMap.cpp.i
 
 map/StateMap.s: map/StateMap.cpp.s
@@ -519,7 +519,7 @@ map/StateMap.s: map/StateMap.cpp.s
 
 # target to generate assembly for a file
 map/StateMap.cpp.s:
-	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8test_shared.dir/build.make src/CMakeFiles/paq8test_shared.dir/map/StateMap.cpp.s
+	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8_shared.dir/build.make src/CMakeFiles/paq8_shared.dir/map/StateMap.cpp.s
 .PHONY : map/StateMap.cpp.s
 
 map/StateTable.o: map/StateTable.cpp.o
@@ -528,7 +528,7 @@ map/StateTable.o: map/StateTable.cpp.o
 
 # target to build an object file
 map/StateTable.cpp.o:
-	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8test_shared.dir/build.make src/CMakeFiles/paq8test_shared.dir/map/StateTable.cpp.o
+	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8_shared.dir/build.make src/CMakeFiles/paq8_shared.dir/map/StateTable.cpp.o
 .PHONY : map/StateTable.cpp.o
 
 map/StateTable.i: map/StateTable.cpp.i
@@ -537,7 +537,7 @@ map/StateTable.i: map/StateTable.cpp.i
 
 # target to preprocess a source file
 map/StateTable.cpp.i:
-	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8test_shared.dir/build.make src/CMakeFiles/paq8test_shared.dir/map/StateTable.cpp.i
+	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8_shared.dir/build.make src/CMakeFiles/paq8_shared.dir/map/StateTable.cpp.i
 .PHONY : map/StateTable.cpp.i
 
 map/StateTable.s: map/StateTable.cpp.s
@@ -546,7 +546,7 @@ map/StateTable.s: map/StateTable.cpp.s
 
 # target to generate assembly for a file
 map/StateTable.cpp.s:
-	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8test_shared.dir/build.make src/CMakeFiles/paq8test_shared.dir/map/StateTable.cpp.s
+	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8_shared.dir/build.make src/CMakeFiles/paq8_shared.dir/map/StateTable.cpp.s
 .PHONY : map/StateTable.cpp.s
 
 map/StationaryMap.o: map/StationaryMap.cpp.o
@@ -555,7 +555,7 @@ map/StationaryMap.o: map/StationaryMap.cpp.o
 
 # target to build an object file
 map/StationaryMap.cpp.o:
-	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8test_shared.dir/build.make src/CMakeFiles/paq8test_shared.dir/map/StationaryMap.cpp.o
+	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8_shared.dir/build.make src/CMakeFiles/paq8_shared.dir/map/StationaryMap.cpp.o
 .PHONY : map/StationaryMap.cpp.o
 
 map/StationaryMap.i: map/StationaryMap.cpp.i
@@ -564,7 +564,7 @@ map/StationaryMap.i: map/StationaryMap.cpp.i
 
 # target to preprocess a source file
 map/StationaryMap.cpp.i:
-	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8test_shared.dir/build.make src/CMakeFiles/paq8test_shared.dir/map/StationaryMap.cpp.i
+	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8_shared.dir/build.make src/CMakeFiles/paq8_shared.dir/map/StationaryMap.cpp.i
 .PHONY : map/StationaryMap.cpp.i
 
 map/StationaryMap.s: map/StationaryMap.cpp.s
@@ -573,7 +573,7 @@ map/StationaryMap.s: map/StationaryMap.cpp.s
 
 # target to generate assembly for a file
 map/StationaryMap.cpp.s:
-	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8test_shared.dir/build.make src/CMakeFiles/paq8test_shared.dir/map/StationaryMap.cpp.s
+	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8_shared.dir/build.make src/CMakeFiles/paq8_shared.dir/map/StationaryMap.cpp.s
 .PHONY : map/StationaryMap.cpp.s
 
 model/ContextModel.o: model/ContextModel.cpp.o
@@ -582,7 +582,7 @@ model/ContextModel.o: model/ContextModel.cpp.o
 
 # target to build an object file
 model/ContextModel.cpp.o:
-	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8test_shared.dir/build.make src/CMakeFiles/paq8test_shared.dir/model/ContextModel.cpp.o
+	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8_shared.dir/build.make src/CMakeFiles/paq8_shared.dir/model/ContextModel.cpp.o
 .PHONY : model/ContextModel.cpp.o
 
 model/ContextModel.i: model/ContextModel.cpp.i
@@ -591,7 +591,7 @@ model/ContextModel.i: model/ContextModel.cpp.i
 
 # target to preprocess a source file
 model/ContextModel.cpp.i:
-	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8test_shared.dir/build.make src/CMakeFiles/paq8test_shared.dir/model/ContextModel.cpp.i
+	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8_shared.dir/build.make src/CMakeFiles/paq8_shared.dir/model/ContextModel.cpp.i
 .PHONY : model/ContextModel.cpp.i
 
 model/ContextModel.s: model/ContextModel.cpp.s
@@ -600,7 +600,7 @@ model/ContextModel.s: model/ContextModel.cpp.s
 
 # target to generate assembly for a file
 model/ContextModel.cpp.s:
-	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8test_shared.dir/build.make src/CMakeFiles/paq8test_shared.dir/model/ContextModel.cpp.s
+	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8_shared.dir/build.make src/CMakeFiles/paq8_shared.dir/model/ContextModel.cpp.s
 .PHONY : model/ContextModel.cpp.s
 
 model/IndirectModel.o: model/IndirectModel.cpp.o
@@ -609,7 +609,7 @@ model/IndirectModel.o: model/IndirectModel.cpp.o
 
 # target to build an object file
 model/IndirectModel.cpp.o:
-	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8test_shared.dir/build.make src/CMakeFiles/paq8test_shared.dir/model/IndirectModel.cpp.o
+	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8_shared.dir/build.make src/CMakeFiles/paq8_shared.dir/model/IndirectModel.cpp.o
 .PHONY : model/IndirectModel.cpp.o
 
 model/IndirectModel.i: model/IndirectModel.cpp.i
@@ -618,7 +618,7 @@ model/IndirectModel.i: model/IndirectModel.cpp.i
 
 # target to preprocess a source file
 model/IndirectModel.cpp.i:
-	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8test_shared.dir/build.make src/CMakeFiles/paq8test_shared.dir/model/IndirectModel.cpp.i
+	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8_shared.dir/build.make src/CMakeFiles/paq8_shared.dir/model/IndirectModel.cpp.i
 .PHONY : model/IndirectModel.cpp.i
 
 model/IndirectModel.s: model/IndirectModel.cpp.s
@@ -627,7 +627,7 @@ model/IndirectModel.s: model/IndirectModel.cpp.s
 
 # target to generate assembly for a file
 model/IndirectModel.cpp.s:
-	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8test_shared.dir/build.make src/CMakeFiles/paq8test_shared.dir/model/IndirectModel.cpp.s
+	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8_shared.dir/build.make src/CMakeFiles/paq8_shared.dir/model/IndirectModel.cpp.s
 .PHONY : model/IndirectModel.cpp.s
 
 model/MatchModel.o: model/MatchModel.cpp.o
@@ -636,7 +636,7 @@ model/MatchModel.o: model/MatchModel.cpp.o
 
 # target to build an object file
 model/MatchModel.cpp.o:
-	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8test_shared.dir/build.make src/CMakeFiles/paq8test_shared.dir/model/MatchModel.cpp.o
+	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8_shared.dir/build.make src/CMakeFiles/paq8_shared.dir/model/MatchModel.cpp.o
 .PHONY : model/MatchModel.cpp.o
 
 model/MatchModel.i: model/MatchModel.cpp.i
@@ -645,7 +645,7 @@ model/MatchModel.i: model/MatchModel.cpp.i
 
 # target to preprocess a source file
 model/MatchModel.cpp.i:
-	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8test_shared.dir/build.make src/CMakeFiles/paq8test_shared.dir/model/MatchModel.cpp.i
+	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8_shared.dir/build.make src/CMakeFiles/paq8_shared.dir/model/MatchModel.cpp.i
 .PHONY : model/MatchModel.cpp.i
 
 model/MatchModel.s: model/MatchModel.cpp.s
@@ -654,7 +654,7 @@ model/MatchModel.s: model/MatchModel.cpp.s
 
 # target to generate assembly for a file
 model/MatchModel.cpp.s:
-	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8test_shared.dir/build.make src/CMakeFiles/paq8test_shared.dir/model/MatchModel.cpp.s
+	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8_shared.dir/build.make src/CMakeFiles/paq8_shared.dir/model/MatchModel.cpp.s
 .PHONY : model/MatchModel.cpp.s
 
 model/NormalModel.o: model/NormalModel.cpp.o
@@ -663,7 +663,7 @@ model/NormalModel.o: model/NormalModel.cpp.o
 
 # target to build an object file
 model/NormalModel.cpp.o:
-	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8test_shared.dir/build.make src/CMakeFiles/paq8test_shared.dir/model/NormalModel.cpp.o
+	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8_shared.dir/build.make src/CMakeFiles/paq8_shared.dir/model/NormalModel.cpp.o
 .PHONY : model/NormalModel.cpp.o
 
 model/NormalModel.i: model/NormalModel.cpp.i
@@ -672,7 +672,7 @@ model/NormalModel.i: model/NormalModel.cpp.i
 
 # target to preprocess a source file
 model/NormalModel.cpp.i:
-	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8test_shared.dir/build.make src/CMakeFiles/paq8test_shared.dir/model/NormalModel.cpp.i
+	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8_shared.dir/build.make src/CMakeFiles/paq8_shared.dir/model/NormalModel.cpp.i
 .PHONY : model/NormalModel.cpp.i
 
 model/NormalModel.s: model/NormalModel.cpp.s
@@ -681,7 +681,7 @@ model/NormalModel.s: model/NormalModel.cpp.s
 
 # target to generate assembly for a file
 model/NormalModel.cpp.s:
-	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8test_shared.dir/build.make src/CMakeFiles/paq8test_shared.dir/model/NormalModel.cpp.s
+	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8_shared.dir/build.make src/CMakeFiles/paq8_shared.dir/model/NormalModel.cpp.s
 .PHONY : model/NormalModel.cpp.s
 
 model/SparseModel.o: model/SparseModel.cpp.o
@@ -690,7 +690,7 @@ model/SparseModel.o: model/SparseModel.cpp.o
 
 # target to build an object file
 model/SparseModel.cpp.o:
-	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8test_shared.dir/build.make src/CMakeFiles/paq8test_shared.dir/model/SparseModel.cpp.o
+	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8_shared.dir/build.make src/CMakeFiles/paq8_shared.dir/model/SparseModel.cpp.o
 .PHONY : model/SparseModel.cpp.o
 
 model/SparseModel.i: model/SparseModel.cpp.i
@@ -699,7 +699,7 @@ model/SparseModel.i: model/SparseModel.cpp.i
 
 # target to preprocess a source file
 model/SparseModel.cpp.i:
-	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8test_shared.dir/build.make src/CMakeFiles/paq8test_shared.dir/model/SparseModel.cpp.i
+	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8_shared.dir/build.make src/CMakeFiles/paq8_shared.dir/model/SparseModel.cpp.i
 .PHONY : model/SparseModel.cpp.i
 
 model/SparseModel.s: model/SparseModel.cpp.s
@@ -708,7 +708,7 @@ model/SparseModel.s: model/SparseModel.cpp.s
 
 # target to generate assembly for a file
 model/SparseModel.cpp.s:
-	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8test_shared.dir/build.make src/CMakeFiles/paq8test_shared.dir/model/SparseModel.cpp.s
+	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8_shared.dir/build.make src/CMakeFiles/paq8_shared.dir/model/SparseModel.cpp.s
 .PHONY : model/SparseModel.cpp.s
 
 paq8test.o: paq8test.cpp.o
@@ -717,7 +717,7 @@ paq8test.o: paq8test.cpp.o
 
 # target to build an object file
 paq8test.cpp.o:
-	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8test_shared.dir/build.make src/CMakeFiles/paq8test_shared.dir/paq8test.cpp.o
+	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8_shared.dir/build.make src/CMakeFiles/paq8_shared.dir/paq8test.cpp.o
 .PHONY : paq8test.cpp.o
 
 paq8test.i: paq8test.cpp.i
@@ -726,7 +726,7 @@ paq8test.i: paq8test.cpp.i
 
 # target to preprocess a source file
 paq8test.cpp.i:
-	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8test_shared.dir/build.make src/CMakeFiles/paq8test_shared.dir/paq8test.cpp.i
+	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8_shared.dir/build.make src/CMakeFiles/paq8_shared.dir/paq8test.cpp.i
 .PHONY : paq8test.cpp.i
 
 paq8test.s: paq8test.cpp.s
@@ -735,7 +735,7 @@ paq8test.s: paq8test.cpp.s
 
 # target to generate assembly for a file
 paq8test.cpp.s:
-	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8test_shared.dir/build.make src/CMakeFiles/paq8test_shared.dir/paq8test.cpp.s
+	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8_shared.dir/build.make src/CMakeFiles/paq8_shared.dir/paq8test.cpp.s
 .PHONY : paq8test.cpp.s
 
 util/Ilog.o: util/Ilog.cpp.o
@@ -744,7 +744,7 @@ util/Ilog.o: util/Ilog.cpp.o
 
 # target to build an object file
 util/Ilog.cpp.o:
-	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8test_shared.dir/build.make src/CMakeFiles/paq8test_shared.dir/util/Ilog.cpp.o
+	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8_shared.dir/build.make src/CMakeFiles/paq8_shared.dir/util/Ilog.cpp.o
 .PHONY : util/Ilog.cpp.o
 
 util/Ilog.i: util/Ilog.cpp.i
@@ -753,7 +753,7 @@ util/Ilog.i: util/Ilog.cpp.i
 
 # target to preprocess a source file
 util/Ilog.cpp.i:
-	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8test_shared.dir/build.make src/CMakeFiles/paq8test_shared.dir/util/Ilog.cpp.i
+	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8_shared.dir/build.make src/CMakeFiles/paq8_shared.dir/util/Ilog.cpp.i
 .PHONY : util/Ilog.cpp.i
 
 util/Ilog.s: util/Ilog.cpp.s
@@ -762,7 +762,7 @@ util/Ilog.s: util/Ilog.cpp.s
 
 # target to generate assembly for a file
 util/Ilog.cpp.s:
-	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8test_shared.dir/build.make src/CMakeFiles/paq8test_shared.dir/util/Ilog.cpp.s
+	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8_shared.dir/build.make src/CMakeFiles/paq8_shared.dir/util/Ilog.cpp.s
 .PHONY : util/Ilog.cpp.s
 
 util/ProgramChecker.o: util/ProgramChecker.cpp.o
@@ -771,7 +771,7 @@ util/ProgramChecker.o: util/ProgramChecker.cpp.o
 
 # target to build an object file
 util/ProgramChecker.cpp.o:
-	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8test_shared.dir/build.make src/CMakeFiles/paq8test_shared.dir/util/ProgramChecker.cpp.o
+	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8_shared.dir/build.make src/CMakeFiles/paq8_shared.dir/util/ProgramChecker.cpp.o
 .PHONY : util/ProgramChecker.cpp.o
 
 util/ProgramChecker.i: util/ProgramChecker.cpp.i
@@ -780,7 +780,7 @@ util/ProgramChecker.i: util/ProgramChecker.cpp.i
 
 # target to preprocess a source file
 util/ProgramChecker.cpp.i:
-	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8test_shared.dir/build.make src/CMakeFiles/paq8test_shared.dir/util/ProgramChecker.cpp.i
+	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8_shared.dir/build.make src/CMakeFiles/paq8_shared.dir/util/ProgramChecker.cpp.i
 .PHONY : util/ProgramChecker.cpp.i
 
 util/ProgramChecker.s: util/ProgramChecker.cpp.s
@@ -789,7 +789,7 @@ util/ProgramChecker.s: util/ProgramChecker.cpp.s
 
 # target to generate assembly for a file
 util/ProgramChecker.cpp.s:
-	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8test_shared.dir/build.make src/CMakeFiles/paq8test_shared.dir/util/ProgramChecker.cpp.s
+	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8_shared.dir/build.make src/CMakeFiles/paq8_shared.dir/util/ProgramChecker.cpp.s
 .PHONY : util/ProgramChecker.cpp.s
 
 util/Random.o: util/Random.cpp.o
@@ -798,7 +798,7 @@ util/Random.o: util/Random.cpp.o
 
 # target to build an object file
 util/Random.cpp.o:
-	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8test_shared.dir/build.make src/CMakeFiles/paq8test_shared.dir/util/Random.cpp.o
+	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8_shared.dir/build.make src/CMakeFiles/paq8_shared.dir/util/Random.cpp.o
 .PHONY : util/Random.cpp.o
 
 util/Random.i: util/Random.cpp.i
@@ -807,7 +807,7 @@ util/Random.i: util/Random.cpp.i
 
 # target to preprocess a source file
 util/Random.cpp.i:
-	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8test_shared.dir/build.make src/CMakeFiles/paq8test_shared.dir/util/Random.cpp.i
+	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8_shared.dir/build.make src/CMakeFiles/paq8_shared.dir/util/Random.cpp.i
 .PHONY : util/Random.cpp.i
 
 util/Random.s: util/Random.cpp.s
@@ -816,8 +816,35 @@ util/Random.s: util/Random.cpp.s
 
 # target to generate assembly for a file
 util/Random.cpp.s:
-	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8test_shared.dir/build.make src/CMakeFiles/paq8test_shared.dir/util/Random.cpp.s
+	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8_shared.dir/build.make src/CMakeFiles/paq8_shared.dir/util/Random.cpp.s
 .PHONY : util/Random.cpp.s
+
+util/redisHandler.o: util/redisHandler.cpp.o
+
+.PHONY : util/redisHandler.o
+
+# target to build an object file
+util/redisHandler.cpp.o:
+	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8_shared.dir/build.make src/CMakeFiles/paq8_shared.dir/util/redisHandler.cpp.o
+.PHONY : util/redisHandler.cpp.o
+
+util/redisHandler.i: util/redisHandler.cpp.i
+
+.PHONY : util/redisHandler.i
+
+# target to preprocess a source file
+util/redisHandler.cpp.i:
+	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8_shared.dir/build.make src/CMakeFiles/paq8_shared.dir/util/redisHandler.cpp.i
+.PHONY : util/redisHandler.cpp.i
+
+util/redisHandler.s: util/redisHandler.cpp.s
+
+.PHONY : util/redisHandler.s
+
+# target to generate assembly for a file
+util/redisHandler.cpp.s:
+	cd /home/ghj/paq8test/build && $(MAKE) -f src/CMakeFiles/paq8_shared.dir/build.make src/CMakeFiles/paq8_shared.dir/util/redisHandler.cpp.s
+.PHONY : util/redisHandler.cpp.s
 
 # Help Target
 help:
@@ -827,10 +854,10 @@ help:
 	@echo "... depend"
 	@echo "... install/strip"
 	@echo "... edit_cache"
-	@echo "... paq8test_shared"
-	@echo "... rebuild_cache"
+	@echo "... paq8_shared"
 	@echo "... list_install_components"
 	@echo "... install/local"
+	@echo "... rebuild_cache"
 	@echo "... install"
 	@echo "... ArithmeticEncoder.o"
 	@echo "... ArithmeticEncoder.i"
@@ -904,6 +931,9 @@ help:
 	@echo "... util/Random.o"
 	@echo "... util/Random.i"
 	@echo "... util/Random.s"
+	@echo "... util/redisHandler.o"
+	@echo "... util/redisHandler.i"
+	@echo "... util/redisHandler.s"
 .PHONY : help
 
 

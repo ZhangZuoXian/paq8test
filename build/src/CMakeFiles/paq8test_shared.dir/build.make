@@ -417,9 +417,33 @@ src/CMakeFiles/paq8test_shared.dir/util/Random.cpp.o.provides: src/CMakeFiles/pa
 src/CMakeFiles/paq8test_shared.dir/util/Random.cpp.o.provides.build: src/CMakeFiles/paq8test_shared.dir/util/Random.cpp.o
 
 
+src/CMakeFiles/paq8test_shared.dir/util/redisHandler.cpp.o: src/CMakeFiles/paq8test_shared.dir/flags.make
+src/CMakeFiles/paq8test_shared.dir/util/redisHandler.cpp.o: ../src/util/redisHandler.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghj/paq8test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object src/CMakeFiles/paq8test_shared.dir/util/redisHandler.cpp.o"
+	cd /home/ghj/paq8test/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/paq8test_shared.dir/util/redisHandler.cpp.o -c /home/ghj/paq8test/src/util/redisHandler.cpp
+
+src/CMakeFiles/paq8test_shared.dir/util/redisHandler.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/paq8test_shared.dir/util/redisHandler.cpp.i"
+	cd /home/ghj/paq8test/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ghj/paq8test/src/util/redisHandler.cpp > CMakeFiles/paq8test_shared.dir/util/redisHandler.cpp.i
+
+src/CMakeFiles/paq8test_shared.dir/util/redisHandler.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/paq8test_shared.dir/util/redisHandler.cpp.s"
+	cd /home/ghj/paq8test/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ghj/paq8test/src/util/redisHandler.cpp -o CMakeFiles/paq8test_shared.dir/util/redisHandler.cpp.s
+
+src/CMakeFiles/paq8test_shared.dir/util/redisHandler.cpp.o.requires:
+
+.PHONY : src/CMakeFiles/paq8test_shared.dir/util/redisHandler.cpp.o.requires
+
+src/CMakeFiles/paq8test_shared.dir/util/redisHandler.cpp.o.provides: src/CMakeFiles/paq8test_shared.dir/util/redisHandler.cpp.o.requires
+	$(MAKE) -f src/CMakeFiles/paq8test_shared.dir/build.make src/CMakeFiles/paq8test_shared.dir/util/redisHandler.cpp.o.provides.build
+.PHONY : src/CMakeFiles/paq8test_shared.dir/util/redisHandler.cpp.o.provides
+
+src/CMakeFiles/paq8test_shared.dir/util/redisHandler.cpp.o.provides.build: src/CMakeFiles/paq8test_shared.dir/util/redisHandler.cpp.o
+
+
 src/CMakeFiles/paq8test_shared.dir/ArithmeticEncoder.cpp.o: src/CMakeFiles/paq8test_shared.dir/flags.make
 src/CMakeFiles/paq8test_shared.dir/ArithmeticEncoder.cpp.o: ../src/ArithmeticEncoder.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghj/paq8test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object src/CMakeFiles/paq8test_shared.dir/ArithmeticEncoder.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghj/paq8test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object src/CMakeFiles/paq8test_shared.dir/ArithmeticEncoder.cpp.o"
 	cd /home/ghj/paq8test/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/paq8test_shared.dir/ArithmeticEncoder.cpp.o -c /home/ghj/paq8test/src/ArithmeticEncoder.cpp
 
 src/CMakeFiles/paq8test_shared.dir/ArithmeticEncoder.cpp.i: cmake_force
@@ -443,7 +467,7 @@ src/CMakeFiles/paq8test_shared.dir/ArithmeticEncoder.cpp.o.provides.build: src/C
 
 src/CMakeFiles/paq8test_shared.dir/Encoder.cpp.o: src/CMakeFiles/paq8test_shared.dir/flags.make
 src/CMakeFiles/paq8test_shared.dir/Encoder.cpp.o: ../src/Encoder.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghj/paq8test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object src/CMakeFiles/paq8test_shared.dir/Encoder.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghj/paq8test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object src/CMakeFiles/paq8test_shared.dir/Encoder.cpp.o"
 	cd /home/ghj/paq8test/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/paq8test_shared.dir/Encoder.cpp.o -c /home/ghj/paq8test/src/Encoder.cpp
 
 src/CMakeFiles/paq8test_shared.dir/Encoder.cpp.i: cmake_force
@@ -467,7 +491,7 @@ src/CMakeFiles/paq8test_shared.dir/Encoder.cpp.o.provides.build: src/CMakeFiles/
 
 src/CMakeFiles/paq8test_shared.dir/Mixer.cpp.o: src/CMakeFiles/paq8test_shared.dir/flags.make
 src/CMakeFiles/paq8test_shared.dir/Mixer.cpp.o: ../src/Mixer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghj/paq8test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object src/CMakeFiles/paq8test_shared.dir/Mixer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghj/paq8test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object src/CMakeFiles/paq8test_shared.dir/Mixer.cpp.o"
 	cd /home/ghj/paq8test/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/paq8test_shared.dir/Mixer.cpp.o -c /home/ghj/paq8test/src/Mixer.cpp
 
 src/CMakeFiles/paq8test_shared.dir/Mixer.cpp.i: cmake_force
@@ -491,7 +515,7 @@ src/CMakeFiles/paq8test_shared.dir/Mixer.cpp.o.provides.build: src/CMakeFiles/pa
 
 src/CMakeFiles/paq8test_shared.dir/Models.cpp.o: src/CMakeFiles/paq8test_shared.dir/flags.make
 src/CMakeFiles/paq8test_shared.dir/Models.cpp.o: ../src/Models.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghj/paq8test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object src/CMakeFiles/paq8test_shared.dir/Models.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghj/paq8test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object src/CMakeFiles/paq8test_shared.dir/Models.cpp.o"
 	cd /home/ghj/paq8test/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/paq8test_shared.dir/Models.cpp.o -c /home/ghj/paq8test/src/Models.cpp
 
 src/CMakeFiles/paq8test_shared.dir/Models.cpp.i: cmake_force
@@ -515,7 +539,7 @@ src/CMakeFiles/paq8test_shared.dir/Models.cpp.o.provides.build: src/CMakeFiles/p
 
 src/CMakeFiles/paq8test_shared.dir/Predictor.cpp.o: src/CMakeFiles/paq8test_shared.dir/flags.make
 src/CMakeFiles/paq8test_shared.dir/Predictor.cpp.o: ../src/Predictor.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghj/paq8test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object src/CMakeFiles/paq8test_shared.dir/Predictor.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghj/paq8test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object src/CMakeFiles/paq8test_shared.dir/Predictor.cpp.o"
 	cd /home/ghj/paq8test/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/paq8test_shared.dir/Predictor.cpp.o -c /home/ghj/paq8test/src/Predictor.cpp
 
 src/CMakeFiles/paq8test_shared.dir/Predictor.cpp.i: cmake_force
@@ -539,7 +563,7 @@ src/CMakeFiles/paq8test_shared.dir/Predictor.cpp.o.provides.build: src/CMakeFile
 
 src/CMakeFiles/paq8test_shared.dir/Shared.cpp.o: src/CMakeFiles/paq8test_shared.dir/flags.make
 src/CMakeFiles/paq8test_shared.dir/Shared.cpp.o: ../src/Shared.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghj/paq8test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object src/CMakeFiles/paq8test_shared.dir/Shared.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghj/paq8test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object src/CMakeFiles/paq8test_shared.dir/Shared.cpp.o"
 	cd /home/ghj/paq8test/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/paq8test_shared.dir/Shared.cpp.o -c /home/ghj/paq8test/src/Shared.cpp
 
 src/CMakeFiles/paq8test_shared.dir/Shared.cpp.i: cmake_force
@@ -563,7 +587,7 @@ src/CMakeFiles/paq8test_shared.dir/Shared.cpp.o.provides.build: src/CMakeFiles/p
 
 src/CMakeFiles/paq8test_shared.dir/Statistic.cpp.o: src/CMakeFiles/paq8test_shared.dir/flags.make
 src/CMakeFiles/paq8test_shared.dir/Statistic.cpp.o: ../src/Statistic.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghj/paq8test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object src/CMakeFiles/paq8test_shared.dir/Statistic.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghj/paq8test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object src/CMakeFiles/paq8test_shared.dir/Statistic.cpp.o"
 	cd /home/ghj/paq8test/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/paq8test_shared.dir/Statistic.cpp.o -c /home/ghj/paq8test/src/Statistic.cpp
 
 src/CMakeFiles/paq8test_shared.dir/Statistic.cpp.i: cmake_force
@@ -587,7 +611,7 @@ src/CMakeFiles/paq8test_shared.dir/Statistic.cpp.o.provides.build: src/CMakeFile
 
 src/CMakeFiles/paq8test_shared.dir/UpdateBroadcaster.cpp.o: src/CMakeFiles/paq8test_shared.dir/flags.make
 src/CMakeFiles/paq8test_shared.dir/UpdateBroadcaster.cpp.o: ../src/UpdateBroadcaster.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghj/paq8test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object src/CMakeFiles/paq8test_shared.dir/UpdateBroadcaster.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghj/paq8test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object src/CMakeFiles/paq8test_shared.dir/UpdateBroadcaster.cpp.o"
 	cd /home/ghj/paq8test/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/paq8test_shared.dir/UpdateBroadcaster.cpp.o -c /home/ghj/paq8test/src/UpdateBroadcaster.cpp
 
 src/CMakeFiles/paq8test_shared.dir/UpdateBroadcaster.cpp.i: cmake_force
@@ -611,7 +635,7 @@ src/CMakeFiles/paq8test_shared.dir/UpdateBroadcaster.cpp.o.provides.build: src/C
 
 src/CMakeFiles/paq8test_shared.dir/paq8test.cpp.o: src/CMakeFiles/paq8test_shared.dir/flags.make
 src/CMakeFiles/paq8test_shared.dir/paq8test.cpp.o: ../src/paq8test.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghj/paq8test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object src/CMakeFiles/paq8test_shared.dir/paq8test.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghj/paq8test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object src/CMakeFiles/paq8test_shared.dir/paq8test.cpp.o"
 	cd /home/ghj/paq8test/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/paq8test_shared.dir/paq8test.cpp.o -c /home/ghj/paq8test/src/paq8test.cpp
 
 src/CMakeFiles/paq8test_shared.dir/paq8test.cpp.i: cmake_force
@@ -650,6 +674,7 @@ paq8test_shared_OBJECTS = \
 "CMakeFiles/paq8test_shared.dir/util/Ilog.cpp.o" \
 "CMakeFiles/paq8test_shared.dir/util/ProgramChecker.cpp.o" \
 "CMakeFiles/paq8test_shared.dir/util/Random.cpp.o" \
+"CMakeFiles/paq8test_shared.dir/util/redisHandler.cpp.o" \
 "CMakeFiles/paq8test_shared.dir/ArithmeticEncoder.cpp.o" \
 "CMakeFiles/paq8test_shared.dir/Encoder.cpp.o" \
 "CMakeFiles/paq8test_shared.dir/Mixer.cpp.o" \
@@ -678,6 +703,7 @@ paq8test_shared_EXTERNAL_OBJECTS =
 ../lib/libpaq8test_shared.so: src/CMakeFiles/paq8test_shared.dir/util/Ilog.cpp.o
 ../lib/libpaq8test_shared.so: src/CMakeFiles/paq8test_shared.dir/util/ProgramChecker.cpp.o
 ../lib/libpaq8test_shared.so: src/CMakeFiles/paq8test_shared.dir/util/Random.cpp.o
+../lib/libpaq8test_shared.so: src/CMakeFiles/paq8test_shared.dir/util/redisHandler.cpp.o
 ../lib/libpaq8test_shared.so: src/CMakeFiles/paq8test_shared.dir/ArithmeticEncoder.cpp.o
 ../lib/libpaq8test_shared.so: src/CMakeFiles/paq8test_shared.dir/Encoder.cpp.o
 ../lib/libpaq8test_shared.so: src/CMakeFiles/paq8test_shared.dir/Mixer.cpp.o
@@ -689,7 +715,7 @@ paq8test_shared_EXTERNAL_OBJECTS =
 ../lib/libpaq8test_shared.so: src/CMakeFiles/paq8test_shared.dir/paq8test.cpp.o
 ../lib/libpaq8test_shared.so: src/CMakeFiles/paq8test_shared.dir/build.make
 ../lib/libpaq8test_shared.so: src/CMakeFiles/paq8test_shared.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ghj/paq8test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Linking CXX shared library ../../lib/libpaq8test_shared.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ghj/paq8test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Linking CXX shared library ../../lib/libpaq8test_shared.so"
 	cd /home/ghj/paq8test/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/paq8test_shared.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -712,6 +738,7 @@ src/CMakeFiles/paq8test_shared.dir/requires: src/CMakeFiles/paq8test_shared.dir/
 src/CMakeFiles/paq8test_shared.dir/requires: src/CMakeFiles/paq8test_shared.dir/util/Ilog.cpp.o.requires
 src/CMakeFiles/paq8test_shared.dir/requires: src/CMakeFiles/paq8test_shared.dir/util/ProgramChecker.cpp.o.requires
 src/CMakeFiles/paq8test_shared.dir/requires: src/CMakeFiles/paq8test_shared.dir/util/Random.cpp.o.requires
+src/CMakeFiles/paq8test_shared.dir/requires: src/CMakeFiles/paq8test_shared.dir/util/redisHandler.cpp.o.requires
 src/CMakeFiles/paq8test_shared.dir/requires: src/CMakeFiles/paq8test_shared.dir/ArithmeticEncoder.cpp.o.requires
 src/CMakeFiles/paq8test_shared.dir/requires: src/CMakeFiles/paq8test_shared.dir/Encoder.cpp.o.requires
 src/CMakeFiles/paq8test_shared.dir/requires: src/CMakeFiles/paq8test_shared.dir/Mixer.cpp.o.requires

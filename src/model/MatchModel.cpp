@@ -134,8 +134,9 @@ void MatchModel::mix(Mixer &m) {
     ctx[1] = ((expectedByte << 11U) | (bpos << 8U) | c1) + 1;
     const int sign = 2 * expectedBit - 1;
     
-    Stats::stat_flag = true;
+    
     m.add(sign * (min(length, 32) << 5U)); // +/- 32..1024
+    
     m.add(sign * (ilog->log(min(length, 65535)) << 2U)); // +/-  0..1024
   } else { // no match at all or delta mode
     m.add(0);
@@ -148,6 +149,7 @@ void MatchModel::mix(Mixer &m) {
 
   for( uint32_t i = 0; i < nST; i++ ) {
     const uint32_t c = ctx[i];
+
     if( c != 0 ) {
       m.add(stretch(stateMaps[i].p1(c)) >> 1U);
     } else {
@@ -191,6 +193,7 @@ void MatchModel::mix(Mixer &m) {
     maps[1].setDirect(iCtx());
     SCM.set((bpos << 3U) | c);
   }
+
   maps[0].mix(m);
   maps[1].mix(m);
   SCM.mix(m);

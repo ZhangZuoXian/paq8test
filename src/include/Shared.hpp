@@ -1,6 +1,7 @@
 #pragma once
 
 #include <cstdint>
+#include <cstring>
 #include "./util/RingBuffer.hpp"
 #include "UpdateBroadcaster.hpp"
 #include <time.h>

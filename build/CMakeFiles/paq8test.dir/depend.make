@@ -209,6 +209,7 @@ CMakeFiles/paq8test.dir/src/map/ContextMap2.cpp.o: ../src/include/util/ProgramCh
 CMakeFiles/paq8test.dir/src/map/ContextMap2.cpp.o: ../src/include/util/Random.hpp
 CMakeFiles/paq8test.dir/src/map/ContextMap2.cpp.o: ../src/include/util/Squash.hpp
 CMakeFiles/paq8test.dir/src/map/ContextMap2.cpp.o: ../src/include/util/Stretch.hpp
+CMakeFiles/paq8test.dir/src/map/ContextMap2.cpp.o: ../src/include/util/redisHandler.hpp
 CMakeFiles/paq8test.dir/src/map/ContextMap2.cpp.o: ../src/include/util/utils.hpp
 CMakeFiles/paq8test.dir/src/map/ContextMap2.cpp.o: ../src/map/ContextMap2.cpp
 
@@ -452,6 +453,7 @@ CMakeFiles/paq8test.dir/src/paq8test.cpp.o: ../src/include/Predictor.hpp
 CMakeFiles/paq8test.dir/src/paq8test.cpp.o: ../src/include/Shared.hpp
 CMakeFiles/paq8test.dir/src/paq8test.cpp.o: ../src/include/Statistic.hpp
 CMakeFiles/paq8test.dir/src/paq8test.cpp.o: ../src/include/UpdateBroadcaster.hpp
+CMakeFiles/paq8test.dir/src/paq8test.cpp.o: ../src/include/util/redisHandler.hpp
 CMakeFiles/paq8test.dir/src/paq8test.cpp.o: ../src/paq8test.cpp
 
 CMakeFiles/paq8test.dir/src/util/Ilog.cpp.o: ../src/include/util/Array.hpp
@@ -470,4 +472,7 @@ CMakeFiles/paq8test.dir/src/util/Random.cpp.o: ../src/include/util/ProgramChecke
 CMakeFiles/paq8test.dir/src/util/Random.cpp.o: ../src/include/util/Random.hpp
 CMakeFiles/paq8test.dir/src/util/Random.cpp.o: ../src/include/util/utils.hpp
 CMakeFiles/paq8test.dir/src/util/Random.cpp.o: ../src/util/Random.cpp
+
+CMakeFiles/paq8test.dir/src/util/redisHandler.cpp.o: ../src/include/util/redisHandler.hpp
+CMakeFiles/paq8test.dir/src/util/redisHandler.cpp.o: ../src/util/redisHandler.cpp
 

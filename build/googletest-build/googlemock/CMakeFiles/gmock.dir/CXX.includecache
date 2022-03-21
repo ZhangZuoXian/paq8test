@@ -179,6 +179,8 @@ gmock/gmock-nice-strict.h
 googletest-src/googlemock/include/gmock/gmock/gmock-nice-strict.h
 gmock/internal/gmock-internal-utils.h
 googletest-src/googlemock/include/gmock/gmock/internal/gmock-internal-utils.h
+gmock/internal/gmock-port.h
+googletest-src/googlemock/include/gmock/gmock/internal/gmock-port.h
 
 googletest-src/googlemock/include/gmock/internal/custom/gmock-generated-actions.h
 
@@ -211,10 +213,10 @@ cstdint
 -
 iostream
 -
-gtest/internal/gtest-port.h
-googletest-src/googlemock/include/gmock/internal/gtest/internal/gtest-port.h
 gmock/internal/custom/gmock-port.h
 googletest-src/googlemock/include/gmock/internal/gmock/internal/custom/gmock-port.h
+gtest/internal/gtest-port.h
+googletest-src/googlemock/include/gmock/internal/gtest/internal/gtest-port.h
 
 googletest-src/googlemock/include/gmock/internal/gmock-pp.h
 
@@ -305,6 +307,20 @@ gmock/gmock.h
 googletest-src/googlemock/src/gmock/gmock.h
 gmock/internal/gmock-port.h
 googletest-src/googlemock/src/gmock/internal/gmock-port.h
+
+googletest-src/googletest/include/gtest/gtest-assertion-result.h
+memory
+-
+ostream
+-
+string
+-
+type_traits
+-
+gtest/gtest-message.h
+googletest-src/googletest/include/gtest/gtest/gtest-message.h
+gtest/internal/gtest-port.h
+googletest-src/googletest/include/gtest/gtest/internal/gtest-port.h
 
 googletest-src/googletest/include/gtest/gtest-death-test.h
 gtest/internal/gtest-death-test-internal.h
@@ -407,10 +423,8 @@ type_traits
 -
 vector
 -
-gtest/internal/gtest-internal.h
-googletest-src/googletest/include/gtest/gtest/internal/gtest-internal.h
-gtest/internal/gtest-string.h
-googletest-src/googletest/include/gtest/gtest/internal/gtest-string.h
+gtest/gtest-assertion-result.h
+googletest-src/googletest/include/gtest/gtest/gtest-assertion-result.h
 gtest/gtest-death-test.h
 googletest-src/googletest/include/gtest/gtest/gtest-death-test.h
 gtest/gtest-matchers.h
@@ -421,18 +435,26 @@ gtest/gtest-param-test.h
 googletest-src/googletest/include/gtest/gtest/gtest-param-test.h
 gtest/gtest-printers.h
 googletest-src/googletest/include/gtest/gtest/gtest-printers.h
-gtest/gtest_prod.h
-googletest-src/googletest/include/gtest/gtest/gtest_prod.h
 gtest/gtest-test-part.h
 googletest-src/googletest/include/gtest/gtest/gtest-test-part.h
 gtest/gtest-typed-test.h
 googletest-src/googletest/include/gtest/gtest/gtest-typed-test.h
 gtest/gtest_pred_impl.h
 googletest-src/googletest/include/gtest/gtest/gtest_pred_impl.h
+gtest/gtest_prod.h
+googletest-src/googletest/include/gtest/gtest/gtest_prod.h
+gtest/internal/gtest-internal.h
+googletest-src/googletest/include/gtest/gtest/internal/gtest-internal.h
+gtest/internal/gtest-string.h
+googletest-src/googletest/include/gtest/gtest/internal/gtest-string.h
 
 googletest-src/googletest/include/gtest/gtest_pred_impl.h
-gtest/gtest.h
-googletest-src/googletest/include/gtest/gtest/gtest.h
+gtest/gtest-assertion-result.h
+googletest-src/googletest/include/gtest/gtest/gtest-assertion-result.h
+gtest/internal/gtest-internal.h
+googletest-src/googletest/include/gtest/gtest/internal/gtest-internal.h
+gtest/internal/gtest-port.h
+googletest-src/googletest/include/gtest/gtest/internal/gtest-port.h
 
 googletest-src/googletest/include/gtest/gtest_prod.h
 
@@ -441,14 +463,14 @@ googletest-src/googletest/include/gtest/internal/custom/gtest-port.h
 googletest-src/googletest/include/gtest/internal/custom/gtest-printers.h
 
 googletest-src/googletest/include/gtest/internal/gtest-death-test-internal.h
-gtest/gtest-matchers.h
-googletest-src/googletest/include/gtest/internal/gtest/gtest-matchers.h
-gtest/internal/gtest-internal.h
-googletest-src/googletest/include/gtest/internal/gtest/internal/gtest-internal.h
 stdio.h
 -
 memory
 -
+gtest/gtest-matchers.h
+googletest-src/googletest/include/gtest/internal/gtest/gtest-matchers.h
+gtest/internal/gtest-internal.h
+googletest-src/googletest/include/gtest/internal/gtest/internal/gtest-internal.h
 
 googletest-src/googletest/include/gtest/internal/gtest-filepath.h
 gtest/internal/gtest-string.h
@@ -517,14 +539,14 @@ utility
 -
 vector
 -
-gtest/internal/gtest-internal.h
-googletest-src/googletest/include/gtest/internal/gtest/internal/gtest-internal.h
-gtest/internal/gtest-port.h
-googletest-src/googletest/include/gtest/internal/gtest/internal/gtest-port.h
 gtest/gtest-printers.h
 googletest-src/googletest/include/gtest/internal/gtest/gtest-printers.h
 gtest/gtest-test-part.h
 googletest-src/googletest/include/gtest/internal/gtest/gtest-test-part.h
+gtest/internal/gtest-internal.h
+googletest-src/googletest/include/gtest/internal/gtest/internal/gtest-internal.h
+gtest/internal/gtest-port.h
+googletest-src/googletest/include/gtest/internal/gtest/internal/gtest-port.h
 
 googletest-src/googletest/include/gtest/internal/gtest-port-arch.h
 winapifamily.h
@@ -563,9 +585,9 @@ type_traits
 -
 vector
 -
-sys/types.h
--
 sys/stat.h
+-
+sys/types.h
 -
 AvailabilityMacros.h
 -
@@ -581,9 +603,9 @@ io.h
 -
 unistd.h
 -
-unistd.h
--
 strings.h
+-
+unistd.h
 -
 android/api-level.h
 -

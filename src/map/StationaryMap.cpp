@@ -52,7 +52,12 @@ void StationaryMap::mix(Mixer &m) {
   shared->GetUpdateBroadcaster()->subscribe(this);
   cp = &data[context + b];
   const int prediction = (*cp) >> 20;
+    
+
+
   m.add((stretch(prediction) * scale) >> 8);
+
+  
   m.add(((prediction - 2048) * scale) >> 9);
   bCount++;
   b += b + 1;

@@ -83,6 +83,8 @@ arm_neon.h
 ../src/include/./Shared.hpp
 cstdint
 -
+cstring
+-
 ./util/RingBuffer.hpp
 ../src/include/././util/RingBuffer.hpp
 UpdateBroadcaster.hpp
@@ -427,6 +429,8 @@ Models.hpp
 ../src/include/Shared.hpp
 cstdint
 -
+cstring
+-
 ./util/RingBuffer.hpp
 ../src/include/./util/RingBuffer.hpp
 UpdateBroadcaster.hpp
@@ -706,6 +710,14 @@ cassert
 cstdint
 -
 
+../src/include/util/redisHandler.hpp
+hiredis/hiredis.h
+-
+iostream
+-
+cstring
+-
+
 ../src/include/util/utils.hpp
 BitCount.hpp
 ../src/include/util/BitCount.hpp
@@ -841,4 +853,8 @@ util/ProgramChecker.hpp
 /home/ghj/paq8test/src/util/Random.cpp
 util/Random.hpp
 /home/ghj/paq8test/src/util/util/Random.hpp
+
+/home/ghj/paq8test/src/util/redisHandler.cpp
+util/redisHandler.hpp
+/home/ghj/paq8test/src/util/util/redisHandler.hpp
 

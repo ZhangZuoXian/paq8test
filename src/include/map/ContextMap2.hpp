@@ -35,6 +35,7 @@ mapped to predictions.
 
 class ContextMap2 : IPredictor {
 public:
+    std::string name = "ContextMap2";
     static constexpr int MIXERINPUTS = 4;
     static constexpr int MIXERINPUTS_RUN_STATS = 1;
     static constexpr int MIXERINPUTS_BYTE_HISTORY = 2;

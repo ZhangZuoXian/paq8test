@@ -14,6 +14,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/paq8test_shared.dir/util/Ilog.cpp.o"
   "CMakeFiles/paq8test_shared.dir/util/ProgramChecker.cpp.o"
   "CMakeFiles/paq8test_shared.dir/util/Random.cpp.o"
+  "CMakeFiles/paq8test_shared.dir/util/redisHandler.cpp.o"
   "CMakeFiles/paq8test_shared.dir/ArithmeticEncoder.cpp.o"
   "CMakeFiles/paq8test_shared.dir/Encoder.cpp.o"
   "CMakeFiles/paq8test_shared.dir/Mixer.cpp.o"

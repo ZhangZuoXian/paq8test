@@ -13,7 +13,9 @@ ContextMap::ContextMap(const Shared* const sh, uint64_t m, const int contexts) :
 }
 
 void ContextMap::set(const uint64_t cx) {
+
   assert(cn >= 0 && cn < C);
+
   const uint32_t ctx = cxt[cn] = finalize64(cx, hashBits);
   const uint16_t checksum = chk[cn] = checksum16(cx, hashBits);
   uint8_t* base = cp0[cn] = cp[cn] = t[ctx].find(checksum);

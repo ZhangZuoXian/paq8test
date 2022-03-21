@@ -1,4 +1,5 @@
 #include "map/ContextMap2.hpp"
+#include "util/redisHandler.hpp"
 
 ContextMap2::ContextMap2(const Shared* const sh, const uint64_t size, const uint32_t contexts, const int scale, const uint32_t uw) : shared(sh), C(contexts), table(size / sizeof(Bucket)),
         bitState(contexts), bitState0(contexts), byteHistory(contexts), contexts(contexts), checksums(contexts),
@@ -157,6 +158,9 @@ void ContextMap2::mix(Mixer &m) {
       const bool complete1 = (byteState >= 3) || (byteState >= 1 && bpos == 0);
       const bool complete2 = (byteState >= 7) || (byteState >= 3 && bpos == 0);
       const bool complete3 = (byteState >= 15) || (byteState >= 7 && bpos == 0);
+
+
+
       if((useWhat & CM_USE_RUN_STATS) != 0U ) {
         const int bp = (0xFEA4U >> (bpos << 1U)) & 3U; // {0}->0  {1}->1  {2,3,4}->2  {5,6,7}->3
         bool skipRunMap = true;
@@ -181,21 +185,31 @@ void ContextMap2::mix(Mixer &m) {
           m.add(0);
         }
       }
+      
       // predict from bit context
       if( state == 0 ) {
         stateMap.skip(i);
+
         m.add(0);
+
         m.add(0);
+
         m.add(0);
+
         m.add(0);
       } else {
         const int p1 = stateMap.p2(i, state);
         const int st = (stretch(p1) * scale) >> 8;
         const int contextIsYoung = int(state <= 2);
+
         m.add(st >> contextIsYoung);
+
         m.add(((p1 - 2048) * scale) >> 9U);
+
         m.add((bitIsUncertain - 1) & st); // when both counts are nonzero add(0) otherwise add(st)
         const int p0 = 4095 - p1;
+
+
         m.add((((p1 & (-!n0)) - (p0 & (-!n1))) * scale) >> 10U);
         order++;
       }
