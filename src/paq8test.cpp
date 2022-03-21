@@ -58,6 +58,9 @@ int main(int argc,char **argv){
     string value;
     rds.getValue("gehujun",value);
     cout<<endl<<"value: "<<value<<endl;
+    rds.setValue("gehujun","24");
+    rds.getValue("gehujun",value);
+    cout<<endl<<"value: "<<value<<endl;
 
     //生成压缩器
     //使用压缩器编码，并统计信息
