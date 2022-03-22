@@ -22,6 +22,7 @@ void StationaryMap::setDirect(uint32_t ctx) {
 }
 
 void StationaryMap::set(uint64_t ctx) {
+
   context = (finalize64(ctx, maskBits) & mask) * stride;
   bCount = b = 0;
 }
@@ -52,11 +53,8 @@ void StationaryMap::mix(Mixer &m) {
   shared->GetUpdateBroadcaster()->subscribe(this);
   cp = &data[context + b];
   const int prediction = (*cp) >> 20;
-    
-
 
   m.add((stretch(prediction) * scale) >> 8);
-
   
   m.add(((prediction - 2048) * scale) >> 9);
   bCount++;

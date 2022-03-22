@@ -21,8 +21,11 @@ ContextMap2::ContextMap2(const Shared* const sh, const uint64_t size, const uint
 }
 
 void ContextMap2::set(const uint64_t ctx) {
+
   assert(index >= 0 && index < C);
   const uint32_t ctx0 = contexts[index] = finalize64(ctx, hashBits);
+  
+  
   const uint16_t chk0 = checksums[index] = checksum16(ctx, hashBits);
   uint8_t *base = bitState[index] = bitState0[index] = table[ctx0].find(chk0);
   byteHistory[index] = &base[3];
@@ -126,6 +129,15 @@ void ContextMap2::update() {
 void ContextMap2::setScale(const int Scale) { scale = Scale; }
 
 void ContextMap2::mix(Mixer &m) {
+  INJECT_SHARED_bpos
+  INJECT_SHARED_c0
+
+  // collecte all predictions of this map for one bit
+
+  Stats::stat_flag = true;
+  Stats::addPath(name);
+  Stats::addPath(std::to_string(bpos));
+  
   shared->GetUpdateBroadcaster()->subscribe(this);
   stateMap.subscribe();
   if((useWhat & CM_USE_RUN_STATS) != 0U ) {
@@ -136,8 +148,7 @@ void ContextMap2::mix(Mixer &m) {
     bhMap12B.subscribe();
   }
   order = 0;
-  INJECT_SHARED_bpos
-  INJECT_SHARED_c0
+
   for( uint32_t i = 0; i < index; i++ ) {
     if(((validFlags >> (index - 1 - i)) & 1) != 0 ) {
       const int state = bitState[i] != nullptr ? *bitState[i] : 0;
@@ -158,8 +169,6 @@ void ContextMap2::mix(Mixer &m) {
       const bool complete1 = (byteState >= 3) || (byteState >= 1 && bpos == 0);
       const bool complete2 = (byteState >= 7) || (byteState >= 3 && bpos == 0);
       const bool complete3 = (byteState >= 15) || (byteState >= 7 && bpos == 0);
-
-
 
       if((useWhat & CM_USE_RUN_STATS) != 0U ) {
         const int bp = (0xFEA4U >> (bpos << 1U)) & 3U; // {0}->0  {1}->1  {2,3,4}->2  {5,6,7}->3
@@ -251,4 +260,8 @@ void ContextMap2::mix(Mixer &m) {
       m.add(0);
     }
   }
+}
+
+void ContextMap2::save(){
+
 }

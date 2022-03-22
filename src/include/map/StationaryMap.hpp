@@ -35,6 +35,7 @@ private:
     int *dt;
 
 public:
+    std::string name = "StationaryMap";
     /**
      * Construct using (2^(BitsOfContext+2))*((2^InputBits)-1) bytes of memory.
      * @param bitsOfContext How many bits to use for each context. Higher bits are discarded.

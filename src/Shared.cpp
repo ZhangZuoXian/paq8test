@@ -9,11 +9,11 @@ void Shared::init(uint8_t level) {
   MatchModelCostTime = 0;
   NormalModelCostTime = 0;
 
+   
 }
 
 void Shared::update(int y) {
   Stats::lossStats(y,State.bitPosition);
-  
   State.y = y;
   State.c0 += State.c0 + y;
   State.bitPosition = (State.bitPosition + 1U) & 7U;

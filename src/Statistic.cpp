@@ -1,7 +1,10 @@
 #include "Statistic.hpp"
 
+std::string Stats::prePath{};
+RedisHandler Stats::rds;
 bool Stats::stat_flag{false};
 bool Stats::record_flag{false};
+std::vector<int> Stats::avgVec = {};
 std::vector<std::string> Stats::fileNames{"bit1","bit2","bit3","bit4","bit5","bit6","bit7","bit8"};
 std::string Stats::dirPath{"../test/statistic/"};
 uint32_t Stats::prediction[8] = {0};
@@ -17,6 +20,16 @@ Stats::Stats(){
         std::string filePath = dirPath + fileNames[i] + ".txt";
         fWrite[i].open(filePath, std::ios::out);
     }
+
+    int rel = rds.connect("127.0.0.1",6379);
+    rds.flushDB();
+    if(rel != M_REDIS_OK){
+        std::cout<<"connect redis fail\n";
+        exit(0);
+    } else {
+        std::cout<<"Connect to redisServer Success\n";
+    }
+
 }
 
 void Stats::lossStats(uint8_t y, uint8_t bitposition){

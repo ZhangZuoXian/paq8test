@@ -14,6 +14,8 @@
  * This model monitors byte sequences and keeps their most recent positions in a hashtable.
  * When the current byte sequence matches an older sequence (having the same hash) the model predicts the forthcoming bits.
  */
+
+
 class MatchModel {
 private:
     static constexpr int numHashes = 3; //代表有多少阶的哈希
@@ -54,6 +56,10 @@ public:
     MatchModel(Shared* const sh, const uint64_t buffermemorysize, const uint64_t mapmemorysize);
     void update();
     void mix(Mixer &m);
+
+    void save(Mixer &m);
+    void load(Mixer &m);
 };
+
 
 #endif //PAQ8PX_MATCHMODEL_HPP

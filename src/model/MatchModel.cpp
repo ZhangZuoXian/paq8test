@@ -115,7 +115,6 @@ void MatchModel::update() {
 
 void MatchModel::mix(Mixer &m) {
   update();
-
   for( uint32_t i = 0; i < nST; i++ ) { // reset contexts
     ctx[i] = 0;
   }
@@ -133,8 +132,114 @@ void MatchModel::mix(Mixer &m) {
     ctx[0] = ((ctx[0] << 8U) | c0);
     ctx[1] = ((expectedByte << 11U) | (bpos << 8U) | c1) + 1;
     const int sign = 2 * expectedBit - 1;
+    m.add(sign * (min(length, 32) << 5U)); // +/- 32..1024
     
+    m.add(sign * (ilog->log(min(length, 65535)) << 2U)); // +/-  0..1024
+  } else { // no match at all or delta mode
+    m.add(0);
+    m.add(0);
+  }
+
+  if( delta ) { // delta mode: helps predicting the remaining bits of a character when a mismatch occurs
+    ctx[2] = (expectedByte << 8U) | c0;
+  }
+
+  for( uint32_t i = 0; i < nST; i++ ) {
+    const uint32_t c = ctx[i];
+
+    if( c != 0 ) {
+      m.add(stretch(stateMaps[i].p1(c)) >> 1U);
+    } else {
+      m.add(0);
+    }
+  }
+
+  const uint32_t lengthIlog2 = ilog2(length + 1);
+  //no match:      lengthIlog2=0
+  //length=1..2:   lengthIlog2=1
+  //length=3..6:   lengthIlog2=2
+  //length=7..14:  lengthIlog2=3
+  //length=15..30: lengthIlog2=4
+
+  const uint8_t length3 = min(lengthIlog2, 3); // 2 bits
+  const auto rm = static_cast<const uint8_t>(lengthBak != 0 &&
+                                             length - lengthBak == 1); // predicting the first byte in recovery mode is still uncertain
+  const uint8_t length3Rm = length3 << 1U | rm; // 3 bits
+
+  //bytewise contexts
+  Stats::prePath.clear();
+  Stats::addPath(name);
+  uint64_t cxt_record = 0;
+  INJECT_SHARED_c4
+  if( bpos == 0 ) {
+    if( length != 0 ) {
+      cm.set(hash(0, expectedByte, length3Rm));
+      cm.set(hash(1, expectedByte, length3Rm, c1)); 
+      cxt_record = hash(1, expectedByte, length3Rm, c1);
+    } else {
+      // when there is no match it is still slightly beneficial not to skip(), but set some low-order contexts
+      cm.set(hash(2, c4 & 0xffu)); // order 1
+      cm.set(hash(3, c4 & 0xffffu)); // order 2
+      cxt_record = hash(3, c4 & 0xffffu);
+    }
+  }
+  
+  cm.mix(m);
+  Stats::addPath(std::to_string(cxt_record));
+  int prediction = Stats::avg();
+  std::cout<<Stats::prePath<<" prediction: "<< prediction<<std::endl;
+  Stats::rds.setValue(m.path,std::to_string(prediction));
+  Stats::stat_flag = false;
+  Stats::prePath.clear();
+  
+  //bitwise contexts
+  {
     
+    maps[0].set(hash(expectedByte, c0, c4 & 0xffffu, length3Rm));
+    INJECT_SHARED_y
+    iCtx += y;
+    const uint8_t c = length3Rm << 1U | expectedBit; // 4 bits
+    iCtx = (bpos << 11U) | (c1 << 3U) | c;
+    maps[1].setDirect(iCtx());
+    SCM.set((bpos << 3U) | c);
+  }
+
+  maps[0].mix(m);
+  maps[1].mix(m);
+  SCM.mix(m);
+
+  const uint32_t lengthC = lengthIlog2 != 0 ? lengthIlog2 + 1 : static_cast<uint32_t>(delta);
+  //no match, no delta mode:   lengthC=0
+  //failed match, delta mode:  lengthC=1
+  //length=1..2:   lengthC=2
+  //length=3..6:   lengthC=3
+  //length=7..14:  lengthC=4
+  //length=15..30: lengthC=5
+
+  m.set(min(lengthC, 7), 8);
+  shared->State.Match.length3 = min(lengthC, 3);
+}
+
+void MatchModel::save(Mixer &m){
+
+  update();
+  for( uint32_t i = 0; i < nST; i++ ) { // reset contexts
+    ctx[i] = 0;
+  }
+
+  INJECT_SHARED_bpos
+  INJECT_SHARED_c0
+  INJECT_SHARED_c1
+  const int expectedBit = length != 0 ? (expectedByte >> (7 - bpos)) & 1U : 0;
+  if( length != 0 ) {
+    if( length <= 16 ) {
+      ctx[0] = (length - 1) * 2 + expectedBit; // 0..31
+    } else {
+      ctx[0] = 24 + (min(length - 1, 63) >> 2U) * 2 + expectedBit; // 32..55
+    }
+    ctx[0] = ((ctx[0] << 8U) | c0);
+    ctx[1] = ((expectedByte << 11U) | (bpos << 8U) | c1) + 1;
+    const int sign = 2 * expectedBit - 1;
     m.add(sign * (min(length, 32) << 5U)); // +/- 32..1024
     
     m.add(sign * (ilog->log(min(length, 65535)) << 2U)); // +/-  0..1024
@@ -181,7 +286,14 @@ void MatchModel::mix(Mixer &m) {
       cm.set(hash(3, c4 & 0xffffu)); // order 2
     }
   }
+
+  m.path.clear();
+  m.addPath(name);
   cm.mix(m);
+  // int prediction = Stats::avg();
+  // std::cout<<m.path<<" prediction: "<< prediction<<std::endl;
+  Stats::stat_flag = false;
+  m.path.clear();
 
   //bitwise contexts
   {

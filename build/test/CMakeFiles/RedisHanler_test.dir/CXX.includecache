@@ -51,6 +51,8 @@ time.h
 -
 Statistic.hpp
 ../src/include/./Statistic.hpp
+util/redisHandler.hpp
+../src/include/./util/redisHandler.hpp
 
 ../src/include/./SimdMixer.hpp
 UpdateBroadcaster.hpp
@@ -369,6 +371,8 @@ time.h
 -
 Statistic.hpp
 ../src/include/Statistic.hpp
+util/redisHandler.hpp
+../src/include/util/redisHandler.hpp
 
 ../src/include/Statistic.hpp
 vector
@@ -409,8 +413,6 @@ vector
 -
 gtest/gtest.h
 /home/ghj/paq8test/test/util/gtest/gtest.h
-util/redisHandler.hpp
-/home/ghj/paq8test/test/util/util/redisHandler.hpp
 Encoder.hpp
 /home/ghj/paq8test/test/util/Encoder.hpp
 Shared.hpp

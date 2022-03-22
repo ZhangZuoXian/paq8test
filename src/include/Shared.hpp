@@ -7,6 +7,7 @@
 #include <time.h>
 #include "Statistic.hpp"
 
+
 // helper #defines to access shared variables
 #define INJECT_SHARED_buf   const RingBuffer<uint8_t> &buf=shared->buf;
 #define INJECT_SHARED_pos   const uint32_t pos=shared->buf.getpos();

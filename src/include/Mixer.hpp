@@ -231,4 +231,14 @@ public:
     void set(uint32_t cx, uint32_t range, int rate = DEFAULT_LEARNING_RATE);
     void skip(uint32_t range);
     void reset();
+
+
+//////////////////////////////////////////////
+/////// offline data
+/////////////////////////////////////////////  
+    std::string path = "";
+    void addPath(const std::string& name){
+        path = path+"+"+name;
+    }
+
 };

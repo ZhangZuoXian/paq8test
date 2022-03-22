@@ -46,6 +46,7 @@ src/CMakeFiles/paq8_shared.dir/Encoder.cpp.o
  ../src/include/Shared.hpp
  ../src/include/Statistic.hpp
  ../src/include/UpdateBroadcaster.hpp
+ ../src/include/util/redisHandler.hpp
  /home/ghj/paq8test/src/Encoder.cpp
 src/CMakeFiles/paq8_shared.dir/Mixer.cpp.o
  ../src/include/./util/Array.hpp
@@ -58,6 +59,7 @@ src/CMakeFiles/paq8_shared.dir/Mixer.cpp.o
  ../src/include/Shared.hpp
  ../src/include/Statistic.hpp
  ../src/include/UpdateBroadcaster.hpp
+ ../src/include/util/redisHandler.hpp
  /home/ghj/paq8test/src/Mixer.cpp
 src/CMakeFiles/paq8_shared.dir/Models.cpp.o
  ../src/include/././util/Array.hpp
@@ -89,6 +91,7 @@ src/CMakeFiles/paq8_shared.dir/Models.cpp.o
  ../src/include/./util/Random.hpp
  ../src/include/./util/Squash.hpp
  ../src/include/./util/Stretch.hpp
+ ../src/include/./util/redisHandler.hpp
  ../src/include/./util/utils.hpp
  ../src/include/Models.hpp
  /home/ghj/paq8test/src/Models.cpp
@@ -132,6 +135,7 @@ src/CMakeFiles/paq8_shared.dir/Predictor.cpp.o
  ../src/include/Shared.hpp
  ../src/include/Statistic.hpp
  ../src/include/UpdateBroadcaster.hpp
+ ../src/include/util/redisHandler.hpp
  /home/ghj/paq8test/src/Predictor.cpp
 src/CMakeFiles/paq8_shared.dir/Shared.cpp.o
  ../src/include/./util/Array.hpp
@@ -143,9 +147,11 @@ src/CMakeFiles/paq8_shared.dir/Shared.cpp.o
  ../src/include/Shared.hpp
  ../src/include/Statistic.hpp
  ../src/include/UpdateBroadcaster.hpp
+ ../src/include/util/redisHandler.hpp
  /home/ghj/paq8test/src/Shared.cpp
 src/CMakeFiles/paq8_shared.dir/Statistic.cpp.o
  ../src/include/Statistic.hpp
+ ../src/include/util/redisHandler.hpp
  /home/ghj/paq8test/src/Statistic.cpp
 src/CMakeFiles/paq8_shared.dir/UpdateBroadcaster.cpp.o
  ../src/include/IPredictor.hpp
@@ -163,6 +169,7 @@ src/CMakeFiles/paq8_shared.dir/map/AdaptiveMap.cpp.o
  ../src/include/UpdateBroadcaster.hpp
  ../src/include/map/AdaptiveMap.hpp
  ../src/include/util/DivisionTable.hpp
+ ../src/include/util/redisHandler.hpp
  /home/ghj/paq8test/src/map/AdaptiveMap.cpp
 src/CMakeFiles/paq8_shared.dir/map/ContextMap.cpp.o
  ../src/include/./util/RingBuffer.hpp
@@ -186,6 +193,7 @@ src/CMakeFiles/paq8_shared.dir/map/ContextMap.cpp.o
  ../src/include/util/Random.hpp
  ../src/include/util/Squash.hpp
  ../src/include/util/Stretch.hpp
+ ../src/include/util/redisHandler.hpp
  ../src/include/util/utils.hpp
  /home/ghj/paq8test/src/map/ContextMap.cpp
 src/CMakeFiles/paq8_shared.dir/map/ContextMap2.cpp.o
@@ -227,6 +235,7 @@ src/CMakeFiles/paq8_shared.dir/map/SmallStationaryContextMap.cpp.o
  ../src/include/map/SmallStationaryContextMap.hpp
  ../src/include/util/Squash.hpp
  ../src/include/util/Stretch.hpp
+ ../src/include/util/redisHandler.hpp
  /home/ghj/paq8test/src/map/SmallStationaryContextMap.cpp
 src/CMakeFiles/paq8_shared.dir/map/StateMap.cpp.o
  ../src/include/./util/RingBuffer.hpp
@@ -242,6 +251,7 @@ src/CMakeFiles/paq8_shared.dir/map/StateMap.cpp.o
  ../src/include/util/DivisionTable.hpp
  ../src/include/util/ProgramChecker.hpp
  ../src/include/util/Random.hpp
+ ../src/include/util/redisHandler.hpp
  ../src/include/util/utils.hpp
  /home/ghj/paq8test/src/map/StateMap.cpp
 src/CMakeFiles/paq8_shared.dir/map/StateTable.cpp.o
@@ -268,6 +278,7 @@ src/CMakeFiles/paq8_shared.dir/map/StationaryMap.cpp.o
  ../src/include/util/Hash.hpp
  ../src/include/util/Squash.hpp
  ../src/include/util/Stretch.hpp
+ ../src/include/util/redisHandler.hpp
  ../src/include/util/utils.hpp
  /home/ghj/paq8test/src/map/StationaryMap.cpp
 src/CMakeFiles/paq8_shared.dir/model/ContextModel.cpp.o
@@ -305,6 +316,7 @@ src/CMakeFiles/paq8_shared.dir/model/ContextModel.cpp.o
  ../src/include/Statistic.hpp
  ../src/include/UpdateBroadcaster.hpp
  ../src/include/model/ContextModel.hpp
+ ../src/include/util/redisHandler.hpp
  /home/ghj/paq8test/src/model/ContextModel.cpp
 src/CMakeFiles/paq8_shared.dir/model/IndirectModel.cpp.o
  ../src/include/./util/BitCount.hpp
@@ -331,6 +343,7 @@ src/CMakeFiles/paq8_shared.dir/model/IndirectModel.cpp.o
  ../src/include/util/RingBuffer.hpp
  ../src/include/util/Squash.hpp
  ../src/include/util/Stretch.hpp
+ ../src/include/util/redisHandler.hpp
  ../src/include/util/utils.hpp
  /home/ghj/paq8test/src/model/IndirectModel.cpp
 src/CMakeFiles/paq8_shared.dir/model/MatchModel.cpp.o
@@ -360,6 +373,7 @@ src/CMakeFiles/paq8_shared.dir/model/MatchModel.cpp.o
  ../src/include/util/Random.hpp
  ../src/include/util/Squash.hpp
  ../src/include/util/Stretch.hpp
+ ../src/include/util/redisHandler.hpp
  ../src/include/util/utils.hpp
  /home/ghj/paq8test/src/model/MatchModel.cpp
 src/CMakeFiles/paq8_shared.dir/model/NormalModel.cpp.o
@@ -385,6 +399,7 @@ src/CMakeFiles/paq8_shared.dir/model/NormalModel.cpp.o
  ../src/include/util/Random.hpp
  ../src/include/util/Squash.hpp
  ../src/include/util/Stretch.hpp
+ ../src/include/util/redisHandler.hpp
  ../src/include/util/utils.hpp
  /home/ghj/paq8test/src/model/NormalModel.cpp
 src/CMakeFiles/paq8_shared.dir/model/SparseModel.cpp.o
@@ -410,6 +425,7 @@ src/CMakeFiles/paq8_shared.dir/model/SparseModel.cpp.o
  ../src/include/util/Random.hpp
  ../src/include/util/Squash.hpp
  ../src/include/util/Stretch.hpp
+ ../src/include/util/redisHandler.hpp
  ../src/include/util/utils.hpp
  /home/ghj/paq8test/src/model/SparseModel.cpp
 src/CMakeFiles/paq8_shared.dir/paq8test.cpp.o

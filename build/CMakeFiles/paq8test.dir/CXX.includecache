@@ -121,6 +121,8 @@ functional
 -
 cmath
 -
+util/redisHandler.hpp
+../src/include/./util/redisHandler.hpp
 
 ../src/include/./UpdateBroadcaster.hpp
 IPredictor.hpp
@@ -350,6 +352,14 @@ cassert
 cstdint
 -
 
+../src/include/./util/redisHandler.hpp
+hiredis/hiredis.h
+-
+iostream
+-
+cstring
+-
+
 ../src/include/./util/utils.hpp
 BitCount.hpp
 ../src/include/./util/BitCount.hpp
@@ -467,6 +477,8 @@ functional
 -
 cmath
 -
+util/redisHandler.hpp
+../src/include/util/redisHandler.hpp
 
 ../src/include/UpdateBroadcaster.hpp
 IPredictor.hpp

@@ -77,6 +77,7 @@ static void loadHashesFromCmd(const char *hashesFromCommandline) {
 #define MUL64_12 hashes[12]
 #define MUL64_13 hashes[13]
 
+
 /**
  * @todo Is it okay that this function hashes values in reverse order? If so, we can replace the below functions.
  */
@@ -217,5 +218,6 @@ static ALWAYS_INLINE
 uint64_t combine64(const uint64_t seed, const uint64_t x) {
   return hash(seed + x);
 }
+
 
 #endif //PAQ8PX_HASH_HPP

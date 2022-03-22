@@ -22,7 +22,10 @@ TEST(RedisHandler,SampleTest){
     en.compressByte(c);
     rds.connect("127.0.0.1",6379);
     rds.setValue("gehujun","2");
-    string value;
+    std::string value;
     rds.getValue("gehujun",value);
+}
 
+TEST(SimpleTest,SimpleTest){
+    printf("nihaoya\n");
 }

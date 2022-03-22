@@ -12,9 +12,7 @@ ContextModel::ContextModel(Shared* const sh,Models& models):shared(sh),models(mo
 
 auto ContextModel::p() -> int {
   
-  // Parse block type and block size
-  
-  
+  // Parse block type and block size  
   m->add(256); //network bias
 
   clock_t t = clock();

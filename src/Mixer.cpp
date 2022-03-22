@@ -25,8 +25,7 @@ void Mixer::add(const int x) {
   /////////////////////////
   INJECT_SHARED_bpos bpos;
   if(Stats::stat_flag){
-    Stats::record(x,bpos);
-    Stats::stat_flag = false;
+    Stats::avgVec.emplace_back(x);
   }
 }
 

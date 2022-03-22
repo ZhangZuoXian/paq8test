@@ -46,21 +46,21 @@ int main(int argc,char **argv){
     Stats stats;
 
     // 测试redis接口
-    RedisHandler rds;
-    int rel = rds.connect("127.0.0.1",6379);
-    if(rel != M_REDIS_OK){
-        cout<<"connect redis fail\n";
-        exit(0);
-    } else {
-        cout<<"Connect to redisServer Success\n";
-    }
-    rds.setValue("gehujun","23");
-    string value;
-    rds.getValue("gehujun",value);
-    cout<<endl<<"value: "<<value<<endl;
-    rds.setValue("gehujun","24");
-    rds.getValue("gehujun",value);
-    cout<<endl<<"value: "<<value<<endl;
+    // RedisHandler rds;
+    // int rel = rds.connect("127.0.0.1",6379);
+    // if(rel != M_REDIS_OK){
+    //     cout<<"connect redis fail\n";
+    //     exit(0);
+    // } else {
+    //     cout<<"Connect to redisServer Success\n";
+    // }
+    // rds.setValue("gehujun","23");
+    // string value;
+    // rds.getValue("gehujun",value);
+    // cout<<endl<<"value: "<<value<<endl;
+    // rds.setValue("gehujun","24");
+    // rds.getValue("gehujun",value);
+    // cout<<endl<<"value: "<<value<<endl;
 
     //生成压缩器
     //使用压缩器编码，并统计信息
