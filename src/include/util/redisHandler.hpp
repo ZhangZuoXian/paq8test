@@ -16,8 +16,11 @@ enum
 class RedisHandler
 {
 public:
+    static RedisHandler& get_instance(){
+        static RedisHandler rds;
+        return rds;
+    }
 
-    RedisHandler();
     ~RedisHandler();
     int connect(const std::string &addr, int port, const std::string &pwd = ""); //连接redis数据库：addr：IP地址，port：端口号，pwd：密码(默认为空)
     int disConnect(); //断开连接
@@ -30,6 +33,11 @@ public:
 
     std::string getErrorMsg(); //获取错误信息
 private:
+    RedisHandler();
+    RedisHandler(RedisHandler&) = delete;
+    RedisHandler& operator= (const RedisHandler*) = delete; 
+
+private:
     std::string m_addr; //IP地址
     int m_port; //端口号
     std::string m_pwd; //密码
@@ -40,3 +48,5 @@ private:
     int connectAuth(const std::string &pwd); //使用密码登录
     int handleReply(void* value = NULL, redisReply ***array = NULL); //处理返回的结果
 };
+
+// RedisHandler* RedisHandler::rds_instance_ptr = nullptr;

@@ -1,7 +1,6 @@
 #include "Statistic.hpp"
 
 std::string Stats::prePath{};
-RedisHandler Stats::rds;
 bool Stats::stat_flag{false};
 bool Stats::record_flag{false};
 std::vector<int> Stats::avgVec = {};
@@ -21,15 +20,15 @@ Stats::Stats(){
         fWrite[i].open(filePath, std::ios::out);
     }
 
-    int rel = rds.connect("127.0.0.1",6379);
-    rds.flushDB();
-    if(rel != M_REDIS_OK){
-        std::cout<<"connect redis fail\n";
-        exit(0);
-    } else {
-        std::cout<<"Connect to redisServer Success\n";
-    }
-
+    // int rel = rds.connect("127.0.0.1",6379);
+    // if(rel != M_REDIS_OK){
+    //     std::cout<<"connect redis fail\n";
+    //     exit(0);
+    // } else {
+    //     std::cout<<"Connect to redisServer Success\n";
+    // }
+    // rds.flushDB();
+    // rds.disConnect();
 }
 
 void Stats::lossStats(uint8_t y, uint8_t bitposition){

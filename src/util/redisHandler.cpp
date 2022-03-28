@@ -2,12 +2,13 @@
 
 RedisHandler::RedisHandler()
 {
-    m_addr = "";
-    m_port = 0;
+    m_addr = "127.0.0.1";
+    m_port = 6379;
     m_pwd = "";
     pm_rct = NULL;
     pm_rr = NULL;
     error_msg = "";
+    connect(m_addr,m_port);
 }
 
 RedisHandler::~RedisHandler()
@@ -57,12 +58,13 @@ int RedisHandler::disConnect()
 key：键，value：值
 成功返回M_REDIS_OK，失败返回<0
 */
-int RedisHandler::setValue(const std::string &key, const std::string &value)
+int RedisHandler::setValue(const std::string &key, const std::string &value = "0")
 {
+    // std::cout<<"key: "<<key<<" "<<"value: "<<value<<std::endl;
     std::string cmd = "set " + key + " " + value;
 
     pm_rr = (redisReply*)redisCommand(pm_rct, cmd.c_str());
-
+    // std::cout<<pm_rr->str<<std::endl;
     return handleReply();
 }
 
@@ -153,12 +155,14 @@ int RedisHandler::handleReply(void* value, redisReply*** array)
     if (pm_rct->err)
     {
         error_msg = pm_rct->errstr;
+        printf("Error: %s\n", pm_rct->errstr);
         return M_CONTEXT_ERROR;
     }
 
     if (pm_rr == NULL)
     {
         error_msg = "auth redisReply is NULL";
+        printf("Error: %s\n", pm_rct->errstr);
         return M_REPLY_ERROR;
     }
 

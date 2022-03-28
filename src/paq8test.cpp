@@ -99,7 +99,7 @@ int main(int argc,char **argv){
         printf("map update cost time = %lf s\n", ((float) en.mapUpdateCost)/ CLOCKS_PER_SEC);
         fclose(out);
 
-        Stats::flush();
+        // Stats::flush();
 
     } else {
         FILE* out = fopen("../result/paper1.paq8test","r");

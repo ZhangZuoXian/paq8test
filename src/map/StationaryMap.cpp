@@ -50,6 +50,12 @@ void StationaryMap::update() {
 }
 
 void StationaryMap::mix(Mixer &m) {
+
+  Stats::stat_flag = true;
+  Stats::addPath(name);
+  INJECT_SHARED_bpos;
+  Stats::addPath(std::to_string(bpos));
+
   shared->GetUpdateBroadcaster()->subscribe(this);
   cp = &data[context + b];
   const int prediction = (*cp) >> 20;

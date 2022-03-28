@@ -90,9 +90,9 @@ CMakeFiles/paq8test.dir/src/Models.cpp.o: ../src/include/./util/ProgramChecker.h
 CMakeFiles/paq8test.dir/src/Models.cpp.o: ../src/include/./util/Random.hpp
 CMakeFiles/paq8test.dir/src/Models.cpp.o: ../src/include/./util/Squash.hpp
 CMakeFiles/paq8test.dir/src/Models.cpp.o: ../src/include/./util/Stretch.hpp
-CMakeFiles/paq8test.dir/src/Models.cpp.o: ../src/include/./util/redisHandler.hpp
 CMakeFiles/paq8test.dir/src/Models.cpp.o: ../src/include/./util/utils.hpp
 CMakeFiles/paq8test.dir/src/Models.cpp.o: ../src/include/Models.hpp
+CMakeFiles/paq8test.dir/src/Models.cpp.o: ../src/include/util/redisHandler.hpp
 CMakeFiles/paq8test.dir/src/Models.cpp.o: ../src/Models.cpp
 
 CMakeFiles/paq8test.dir/src/Predictor.cpp.o: ../src/include/././util/BitCount.hpp

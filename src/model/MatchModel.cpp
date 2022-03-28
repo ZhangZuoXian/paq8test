@@ -17,6 +17,8 @@ MatchModel::MatchModel(Shared* const sh, const uint64_t buffermemorysize, const 
   printf("Created MatchModel with size = %" PRIu64 "\n", size);
 #endif
   assert(isPowerOf2(mapmemorysize));
+
+
 }
 
 void MatchModel::update() {
@@ -114,6 +116,7 @@ void MatchModel::update() {
 }
 
 void MatchModel::mix(Mixer &m) {
+  
   update();
   for( uint32_t i = 0; i < nST; i++ ) { // reset contexts
     ctx[i] = 0;
@@ -169,7 +172,6 @@ void MatchModel::mix(Mixer &m) {
   //bytewise contexts
   Stats::prePath.clear();
   Stats::addPath(name);
-  uint64_t cxt_record = 0;
   INJECT_SHARED_c4
   if( bpos == 0 ) {
     if( length != 0 ) {
@@ -187,25 +189,49 @@ void MatchModel::mix(Mixer &m) {
   cm.mix(m);
   Stats::addPath(std::to_string(cxt_record));
   int prediction = Stats::avg();
-  std::cout<<Stats::prePath<<" prediction: "<< prediction<<std::endl;
-  Stats::rds.setValue(m.path,std::to_string(prediction));
+  RedisHandler& rds = RedisHandler::get_instance();
+  int rel = rds.setValue(Stats::prePath,std::to_string(prediction));
   Stats::stat_flag = false;
-  Stats::prePath.clear();
+  // if(rel != M_REDIS_OK){
+  //   std::cout<<"fail to set kay value\n";
+  // }
+  
+  // rds.disConnect();
   
   //bitwise contexts
   {
     
+    // stationaryMap - 0
+    Stats::prePath.clear();
+    Stats::addPath(name);
+
     maps[0].set(hash(expectedByte, c0, c4 & 0xffffu, length3Rm));
+    maps[0].mix(m);
+    cxt_record = hash(expectedByte, c0, c4 & 0xffffu, length3Rm);
+
+    Stats::addPath(std::to_string(cxt_record));
+    int prediction = Stats::avg();
+    RedisHandler& rds = RedisHandler::get_instance();
+    int rel = rds.setValue(Stats::prePath,std::to_string(prediction));
+    Stats::stat_flag = false;
+
+
+    // stationaryMap - 1
+    Stats::prePath.clear();
+    Stats::addPath(name);
+
     INJECT_SHARED_y
     iCtx += y;
     const uint8_t c = length3Rm << 1U | expectedBit; // 4 bits
     iCtx = (bpos << 11U) | (c1 << 3U) | c;
     maps[1].setDirect(iCtx());
+    maps[1].mix(m);
+
     SCM.set((bpos << 3U) | c);
   }
 
-  maps[0].mix(m);
-  maps[1].mix(m);
+  
+  
   SCM.mix(m);
 
   const uint32_t lengthC = lengthIlog2 != 0 ? lengthIlog2 + 1 : static_cast<uint32_t>(delta);

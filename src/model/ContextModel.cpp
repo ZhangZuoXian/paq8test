@@ -21,15 +21,15 @@ auto ContextModel::p() -> int {
   matchModel.mix(*m);
   shared->MatchModelCostTime +=  clock()-t;
 
-  t = clock();
-  NormalModel &normalModel = models.normalModel();
-  normalModel.mix(*m);
+  // t = clock();
+  // NormalModel &normalModel = models.normalModel();
+  // normalModel.mix(*m);
 
-  normalModel.mixPost(*m);
-  shared->NormalModelCostTime += clock()-t;
+  // normalModel.mixPost(*m);
+  // shared->NormalModelCostTime += clock()-t;
 
-  SparseModel &sparseModel = models.sparseModel();
-  sparseModel.mix(*m);
+  // SparseModel &sparseModel = models.sparseModel();
+  // sparseModel.mix(*m);
 
   m->setScaleFactor(1024, 128);
   // return 2048;

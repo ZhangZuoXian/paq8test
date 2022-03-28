@@ -253,6 +253,8 @@ IndirectContext.hpp
 ../src/include/./map/SmallStationaryContextMap.hpp
 ../map/StationaryMap.hpp
 ../src/include/./map/StationaryMap.hpp
+util/redisHandler.hpp
+../src/include/./model/util/redisHandler.hpp
 
 ../src/include/./model/NormalModel.hpp
 ../map/ContextMap2.hpp
@@ -350,14 +352,6 @@ Squash.hpp
 cassert
 -
 cstdint
--
-
-../src/include/./util/redisHandler.hpp
-hiredis/hiredis.h
--
-iostream
--
-cstring
 -
 
 ../src/include/./util/utils.hpp
@@ -623,6 +617,8 @@ IndirectContext.hpp
 ../src/include/map/SmallStationaryContextMap.hpp
 ../map/StationaryMap.hpp
 ../src/include/map/StationaryMap.hpp
+util/redisHandler.hpp
+../src/include/model/util/redisHandler.hpp
 
 ../src/include/model/NormalModel.hpp
 ../map/ContextMap2.hpp

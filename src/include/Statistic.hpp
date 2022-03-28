@@ -15,7 +15,6 @@
 
 class Stats {
 public:
-    static RedisHandler rds;
 
     Stats() ;
     ~Stats() = default;
@@ -40,7 +39,7 @@ public:
         return sum / n;
     }
     static void addPath(const std::string& name){
-        Stats::prePath += " + "+name;
+        Stats::prePath += "+"+name;
     }
 
 private:

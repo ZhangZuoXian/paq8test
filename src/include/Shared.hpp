@@ -37,7 +37,6 @@ public:
 
     //predictions output
     
-
     clock_t MatchModelCostTime;
     clock_t NormalModelCostTime;
 

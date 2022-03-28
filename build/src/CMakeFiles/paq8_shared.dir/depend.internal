@@ -91,9 +91,9 @@ src/CMakeFiles/paq8_shared.dir/Models.cpp.o
  ../src/include/./util/Random.hpp
  ../src/include/./util/Squash.hpp
  ../src/include/./util/Stretch.hpp
- ../src/include/./util/redisHandler.hpp
  ../src/include/./util/utils.hpp
  ../src/include/Models.hpp
+ ../src/include/util/redisHandler.hpp
  /home/ghj/paq8test/src/Models.cpp
 src/CMakeFiles/paq8_shared.dir/Predictor.cpp.o
  ../src/include/././util/BitCount.hpp

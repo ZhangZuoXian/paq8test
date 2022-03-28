@@ -7,6 +7,7 @@
 #include "IndirectContext.hpp"
 #include "../map/SmallStationaryContextMap.hpp"
 #include "../map/StationaryMap.hpp"
+#include "util/redisHandler.hpp"
 
 /**
  * Predict the next bit based on a preceding long matching byte sequence
@@ -57,6 +58,7 @@ public:
     void update();
     void mix(Mixer &m);
 
+    uint64_t cxt_record;
     void save(Mixer &m);
     void load(Mixer &m);
 };
