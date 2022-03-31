@@ -262,6 +262,148 @@ void ContextMap2::mix(Mixer &m) {
   }
 }
 
-void ContextMap2::save(){
+void ContextMap2::save(Mixer &m){
+  INJECT_SHARED_bpos
+  INJECT_SHARED_c0
 
+  // collecte all predictions of this map for one bit
+
+  Stats::stat_flag = true;
+  Stats::addPath(name);
+  Stats::addPath(std::to_string(bpos));
+  
+  shared->GetUpdateBroadcaster()->subscribe(this);
+  stateMap.subscribe();
+  if((useWhat & CM_USE_RUN_STATS) != 0U ) {
+    runMap.subscribe();
+  }
+  if((useWhat & CM_USE_BYTE_HISTORY) != 0U ) {
+    bhMap8B.subscribe();
+    bhMap12B.subscribe();
+  }
+  order = 0;
+
+  for( uint32_t i = 0; i < index; i++ ) {
+    if(((validFlags >> (index - 1 - i)) & 1) != 0 ) {
+      const int state = bitState[i] != nullptr ? *bitState[i] : 0;
+      //由状态表示的位历史中的零的个数
+      const int n0 = StateTable::next(state, 2);
+      //由状态表示的位历史中的一的个数
+      const int n1 = StateTable::next(state, 3);
+      
+      const int bitIsUncertain = int(n0 != 0 && n1 != 0);
+
+      // predict from last byte(s) in context
+      auto byteHistoryPtr = byteHistory[i];
+      uint8_t byteState = byteHistoryPtr[-3]; //什么时候更新呢？
+      const uint8_t byte1 = byteHistoryPtr[1];
+      const uint8_t byte2 = byteHistoryPtr[2];
+      const uint8_t byte3 = byteHistoryPtr[3];
+      //runmap之后存储三个候选的值
+      const bool complete1 = (byteState >= 3) || (byteState >= 1 && bpos == 0);
+      const bool complete2 = (byteState >= 7) || (byteState >= 3 && bpos == 0);
+      const bool complete3 = (byteState >= 15) || (byteState >= 7 && bpos == 0);
+
+      if((useWhat & CM_USE_RUN_STATS) != 0U ) {
+        const int bp = (0xFEA4U >> (bpos << 1U)) & 3U; // {0}->0  {1}->1  {2,3,4}->2  {5,6,7}->3
+        bool skipRunMap = true;
+        if( complete1 ) {
+          //尝试前两个runmap value是否和当前预测匹配,第三个不怎么可信不做匹配
+          if(((byte1 + 256) >> (8 - bpos)) == c0 ) { // 1st candidate (last byte seen) matches
+            const int predictedBit = (byte1 >> (7 - bpos)) & 1U;
+            const int byte1IsUncertain = static_cast<const int>(byte2 != byte1);
+            const int runCount = byteHistoryPtr[0]; // 1..254
+            m.add(stretch(runMap.p2(i, runCount << 4U | bp << 2U | byte1IsUncertain << 1 | predictedBit)) >> (1 + byte1IsUncertain));
+            skipRunMap = false;
+          } else if( complete2 && ((byte2 + 256) >> (8 - bpos)) == c0 ) { // 2nd candidate matches
+            const int predictedBit = (byte2 >> (7 - bpos)) & 1U;
+            const int byte2IsUncertain = static_cast<const int>(byte3 != byte2);
+            m.add(stretch(runMap.p2(i, bitIsUncertain << 1U | predictedBit)) >> (2 + byte2IsUncertain));
+            skipRunMap = false;
+          }
+          // remark: considering the 3rd byte is not beneficial in most cases, except for some 8bpp images
+        }
+        if( skipRunMap ) {
+          runMap.skip(i);
+          m.add(0);
+        }
+      }
+      
+      // predict from bit context
+      if( state == 0 ) {
+        stateMap.skip(i);
+
+        m.add(0);
+
+        m.add(0);
+
+        m.add(0);
+
+        m.add(0);
+      } else {
+        const int p1 = stateMap.p2(i, state);
+        const int st = (stretch(p1) * scale) >> 8;
+        const int contextIsYoung = int(state <= 2);
+
+        m.add(st >> contextIsYoung);
+
+        m.add(((p1 - 2048) * scale) >> 9U);
+
+        m.add((bitIsUncertain - 1) & st); // when both counts are nonzero add(0) otherwise add(st)
+        const int p0 = 4095 - p1;
+
+
+        m.add((((p1 & (-!n0)) - (p0 & (-!n1))) * scale) >> 10U);
+        order++;
+      }
+
+      if((useWhat & CM_USE_BYTE_HISTORY) != 0U ) {
+        const int bhBits = (((byte1 >> (7 - bpos)) & 1)) | (((byte2 >> (7 - bpos)) & 1) << 1) |
+                           (((byte3 >> (7 - bpos)) & 1) << 2);
+
+        int bhState = 0; // 4 bit
+        if( complete3 ) {
+          bhState = 8U | (bhBits); //we have seen 3 bytes (at least)
+        } else if( complete2 ) {
+          bhState = 4U | (bhBits & 3U); //we have seen 2 bytes
+        } else if( complete1 ) {
+          bhState = 2U | (bhBits & 1U); //we have seen 1 byte only
+        }
+        //else new context (bhState=0)
+
+        const uint8_t stateGroup = StateTable::group(state); //0..31
+        m.add(stretch(bhMap8B.p2(i, bitIsUncertain << 7U | (bhState << 3U) | bpos))
+                      >> 2); // using bitIsUncertain is generally beneficial except for some 8bpp image (noticeable loss)
+        m.add(stretch(bhMap12B.p2(i, stateGroup << 7U | (bhState << 3U) | bpos)) >> 2U);
+      }
+    } else { //skipped context
+      if((useWhat & CM_USE_RUN_STATS) != 0U ) {
+        runMap.skip(i);
+        m.add(0);
+      }
+      if((useWhat & CM_USE_BYTE_HISTORY) != 0U ) {
+        bhMap8B.skip(i);
+        m.add(0);
+        bhMap12B.skip(i);
+        m.add(0);
+      }
+      stateMap.skip(i);
+      m.add(0);
+      m.add(0);
+      m.add(0);
+      m.add(0);
+    }
+  }
+}
+
+void ContextMap2::load(Mixer &m){
+  INJECT_SHARED_bpos
+  INJECT_SHARED_c0
+
+  // collecte all predictions of this map for one bit
+
+  Stats::stat_flag = true;
+  Stats::addPath(name);
+  Stats::addPath(std::to_string(bpos));
+  
 }

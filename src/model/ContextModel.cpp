@@ -18,7 +18,7 @@ auto ContextModel::p() -> int {
   clock_t t = clock();
 
   MatchModel &matchModel = models.matchModel();
-  matchModel.mix(*m);
+  matchModel.load(*m);
   shared->MatchModelCostTime +=  clock()-t;
 
   // t = clock();

@@ -41,8 +41,8 @@ int main(int argc,char **argv){
     // };
     
     Mode mode(COMPRESS);
-    mode = (argc == 1) ? COMPRESS : DECOMPRESS;
-
+    mode = (argc == 1 ) ? COMPRESS : DECOMPRESS;
+    mode = COMPRESS;
     Stats stats;
 
     // 测试redis接口

@@ -20,13 +20,14 @@ void Mixer::add(const int x) {
   
   assert(nx < n);
   assert(x == short(x));
+  
   tx[nx++] = static_cast<short>(x);
   
   /////////////////////////
-  INJECT_SHARED_bpos bpos;
-  if(Stats::stat_flag){
-    Stats::avgVec.emplace_back(x);
-  }
+  // INJECT_SHARED_bpos bpos;
+  // if(Stats::stat_flag){
+  //   Stats::avgVec.emplace_back(x);
+  // }
 }
 
 void Mixer::set(const uint32_t cx, const uint32_t range, const int rate) {

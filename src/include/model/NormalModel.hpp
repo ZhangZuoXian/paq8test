@@ -3,6 +3,9 @@
 #include "../map/ContextMap2.hpp"
 #include <thread>
 #include <time.h>
+#include "util/redisHandler.hpp"
+#include "Statistic.hpp"
+
 /**
  * Model for order 0-14 contexts
  * Contexts are hashes of previous 0..14 bytes.
@@ -41,11 +44,9 @@ public:
      */
     void mixPost(Mixer &m);
 
-    //-----------------
-    //并行处理
-    //-----------------
-    void pretreatment();
-    
+    uint64_t cxt_record;
+    void save(Mixer &m);
+    void load(Mixer &m);
 
 };
 

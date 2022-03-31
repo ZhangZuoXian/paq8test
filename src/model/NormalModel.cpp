@@ -22,6 +22,10 @@ void NormalModel::updateHashes() {
 
 void NormalModel::mix(Mixer &m) {
   INJECT_SHARED_bpos
+
+  Stats::prePath.clear();
+  Stats::addPath(name);  
+
   if( bpos == 0 ) {
     updateHashes();
     for( int i = 1; i <= 7; ++i ) {
@@ -29,10 +33,18 @@ void NormalModel::mix(Mixer &m) {
     }
     cm.set(cxt[9]);
     cm.set(cxt[14]);
+    cxt_record = cxt[6];
   }
   cm.mix(m);
   INJECT_SHARED_c0 
   INJECT_SHARED_c1
+
+  Stats::addPath(std::to_string(cxt_record));
+  int prediction = Stats::avg();
+  RedisHandler& rds = RedisHandler::get_instance();
+  int rel = rds.setValue(Stats::prePath,std::to_string(prediction));
+  Stats::stat_flag = false;
+
   m.add((stretch(smOrder0Slow.p1(c0 - 1))) >> 2U); //order 0
   m.add((stretch(smOrder1Fast.p1((c0 - 1) << 8U | c1))) >> 2U); //order 1
   m.add((stretch(smOrder1Slow.p1((c0 - 1) << 8U | c1))) >> 2U); //order 1

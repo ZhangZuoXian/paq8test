@@ -50,7 +50,9 @@ private:
 
 public:
     std::string name = "MactchModel";
-    static constexpr int MIXERINPUTS = 2 + nCM * (ContextMap2::MIXERINPUTS + ContextMap2::MIXERINPUTS_RUN_STATS) + nST +
+    // static constexpr int MIXERINPUTS = 2 + nCM * (ContextMap2::MIXERINPUTS + ContextMap2::MIXERINPUTS_RUN_STATS) + nST +
+    //                                    nSSM * SmallStationaryContextMap::MIXERINPUTS + nSM * StationaryMap::MIXERINPUTS; // 23
+    static constexpr int MIXERINPUTS = 2 + 1 + nST +
                                        nSSM * SmallStationaryContextMap::MIXERINPUTS + nSM * StationaryMap::MIXERINPUTS; // 23
     static constexpr int MIXERCONTEXTS = 8;
     static constexpr int MIXERCONTEXTSETS = 1;

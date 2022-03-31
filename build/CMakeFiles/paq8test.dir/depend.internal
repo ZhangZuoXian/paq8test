@@ -69,7 +69,6 @@ CMakeFiles/paq8test.dir/src/Models.cpp.o
  ../src/include/./IPredictor.hpp
  ../src/include/./Mixer.hpp
  ../src/include/./Shared.hpp
- ../src/include/./Statistic.hpp
  ../src/include/./UpdateBroadcaster.hpp
  ../src/include/./map/AdaptiveMap.hpp
  ../src/include/./map/ContextMap.hpp
@@ -93,6 +92,7 @@ CMakeFiles/paq8test.dir/src/Models.cpp.o
  ../src/include/./util/Stretch.hpp
  ../src/include/./util/utils.hpp
  ../src/include/Models.hpp
+ ../src/include/Statistic.hpp
  ../src/include/util/redisHandler.hpp
  /home/ghj/paq8test/src/Models.cpp
 CMakeFiles/paq8test.dir/src/Predictor.cpp.o

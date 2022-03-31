@@ -45,6 +45,7 @@ public:
     void setScaleFactor(const int sf0, const int sf1) override {
       scaleFactor = sf0;
       if( mp ) {
+        
         mp->setScaleFactor(sf1, 0);
       }
     }

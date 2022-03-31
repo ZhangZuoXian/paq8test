@@ -106,24 +106,6 @@ Mixer.hpp
 ./util/Squash.hpp
 ../src/include/././util/Squash.hpp
 
-../src/include/./Statistic.hpp
-vector
--
-cstdint
--
-fstream
--
-iostream
--
-cassert
--
-functional
--
-cmath
--
-util/redisHandler.hpp
-../src/include/./util/redisHandler.hpp
-
 ../src/include/./UpdateBroadcaster.hpp
 IPredictor.hpp
 ../src/include/./IPredictor.hpp
@@ -263,6 +245,10 @@ thread
 -
 time.h
 -
+util/redisHandler.hpp
+../src/include/./model/util/redisHandler.hpp
+Statistic.hpp
+../src/include/./model/Statistic.hpp
 
 ../src/include/./model/SparseModel.hpp
 ../map/ContextMap.hpp
@@ -627,6 +613,10 @@ thread
 -
 time.h
 -
+util/redisHandler.hpp
+../src/include/model/util/redisHandler.hpp
+Statistic.hpp
+../src/include/model/Statistic.hpp
 
 ../src/include/model/SparseModel.hpp
 ../map/ContextMap.hpp

@@ -77,9 +77,12 @@ int RedisHandler::getValue(const std::string &key, std::string &value)
 {
     std::string cmd = "get " + key;
 
+    // std::cout<<"key: "<<key<<" "<<"value: "<<value<<std::endl;
     pm_rr = (redisReply*)redisCommand(pm_rct, cmd.c_str());
-
+    
+    // std::cout<<pm_rr->str<<std::endl;
     int ret = handleReply(&value);
+    // std::cout<<"key: "<<key<<" "<<"value: "<<value<<std::endl;
 }
 
 /*
@@ -155,14 +158,14 @@ int RedisHandler::handleReply(void* value, redisReply*** array)
     if (pm_rct->err)
     {
         error_msg = pm_rct->errstr;
-        printf("Error: %s\n", pm_rct->errstr);
+        // printf("Error in null : %s\n", pm_rct->errstr);
         return M_CONTEXT_ERROR;
     }
 
     if (pm_rr == NULL)
     {
         error_msg = "auth redisReply is NULL";
-        printf("Error: %s\n", pm_rct->errstr);
+        // printf("Error: %s\n", pm_rct->errstr);
         return M_REPLY_ERROR;
     }
 
