@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/zzx/paq8test/originPaq8test/src
+CXX_INCLUDES = -I/home/zzx/paq8test/paq8test/src
 
 CXX_FLAGS = -O3 -floop-strip-mine -funroll-loops -ftree-vectorize -fgcse-sm -falign-loops=16 -ggdb -O3 -DNDEBUG -std=gnu++17
 

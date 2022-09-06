@@ -18,7 +18,7 @@ U32 x1=0, x2=0xffffffff;
 
 long BLOCK_SIZE;
 FILE* fp = NULL;
-FILE* deCom = fopen("/home/zzx/paq8test/originPaq8test/decomress.txt","w");
+FILE* deCom = fopen("/home/zzx/paq8test/paq8test/decomress.txt","w");
 
 int main(int argc,char **argv){
 
@@ -57,7 +57,7 @@ int main(int argc,char **argv){
     //使用压缩器编码，并统计信息
     if(mode == COMPRESS){
 
-        FILE* out = fopen("/home/zzx/paq8test/originPaq8test/output.txt","w");
+        FILE* out = fopen("/home/zzx/paq8test/paq8test/output.txt","w");
 
         printf("Begin compression:....\n");
         Encoder *en = NULL;
@@ -103,7 +103,7 @@ int main(int argc,char **argv){
         printf("compression time=%lf s\n",((float) t)/ CLOCKS_PER_SEC);
         fclose(out);
     } else {
-        FILE* out = fopen("/home/zzx/paq8test/originPaq8test/output.txt","r");
+        FILE* out = fopen("/home/zzx/paq8test/paq8test/output.txt","r");
         Encoder en(&shared, DECOMPRESS,out,deCom);
         printf("Begin decompression:....\n");
         for(int i=0;i<4;i++){

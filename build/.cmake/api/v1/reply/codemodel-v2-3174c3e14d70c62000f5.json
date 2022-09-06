@@ -38,7 +38,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "paq8test::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-paq8test-Release-fd47ee2d7e9bbaacaab6.json",
+					"jsonFile" : "target-paq8test-Release-e8e990d0e72423c6520b.json",
 					"name" : "paq8test",
 					"projectIndex" : 0
 				}
@@ -48,8 +48,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/zzx/paq8test/originPaq8test/build",
-		"source" : "/home/zzx/paq8test/originPaq8test"
+		"build" : "/home/zzx/paq8test/paq8test/build",
+		"source" : "/home/zzx/paq8test/paq8test"
 	},
 	"version" : 
 	{
