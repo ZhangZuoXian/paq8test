@@ -34,17 +34,17 @@ int main(int argc,char **argv){
 
     sscanf(argv[1], "%ld", &BLOCK_SIZE); //第一个参数为分块大小，单位为KB
     BLOCK_SIZE *= 1024; //单位换算为Byte
+    char filePath[128];
     if(strcmp(argv[2], "enwik8") == 0){ //根据第二个参数选择文件
-        fp = fopen("/home/zzx/paq8test/data/enwik8/enwik8","r");
+        sprintf(filePath, "/home/zzx/paq8test/data/enwik8/enwik8");
     }
     else if(strcmp(argv[2], "enwik9") == 0){
-        fp = fopen("/home/zzx/paq8test/data/enwik9","r");
+        sprintf(filePath, "/home/zzx/paq8test/data/enwik9");
     }
     else{
-        char filePath[64];
         sprintf(filePath, "/home/zzx/paq8test/data/calgarycorpus//%s", argv[2]);
-        fp = fopen(filePath, "r");
     }
+    fp = fopen(filePath, "r");
     if(fp == NULL){
         printf("File \"%s\" no exist\n", argv[2]);
         return 0;
@@ -59,7 +59,8 @@ int main(int argc,char **argv){
 
         FILE* out = fopen("/home/zzx/paq8test/paq8test/output.txt","w");
 
-        printf("Begin compression:....\n");
+        printf("Begin compression %s\n", argv[2]);
+        std::cout << "block size is : " << BLOCK_SIZE/1024 << " KB\n";
         Encoder *en = NULL;
 
         //统计文件大小
@@ -79,7 +80,7 @@ int main(int argc,char **argv){
         while(notEnd){
             // printf("%x\t",c);
             en = new Encoder(&shared, COMPRESS, out, deCom);
-            for(byteCount = 0; byteCount < BLOCK_SIZE; byteCount++){
+            for(byteCount = 0; BLOCK_SIZE == 0 || byteCount < BLOCK_SIZE; byteCount++){
                 if((c=getc(fp)) == EOF){
                     notEnd = 0;
                     break;
@@ -92,7 +93,7 @@ int main(int argc,char **argv){
 
             sizeTmp = size;
             size = ftell(out);
-            std::cout<<"Block compressed size: "<<size - sizeTmp<<"B"<<std::endl;
+            // std::cout<<"Block compressed size: "<<size - sizeTmp<<"B"<<std::endl;
         }
         
         t = clock()-t;
