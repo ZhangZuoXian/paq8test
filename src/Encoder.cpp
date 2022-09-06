@@ -13,7 +13,7 @@ void Encoder::compressByte(uint8_t c) {
     for( int i = 7; i >= 0; --i ) {
       clock_t t = clock();
       int p = predictor.p();
-      printf("p:%d\t",p);
+      // printf("p:%d\t",p);
       modelTimeCost += clock() - t;
       int y = (c >> i) & 1;
       predictor.update(y);
@@ -38,11 +38,11 @@ auto Encoder::decompressByte() -> uint8_t {
   for( int i = 0; i < 8; ++i ) {
     int p = predictor.p();
     int y = ari.decodeBit(p);
-    printf("p:%d\t",p);
+    // printf("p:%d\t",p);
     c = c << 1 | y;
     predictor.update(y);
   }
-  printf("decompressByte %x\n",c);
+  // printf("decompressByte %x\n",c);
   return c;
 }
 

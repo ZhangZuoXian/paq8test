@@ -19,16 +19,15 @@ auto ContextModel::p() -> int {
 
   clock_t t = clock();
 
-  // MatchModel &matchModel = models.matchModel();
-  // matchModel.mix(*m);
-  // shared->MatchModelCostTime +=  clock()-t;
+  MatchModel &matchModel = models.matchModel();
+  matchModel.mix(*m);
+  shared->MatchModelCostTime +=  clock()-t;
 
-  // t = clock();
-  // NormalModel &normalModel = models.normalModel();
-  // normalModel.mix(*m);
-
-  // normalModel.mixPost(*m);
-  // shared->NormalModelCostTime += clock()-t;
+  t = clock();
+  NormalModel &normalModel = models.normalModel();
+  normalModel.mix(*m);
+  normalModel.mixPost(*m);
+  shared->NormalModelCostTime += clock()-t;
 
   SparseModel &sparseModel = models.sparseModel();
   sparseModel.mix(*m);

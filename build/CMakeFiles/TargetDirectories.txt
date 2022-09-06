@@ -1,3 +1,3 @@
-/home/ghj/c++_project/compress/paq8test/build/CMakeFiles/rebuild_cache.dir
-/home/ghj/c++_project/compress/paq8test/build/CMakeFiles/edit_cache.dir
-/home/ghj/c++_project/compress/paq8test/build/CMakeFiles/paq8test.dir
+/home/zzx/paq8test/originPaq8test/build/CMakeFiles/rebuild_cache.dir
+/home/zzx/paq8test/originPaq8test/build/CMakeFiles/edit_cache.dir
+/home/zzx/paq8test/originPaq8test/build/CMakeFiles/paq8test.dir

@@ -14,21 +14,13 @@ typedef unsigned char  U8;
 typedef unsigned short U16;
 typedef unsigned int   U32;
 
-U32 x1=0,x2=0xffffffff;
+U32 x1=0, x2=0xffffffff;
 
-#define DEBUG true
-
-// FILE* fp = fopen("/home/ghj/lpaq1/test/src/enwik8/enwik8","r");
-#ifdef DEBUG 
-    FILE* fp = fopen("/home/ghj/lpaq1/test/src/easy.txt","r");
-#else 
-    FILE* fp = fopen("/home/ghj/lpaq1/test/src/calgarycorpus/book1","r");
-#endif
-
-FILE* deCom = fopen("/home/ghj/c++_project/compress/paq8test/decomress.txt","w");
+long BLOCK_SIZE;
+FILE* fp = NULL;
+FILE* deCom = fopen("/home/zzx/paq8test/originPaq8test/decomress.txt","w");
 
 int main(int argc,char **argv){
-    // ifstream file("/home/ghj/lpaq1/test/src/calgarycorpus/book1");
 
     Shared shared;
     clock_t t;
@@ -39,49 +31,79 @@ int main(int argc,char **argv){
     //     {"decompress",  0,  NULL,   'd'},
     //     {"compress",    0,  NULL,   'c'},
     // };
+
+    sscanf(argv[1], "%ld", &BLOCK_SIZE); //第一个参数为分块大小，单位为KB
+    BLOCK_SIZE *= 1024; //单位换算为Byte
+    if(strcmp(argv[2], "enwik8") == 0){ //根据第二个参数选择文件
+        fp = fopen("/home/zzx/paq8test/data/enwik8/enwik8","r");
+    }
+    else if(strcmp(argv[2], "enwik9") == 0){
+        fp = fopen("/home/zzx/paq8test/data/enwik9","r");
+    }
+    else{
+        char filePath[64];
+        sprintf(filePath, "/home/zzx/paq8test/data/calgarycorpus//%s", argv[2]);
+        fp = fopen(filePath, "r");
+    }
+    if(fp == NULL){
+        printf("File \"%s\" no exist\n", argv[2]);
+        return 0;
+    }
     
     Mode mode(COMPRESS);
-    mode = (argc == 1) ? COMPRESS : DECOMPRESS;
+    mode = (argc == 3) ? COMPRESS : DECOMPRESS;
 
     //生成压缩器
     //使用压缩器编码，并统计信息
     if(mode == COMPRESS){
 
-        FILE* out = fopen("/home/ghj/c++_project/compress/paq8test/output.txt","w");
+        FILE* out = fopen("/home/zzx/paq8test/originPaq8test/output.txt","w");
 
         printf("Begin compression:....\n");
-        Encoder en(&shared, COMPRESS,out,deCom);
+        Encoder *en = NULL;
+
         //统计文件大小
-        fseek(fp,0,SEEK_END);
+        fseek(fp, 0, SEEK_END);
         long size = ftell(fp);
-        // printf("the size is %ll\n",size);
-        std::cout<<"the size is : "<<size<<"B\n";
+        std::cout << "the size is : " << size << "B\n";
         fseek(fp, 0, SEEK_SET);
+
         //压缩处理
         char c;
         t = clock();
 
-        while((c=getc(fp))!=EOF){
-            printf("%x\t",c);
-            en.compressByte(c);
+        long byteCount = 0;
+        bool notEnd = 1;
+        size = 0;
+        long sizeTmp = 0;
+        while(notEnd){
+            // printf("%x\t",c);
+            en = new Encoder(&shared, COMPRESS, out, deCom);
+            for(byteCount = 0; byteCount < BLOCK_SIZE; byteCount++){
+                if((c=getc(fp)) == EOF){
+                    notEnd = 0;
+                    break;
+                }
+                en->compressByte(c);
+            }
+            //多余小数刷新回压缩文件中
+            en->flush();
+            delete en;
+
+            sizeTmp = size;
+            size = ftell(out);
+            std::cout<<"Block compressed size: "<<size - sizeTmp<<"B"<<std::endl;
         }
-        //多余小数刷新回压缩文件中
-        en.flush();
         
         t = clock()-t;
         
         //输出压缩统计信息
         size = ftell(out);
-        std::cout<<" ---> "<<size<<"B"<<std::endl;
+        std::cout<<"compressed size: "<<size<<"B"<<std::endl;
         printf("compression time=%lf s\n",((float) t)/ CLOCKS_PER_SEC);
-        printf("model prediction cost time = %lf s\n",((float) en.modelTimeCost )/ CLOCKS_PER_SEC);
-        printf("\t Match model prediction cost time = %lf s\n",((float) shared.MatchModelCostTime )/ CLOCKS_PER_SEC);
-        printf("\t normal model prediction cost time = %lf s\n",((float) shared.NormalModelCostTime )/ CLOCKS_PER_SEC);
-        
-        printf("map update cost time = %lf s\n", ((float) en.mapUpdateCost)/ CLOCKS_PER_SEC);
         fclose(out);
     } else {
-        FILE* out = fopen("/home/ghj/c++_project/compress/paq8test/output.txt","r");
+        FILE* out = fopen("/home/zzx/paq8test/originPaq8test/output.txt","r");
         Encoder en(&shared, DECOMPRESS,out,deCom);
         printf("Begin decompression:....\n");
         for(int i=0;i<4;i++){
