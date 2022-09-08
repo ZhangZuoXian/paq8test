@@ -81,6 +81,7 @@ public:
     void update() override;
     void setScale(int Scale);
     void mix(Mixer &m);
+    int getType() override;
 };
 
 #endif //PAQ8PX_CONTEXTMAP2_HPP

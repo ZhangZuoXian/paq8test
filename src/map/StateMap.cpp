@@ -47,6 +47,10 @@ void StateMap::reset(const int rate) {
 
 void StateMap::update() {
   assert(numContexts <= numContextSets);
+  if(shared->updateState == false){
+    numContexts = 0;
+    return;
+  }
   while( numContexts > 0 ) {
     numContexts--;
     const uint32_t idx = cxt[numContexts];

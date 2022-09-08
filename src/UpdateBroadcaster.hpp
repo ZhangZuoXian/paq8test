@@ -6,7 +6,7 @@
 class UpdateBroadcaster {
 public:
     void subscribe(IPredictor *subscriber);
-    void broadcastUpdate();
+    void broadcastUpdate(bool updateState);
     UpdateBroadcaster() {}
 private:
     int n {0}; /**< number of subscribed predictors, (number of items in "subscribers" array) */

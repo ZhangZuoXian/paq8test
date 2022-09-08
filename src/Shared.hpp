@@ -34,8 +34,6 @@ public:
     bool toScreen = true;
 
     //predictions output
-    
-
     clock_t MatchModelCostTime;
     clock_t NormalModelCostTime;
 
@@ -80,6 +78,13 @@ public:
     void update(int y);
     void reset();
     UpdateBroadcaster *GetUpdateBroadcaster() const;
+
+    //update control, if updateState is true, update byte by byte
+    bool updateState = false;
+    void dynamicPara();
+    void staticPara();
+    bool getUpdateState();
+
 private:
 
     /**

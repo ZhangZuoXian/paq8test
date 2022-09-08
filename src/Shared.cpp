@@ -26,8 +26,7 @@ void Shared::update(int y) {
 //   State.Text.characterGroup = (State.bitPosition > 0) ? asciiGroup[(1U << State.bitPosition) - 2 + (State.c0 & ((1U << State.bitPosition) - 1))] : 0;
   
   // Broadcast to all current subscribers: y (and c0, c1, c4, etc) is known
-  
-  updateBroadcaster.broadcastUpdate();
+  updateBroadcaster.broadcastUpdate(updateState);
 }
 
 void Shared::reset() {
@@ -40,6 +39,16 @@ void Shared::reset() {
 UpdateBroadcaster *Shared::GetUpdateBroadcaster() const {
   UpdateBroadcaster* updater = const_cast<UpdateBroadcaster*>(&updateBroadcaster);
   return updater;
+}
+
+void Shared::dynamicPara(){
+  updateState = true;
+}
+void Shared::staticPara(){
+  updateState = false;
+}
+bool Shared::getUpdateState(){
+  return updateState;
 }
 
 auto Shared::isOutputDirected() -> bool {

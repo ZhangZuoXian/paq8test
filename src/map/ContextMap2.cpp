@@ -238,3 +238,5 @@ void ContextMap2::mix(Mixer &m) {
     }
   }
 }
+
+int ContextMap2::getType() { return 3; }

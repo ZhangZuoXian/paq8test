@@ -21,6 +21,7 @@ protected:
     void update(uint32_t *p);
 public:
     void setLimit(int lim);
+    int getType() override;
 };
 
 #endif //PAQ8PX_ADAPTIVEMAP_HPP

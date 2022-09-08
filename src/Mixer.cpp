@@ -49,3 +49,7 @@ void Mixer::reset() {
   base = 0;
   numContexts = 0;
 }
+
+int Mixer::getType(){
+  return 0; //0代表mixer
+}

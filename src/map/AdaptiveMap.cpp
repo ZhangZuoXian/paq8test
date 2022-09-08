@@ -24,3 +24,5 @@ void AdaptiveMap::update(uint32_t *const p) {
 }
 
 void AdaptiveMap::setLimit(const int lim) { limit = lim; }
+
+int AdaptiveMap::getType() { return 1; } //1代表AdaptiveMap和StateMap
