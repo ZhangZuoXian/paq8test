@@ -19,7 +19,7 @@ void ContextMap::set(const uint64_t cx) {
   uint8_t* base = cp0[cn] = cp[cn] = t[ctx].find(checksum);
   runP[cn] = base + 3;
   // update pending bit histories for bits 2-7
-  if( base[3] == 2 ) {
+  if( shared->updateState && base[3] == 2 ) {
     const int c = base[4] + 256;
     uint8_t *p = t[(ctx + (c >> 6U)) & mask].find(checksum);
     p[0] = 1 + ((c >> 5U) & 1U);
@@ -48,7 +48,7 @@ void ContextMap::update() {
   for( int i = 0; i < cn; ++i ) {
     if(((validFlags >> (cn - 1 - i)) & 1) != 0 ) {
       // update bit history state byte
-      if( cp[i] != nullptr ) {
+      if( shared->updateState && cp[i] != nullptr ) {
         assert(cp[i] >= &t[0].bitState[0][0] && cp[i] <= &t[t.size() - 1].bitState[6][6]);
         assert((uintptr_t(cp[i]) & 63) >= 15);
         StateTable::update(cp[i], y, rnd);
@@ -77,14 +77,16 @@ void ContextMap::update() {
           }
           case 0: {
             // update run count of previous context
-            if( runP[i][0] == 0 ) { // new context
-              runP[i][0] = 2, runP[i][1] = c1;
-            } else if( runP[i][1] != c1 ) { // different byte in context
-              runP[i][0] = 1, runP[i][1] = c1;
-            } else if( runP[i][0] < 254 ) { // same byte in context
-              runP[i][0] += 2;
-            } else if( runP[i][0] == 255 ) {
-              runP[i][0] = 128;
+            if(shared->updateState){
+              if( runP[i][0] == 0 ) { // new context
+                runP[i][0] = 2, runP[i][1] = c1;
+              } else if( runP[i][1] != c1 ) { // different byte in context
+                runP[i][0] = 1, runP[i][1] = c1;
+              } else if( runP[i][0] < 254 ) { // same byte in context
+                runP[i][0] += 2;
+              } else if( runP[i][0] == 255 ) {
+                runP[i][0] = 128;
+              }              
             }
             break;
           }

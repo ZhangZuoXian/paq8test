@@ -26,7 +26,7 @@ void ContextMap2::set(const uint64_t ctx) {
   uint8_t *base = bitState[index] = bitState0[index] = table[ctx0].find(chk0);
   byteHistory[index] = &base[3];
   const uint8_t runCount = base[3];
-  if( runCount == 255 ) { // pending
+  if( shared->updateState && runCount == 255 ) { // pending
     // update pending bit histories for bits 2-7
     // in case of a collision updating (mixing) is slightly better (but slightly slower) then resetting, so we update
     const int c = base[4] + 256;
@@ -41,7 +41,7 @@ void ContextMap2::set(const uint64_t ctx) {
     base[3] = 1; // runCount: flag for having completed storing all the 8 bits of the first byte
   } else {
     const uint8_t byteState = base[0];
-    if( byteState == 0 ) { // empty slot, new context
+    if( shared->updateState && byteState == 0 ) { // empty slot, new context
       base[3] = 255; // runCount: flag for skipping updating bits 2..7
     }
   }
@@ -62,7 +62,7 @@ void ContextMap2::update() {
   INJECT_SHARED_c0
   for( uint32_t i = 0; i < index; i++ ) {
     if(((validFlags >> (index - 1 - i)) & 1U) != 0 ) {
-      if( bitState[i] != nullptr ) {
+      if( shared->updateState && bitState[i] != nullptr ) {
         StateTable::update(bitState[i], y, rnd);
       }
 
@@ -76,15 +76,15 @@ void ContextMap2::update() {
           case 0: {
             // update byte history
             const auto byteState = byteHistoryPtr[-3];
-            if( byteState < 3 ) { // 1st byte has just become known
+            if( shared->updateState && byteState < 3 ) { // 1st byte has just become known
               byteHistoryPtr[1] = byteHistoryPtr[2] = byteHistoryPtr[3] = c1; // set all byte candidates to c1
             } else { // 2nd byte is known
               const auto isMatch = byteHistoryPtr[1] == c1;
               if( isMatch ) {
-                if( runCount < 253 ) {
+                if( shared->updateState && runCount < 253 ) {
                   byteHistoryPtr[0] = runCount + 1;
                 }
-              } else {
+              } else if(shared->updateState){
                 byteHistoryPtr[0] = 1; //runCount
                 // scroll byte candidates
                 byteHistoryPtr[3] = byteHistoryPtr[2];
