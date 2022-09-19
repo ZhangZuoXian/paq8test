@@ -41,8 +41,11 @@ int main(int argc,char **argv){
     else if(strcmp(argv[2], "enwik9") == 0){
         sprintf(filePath, "/home/zzx/paq8test/data/enwik9");
     }
-    else{
+    else if(strcmp(argv[2], "book1") == 0 || strcmp(argv[2], "book2") == 0){
         sprintf(filePath, "/home/zzx/paq8test/data/calgarycorpus//%s", argv[2]);
+    }
+    else{
+        sprintf(filePath, "/home/zzx/paq8test/data/silesia//%s", argv[2]);
     }
     fp = fopen(filePath, "r");
     if(fp == NULL){
@@ -65,8 +68,8 @@ int main(int argc,char **argv){
 
         //统计文件大小
         fseek(fp, 0, SEEK_END);
-        long size = ftell(fp);
-        std::cout << "original size is : " << size << " B\n";
+        long fsize = ftell(fp);
+        std::cout << "original size is : " << fsize << " B\n";
         fseek(fp, 0, SEEK_SET);
 
         //压缩处理
@@ -75,33 +78,35 @@ int main(int argc,char **argv){
 
         long byteCount = 0;
         bool notEnd = 1;
-        size = 0;
+        long csize = 0;
         long sizeTmp = 0;
         while(notEnd){
             // printf("%x\t",c);
             en = new Encoder(&shared, COMPRESS, out, deCom);
-            for(byteCount = 0; BLOCK_SIZE == 0 || byteCount < BLOCK_SIZE; byteCount++){
-                if((c=getc(fp)) == EOF){
+            for(int i = 0; BLOCK_SIZE == 0 || i < BLOCK_SIZE; i++){
+                c=getc(fp);
+                byteCount++;
+                en->compressByte(c);
+                if(byteCount >= fsize){
                     notEnd = 0;
                     break;
                 }
-                en->compressByte(c);
             }
             //多余小数刷新回压缩文件中
             en->flush();
             delete en;
 
-            sizeTmp = size;
-            size = ftell(out);
+            sizeTmp = csize;
+            csize = ftell(out);
             // std::cout<<"Block compressed size: "<<size - sizeTmp<<"B"<<std::endl;
         }
         
         t = clock()-t;
         
         //输出压缩统计信息
-        size = ftell(out);
-        std::cout<<"compressed size: "<<size<<" B"<<std::endl;
-        printf("compression time=%lf s\n",((float) t)/ CLOCKS_PER_SEC);
+        csize = ftell(out);
+        std::cout<<"compressed size: "<<csize<<" B"<<std::endl;
+        printf("compression time=%lf s\n\n",((float) t)/ CLOCKS_PER_SEC);
         fclose(out);
     } else {
         FILE* out = fopen("/home/zzx/paq8test/originPaq8test/output.txt","r");

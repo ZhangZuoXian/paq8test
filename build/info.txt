@@ -1,0 +1,19 @@
+nohup: 忽略输入
+Begin compression book1
+block size is : 0 KB
+original size is : 768771 B
+compressed size: 203191 B
+compression time=95.631477 s
+nohup: 忽略输入
+Begin compression enwik8
+block size is : 0 KB
+original size is : 100000000 B
+compressed size: 21387728 B
+compression time=12411.934570 s
+nohup: 忽略输入
+Begin compression enwik9
+block size is : 0 KB
+original size is : 1000000000 B
+compressed size: 184806824 B
+compression time=123491.203125 s
+

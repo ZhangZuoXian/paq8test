@@ -1,0 +1,6 @@
+nohup: 忽略输入
+nohup: 无法运行命令 './paq8test': 没有那个文件或目录
+nohup: 忽略输入
+nohup: 无法运行命令 './paq8test': 没有那个文件或目录
+nohup: 忽略输入
+nohup: 无法运行命令 './paq8test': 没有那个文件或目录
