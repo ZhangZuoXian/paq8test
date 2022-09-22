@@ -56,7 +56,7 @@ public:
     void update() override {
       INJECT_SHARED_y
       const int target = y << 12;
-      if( nx > 0 ) {
+      if( shared->updateState && nx > 0 ) {
         for( uint64_t i = 0; i < numContexts; ++i ) {
           if (cxt[i] != UINT32_MAX) {
             const int err = target - pr[i];

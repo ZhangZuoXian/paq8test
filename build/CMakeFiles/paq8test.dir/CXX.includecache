@@ -30,10 +30,6 @@ time.h
 
 /home/zzx/paq8test/paq8test/src/IPredictor.hpp
 
-/home/zzx/paq8test/paq8test/src/Mixer.cpp
-Mixer.hpp
-/home/zzx/paq8test/paq8test/src/Mixer.hpp
-
 /home/zzx/paq8test/paq8test/src/Mixer.hpp
 IPredictor.hpp
 /home/zzx/paq8test/paq8test/src/IPredictor.hpp
@@ -45,10 +41,6 @@ immintrin.h
 -
 arm_neon.h
 -
-
-/home/zzx/paq8test/paq8test/src/Models.cpp
-Models.hpp
-/home/zzx/paq8test/paq8test/src/Models.hpp
 
 /home/zzx/paq8test/paq8test/src/Models.hpp
 ./model/MatchModel.hpp
@@ -76,10 +68,6 @@ UpdateBroadcaster.hpp
 Models.hpp
 /home/zzx/paq8test/paq8test/src/Models.hpp
 
-/home/zzx/paq8test/paq8test/src/Shared.cpp
-Shared.hpp
-/home/zzx/paq8test/paq8test/src/Shared.hpp
-
 /home/zzx/paq8test/paq8test/src/Shared.hpp
 cstdint
 -
@@ -102,21 +90,11 @@ Mixer.hpp
 ./util/Squash.hpp
 /home/zzx/paq8test/paq8test/src/util/Squash.hpp
 
-/home/zzx/paq8test/paq8test/src/UpdateBroadcaster.cpp
-UpdateBroadcaster.hpp
-/home/zzx/paq8test/paq8test/src/UpdateBroadcaster.hpp
-stdio.h
--
-
 /home/zzx/paq8test/paq8test/src/UpdateBroadcaster.hpp
 IPredictor.hpp
 /home/zzx/paq8test/paq8test/src/IPredictor.hpp
 cassert
 -
-
-/home/zzx/paq8test/paq8test/src/map/AdaptiveMap.cpp
-AdaptiveMap.hpp
-/home/zzx/paq8test/paq8test/src/map/AdaptiveMap.hpp
 
 /home/zzx/paq8test/paq8test/src/map/AdaptiveMap.hpp
 ../IPredictor.hpp
@@ -128,10 +106,6 @@ cstdint
 ../util/DivisionTable.hpp
 /home/zzx/paq8test/paq8test/src/util/DivisionTable.hpp
 
-/home/zzx/paq8test/paq8test/src/map/ContextMap.cpp
-ContextMap.hpp
-/home/zzx/paq8test/paq8test/src/map/ContextMap.hpp
-
 /home/zzx/paq8test/paq8test/src/map/ContextMap.hpp
 ../IPredictor.hpp
 /home/zzx/paq8test/paq8test/src/IPredictor.hpp
@@ -151,10 +125,6 @@ StateMap.hpp
 /home/zzx/paq8test/paq8test/src/map/StateMap.hpp
 StateTable.hpp
 /home/zzx/paq8test/paq8test/src/map/StateTable.hpp
-
-/home/zzx/paq8test/paq8test/src/map/ContextMap2.cpp
-ContextMap2.hpp
-/home/zzx/paq8test/paq8test/src/map/ContextMap2.hpp
 
 /home/zzx/paq8test/paq8test/src/map/ContextMap2.hpp
 ../IPredictor.hpp
@@ -178,10 +148,6 @@ StateTable.hpp
 ../UpdateBroadcaster.hpp
 /home/zzx/paq8test/paq8test/src/UpdateBroadcaster.hpp
 
-/home/zzx/paq8test/paq8test/src/map/SmallStationaryContextMap.cpp
-SmallStationaryContextMap.hpp
-/home/zzx/paq8test/paq8test/src/map/SmallStationaryContextMap.hpp
-
 /home/zzx/paq8test/paq8test/src/map/SmallStationaryContextMap.hpp
 ../IPredictor.hpp
 /home/zzx/paq8test/paq8test/src/IPredictor.hpp
@@ -191,10 +157,6 @@ SmallStationaryContextMap.hpp
 /home/zzx/paq8test/paq8test/src/util/Stretch.hpp
 ../UpdateBroadcaster.hpp
 /home/zzx/paq8test/paq8test/src/UpdateBroadcaster.hpp
-
-/home/zzx/paq8test/paq8test/src/map/StateMap.cpp
-StateMap.hpp
-/home/zzx/paq8test/paq8test/src/map/StateMap.hpp
 
 /home/zzx/paq8test/paq8test/src/map/StateMap.hpp
 ../util/DivisionTable.hpp
@@ -211,10 +173,6 @@ StateTable.hpp
 /home/zzx/paq8test/paq8test/src/util/Random.hpp
 cstdint
 -
-
-/home/zzx/paq8test/paq8test/src/map/StationaryMap.cpp
-StationaryMap.hpp
-/home/zzx/paq8test/paq8test/src/map/StationaryMap.hpp
 
 /home/zzx/paq8test/paq8test/src/map/StationaryMap.hpp
 ../IPredictor.hpp
@@ -254,28 +212,6 @@ cassert
 cstdint
 -
 
-/home/zzx/paq8test/paq8test/src/model/IndirectModel.cpp
-IndirectModel.hpp
-/home/zzx/paq8test/paq8test/src/model/IndirectModel.hpp
-
-/home/zzx/paq8test/paq8test/src/model/IndirectModel.hpp
-../map/ContextMap.hpp
-/home/zzx/paq8test/paq8test/src/map/ContextMap.hpp
-IndirectContext.hpp
-/home/zzx/paq8test/paq8test/src/model/IndirectContext.hpp
-../Mixer.hpp
-/home/zzx/paq8test/paq8test/src/Mixer.hpp
-../util/RingBuffer.hpp
-/home/zzx/paq8test/paq8test/src/util/RingBuffer.hpp
-../Shared.hpp
-/home/zzx/paq8test/paq8test/src/Shared.hpp
-cctype
--
-
-/home/zzx/paq8test/paq8test/src/model/MatchModel.cpp
-MatchModel.hpp
-/home/zzx/paq8test/paq8test/src/model/MatchModel.hpp
-
 /home/zzx/paq8test/paq8test/src/model/MatchModel.hpp
 ../Shared.hpp
 /home/zzx/paq8test/paq8test/src/Shared.hpp
@@ -288,10 +224,6 @@ IndirectContext.hpp
 ../map/StationaryMap.hpp
 /home/zzx/paq8test/paq8test/src/map/StationaryMap.hpp
 
-/home/zzx/paq8test/paq8test/src/model/NormalModel.cpp
-NormalModel.hpp
-/home/zzx/paq8test/paq8test/src/model/NormalModel.hpp
-
 /home/zzx/paq8test/paq8test/src/model/NormalModel.hpp
 ../map/ContextMap2.hpp
 /home/zzx/paq8test/paq8test/src/map/ContextMap2.hpp
@@ -299,12 +231,6 @@ thread
 -
 time.h
 -
-
-/home/zzx/paq8test/paq8test/src/model/SparseModel.cpp
-SparseModel.hpp
-/home/zzx/paq8test/paq8test/src/model/SparseModel.hpp
-../util/Hash.hpp
-/home/zzx/paq8test/paq8test/src/util/Hash.hpp
 
 /home/zzx/paq8test/paq8test/src/model/SparseModel.hpp
 ../map/ContextMap.hpp

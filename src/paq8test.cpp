@@ -41,8 +41,11 @@ int main(int argc,char **argv){
     else if(strcmp(argv[2], "enwik9") == 0){
         sprintf(filePath, "/home/zzx/paq8test/data/enwik9");
     }
-    else{
+    else if(strcmp(argv[2], "book1") == 0 || strcmp(argv[2], "book2") == 0){
         sprintf(filePath, "/home/zzx/paq8test/data/calgarycorpus//%s", argv[2]);
+    }
+    else{
+        sprintf(filePath, "/home/zzx/paq8test/data/silesia//%s", argv[2]);
     }
     fp = fopen(filePath, "r");
     if(fp == NULL){
