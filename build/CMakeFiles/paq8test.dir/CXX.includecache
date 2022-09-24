@@ -14,10 +14,6 @@ stdio.h
 assert.h
 -
 
-/home/zzx/paq8test/paq8test/src/Encoder.cpp
-Encoder.hpp
-/home/zzx/paq8test/paq8test/src/Encoder.hpp
-
 /home/zzx/paq8test/paq8test/src/Encoder.hpp
 ArithmeticEncoder.hpp
 /home/zzx/paq8test/paq8test/src/ArithmeticEncoder.hpp
@@ -49,10 +45,6 @@ arm_neon.h
 /home/zzx/paq8test/paq8test/src/model/NormalModel.hpp
 ./model/SparseModel.hpp
 /home/zzx/paq8test/paq8test/src/model/SparseModel.hpp
-
-/home/zzx/paq8test/paq8test/src/Predictor.cpp
-Predictor.hpp
-/home/zzx/paq8test/paq8test/src/Predictor.hpp
 
 /home/zzx/paq8test/paq8test/src/Predictor.hpp
 cstdint
@@ -187,10 +179,6 @@ cstdint
 /home/zzx/paq8test/paq8test/src/util/Stretch.hpp
 ../UpdateBroadcaster.hpp
 /home/zzx/paq8test/paq8test/src/UpdateBroadcaster.hpp
-
-/home/zzx/paq8test/paq8test/src/model/ContextModel.cpp
-ContextModel.hpp
-/home/zzx/paq8test/paq8test/src/model/ContextModel.hpp
 
 /home/zzx/paq8test/paq8test/src/model/ContextModel.hpp
 ../Mixer.hpp

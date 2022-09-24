@@ -1,5 +1,5 @@
 #!/bin/bash
-BLOCKSIZE=64
+BLOCKSIZE=10
 nohup ./paq8test ${BLOCKSIZE} book1 >> ./info.txt 2>&1 &
 nohup ./paq8test ${BLOCKSIZE} book2 >> ./info.txt 2>&1 &
 nohup ./paq8test ${BLOCKSIZE} enwik8 >> ./info.txt 2>&1 &

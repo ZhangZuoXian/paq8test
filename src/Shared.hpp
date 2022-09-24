@@ -80,7 +80,7 @@ public:
     UpdateBroadcaster *GetUpdateBroadcaster() const;
 
     //update control, if updateState is true, update byte by byte
-    bool updateState = false;
+    bool updateState = true;
     void dynamicPara();
     void staticPara();
     bool getUpdateState();

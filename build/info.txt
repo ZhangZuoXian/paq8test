@@ -1,0 +1,18 @@
+Begin compression book2
+train ratio is : 10 
+original size is : 610856B
+dynamic compress 61085B to 16581B
+dynamic compression time=7.659497 s
+static compress 549771B to 161415B
+static compression time=47.682247 s
+compressed size: 177996B
+compression time=55.341751 s
+Begin compression book1
+train ratio is : 10 
+original size is : 768771B
+dynamic compress 76877B to 24265B
+dynamic compression time=9.588646 s
+static compress 691894B to 210068B
+static compression time=60.008961 s
+compressed size: 234333B
+compression time=69.597610 s
