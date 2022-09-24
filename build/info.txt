@@ -17,3 +17,371 @@ original size is : 1000000000 B
 compressed size: 184806824 B
 compression time=123491.203125 s
 
+Begin compression reymont
+block size is : 0 KB
+original size is : 6627202 B
+compressed size: 906029 B
+compression time=823.179688 s
+Begin compression osdb
+block size is : 0 KB
+original size is : 10085684 B
+compressed size: 2210425 B
+compression time=1238.949219 s
+Begin compression dickens
+block size is : 0 KB
+original size is : 10192446 B
+compressed size: 2249835 B
+compression time=1268.922974 s
+Begin compression nci
+block size is : 0 KB
+original size is : 33553445 B
+compressed size: 1181740 B
+compression time=3969.465332 s
+Begin compression webster
+block size is : 0 KB
+original size is : 41458703 B
+compressed size: 6327586 B
+compression time=5198.170898 s
+
+Begin compression book2
+block size is : 4 KB
+original size is : 610856 B
+compressed size: 141616 B
+compression time=76.543633 s
+
+Begin compression book1
+block size is : 4 KB
+original size is : 768771 B
+compressed size: 219457 B
+compression time=95.685799 s
+
+Begin compression reymont
+block size is : 4 KB
+original size is : 6627202 B
+compressed size: 1089409 B
+compression time=827.665039 s
+
+Begin compression osdb
+block size is : 4 KB
+original size is : 10085684 B
+compressed size: 2536687 B
+compression time=1251.726318 s
+
+Begin compression dickens
+block size is : 4 KB
+original size is : 10192446 B
+compressed size: 2513958 B
+compression time=1271.487793 s
+
+Begin compression nci
+block size is : 4 KB
+original size is : 33553445 B
+compressed size: 1759372 B
+compression time=3977.548340 s
+
+Begin compression webster
+block size is : 4 KB
+original size is : 41458703 B
+compressed size: 7491676 B
+compression time=5201.505371 s
+
+Begin compression enwik8
+block size is : 4 KB
+original size is : 100000000 B
+compressed size: 24595673 B
+compression time=12484.255859 s
+
+Begin compression book2
+block size is : 8 KB
+original size is : 610856 B
+compressed size: 137571 B
+compression time=76.144257 s
+
+Begin compression book1
+block size is : 8 KB
+original size is : 768771 B
+compressed size: 214028 B
+compression time=96.009430 s
+
+Begin compression reymont
+block size is : 8 KB
+original size is : 6627202 B
+compressed size: 1045620 B
+compression time=828.473145 s
+
+Begin compression osdb
+block size is : 8 KB
+original size is : 10085684 B
+compressed size: 2458075 B
+compression time=1245.104614 s
+
+Begin compression dickens
+block size is : 8 KB
+original size is : 10192446 B
+compressed size: 2442129 B
+compression time=1275.964600 s
+
+Begin compression nci
+block size is : 8 KB
+original size is : 33553445 B
+compressed size: 1632427 B
+compression time=3986.940674 s
+
+Begin compression webster
+block size is : 8 KB
+original size is : 41458703 B
+compressed size: 7210383 B
+compression time=5198.307129 s
+
+Begin compression enwik8
+block size is : 8 KB
+original size is : 100000000 B
+compressed size: 23777639 B
+compression time=12467.135742 s
+
+Begin compression book2
+block size is : 16 KB
+original size is : 610856 B
+compressed size: 134950 B
+compression time=76.308266 s
+
+Begin compression book1
+block size is : 16 KB
+original size is : 768771 B
+compressed size: 210582 B
+compression time=95.713112 s
+
+Begin compression reymont
+block size is : 16 KB
+original size is : 6627202 B
+compressed size: 1013257 B
+compression time=823.486511 s
+
+Begin compression osdb
+block size is : 16 KB
+original size is : 10085684 B
+compressed size: 2404877 B
+compression time=1247.028687 s
+
+Begin compression dickens
+block size is : 16 KB
+original size is : 10192446 B
+compressed size: 2395247 B
+compression time=1276.773926 s
+
+Begin compression nci
+block size is : 16 KB
+original size is : 33553445 B
+compressed size: 1534511 B
+compression time=3994.726562 s
+
+Begin compression webster
+block size is : 16 KB
+original size is : 41458703 B
+compressed size: 7015823 B
+compression time=5199.355957 s
+
+Begin compression enwik8
+block size is : 16 KB
+original size is : 100000000 B
+compressed size: 23218879 B
+compression time=12469.826172 s
+
+Begin compression book2
+block size is : 32 KB
+original size is : 610856 B
+compressed size: 133170 B
+compression time=75.967209 s
+
+Begin compression book1
+block size is : 32 KB
+original size is : 768771 B
+compressed size: 208352 B
+compression time=96.321236 s
+
+Begin compression reymont
+block size is : 32 KB
+original size is : 6627202 B
+compressed size: 989091 B
+compression time=824.712463 s
+
+Begin compression osdb
+block size is : 32 KB
+original size is : 10085684 B
+compressed size: 2364653 B
+compression time=1241.969360 s
+
+Begin compression dickens
+block size is : 32 KB
+original size is : 10192446 B
+compressed size: 2362964 B
+compression time=1277.396240 s
+
+Begin compression nci
+block size is : 32 KB
+original size is : 33553445 B
+compressed size: 1455662 B
+compression time=3977.547119 s
+
+Begin compression webster
+block size is : 32 KB
+original size is : 41458703 B
+compressed size: 6871641 B
+compression time=5185.975098 s
+
+Begin compression enwik8
+block size is : 32 KB
+original size is : 100000000 B
+compressed size: 22816132 B
+compression time=12469.458984 s
+
+Begin compression book2
+block size is : 64 KB
+original size is : 610856 B
+compressed size: 131861 B
+compression time=76.383957 s
+
+Begin compression book1
+block size is : 64 KB
+original size is : 768771 B
+compressed size: 206704 B
+compression time=96.859032 s
+
+Begin compression reymont
+block size is : 64 KB
+original size is : 6627202 B
+compressed size: 970101 B
+compression time=824.865295 s
+
+Begin compression osdb
+block size is : 64 KB
+original size is : 10085684 B
+compressed size: 2331846 B
+compression time=1241.872559 s
+
+Begin compression dickens
+block size is : 64 KB
+original size is : 10192446 B
+compressed size: 2339397 B
+compression time=1272.989624 s
+
+Begin compression nci
+block size is : 64 KB
+original size is : 33553445 B
+compressed size: 1394176 B
+compression time=3967.441406 s
+
+Begin compression webster
+block size is : 64 KB
+original size is : 41458703 B
+compressed size: 6757971 B
+compression time=5172.751465 s
+
+Begin compression enwik8
+block size is : 64 KB
+original size is : 100000000 B
+compressed size: 22508197 B
+compression time=12428.071289 s
+
+Begin compression book2
+block size is : 128 KB
+original size is : 610856 B
+compressed size: 130836 B
+compression time=76.533127 s
+
+Begin compression book1
+block size is : 128 KB
+original size is : 768771 B
+compressed size: 205451 B
+compression time=96.541939 s
+
+Begin compression reymont
+block size is : 128 KB
+original size is : 6627202 B
+compressed size: 954633 B
+compression time=823.658569 s
+
+Begin compression osdb
+block size is : 128 KB
+original size is : 10085684 B
+compressed size: 2304789 B
+compression time=1244.178101 s
+
+Begin compression dickens
+block size is : 128 KB
+original size is : 10192446 B
+compressed size: 2319945 B
+compression time=1275.087158 s
+
+Begin compression nci
+block size is : 128 KB
+original size is : 33553445 B
+compressed size: 1345153 B
+compression time=3974.427246 s
+
+Begin compression webster
+block size is : 128 KB
+original size is : 41458703 B
+compressed size: 6666014 B
+compression time=5180.631836 s
+
+Begin compression enwik8
+block size is : 128 KB
+original size is : 100000000 B
+compressed size: 22259808 B
+compression time=12512.079102 s
+
+Begin compression book2
+block size is : 256 KB
+original size is : 610856 B
+compressed size: 130105 B
+compression time=76.542870 s
+
+Begin compression book1
+block size is : 256 KB
+original size is : 768771 B
+compressed size: 204467 B
+compression time=96.235504 s
+
+Begin compression reymont
+block size is : 256 KB
+original size is : 6627202 B
+compressed size: 941881 B
+compression time=829.277954 s
+
+Begin compression osdb
+block size is : 256 KB
+original size is : 10085684 B
+compressed size: 2282840 B
+compression time=1243.047119 s
+
+Begin compression dickens
+block size is : 256 KB
+original size is : 10192446 B
+compressed size: 2304519 B
+compression time=1274.318970 s
+
+Begin compression nci
+block size is : 256 KB
+original size is : 33553445 B
+compressed size: 1304342 B
+compression time=3979.422607 s
+
+Begin compression webster
+block size is : 256 KB
+original size is : 41458703 B
+compressed size: 6587439 B
+compression time=5200.460938 s
+
+Begin compression enwik8
+block size is : 256 KB
+original size is : 100000000 B
+compressed size: 22049045 B
+compression time=12498.611328 s
+
+Begin compression book2
+block size is : 4 KB
+original size is : 610856 B
+compressed size: 141616 B
+compression time=77.037521 s
+

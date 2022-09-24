@@ -42,10 +42,10 @@ int main(int argc,char **argv){
         sprintf(filePath, "/home/zzx/paq8test/data/enwik9");
     }
     else if(strcmp(argv[2], "book1") == 0 || strcmp(argv[2], "book2") == 0){
-        sprintf(filePath, "/home/zzx/paq8test/data/calgarycorpus//%s", argv[2]);
+        sprintf(filePath, "/home/zzx/paq8test/data/calgarycorpus/%s", argv[2]);
     }
     else{
-        sprintf(filePath, "/home/zzx/paq8test/data/silesia//%s", argv[2]);
+        sprintf(filePath, "/home/zzx/paq8test/data/silesia/%s", argv[2]);
     }
     fp = fopen(filePath, "r");
     if(fp == NULL){
@@ -59,8 +59,9 @@ int main(int argc,char **argv){
     //生成压缩器
     //使用压缩器编码，并统计信息
     if(mode == COMPRESS){
-
-        FILE* out = fopen("/home/zzx/paq8test/originPaq8test/output.txt","w");
+        char foutPath[128];
+        sprintf(foutPath, "/home/zzx/paq8test/originPaq8test/output/%s", argv[2]);
+        FILE* out = fopen(foutPath, "w");
 
         printf("Begin compression %s\n", argv[2]);
         std::cout << "block size is : " << BLOCK_SIZE/1024 << " KB\n";
