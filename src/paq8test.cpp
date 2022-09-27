@@ -43,10 +43,10 @@ int main(int argc,char **argv){
         sprintf(filePath, "/home/zzx/paq8test/data/enwik9");
     }
     else if(strcmp(argv[2], "book1") == 0 || strcmp(argv[2], "book2") == 0){
-        sprintf(filePath, "/home/zzx/paq8test/data/calgarycorpus//%s", argv[2]);
+        sprintf(filePath, "/home/zzx/paq8test/data/calgarycorpus/%s", argv[2]);
     }
     else{
-        sprintf(filePath, "/home/zzx/paq8test/data/silesia//%s", argv[2]);
+        sprintf(filePath, "/home/zzx/paq8test/data/silesia/%s", argv[2]);
     }
     fp = fopen(filePath, "r");
     if(fp == NULL){
@@ -60,8 +60,9 @@ int main(int argc,char **argv){
     //生成压缩器
     //使用压缩器编码，并统计信息
     if(mode == COMPRESS){
-
-        FILE* out = fopen("/home/zzx/paq8test/paq8test/output.txt","w");
+        char foutPath[128];
+        sprintf(foutPath, "/home/zzx/paq8test/paq8test/output/%s", argv[2]);
+        FILE* out = fopen(foutPath, "w");
 
         printf("Begin compression %s\n", argv[2]);
         // std::cout << "block size is : " << BLOCK_SIZE << " KB\n";
@@ -71,7 +72,7 @@ int main(int argc,char **argv){
         //统计文件大小
         fseek(fp, 0, SEEK_END);
         U32 fsize = ftell(fp);
-        std::cout << "original size is : " << fsize << "B\n";
+        std::cout << "original size is : " << fsize << " B\n";
         fseek(fp, 0, SEEK_SET);
 
         //数据块统计
@@ -172,19 +173,19 @@ int main(int argc,char **argv){
         delete en;
         
         //动态、静态压缩信息
-        std::cout<<"dynamic compress " << byteThreshold << "B to " << dynamicByte << "B" <<std::endl;
+        std::cout<<"dynamic compress " << byteThreshold << " B to " << dynamicByte << " B" <<std::endl;
         printf("dynamic compression time=%lf s\n",((float) dynamic_t)/ CLOCKS_PER_SEC);
 
         csize = ftell(out) - csize;
-        std::cout<<"static compress " << byteCount - byteThreshold << "B to " << csize << "B" <<std::endl;
+        std::cout<<"static compress " << byteCount - byteThreshold << " B to " << csize << " B" <<std::endl;
         t = clock() - start - t;
         printf("static compression time=%lf s\n",((float) t)/ CLOCKS_PER_SEC);
 
         //输出压缩统计信息
         csize = ftell(out);
-        std::cout<<"compressed size: "<<csize<<"B"<<std::endl;
+        std::cout<<"compressed size: "<<csize<<" B"<<std::endl;
         t = clock() - start;
-        printf("compression time=%lf s\n",((float) t)/ CLOCKS_PER_SEC);
+        printf("compression time=%lf s\n\n",((float) t)/ CLOCKS_PER_SEC);
         fclose(out);
     } else {
         FILE* out = fopen("/home/zzx/paq8test/paq8test/output.txt","r");
