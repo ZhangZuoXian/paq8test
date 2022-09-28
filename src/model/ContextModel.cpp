@@ -17,17 +17,17 @@ auto ContextModel::p() -> int {
   
   m->add(256); //network bias
 
-  clock_t t = clock();
+  // clock_t t = clock();
 
   MatchModel &matchModel = models.matchModel();
   matchModel.mix(*m);
-  shared->MatchModelCostTime +=  clock()-t;
+  // shared->MatchModelCostTime +=  clock()-t;
 
-  t = clock();
+  // t = clock();
   NormalModel &normalModel = models.normalModel();
   normalModel.mix(*m);
   normalModel.mixPost(*m);
-  shared->NormalModelCostTime += clock()-t;
+  // shared->NormalModelCostTime += clock()-t;
 
   SparseModel &sparseModel = models.sparseModel();
   sparseModel.mix(*m);

@@ -1,8 +1,8 @@
 #include "Encoder.hpp"
 
 Encoder::Encoder(Shared * const sh,Mode m,FILE* f,FILE* d) :predictor(sh), shared(sh), mode(m),archive(f),ari(f,d){ 
-    modelTimeCost = 0;
-    mapUpdateCost = 0;
+    // modelTimeCost = 0;
+    // mapUpdateCost = 0;
     if(mode == DECOMPRESS){      
       ari.prefetch();
     }
@@ -11,17 +11,17 @@ Encoder::Encoder(Shared * const sh,Mode m,FILE* f,FILE* d) :predictor(sh), share
 void Encoder::compressByte(uint8_t c) {
 
     for( int i = 7; i >= 0; --i ) {
-      clock_t t = clock();
+      // clock_t t = clock();
       int p = predictor.p();
       // printf("p:%d\t",p);
-      modelTimeCost += clock() - t;
+      // modelTimeCost += clock() - t;
       int y = (c >> i) & 1;
       predictor.update(y);
 
       ari.encodeBit(p, y,7-i);
-      t = clock();
+      // t = clock();
       
-      mapUpdateCost += clock() - t;
+      // mapUpdateCost += clock() - t;
     }
   
 }

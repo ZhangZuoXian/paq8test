@@ -34,8 +34,8 @@ public:
     bool toScreen = true;
 
     //predictions output
-    clock_t MatchModelCostTime;
-    clock_t NormalModelCostTime;
+    // clock_t MatchModelCostTime;
+    // clock_t NormalModelCostTime;
 
     struct {
 

@@ -150,4 +150,4 @@ void ContextMap::mix(Mixer &m) {
   }
 }
 
-int ContextMap::getType() { return 2; }
+// int ContextMap::getType() { return 2; }

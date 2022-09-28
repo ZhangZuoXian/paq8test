@@ -25,6 +25,6 @@ public:
     auto decompressByte() ->uint8_t;
     void flush();
     //Statistics
-    clock_t modelTimeCost;
-    clock_t mapUpdateCost;
+    // clock_t modelTimeCost;
+    // clock_t mapUpdateCost;
 };

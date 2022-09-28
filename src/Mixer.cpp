@@ -50,6 +50,6 @@ void Mixer::reset() {
   numContexts = 0;
 }
 
-int Mixer::getType(){
-  return 0; //0代表mixer
-}
+// int Mixer::getType(){
+//   return 0; //0代表mixer
+// }

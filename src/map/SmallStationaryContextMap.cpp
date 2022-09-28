@@ -43,4 +43,4 @@ void SmallStationaryContextMap::mix(Mixer &m) {
   assert(bCount <= bTotal);
 }
 
-int SmallStationaryContextMap::getType() { return 4; }
+// int SmallStationaryContextMap::getType() { return 4; }

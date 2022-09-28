@@ -59,4 +59,4 @@ void StationaryMap::mix(Mixer &m) {
   assert(bCount <= bTotal);
 }
 
-int StationaryMap::getType() { return 5; }
+// int StationaryMap::getType() { return 5; }

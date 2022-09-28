@@ -116,7 +116,7 @@ public:
     void skip();
     void update() override;
     void mix(Mixer &m);
-    int getType() override;
+    // int getType() override;
 };
 
 #endif //PAQ8PX_CONTEXTMAP_HPP

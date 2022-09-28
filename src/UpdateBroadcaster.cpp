@@ -3,7 +3,6 @@
 
 void UpdateBroadcaster::subscribe(IPredictor *subscriber) {
   
-  // if(subscriber->getType() == 1){printf("%d\n", subscriber->getType());}
   subscribers[n] = subscriber;
   n++;
   assert(n < 1024);

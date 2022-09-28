@@ -59,7 +59,7 @@ public:
     void reset(int rate);
     void update() override;
     void mix(Mixer &m);
-    int getType() override;
+    // int getType() override;
 };
 
 #endif //PAQ8PX_STATIONARYMAP_HPP

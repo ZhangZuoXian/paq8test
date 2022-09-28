@@ -6,8 +6,8 @@ void Shared::init(uint8_t level) {
   buf.setSize(min(mem * 8, 1ULL << 30)); /**< no reason to go over 1 GB */
   toScreen = !isOutputDirected();
 
-  MatchModelCostTime = 0;
-  NormalModelCostTime = 0;
+  // MatchModelCostTime = 0;
+  // NormalModelCostTime = 0;
 
 }
 

@@ -43,7 +43,7 @@ public:
     void reset();
     void update() override;
     void mix(Mixer &m);
-    int getType() override;
+    // int getType() override;
 };
 
 #endif //PAQ8PX_SMALLSTATIONARYCONTEXTMAP_HPP
