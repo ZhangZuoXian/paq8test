@@ -719,3 +719,85 @@ static compression time=7033.797852 s
 compressed size: 25288047 B
 compression time=9152.128906 s
 
+*****************************************************
+
+Begin compression book2
+train ratio is : 100 
+original size is : 610856 B
+dynamic compress 610856 B to 128984 B
+dynamic compression time=46.958172 s
+static compress 0 B to 0 B
+static compression time=0.000169 s
+compressed size: 128984 B
+compression time=46.958347 s
+
+Begin compression book1
+train ratio is : 100 
+original size is : 768771 B
+dynamic compress 768771 B to 203191 B
+dynamic compression time=59.133965 s
+static compress 0 B to 0 B
+static compression time=0.000171 s
+compressed size: 203191 B
+compression time=59.134144 s
+
+Begin compression reymont
+train ratio is : 100 
+original size is : 6627202 B
+dynamic compress 6627202 B to 906029 B
+dynamic compression time=508.422180 s
+static compress 0 B to 0 B
+static compression time=0.000366 s
+compressed size: 906029 B
+compression time=508.422516 s
+
+Begin compression osdb
+train ratio is : 100 
+original size is : 10085684 B
+dynamic compress 10085684 B to 2210425 B
+dynamic compression time=763.392761 s
+static compress 0 B to 0 B
+static compression time=0.000416 s
+compressed size: 2210425 B
+compression time=763.393127 s
+
+Begin compression dickens
+train ratio is : 100 
+original size is : 10192446 B
+dynamic compress 10192446 B to 2249835 B
+dynamic compression time=788.760376 s
+static compress 0 B to 0 B
+static compression time=0.000307 s
+compressed size: 2249835 B
+compression time=788.760681 s
+
+Begin compression nci
+train ratio is : 100 
+original size is : 33553445 B
+dynamic compress 33553445 B to 1181740 B
+dynamic compression time=2366.013184 s
+static compress 0 B to 0 B
+static compression time=0.000277 s
+compressed size: 1181740 B
+compression time=2366.013428 s
+
+Begin compression webster
+train ratio is : 100 
+original size is : 41458703 B
+dynamic compress 41458703 B to 6327586 B
+dynamic compression time=3182.317383 s
+static compress 0 B to 0 B
+static compression time=0.000267 s
+compressed size: 6327586 B
+compression time=3182.317627 s
+
+Begin compression enwik8
+train ratio is : 100 
+original size is : 100000000 B
+dynamic compress 14100654 B to 3070481 B
+dynamic compression time=1087.968628 s
+static compress 85899346 B to 22462887 B
+static compression time=3298.688965 s
+compressed size: 25533368 B
+compression time=4386.657715 s
+
