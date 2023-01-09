@@ -1,5 +1,3 @@
-
-#include<iostream>
 #include<memory>
 #include<unistd.h>
 #include<fstream>
@@ -8,199 +6,218 @@
 #include<getopt.h>
 #include<time.h>
 
-using namespace std;
-
 typedef unsigned char  U8;
 typedef unsigned short U16;
 typedef unsigned int   U32;
 
-U32 x1=0, x2=0xffffffff;
-
-U32 BLOCK_SIZE;
-U32 updateBlock; //预训练数据块的数量
-
-FILE* fp = NULL;
-FILE* deCom = fopen("/home/zzx/paq8test/paq8test/decomress.txt","w");
-
 int main(int argc,char **argv){
+        
+    // 模式选择：压缩、解压
+    Mode mode(COMPRESS);
+    mode = (strcmp(argv[1], "-d")) ? COMPRESS : DECOMPRESS;
 
-    Shared shared;
-    clock_t t;
-
-    // shared.level = 2;
-    shared.init(2);
-    // static const struct option longopts[] = {
-    //     {"decompress",  0,  NULL,   'd'},
-    //     {"compress",    0,  NULL,   'c'},
-    // };
-
-    sscanf(argv[1], "%u", &BLOCK_SIZE); //第一个参数为分块大小，单位为KB
+    // 输入输出元数据文件
     char filePath[128];
-    if(strcmp(argv[2], "enwik8") == 0){ //根据第二个参数选择文件
-        sprintf(filePath, "/home/zzx/paq8test/data/enwik8/enwik8");
+    char metaPath[128];
+    char foutPath[128];
+    FILE* fp = NULL;
+    FILE* metaData = NULL;
+    FILE* out = NULL;
+    sprintf(metaPath, "/home/zzx/paq8test/output/%s.meta", argv[2]);
+    if(mode == COMPRESS) {
+        if(strcmp(argv[2], "enwik8") == 0){ //根据第二个参数选择文件
+            sprintf(filePath, "/home/zzx/data/enwik8");
+        }
+        else if(strcmp(argv[2], "enwik9") == 0){
+            sprintf(filePath, "/home/zzx/data/enwik9");
+        }
+        else if(strcmp(argv[2], "book1") == 0 || strcmp(argv[2], "book2") == 0){
+            sprintf(filePath, "/home/zzx/data/calgarycorpus/%s", argv[2]);
+        }
+        else{
+            sprintf(filePath, "/home/zzx/data/silesia/%s", argv[2]);
+        }
+        sprintf(foutPath, "/home/zzx/paq8test/output/%s.p8t", argv[2]); // p8t = paq8test
+        metaData = fopen(metaPath, "w");
     }
-    else if(strcmp(argv[2], "enwik9") == 0){
-        sprintf(filePath, "/home/zzx/paq8test/data/enwik9");
-    }
-    else if(strcmp(argv[2], "book1") == 0 || strcmp(argv[2], "book2") == 0){
-        sprintf(filePath, "/home/zzx/paq8test/data/calgarycorpus/%s", argv[2]);
-    }
-    else{
-        sprintf(filePath, "/home/zzx/paq8test/data/silesia/%s", argv[2]);
+    else {
+        sprintf(filePath, "/home/zzx/paq8test/output/%s.p8t", argv[2]);
+        sprintf(foutPath, "/home/zzx/paq8test/output/%s", argv[2]);
+        metaData = fopen(metaPath, "r");
+        if(metaData == NULL){
+            printf("Meta file \"%s.meta\" no exist\n", argv[2]);
+            return 0;
+        }
     }
     fp = fopen(filePath, "r");
     if(fp == NULL){
         printf("File \"%s\" no exist\n", argv[2]);
+        fclose(metaData);
         return 0;
     }
-    
-    Mode mode(COMPRESS);
-    mode = (argc == 3) ? COMPRESS : DECOMPRESS;
+    out = fopen(foutPath, "w");
 
-    //生成压缩器
-    //使用压缩器编码，并统计信息
-    if(mode == COMPRESS){
-        char foutPath[128];
-        sprintf(foutPath, "/home/zzx/paq8test/paq8test/output/%s", argv[2]);
-        FILE* out = fopen(foutPath, "w");
+    Shared shared;
+    shared.init(2);
+    clock_t t;
 
-        printf("Begin compression %s\n", argv[2]);
-        // std::cout << "block size is : " << BLOCK_SIZE << " KB\n";
-        std::cout << "train ratio is : " << BLOCK_SIZE << " \n";
-        Encoder *en = NULL;
-
-        //统计文件大小
+    if(mode == COMPRESS) {
+        // 计算分块数量
+        U32 block_size;
+        // 统计文件大小
         fseek(fp, 0, SEEK_END);
         U32 fsize = ftell(fp);
-        std::cout << "original size is : " << fsize << " B\n";
         fseek(fp, 0, SEEK_SET);
+        sscanf(argv[1], "%u", &block_size); //单位为KB
+        block_size *= 1024; //单位换算为Byte
+        if(block_size == 0) {
+            block_size = fsize; //0代表不分块
+        }
+        // 计算数据块数量
+        U32 blocks;
+        blocks = fsize / block_size;
+        if(fsize % block_size > 0){
+            blocks++;
+        }
 
-        //数据块统计
-        U32 fblock;
-        if(BLOCK_SIZE == 0){
-            fblock = 1;
-        }
-        else{
-            fblock = (fsize >> 10) / BLOCK_SIZE;
-            if(fsize % (1024 * BLOCK_SIZE) > 0){
-                fblock++;
-            }
-        }
+        // 计算训练数据量
+        U32 update_ratio; 
+        sscanf(argv[3], "%u", &update_ratio);
+        U32 update_block; 
+        // 训练量有两种，一种是指定训练的数据块数量，一种是指定训练数据占比
+        // 指定训练数据块数量
+        update_block = update_ratio;
+        // 指定训练数据占比（向下取整）
+        // update_block = blocks * update_ratio / 100;
 
-        U32 updateRatio = BLOCK_SIZE; //更新或者说预训练的数据占总数据的百分比，暂时使用命令行的第二个参数，其值存储在BLOCK_SIZE中
-        U32 byteThreshold = fsize * updateRatio / 100;
-        updateBlock = fblock * updateRatio / 100; 
-        if((fblock * updateRatio) % 100 > 0){
-            updateBlock++;
-        }
-        // std::cout << "block : " << fblock << ", dynamic update block : " << updateBlock << "\n";
+        // if(update_block <= 0) {
+        //     update_block = 1; // update_block必须是正数
+        // }
+
+        // 输出统计信息
+        printf("Begin compressing %s\n", argv[2]);
+        printf("file size: %u\n", fsize);
+        printf("block size : %u B, block num: %u\n", block_size, blocks);
+        printf("train block: %u\n", update_block);
+        // TODO:测试这里需不需要空格
+        fprintf(metaData, "%u%u%u%u", fsize, block_size, blocks, update_block);
 
         //压缩处理
+        Encoder *en = NULL;
+        Encoder *train_en = NULL;
         char c;
-        BLOCK_SIZE *= 1024; //单位换算为Byte
         U32 byteCount = 0;
-        bool notEnd = 1;
-        U32 csize = 0;
-        U32 sizeTmp = 0;
-
         U32 blockCount = 0;
+        U32 csize = 0;
+        U32 out_pos = 0;
 
-        en = new Encoder(&shared, COMPRESS, out, deCom);
+        en = new Encoder(&shared, COMPRESS, out, NULL);
+        t = clock();
 
-        clock_t start = clock();
-
-        //动态压缩数据统计
-        U32 dynamicByte;
-        clock_t dynamic_t;
-
-        while(notEnd){
-            // // en = new Encoder(&shared, COMPRESS, out, deCom);
-            // for(int i = 0; BLOCK_SIZE == 0 || i < BLOCK_SIZE; i++){
-            //     c=getc(fp);
-            //     en->compressByte(c);
-            //     byteCount++;
-            //     if(byteCount >= fsize){
-            //         notEnd = 0;
-            //         break;
-            //     }
-            // }
-            // //多余小数刷新回压缩文件中
-            // // en->flush();
-            // // delete en;
-
-            // sizeTmp = csize;
-            // csize = ftell(out);
-            // if(shared.updateState){
-            //     std::cout<<"Dynamic ";
-            // }
-            // else{
-            //     std::cout<<"Static ";
-            // }
-            // std::cout<<"Block compressed size: "<<csize - sizeTmp<<"B"<<std::endl;
-
-            // blockCount++;
-            // if(blockCount >= updateBlock){
-            //     shared.staticPara();
-            // }
-
-            //为不分块测试重写这一段
-            if(byteCount == byteThreshold){
-                csize = ftell(out);
-                dynamicByte = csize;
-                t = clock() - start;
-                dynamic_t = t;
-                shared.staticPara();
-            }
-            c=getc(fp);
-            en->compressByte(c);
-            byteCount++;
-            if(byteCount >= fsize){
-                en->flush(); 
-                if(byteCount == byteThreshold){
-                    csize = ftell(out);
-                    dynamicByte = csize;
-                    t = clock() - start;
-                    dynamic_t = t;
-                    shared.staticPara();
+        while(byteCount < fsize){
+            for(int i = 0; i < block_size; i++) {
+                c=getc(fp);
+                en->compressByte(c);
+                byteCount++;
+                if(byteCount >= fsize){
+                    break;
                 }
-                notEnd = 0;
-                break;
             }
-        }
+            blockCount++;
+            if(shared.getUpdateState() == true && blockCount >= update_block) { // training
+                shared.staticPara();
+                train_en = en;
+                en->flush();
+                en = new Encoder(train_en);
+            }
+            else if(shared.getUpdateState() == false) {
+                en->flush();
+                en = new Encoder(train_en);
+            }
 
-        //多余小数刷新回压缩文件中
-        // en->flush();
-        delete en;
+            csize = ftell(out) - out_pos;
+            out_pos = ftell(out);
+            fprintf(metaData, "%u", csize);
+
+            if(shared.updateState){
+                printf("Dynamic ");
+            }
+            else{
+                printf("Static ");
+            }
+            printf("Block compressed size: %u B\n", csize);
+        }
         
         //动态、静态压缩信息
-        std::cout<<"dynamic compress " << byteThreshold << " B to " << dynamicByte << " B" <<std::endl;
-        printf("dynamic compression time=%lf s\n",((float) dynamic_t)/ CLOCKS_PER_SEC);
+        // std::cout<<"dynamic compress " << byteThreshold << " B to " << dynamicByte << " B" <<std::endl;
+        // printf("dynamic compression time=%lf s\n",((float) dynamic_t)/ CLOCKS_PER_SEC);
 
-        csize = ftell(out) - csize;
-        std::cout<<"static compress " << byteCount - byteThreshold << " B to " << csize << " B" <<std::endl;
-        t = clock() - start - t;
-        printf("static compression time=%lf s\n",((float) t)/ CLOCKS_PER_SEC);
+        // csize = ftell(out) - csize;
+        // std::cout<<"static compress " << byteCount - byteThreshold << " B to " << csize << " B" <<std::endl;
+        // t = clock() - start - t;
+        // printf("static compression time=%lf s\n",((float) t)/ CLOCKS_PER_SEC);
 
         //输出压缩统计信息
+        t = clock() - t;
         csize = ftell(out);
-        std::cout<<"compressed size: "<<csize<<" B"<<std::endl;
-        t = clock() - start;
+        printf("compressed size: %u B\n", csize);
         printf("compression time=%lf s\n\n",((float) t)/ CLOCKS_PER_SEC);
-        fclose(out);
-    } else {
-        FILE* out = fopen("/home/zzx/paq8test/paq8test/output.txt","r");
-        Encoder en(&shared, DECOMPRESS,out,deCom);
-        printf("Begin decompression:....\n");
-        for(int i=0;i<4;i++){
-            putc(en.decompressByte(),deCom);
-            // cout<<en.decompressByte();
-        }
-        // uint8_t a = 'a';
-        // putc(a,deCom);
-        fclose(out);
+    }
+    else {
+        U32 fsize, block_size, blocks, update_block;
+        fscanf(metaData, "%u%u%u%u", &fsize, &block_size, &blocks, &update_block);
+        printf("Begin decompressing %s\n", argv[2]);
+        printf("file size: %u\n", fsize);
+        printf("block size : %u B, block num: %u\n", block_size, blocks);
+        printf("train block: %u\n", update_block);
+
+        //解压处理
+        Encoder *en = NULL;
+        Encoder *train_en = NULL;
+        char c;
+        U32 byteCount = 0;
+        U32 blockCount = 0;
+        U32 csize = 0;
+        U32 out_pos = 0;
+
+        en = new Encoder(&shared, DECOMPRESS, out, NULL);
+        t = clock();
+
+        while(byteCount < fsize){
+            for(int i = 0; i < block_size; i++) {
+                putc(en->decompressByte(), out);
+                byteCount++;
+                if(byteCount >= fsize){
+                    break;
+                }
+            }
+            blockCount++;
+            if(shared.getUpdateState() == true && blockCount >= update_block) { // training
+                shared.staticPara();
+                train_en = en;
+                fseek(out, -3, SEEK_CUR); // 文件回退3字节
+                en = new Encoder(train_en);
+            }
+            else if(shared.getUpdateState() == false) {
+                fseek(out, -3, SEEK_CUR);
+                en = new Encoder(train_en);
+            }
+
+            csize = ftell(out) - out_pos;
+            out_pos = ftell(out);
+
+            if(shared.updateState){
+                printf("Dynamic ");
+            }
+            else{
+                printf("Static ");
+            }
+            printf("Block decompressed size: %u B\n", csize);
+        }        
     }
 
     fclose(fp);
-    fclose(deCom);
+    fclose(out);
+    fclose(metaData);
 
 }

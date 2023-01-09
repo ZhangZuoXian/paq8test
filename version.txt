@@ -7,3 +7,5 @@ decompress:
 
 dev:
 decompress的dev分支
+压缩命令格式：paq8test [分块大小] [文件名] [训练量]
+解压命令格式：paq8test -d [文件名]
