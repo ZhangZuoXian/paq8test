@@ -111,7 +111,7 @@ int main(int argc,char **argv){
         U32 csize = 0;
         U32 out_pos = 0;
 
-        en = new Encoder(&shared, COMPRESS, out, NULL);
+        en = new Encoder(&shared, COMPRESS, out);
         t = clock();
 
         while(byteCount < fsize){
@@ -128,11 +128,11 @@ int main(int argc,char **argv){
                 shared.staticPara();
                 train_en = en;
                 en->flush();
-                en = new Encoder(train_en);
+                en = new Encoder(&shared, COMPRESS, out, train_en);
             }
             else if(shared.getUpdateState() == false) {
                 en->flush();
-                en = new Encoder(train_en);
+                en = new Encoder(&shared, COMPRESS, out, train_en);
             }
 
             csize = ftell(out) - out_pos;
@@ -180,7 +180,7 @@ int main(int argc,char **argv){
         U32 csize = 0;
         U32 out_pos = 0;
 
-        en = new Encoder(&shared, DECOMPRESS, out, NULL);
+        en = new Encoder(&shared, DECOMPRESS, out);
         t = clock();
 
         while(byteCount < fsize){
@@ -196,11 +196,11 @@ int main(int argc,char **argv){
                 shared.staticPara();
                 train_en = en;
                 fseek(out, -3, SEEK_CUR); // 文件回退3字节
-                en = new Encoder(train_en);
+                en = new Encoder(&shared, DECOMPRESS, out, train_en);
             }
             else if(shared.getUpdateState() == false) {
                 fseek(out, -3, SEEK_CUR);
-                en = new Encoder(train_en);
+                en = new Encoder(&shared, DECOMPRESS, out, train_en);
             }
 
             csize = ftell(out) - out_pos;

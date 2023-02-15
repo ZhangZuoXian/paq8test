@@ -1,8 +1,16 @@
 #include "Encoder.hpp"
 
-Encoder::Encoder(Shared * const sh,Mode m,FILE* f,FILE* d) :predictor(sh), shared(sh), mode(m),archive(f),ari(f,d){ 
+Encoder::Encoder(Shared * const sh,Mode m,FILE* f) : predictor(sh), shared(sh), 
+  mode(m), ari(f,NULL) { 
     // modelTimeCost = 0;
     // mapUpdateCost = 0;
+    if(mode == DECOMPRESS){      
+      ari.prefetch();
+    }
+}
+
+Encoder::Encoder(Shared * const sh,Mode m,FILE* f,const Encoder *train_en) : 
+  predictor(sh, &(train_en->predictor)), shared(sh), mode(m), ari(f,NULL) {
     if(mode == DECOMPRESS){      
       ari.prefetch();
     }
