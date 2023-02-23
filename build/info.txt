@@ -801,3 +801,101 @@ static compression time=3298.688965 s
 compressed size: 25533368 B
 compression time=4386.657715 s
 
+// enwik8 10%训练量 1MB分块nohup: ignoring input
+nohup: ignoring input
+Begin compression enwik8
+train ratio is : 10 
+original size is : 100000000 B
+static compress 1048576 B to 273478 B	compress ratio: 3.83422
+static compress 1048576 B to 282634 B	compress ratio: 3.71001
+static compress 1048576 B to 278465 B	compress ratio: 3.76556
+static compress 1048576 B to 277563 B	compress ratio: 3.77779
+static compress 1048576 B to 273981 B	compress ratio: 3.82719
+static compress 1048576 B to 277096 B	compress ratio: 3.78416
+static compress 1048576 B to 277673 B	compress ratio: 3.7763
+static compress 1048576 B to 280752 B	compress ratio: 3.73488
+static compress 1048576 B to 268163 B	compress ratio: 3.91022
+static compress 1048576 B to 265290 B	compress ratio: 3.95257
+static compress 1048576 B to 268501 B	compress ratio: 3.9053
+static compress 1048576 B to 279236 B	compress ratio: 3.75516
+static compress 1048576 B to 279146 B	compress ratio: 3.75637
+static compress 1048576 B to 283760 B	compress ratio: 3.69529
+static compress 1048576 B to 282712 B	compress ratio: 3.70899
+static compress 1048576 B to 281538 B	compress ratio: 3.72446
+static compress 1048576 B to 284551 B	compress ratio: 3.68502
+static compress 1048576 B to 275519 B	compress ratio: 3.80582
+static compress 1048576 B to 279114 B	compress ratio: 3.7568
+static compress 1048576 B to 259204 B	compress ratio: 4.04537
+static compress 1048576 B to 276347 B	compress ratio: 3.79442
+static compress 1048576 B to 261748 B	compress ratio: 4.00605
+static compress 1048576 B to 274637 B	compress ratio: 3.81804
+static compress 1048576 B to 271605 B	compress ratio: 3.86067
+static compress 1048576 B to 278550 B	compress ratio: 3.76441
+static compress 1048576 B to 276602 B	compress ratio: 3.79092
+static compress 1048576 B to 276992 B	compress ratio: 3.78558
+static compress 1048576 B to 272340 B	compress ratio: 3.85025
+static compress 1048576 B to 254815 B	compress ratio: 4.11505
+static compress 1048576 B to 282829 B	compress ratio: 3.70746
+static compress 1048576 B to 289300 B	compress ratio: 3.62453
+static compress 1048576 B to 280863 B	compress ratio: 3.73341
+static compress 1048576 B to 266989 B	compress ratio: 3.92741
+static compress 1048576 B to 275550 B	compress ratio: 3.80539
+static compress 1048576 B to 273975 B	compress ratio: 3.82727
+static compress 1048576 B to 276953 B	compress ratio: 3.78612
+static compress 1048576 B to 274738 B	compress ratio: 3.81664
+static compress 1048576 B to 268225 B	compress ratio: 3.90931
+static compress 1048576 B to 275440 B	compress ratio: 3.80691
+static compress 1048576 B to 278979 B	compress ratio: 3.75862
+static compress 1048576 B to 281278 B	compress ratio: 3.7279
+static compress 1048576 B to 284436 B	compress ratio: 3.68651
+static compress 1048576 B to 282791 B	compress ratio: 3.70795
+static compress 1048576 B to 273322 B	compress ratio: 3.83641
+static compress 1048576 B to 276663 B	compress ratio: 3.79008
+static compress 1048576 B to 269894 B	compress ratio: 3.88514
+static compress 1048576 B to 262364 B	compress ratio: 3.99665
+static compress 1048576 B to 276075 B	compress ratio: 3.79816
+static compress 1048576 B to 277580 B	compress ratio: 3.77756
+static compress 1048576 B to 276195 B	compress ratio: 3.79651
+static compress 1048576 B to 274230 B	compress ratio: 3.82371
+static compress 1048576 B to 275700 B	compress ratio: 3.80332
+static compress 1048576 B to 273890 B	compress ratio: 3.82846
+static compress 1048576 B to 272446 B	compress ratio: 3.84875
+static compress 1048576 B to 269439 B	compress ratio: 3.8917
+static compress 1048576 B to 276685 B	compress ratio: 3.78978
+static compress 1048576 B to 274144 B	compress ratio: 3.82491
+static compress 1048576 B to 277938 B	compress ratio: 3.7727
+static compress 1048576 B to 260465 B	compress ratio: 4.02578
+static compress 1048576 B to 279268 B	compress ratio: 3.75473
+static compress 1048576 B to 275119 B	compress ratio: 3.81135
+static compress 1048576 B to 279737 B	compress ratio: 3.74844
+static compress 1048576 B to 275264 B	compress ratio: 3.80935
+static compress 1048576 B to 258248 B	compress ratio: 4.06035
+static compress 1048576 B to 280761 B	compress ratio: 3.73476
+static compress 1048576 B to 276300 B	compress ratio: 3.79506
+static compress 1048576 B to 279948 B	compress ratio: 3.74561
+static compress 1048576 B to 277895 B	compress ratio: 3.77328
+static compress 1048576 B to 280042 B	compress ratio: 3.74435
+static compress 1048576 B to 272991 B	compress ratio: 3.84106
+static compress 1048576 B to 267158 B	compress ratio: 3.92493
+static compress 1048576 B to 278580 B	compress ratio: 3.764
+static compress 1048576 B to 280743 B	compress ratio: 3.735
+static compress 1048576 B to 277374 B	compress ratio: 3.78037
+static compress 1048576 B to 282236 B	compress ratio: 3.71525
+static compress 1048576 B to 280987 B	compress ratio: 3.73176
+static compress 1048576 B to 274226 B	compress ratio: 3.82377
+static compress 1048576 B to 268483 B	compress ratio: 3.90556
+static compress 1048576 B to 277527 B	compress ratio: 3.77828
+static compress 1048576 B to 270306 B	compress ratio: 3.87922
+static compress 1048576 B to 272411 B	compress ratio: 3.84924
+static compress 1048576 B to 271811 B	compress ratio: 3.85774
+static compress 1048576 B to 250819 B	compress ratio: 4.18061
+static compress 1048576 B to 274806 B	compress ratio: 3.8157
+static compress 1048576 B to 268730 B	compress ratio: 3.90197
+static compress 871041 B to 25539755 B	compress ratio: 0.0341053
+dynamic compress 10000000 B to 2176597 B
+dynamic compression time=776.830750 s
+static compress 90000000 B to 23588216 B
+static compression time=3329.670166 s
+compressed size: 25764813 B
+compression time=4106.500977 s
+

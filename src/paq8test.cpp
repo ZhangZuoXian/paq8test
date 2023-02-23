@@ -20,7 +20,7 @@ U32 BLOCK_SIZE;
 U32 updateBlock; //预训练数据块的数量
 
 FILE* fp = NULL;
-FILE* deCom = fopen("/home/zzx/paq8test/paq8test/decomress.txt","w");
+FILE* deCom = fopen("/home/zzx/paq8test/decomress.txt","w");
 
 int main(int argc,char **argv){
 
@@ -37,16 +37,16 @@ int main(int argc,char **argv){
     sscanf(argv[1], "%u", &BLOCK_SIZE); //第一个参数为分块大小，单位为KB
     char filePath[128];
     if(strcmp(argv[2], "enwik8") == 0){ //根据第二个参数选择文件
-        sprintf(filePath, "/home/zzx/paq8test/data/enwik8/enwik8");
+        sprintf(filePath, "/home/zzx/data/enwik8");
     }
     else if(strcmp(argv[2], "enwik9") == 0){
-        sprintf(filePath, "/home/zzx/paq8test/data/enwik9");
+        sprintf(filePath, "/home/zzx/data/enwik9");
     }
-    else if(strcmp(argv[2], "book1") == 0 || strcmp(argv[2], "book2") == 0){
-        sprintf(filePath, "/home/zzx/paq8test/data/calgarycorpus/%s", argv[2]);
+    else if(strcmp(argv[2], "BOOK1") == 0 || strcmp(argv[2], "BOOK2") == 0){
+        sprintf(filePath, "/home/zzx/data/calgary/%s", argv[2]);
     }
     else{
-        sprintf(filePath, "/home/zzx/paq8test/data/silesia/%s", argv[2]);
+        sprintf(filePath, "/home/zzx/data/silesia/%s", argv[2]);
     }
     fp = fopen(filePath, "r");
     if(fp == NULL){
@@ -61,7 +61,7 @@ int main(int argc,char **argv){
     //使用压缩器编码，并统计信息
     if(mode == COMPRESS){
         char foutPath[128];
-        sprintf(foutPath, "/home/zzx/paq8test/paq8test/output/%s", argv[2]);
+        sprintf(foutPath, "/home/zzx/paq8test/output/%s", argv[2]);
         FILE* out = fopen(foutPath, "w");
 
         printf("Begin compression %s\n", argv[2]);
@@ -112,6 +112,9 @@ int main(int argc,char **argv){
         //动态压缩数据统计
         U32 dynamicByte;
         clock_t dynamic_t;
+        
+        int test_byte_count = 0;
+        int last_out_size = 0;
 
         while(notEnd){
             // // en = new Encoder(&shared, COMPRESS, out, deCom);
@@ -150,10 +153,22 @@ int main(int argc,char **argv){
                 t = clock() - start;
                 dynamic_t = t;
                 shared.staticPara();
+                last_out_size = dynamicByte;
             }
             c=getc(fp);
             en->compressByte(c);
             byteCount++;
+            if(shared.getUpdateState() == false) {
+                test_byte_count++;
+                if(test_byte_count >= 1024 * 1024) {
+                    csize = ftell(out) - last_out_size;
+                    last_out_size = ftell(out);
+                    std::cout<<"static compress " << test_byte_count << " B to " << csize << " B\t";
+                    double r = ((double)test_byte_count) / csize;
+                    std::cout<<"compress ratio: " << r <<std::endl;
+                    test_byte_count = 0;
+                }
+            }
             if(byteCount >= fsize){
                 en->flush(); 
                 if(byteCount == byteThreshold){
@@ -162,6 +177,17 @@ int main(int argc,char **argv){
                     t = clock() - start;
                     dynamic_t = t;
                     shared.staticPara();
+                }
+                if(shared.getUpdateState() == false) {
+                    test_byte_count++;
+                    if(test_byte_count >= 10 * 1024) {
+                        csize = ftell(out) - last_out_size;
+                        last_out_size = ftell(out);
+                        csize = ftell(out) - csize;
+                        std::cout<<"static compress " << test_byte_count << " B to " << csize << " B\t";
+                        double r = ((double)test_byte_count) / csize;
+                        std::cout<<"compress ratio: " << r <<std::endl;
+                    }
                 }
                 notEnd = 0;
                 break;
@@ -176,7 +202,7 @@ int main(int argc,char **argv){
         std::cout<<"dynamic compress " << byteThreshold << " B to " << dynamicByte << " B" <<std::endl;
         printf("dynamic compression time=%lf s\n",((float) dynamic_t)/ CLOCKS_PER_SEC);
 
-        csize = ftell(out) - csize;
+        csize = ftell(out) - dynamicByte;
         std::cout<<"static compress " << byteCount - byteThreshold << " B to " << csize << " B" <<std::endl;
         t = clock() - start - t;
         printf("static compression time=%lf s\n",((float) t)/ CLOCKS_PER_SEC);
