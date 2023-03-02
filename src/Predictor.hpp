@@ -18,7 +18,7 @@ private:
     
 public:
     Predictor(Shared* const sh);
-    Predictor(Shared* const sh, const Predictor *train_p);
+    Predictor(Shared* const sh, const Predictor &train_p);
     void update(uint8_t y);
     [[nodiscard]] auto p() -> int;
     

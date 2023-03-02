@@ -62,45 +62,43 @@ int main(int argc,char **argv){
     clock_t t;
 
     if(mode == COMPRESS) {
-        // 计算分块数量
-        U32 block_size;
         // 统计文件大小
         fseek(fp, 0, SEEK_END);
         U32 fsize = ftell(fp);
         fseek(fp, 0, SEEK_SET);
+        // 计算分块数量
+        U32 block_size;
         sscanf(argv[1], "%u", &block_size); //单位为KB
         block_size *= 1024; //单位换算为Byte
         if(block_size == 0) {
             block_size = fsize; //0代表不分块
         }
         // 计算数据块数量
-        U32 blocks;
-        blocks = fsize / block_size;
+        U32 block_num;
+        block_num = fsize / block_size;
         if(fsize % block_size > 0){
-            blocks++;
+            block_num++;
         }
-
         // 计算训练数据量
         U32 update_ratio; 
         sscanf(argv[3], "%u", &update_ratio);
-        U32 update_block; 
+        U32 update_block_num; 
         // 训练量有两种，一种是指定训练的数据块数量，一种是指定训练数据占比
         // 指定训练数据块数量
-        update_block = update_ratio;
+        update_block_num = update_ratio;
         // 指定训练数据占比（向下取整）
-        // update_block = blocks * update_ratio / 100;
-
-        // if(update_block <= 0) {
-        //     update_block = 1; // update_block必须是正数
+        // update_block_num = block_num * update_ratio / 100;
+        // if(update_block_num <= 0) {
+        //     update_block_num = 1; // update_block必须是正数
         // }
 
         // 输出统计信息
         printf("Begin compressing %s\n", argv[2]);
         printf("file size: %u\n", fsize);
-        printf("block size : %u B, block num: %u\n", block_size, blocks);
-        printf("train block: %u\n", update_block);
-        // TODO:测试这里需不需要空格
-        fprintf(metaData, "%u%u%u%u", fsize, block_size, blocks, update_block);
+        printf("block size : %u B, block num: %u\n", block_size, block_num);
+        printf("train block: %u\n", update_block_num);
+        // TODO:修改block_num为实际数量（将动态压缩的数据块认定为一个数据块）
+        fprintf(metaData, "%u%u%u%u", fsize, block_size, block_num, update_block_num);
 
         //压缩处理
         Encoder *en = NULL;
@@ -109,35 +107,43 @@ int main(int argc,char **argv){
         U32 byteCount = 0;
         U32 blockCount = 0;
         U32 csize = 0;
+        U32 in_size = 0;
+        U32 out_size = 0;
+        U32 in_pos = 0;
         U32 out_pos = 0;
 
         en = new Encoder(&shared, COMPRESS, out);
         t = clock();
 
         while(byteCount < fsize){
-            for(int i = 0; i < block_size; i++) {
+            for(int i = 0; i < block_size && byteCount < fsize; i++) {
                 c=getc(fp);
                 en->compressByte(c);
                 byteCount++;
-                if(byteCount >= fsize){
-                    break;
-                }
             }
             blockCount++;
-            if(shared.getUpdateState() == true && blockCount >= update_block) { // training
+
+            if(byteCount < fsize && shared.getUpdateState() == true && 
+                blockCount < update_block_num) {
+                    continue;
+            }
+
+            if(shared.getUpdateState() == true) { 
                 shared.staticPara();
-                train_en = en;
                 en->flush();
-                en = new Encoder(&shared, COMPRESS, out, train_en);
+                //TODO: reset
             }
             else if(shared.getUpdateState() == false) {
                 en->flush();
-                en = new Encoder(&shared, COMPRESS, out, train_en);
+                //TODO: reset
             }
-
-            csize = ftell(out) - out_pos;
+            
+            //将压缩前、后大小保存至元数据
+            in_size = byteCount - in_pos;
+            in_pos = byteCount;
+            out_size = ftell(out) - out_pos;
             out_pos = ftell(out);
-            fprintf(metaData, "%u", csize);
+            fprintf(metaData, "%u%u", in_size, out_size);
 
             if(shared.updateState){
                 printf("Dynamic ");
@@ -164,12 +170,12 @@ int main(int argc,char **argv){
         printf("compression time=%lf s\n\n",((float) t)/ CLOCKS_PER_SEC);
     }
     else {
-        U32 fsize, block_size, blocks, update_block;
-        fscanf(metaData, "%u%u%u%u", &fsize, &block_size, &blocks, &update_block);
+        U32 fsize, block_size, block_num, update_block_num;
+        fscanf(metaData, "%u%u%u%u", &fsize, &block_size, &block_num, &update_block_num);
         printf("Begin decompressing %s\n", argv[2]);
         printf("file size: %u\n", fsize);
-        printf("block size : %u B, block num: %u\n", block_size, blocks);
-        printf("train block: %u\n", update_block);
+        printf("block size : %u B, block num: %u\n", block_size, block_num);
+        printf("train block: %u\n", update_block_num);
 
         //解压处理
         Encoder *en = NULL;
@@ -192,15 +198,15 @@ int main(int argc,char **argv){
                 }
             }
             blockCount++;
-            if(shared.getUpdateState() == true && blockCount >= update_block) { // training
+            if(shared.getUpdateState() == true && blockCount >= update_block_num) { // training
                 shared.staticPara();
                 train_en = en;
                 fseek(out, -3, SEEK_CUR); // 文件回退3字节
-                en = new Encoder(&shared, DECOMPRESS, out, train_en);
+                en = new Encoder(&shared, DECOMPRESS, out, *train_en);
             }
             else if(shared.getUpdateState() == false) {
                 fseek(out, -3, SEEK_CUR);
-                en = new Encoder(&shared, DECOMPRESS, out, train_en);
+                en = new Encoder(&shared, DECOMPRESS, out, *train_en);
             }
 
             csize = ftell(out) - out_pos;

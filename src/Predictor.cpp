@@ -6,7 +6,7 @@ Predictor::Predictor(Shared* const sh):shared(sh),
 
 }
 
-Predictor::Predictor(Shared* const sh, const Predictor *train_p) : shared(sh),
+Predictor::Predictor(Shared* const sh, const Predictor &train_p) : shared(sh),
   models(sh),contextModel(sh,models){
   // shared->reset();
   // TODO: 查看share中是否有参数需要修改

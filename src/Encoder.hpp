@@ -20,7 +20,7 @@ private:
     
 public:
     explicit Encoder(Shared * const sh,Mode m,FILE* f);
-    explicit Encoder(Shared * const sh,Mode m,FILE* f,const Encoder *train_en);
+    explicit Encoder(Shared * const sh,Mode m,FILE* f, const Encoder &train_en);
     void compressByte(uint8_t c);
     void compressByteParallel(uint8_t c);
     auto decompressByte() ->uint8_t;

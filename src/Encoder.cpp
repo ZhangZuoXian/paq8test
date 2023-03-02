@@ -9,7 +9,7 @@ Encoder::Encoder(Shared * const sh,Mode m,FILE* f) : predictor(sh), shared(sh),
     }
 }
 
-Encoder::Encoder(Shared * const sh,Mode m,FILE* f,const Encoder *train_en) : 
+Encoder::Encoder(Shared * const sh,Mode m,FILE* f,const Encoder &train_en) : 
   predictor(sh, &(train_en->predictor)), shared(sh), mode(m), ari(f,NULL) {
     if(mode == DECOMPRESS){      
       ari.prefetch();
