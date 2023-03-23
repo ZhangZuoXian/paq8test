@@ -1,0 +1,305 @@
+Begin compressing book1
+file size: 768771
+block size : 10240 B, block num: 76
+train block: 10
+last c is f
+p:2	p:f6f	p:f5f	p:493	p:817	p:714	p:ced	p:317	Dynamic compress 102400 B to 31449 B	compress ratio: 3.256065
+Static compress 10240 B to 3101 B	compress ratio: 3.302161
+Static compress 10240 B to 3186 B	compress ratio: 3.214062
+Static compress 10240 B to 3103 B	compress ratio: 3.300032
+Static compress 10240 B to 3137 B	compress ratio: 3.264265
+Static compress 10240 B to 3222 B	compress ratio: 3.178150
+Static compress 10240 B to 3033 B	compress ratio: 3.376195
+Static compress 10240 B to 3027 B	compress ratio: 3.382887
+Static compress 10240 B to 3093 B	compress ratio: 3.310702
+Static compress 10240 B to 3064 B	compress ratio: 3.342037
+Static compress 10240 B to 3099 B	compress ratio: 3.304292
+Static compress 10240 B to 3113 B	compress ratio: 3.289431
+Static compress 10240 B to 3030 B	compress ratio: 3.379538
+Static compress 10240 B to 2959 B	compress ratio: 3.460629
+Static compress 10240 B to 3022 B	compress ratio: 3.388484
+Static compress 10240 B to 3018 B	compress ratio: 3.392975
+Static compress 10240 B to 3112 B	compress ratio: 3.290488
+Static compress 10240 B to 3056 B	compress ratio: 3.350785
+Static compress 10240 B to 3163 B	compress ratio: 3.237433
+Static compress 10240 B to 3128 B	compress ratio: 3.273657
+Static compress 10240 B to 3055 B	compress ratio: 3.351882
+Static compress 10240 B to 3116 B	compress ratio: 3.286264
+Static compress 10240 B to 3082 B	compress ratio: 3.322518
+Static compress 10240 B to 3097 B	compress ratio: 3.306426
+Static compress 10240 B to 3139 B	compress ratio: 3.262185
+Static compress 10240 B to 3093 B	compress ratio: 3.310702
+Static compress 10240 B to 3078 B	compress ratio: 3.326836
+Static compress 10240 B to 3141 B	compress ratio: 3.260108
+Static compress 10240 B to 3157 B	compress ratio: 3.243586
+Static compress 10240 B to 3062 B	compress ratio: 3.344219
+Static compress 10240 B to 3082 B	compress ratio: 3.322518
+Static compress 10240 B to 3209 B	compress ratio: 3.191025
+Static compress 10240 B to 3077 B	compress ratio: 3.327917
+Static compress 10240 B to 3136 B	compress ratio: 3.265306
+Static compress 10240 B to 3112 B	compress ratio: 3.290488
+Static compress 10240 B to 3095 B	compress ratio: 3.308562
+Static compress 10240 B to 3016 B	compress ratio: 3.395225
+Static compress 10240 B to 2916 B	compress ratio: 3.511660
+Static compress 10240 B to 3047 B	compress ratio: 3.360683
+Static compress 10240 B to 3020 B	compress ratio: 3.390728
+Static compress 10240 B to 2975 B	compress ratio: 3.442017
+Static compress 10240 B to 3054 B	compress ratio: 3.352980
+Static compress 10240 B to 3044 B	compress ratio: 3.363995
+Static compress 10240 B to 3137 B	compress ratio: 3.264265
+Static compress 10240 B to 3060 B	compress ratio: 3.346405
+Static compress 10240 B to 2942 B	compress ratio: 3.480625
+Static compress 10240 B to 3081 B	compress ratio: 3.323596
+Static compress 10240 B to 3083 B	compress ratio: 3.321440
+Static compress 10240 B to 3015 B	compress ratio: 3.396352
+Static compress 10240 B to 2992 B	compress ratio: 3.422460
+Static compress 10240 B to 3004 B	compress ratio: 3.408788
+Static compress 10240 B to 2923 B	compress ratio: 3.503250
+Static compress 10240 B to 3056 B	compress ratio: 3.350785
+Static compress 10240 B to 3101 B	compress ratio: 3.302161
+Static compress 10240 B to 3046 B	compress ratio: 3.361786
+Static compress 10240 B to 3005 B	compress ratio: 3.407654
+Static compress 10240 B to 3010 B	compress ratio: 3.401993
+Static compress 10240 B to 3083 B	compress ratio: 3.321440
+Static compress 10240 B to 3129 B	compress ratio: 3.272611
+Static compress 10240 B to 3094 B	compress ratio: 3.309632
+Static compress 10240 B to 2950 B	compress ratio: 3.471186
+Static compress 10240 B to 3012 B	compress ratio: 3.399734
+Static compress 10240 B to 3000 B	compress ratio: 3.413333
+Static compress 10240 B to 3061 B	compress ratio: 3.345312
+Static compress 10240 B to 2980 B	compress ratio: 3.436242
+Static compress 10240 B to 3034 B	compress ratio: 3.375082
+Static compress 771 B to 251 B	compress ratio: 3.071713
+compressed size: 230967 B
+compress ratio: 3.328488
+train time=8.024126 s
+compression time=32.750778 s
+Begin compressing book1
+file size: 768771
+block size : 10240 B, block num: 76
+train block: 10
+last c is 
+
+p:2	p:3f	p:efe	p:4	p:ffa	p:5	p:ffa	p:4	Dynamic compress 102400 B to 31449 B	compress ratio: 3.256065
+Static compress 10240 B to 3101 B	compress ratio: 3.302161
+Static compress 10240 B to 3186 B	compress ratio: 3.214062
+Static compress 10240 B to 3103 B	compress ratio: 3.300032
+Static compress 10240 B to 3137 B	compress ratio: 3.264265
+Static compress 10240 B to 3222 B	compress ratio: 3.178150
+Static compress 10240 B to 3033 B	compress ratio: 3.376195
+Static compress 10240 B to 3027 B	compress ratio: 3.382887
+Static compress 10240 B to 3093 B	compress ratio: 3.310702
+Static compress 10240 B to 3064 B	compress ratio: 3.342037
+Static compress 10240 B to 3099 B	compress ratio: 3.304292
+Static compress 10240 B to 3113 B	compress ratio: 3.289431
+Static compress 10240 B to 3030 B	compress ratio: 3.379538
+Static compress 10240 B to 2959 B	compress ratio: 3.460629
+Static compress 10240 B to 3022 B	compress ratio: 3.388484
+Static compress 10240 B to 3018 B	compress ratio: 3.392975
+Static compress 10240 B to 3112 B	compress ratio: 3.290488
+Static compress 10240 B to 3056 B	compress ratio: 3.350785
+Static compress 10240 B to 3163 B	compress ratio: 3.237433
+Static compress 10240 B to 3128 B	compress ratio: 3.273657
+Static compress 10240 B to 3055 B	compress ratio: 3.351882
+Static compress 10240 B to 3116 B	compress ratio: 3.286264
+Static compress 10240 B to 3082 B	compress ratio: 3.322518
+Static compress 10240 B to 3097 B	compress ratio: 3.306426
+Static compress 10240 B to 3139 B	compress ratio: 3.262185
+Static compress 10240 B to 3093 B	compress ratio: 3.310702
+Static compress 10240 B to 3078 B	compress ratio: 3.326836
+Static compress 10240 B to 3141 B	compress ratio: 3.260108
+Static compress 10240 B to 3157 B	compress ratio: 3.243586
+Static compress 10240 B to 3062 B	compress ratio: 3.344219
+Static compress 10240 B to 3082 B	compress ratio: 3.322518
+Static compress 10240 B to 3209 B	compress ratio: 3.191025
+Static compress 10240 B to 3077 B	compress ratio: 3.327917
+Static compress 10240 B to 3136 B	compress ratio: 3.265306
+Static compress 10240 B to 3112 B	compress ratio: 3.290488
+Static compress 10240 B to 3095 B	compress ratio: 3.308562
+Static compress 10240 B to 3016 B	compress ratio: 3.395225
+Static compress 10240 B to 2916 B	compress ratio: 3.511660
+Static compress 10240 B to 3047 B	compress ratio: 3.360683
+Static compress 10240 B to 3020 B	compress ratio: 3.390728
+Static compress 10240 B to 2975 B	compress ratio: 3.442017
+Static compress 10240 B to 3054 B	compress ratio: 3.352980
+Static compress 10240 B to 3044 B	compress ratio: 3.363995
+Static compress 10240 B to 3137 B	compress ratio: 3.264265
+Static compress 10240 B to 3060 B	compress ratio: 3.346405
+Static compress 10240 B to 2942 B	compress ratio: 3.480625
+Static compress 10240 B to 3081 B	compress ratio: 3.323596
+Static compress 10240 B to 3083 B	compress ratio: 3.321440
+Static compress 10240 B to 3015 B	compress ratio: 3.396352
+Static compress 10240 B to 2992 B	compress ratio: 3.422460
+Static compress 10240 B to 3004 B	compress ratio: 3.408788
+Static compress 10240 B to 2923 B	compress ratio: 3.503250
+Static compress 10240 B to 3056 B	compress ratio: 3.350785
+Static compress 10240 B to 3101 B	compress ratio: 3.302161
+Static compress 10240 B to 3046 B	compress ratio: 3.361786
+Static compress 10240 B to 3005 B	compress ratio: 3.407654
+Static compress 10240 B to 3010 B	compress ratio: 3.401993
+Static compress 10240 B to 3083 B	compress ratio: 3.321440
+Static compress 10240 B to 3129 B	compress ratio: 3.272611
+Static compress 10240 B to 3094 B	compress ratio: 3.309632
+Static compress 10240 B to 2950 B	compress ratio: 3.471186
+Static compress 10240 B to 3012 B	compress ratio: 3.399734
+Static compress 10240 B to 3000 B	compress ratio: 3.413333
+Static compress 10240 B to 3061 B	compress ratio: 3.345312
+Static compress 10240 B to 2980 B	compress ratio: 3.436242
+Static compress 10240 B to 3034 B	compress ratio: 3.375082
+Static compress 771 B to 251 B	compress ratio: 3.071713
+compressed size: 230967 B
+compress ratio: 3.328488
+train time=7.990631 s
+compression time=33.265476 s
+Begin compressing book1
+file size: 768771
+block size : 10240 B, block num: 76
+train block: 10
+last c is f
+p:2	p:f6f	p:f5f	p:493	p:817	p:714	p:ced	p:317	Dynamic compress 102400 B to 31449 B	compress ratio: 3.256065
+Dynamic compress 10240 B to 2892 B	compress ratio: 3.540802
+Dynamic compress 10240 B to 2872 B	compress ratio: 3.565460
+Dynamic compress 10240 B to 2760 B	compress ratio: 3.710145
+Dynamic compress 10240 B to 2878 B	compress ratio: 3.558026
+Dynamic compress 10240 B to 2802 B	compress ratio: 3.654532
+Dynamic compress 10240 B to 2812 B	compress ratio: 3.641536
+Dynamic compress 10240 B to 2780 B	compress ratio: 3.683453
+Dynamic compress 10240 B to 2801 B	compress ratio: 3.655837
+Dynamic compress 10240 B to 2800 B	compress ratio: 3.657143
+Dynamic compress 10240 B to 2756 B	compress ratio: 3.715530
+Dynamic compress 10240 B to 2765 B	compress ratio: 3.703436
+Dynamic compress 10240 B to 2779 B	compress ratio: 3.684779
+Dynamic compress 10240 B to 2684 B	compress ratio: 3.815201
+Dynamic compress 10240 B to 2675 B	compress ratio: 3.828037
+Dynamic compress 10240 B to 2653 B	compress ratio: 3.859781
+Dynamic compress 10240 B to 2745 B	compress ratio: 3.730419
+Dynamic compress 10240 B to 2784 B	compress ratio: 3.678161
+Dynamic compress 10240 B to 2791 B	compress ratio: 3.668936
+Dynamic compress 10240 B to 2711 B	compress ratio: 3.777204
+Dynamic compress 10240 B to 2755 B	compress ratio: 3.716878
+Dynamic compress 10240 B to 2752 B	compress ratio: 3.720930
+Dynamic compress 10240 B to 2684 B	compress ratio: 3.815201
+Dynamic compress 10240 B to 2690 B	compress ratio: 3.806691
+Dynamic compress 10240 B to 2757 B	compress ratio: 3.714182
+Dynamic compress 10240 B to 2641 B	compress ratio: 3.877319
+Dynamic compress 10240 B to 2612 B	compress ratio: 3.920368
+Dynamic compress 10240 B to 2633 B	compress ratio: 3.889100
+Dynamic compress 10240 B to 2663 B	compress ratio: 3.845287
+Dynamic compress 10240 B to 2701 B	compress ratio: 3.791188
+Dynamic compress 10240 B to 2641 B	compress ratio: 3.877319
+Dynamic compress 10240 B to 2720 B	compress ratio: 3.764706
+Dynamic compress 10240 B to 2519 B	compress ratio: 4.065105
+Dynamic compress 10240 B to 2517 B	compress ratio: 4.068335
+Dynamic compress 10240 B to 2686 B	compress ratio: 3.812360
+Dynamic compress 10240 B to 2710 B	compress ratio: 3.778598
+Dynamic compress 10240 B to 2595 B	compress ratio: 3.946050
+Dynamic compress 10240 B to 2534 B	compress ratio: 4.041042
+Dynamic compress 10240 B to 2630 B	compress ratio: 3.893536
+Dynamic compress 10240 B to 2646 B	compress ratio: 3.869992
+Dynamic compress 10240 B to 2581 B	compress ratio: 3.967454
+Dynamic compress 10240 B to 2542 B	compress ratio: 4.028324
+Dynamic compress 10240 B to 2595 B	compress ratio: 3.946050
+Dynamic compress 10240 B to 2665 B	compress ratio: 3.842402
+Dynamic compress 10240 B to 2569 B	compress ratio: 3.985987
+Dynamic compress 10240 B to 2488 B	compress ratio: 4.115756
+Dynamic compress 10240 B to 2596 B	compress ratio: 3.944530
+Dynamic compress 10240 B to 2643 B	compress ratio: 3.874385
+Dynamic compress 10240 B to 2593 B	compress ratio: 3.949094
+Dynamic compress 10240 B to 2595 B	compress ratio: 3.946050
+Dynamic compress 10240 B to 2558 B	compress ratio: 4.003127
+Dynamic compress 10240 B to 2487 B	compress ratio: 4.117411
+Dynamic compress 10240 B to 2598 B	compress ratio: 3.941493
+Dynamic compress 10240 B to 2714 B	compress ratio: 3.773029
+Dynamic compress 10240 B to 2579 B	compress ratio: 3.970531
+Dynamic compress 10240 B to 2497 B	compress ratio: 4.100921
+Dynamic compress 10240 B to 2523 B	compress ratio: 4.058660
+Dynamic compress 10240 B to 2576 B	compress ratio: 3.975155
+Dynamic compress 10240 B to 2600 B	compress ratio: 3.938462
+Dynamic compress 10240 B to 2558 B	compress ratio: 4.003127
+Dynamic compress 10240 B to 2434 B	compress ratio: 4.207067
+Dynamic compress 10240 B to 2448 B	compress ratio: 4.183007
+Dynamic compress 10240 B to 2501 B	compress ratio: 4.094362
+Dynamic compress 10240 B to 2515 B	compress ratio: 4.071571
+Dynamic compress 10240 B to 2476 B	compress ratio: 4.135703
+Dynamic compress 10240 B to 2545 B	compress ratio: 4.023576
+Dynamic compress 771 B to 201 B	compress ratio: 3.835821
+compressed size: 203952 B
+compress ratio: 3.769372
+train time=59.278458 s
+compression time=59.278458 s
+
+Begin compressing book1
+file size: 768771
+block size : 10240 B, block num: 76
+train block: 10
+Dynamic compress 102400 B to 31452 B	compress ratio: 3.255755
+Static compress 10240 B to 3104 B	compress ratio: 3.298969
+Static compress 10240 B to 3189 B	compress ratio: 3.211038
+Static compress 10240 B to 3106 B	compress ratio: 3.296845
+Static compress 10240 B to 3140 B	compress ratio: 3.261146
+Static compress 10240 B to 3225 B	compress ratio: 3.175194
+Static compress 10240 B to 3036 B	compress ratio: 3.372859
+Static compress 10240 B to 3030 B	compress ratio: 3.379538
+Static compress 10240 B to 3096 B	compress ratio: 3.307494
+Static compress 10240 B to 3067 B	compress ratio: 3.338768
+Static compress 10240 B to 3102 B	compress ratio: 3.301096
+Static compress 10240 B to 3116 B	compress ratio: 3.286264
+Static compress 10240 B to 3033 B	compress ratio: 3.376195
+Static compress 10240 B to 2962 B	compress ratio: 3.457124
+Static compress 10240 B to 3025 B	compress ratio: 3.385124
+Static compress 10240 B to 3021 B	compress ratio: 3.389606
+Static compress 10240 B to 3115 B	compress ratio: 3.287319
+Static compress 10240 B to 3059 B	compress ratio: 3.347499
+Static compress 10240 B to 3166 B	compress ratio: 3.234365
+Static compress 10240 B to 3131 B	compress ratio: 3.270521
+Static compress 10240 B to 3058 B	compress ratio: 3.348594
+Static compress 10240 B to 3119 B	compress ratio: 3.283104
+Static compress 10240 B to 3085 B	compress ratio: 3.319287
+Static compress 10240 B to 3100 B	compress ratio: 3.303226
+Static compress 10240 B to 3142 B	compress ratio: 3.259071
+Static compress 10240 B to 3096 B	compress ratio: 3.307494
+Static compress 10240 B to 3081 B	compress ratio: 3.323596
+Static compress 10240 B to 3144 B	compress ratio: 3.256997
+Static compress 10240 B to 3160 B	compress ratio: 3.240506
+Static compress 10240 B to 3065 B	compress ratio: 3.340946
+Static compress 10240 B to 3085 B	compress ratio: 3.319287
+Static compress 10240 B to 3212 B	compress ratio: 3.188045
+Static compress 10240 B to 3080 B	compress ratio: 3.324675
+Static compress 10240 B to 3139 B	compress ratio: 3.262185
+Static compress 10240 B to 3115 B	compress ratio: 3.287319
+Static compress 10240 B to 3098 B	compress ratio: 3.305358
+Static compress 10240 B to 3019 B	compress ratio: 3.391852
+Static compress 10240 B to 2919 B	compress ratio: 3.508051
+Static compress 10240 B to 3050 B	compress ratio: 3.357377
+Static compress 10240 B to 3023 B	compress ratio: 3.387364
+Static compress 10240 B to 2978 B	compress ratio: 3.438549
+Static compress 10240 B to 3057 B	compress ratio: 3.349689
+Static compress 10240 B to 3047 B	compress ratio: 3.360683
+Static compress 10240 B to 3140 B	compress ratio: 3.261146
+Static compress 10240 B to 3063 B	compress ratio: 3.343128
+Static compress 10240 B to 2945 B	compress ratio: 3.477080
+Static compress 10240 B to 3084 B	compress ratio: 3.320363
+Static compress 10240 B to 3086 B	compress ratio: 3.318211
+Static compress 10240 B to 3018 B	compress ratio: 3.392975
+Static compress 10240 B to 2995 B	compress ratio: 3.419032
+Static compress 10240 B to 3007 B	compress ratio: 3.405387
+Static compress 10240 B to 2926 B	compress ratio: 3.499658
+Static compress 10240 B to 3059 B	compress ratio: 3.347499
+Static compress 10240 B to 3104 B	compress ratio: 3.298969
+Static compress 10240 B to 3049 B	compress ratio: 3.358478
+Static compress 10240 B to 3008 B	compress ratio: 3.404255
+Static compress 10240 B to 3013 B	compress ratio: 3.398606
+Static compress 10240 B to 3086 B	compress ratio: 3.318211
+Static compress 10240 B to 3132 B	compress ratio: 3.269476
+Static compress 10240 B to 3097 B	compress ratio: 3.306426
+Static compress 10240 B to 2953 B	compress ratio: 3.467660
+Static compress 10240 B to 3015 B	compress ratio: 3.396352
+Static compress 10240 B to 3003 B	compress ratio: 3.409923
+Static compress 10240 B to 3064 B	compress ratio: 3.342037
+Static compress 10240 B to 2983 B	compress ratio: 3.432786
+Static compress 10240 B to 3037 B	compress ratio: 3.371748
+Static compress 771 B to 254 B	compress ratio: 3.035433
+compressed size: 231168 B
+compress ratio: 3.325594
+train time=7.957037 s
+compression time=32.686085 s

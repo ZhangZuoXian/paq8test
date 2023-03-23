@@ -1,4 +1,481 @@
 Begin compression book2
+train ratio is : 10 
+original size is : 610856B
+dynamic compress 61085B to 16581B
+dynamic compression time=7.659497 s
+static compress 549771B to 161415B
+static compression time=47.682247 s
+compressed size: 177996B
+compression time=55.341751 s
+Begin compression book1
+train ratio is : 10 
+original size is : 768771B
+dynamic compress 76877B to 24265B
+dynamic compression time=9.588646 s
+static compress 691894B to 210068B
+static compression time=60.008961 s
+compressed size: 234333B
+compression time=69.597610 s
+Begin compression reymont
+train ratio is : 10 
+original size is : 6627202B
+dynamic compress 662720B to 97666B
+dynamic compression time=82.590591 s
+static compress 5964482B to 1127622B
+static compression time=508.104523 s
+compressed size: 1225288B
+compression time=590.695129 s
+Begin compression osdb
+train ratio is : 10 
+original size is : 10085684B
+dynamic compress 1008568B to 235652B
+dynamic compression time=124.915634 s
+static compress 9077116B to 2024424B
+static compression time=777.319824 s
+compressed size: 2260076B
+compression time=902.235413 s
+Begin compression dickens
+train ratio is : 10 
+original size is : 10192446B
+dynamic compress 1019244B to 229873B
+dynamic compression time=128.847870 s
+static compress 9173202B to 2385255B
+static compression time=798.174683 s
+compressed size: 2615128B
+compression time=927.022522 s
+
+
+Begin compression book2
+train ratio is : 10 
+original size is : 610856B
+dynamic compress 61085B to 16581B
+dynamic compression time=7.713105 s
+static compress 549771B to 161415B
+static compression time=47.798889 s
+compressed size: 177996B
+compression time=55.512001 s
+
+Begin compression book1
+train ratio is : 10 
+original size is : 768771B
+dynamic compress 76877B to 24265B
+dynamic compression time=9.689905 s
+static compress 691894B to 210068B
+static compression time=60.875904 s
+compressed size: 234333B
+compression time=70.565819 s
+
+Begin compression book2
+train ratio is : 10 
+original size is : 610856B
+dynamic compress 61085B to 16581B
+dynamic compression time=7.742464 s
+static compress 549771B to 161415B
+static compression time=47.571877 s
+compressed size: 177996B
+compression time=55.314346 s
+
+Begin compression book1
+train ratio is : 10 
+original size is : 768771B
+dynamic compress 76877B to 24265B
+dynamic compression time=9.785542 s
+static compress 691894B to 210068B
+static compression time=60.274311 s
+compressed size: 234333B
+compression time=70.059860 s
+
+Begin compression reymont
+train ratio is : 10 
+original size is : 6627202B
+dynamic compress 662720B to 97666B
+dynamic compression time=83.574059 s
+static compress 5964482B to 1127622B
+static compression time=512.439148 s
+compressed size: 1225288B
+compression time=596.013184 s
+
+Begin compression osdb
+train ratio is : 10 
+original size is : 10085684B
+dynamic compress 1008568B to 235652B
+dynamic compression time=124.521484 s
+static compress 9077116B to 2024424B
+static compression time=777.895447 s
+compressed size: 2260076B
+compression time=902.416870 s
+
+Begin compression dickens
+train ratio is : 10 
+original size is : 10192446B
+dynamic compress 1019244B to 229873B
+dynamic compression time=126.939140 s
+static compress 9173202B to 2385255B
+static compression time=789.683960 s
+compressed size: 2615128B
+compression time=916.623108 s
+
+Begin compression nci
+train ratio is : 10 
+original size is : 33553445B
+dynamic compress 3355344B to 132204B
+dynamic compression time=397.864471 s
+static compress 30198101B to 1459048B
+static compression time=2431.522461 s
+compressed size: 1591252B
+compression time=2829.386963 s
+
+Begin compression webster
+train ratio is : 10 
+original size is : 41458703B
+dynamic compress 4145870B to 658258B
+dynamic compression time=532.710815 s
+static compress 37312833B to 6976098B
+static compression time=3304.683594 s
+compressed size: 7634356B
+compression time=3837.394531 s
+
+Begin compression enwik8
+train ratio is : 10 
+original size is : 100000000B
+dynamic compress 10000000B to 2176597B
+dynamic compression time=1253.282837 s
+static compress 90000000B to 23588216B
+static compression time=7637.073730 s
+compressed size: 25764813B
+compression time=8890.356445 s
+
+*****************************************************
+
+Begin compression book2
+train ratio is : 1 
+original size is : 610856 B
+dynamic compress 6108 B to 2354 B
+dynamic compression time=0.805790 s
+static compress 604748 B to 242226 B
+static compression time=51.957615 s
+compressed size: 244580 B
+compression time=52.763416 s
+
+Begin compression book1
+train ratio is : 1 
+original size is : 768771 B
+dynamic compress 7687 B to 3124 B
+dynamic compression time=1.018004 s
+static compress 761084 B to 289517 B
+static compression time=65.764420 s
+compressed size: 292641 B
+compression time=66.782433 s
+
+Begin compression reymont
+train ratio is : 1 
+original size is : 6627202 B
+dynamic compress 66272 B to 11681 B
+dynamic compression time=8.317647 s
+static compress 6560930 B to 1290560 B
+static compression time=562.572510 s
+compressed size: 1302241 B
+compression time=570.890137 s
+
+Begin compression osdb
+train ratio is : 1 
+original size is : 10085684 B
+dynamic compress 100856 B to 29365 B
+dynamic compression time=12.312630 s
+static compress 9984828 B to 2336152 B
+static compression time=853.758423 s
+compressed size: 2365517 B
+compression time=866.071045 s
+
+Begin compression dickens
+train ratio is : 1 
+original size is : 10192446 B
+dynamic compress 101924 B to 28526 B
+dynamic compression time=12.846868 s
+static compress 10090522 B to 3026056 B
+static compression time=872.036133 s
+compressed size: 3054582 B
+compression time=884.883057 s
+
+Begin compression nci
+train ratio is : 1 
+original size is : 33553445 B
+dynamic compress 335534 B to 13947 B
+dynamic compression time=40.007881 s
+static compress 33217911 B to 1732726 B
+static compression time=2686.616211 s
+compressed size: 1746673 B
+compression time=2726.624268 s
+
+Begin compression webster
+train ratio is : 1 
+original size is : 41458703 B
+dynamic compress 414587 B to 74885 B
+dynamic compression time=52.169159 s
+static compress 41044116 B to 8505027 B
+static compression time=3531.832764 s
+compressed size: 8579912 B
+compression time=3584.001953 s
+
+Begin compression enwik8
+train ratio is : 1 
+original size is : 100000000 B
+dynamic compress 1000000 B to 223652 B
+dynamic compression time=125.314957 s
+static compress 99000000 B to 27115128 B
+static compression time=8466.917969 s
+compressed size: 27338780 B
+compression time=8592.233398 s
+
+*****************************************************
+
+Begin compression book2
+train ratio is : 5 
+original size is : 610856 B
+dynamic compress 30542 B to 9037 B
+dynamic compression time=3.882784 s
+static compress 580314 B to 185647 B
+static compression time=50.078640 s
+compressed size: 194684 B
+compression time=53.961433 s
+
+Begin compression book1
+train ratio is : 5 
+original size is : 768771 B
+dynamic compress 38438 B to 12911 B
+dynamic compression time=4.875674 s
+static compress 730333 B to 239279 B
+static compression time=63.075333 s
+compressed size: 252190 B
+compression time=67.951012 s
+
+Begin compression reymont
+train ratio is : 5 
+original size is : 6627202 B
+dynamic compress 331360 B to 51486 B
+dynamic compression time=41.766792 s
+static compress 6295842 B to 1172584 B
+static compression time=542.556458 s
+compressed size: 1224070 B
+compression time=584.323242 s
+
+Begin compression osdb
+train ratio is : 5 
+original size is : 10085684 B
+dynamic compress 504284 B to 122203 B
+dynamic compression time=62.184937 s
+static compress 9581400 B to 2159841 B
+static compression time=817.778442 s
+compressed size: 2282044 B
+compression time=879.963379 s
+
+Begin compression dickens
+train ratio is : 5 
+original size is : 10192446 B
+dynamic compress 509622 B to 120124 B
+dynamic compression time=64.221107 s
+static compress 9682824 B to 2667728 B
+static compression time=839.693542 s
+compressed size: 2787852 B
+compression time=903.914673 s
+
+Begin compression nci
+train ratio is : 5 
+original size is : 33553445 B
+dynamic compress 1677672 B to 73318 B
+dynamic compression time=199.202393 s
+static compress 31875773 B to 1766669 B
+static compression time=2569.490967 s
+compressed size: 1839987 B
+compression time=2768.693604 s
+
+Begin compression webster
+train ratio is : 5 
+original size is : 41458703 B
+dynamic compress 2072935 B to 332059 B
+dynamic compression time=258.666168 s
+static compress 39385768 B to 7438306 B
+static compression time=3362.010254 s
+compressed size: 7770365 B
+compression time=3620.676514 s
+
+Begin compression enwik8
+train ratio is : 5 
+original size is : 100000000 B
+dynamic compress 5000000 B to 1097498 B
+dynamic compression time=622.054626 s
+static compress 95000000 B to 24978928 B
+static compression time=8105.788574 s
+compressed size: 26076426 B
+compression time=8727.842773 s
+
+*****************************************************
+
+Begin compression book2
+train ratio is : 20 
+original size is : 610856 B
+dynamic compress 122171 B to 30454 B
+dynamic compression time=15.411108 s
+static compress 488685 B to 127714 B
+static compression time=42.365665 s
+compressed size: 158168 B
+compression time=57.776779 s
+
+Begin compression book1
+train ratio is : 20 
+original size is : 768771 B
+dynamic compress 153754 B to 45651 B
+dynamic compression time=19.467669 s
+static compress 615017 B to 173431 B
+static compression time=53.774258 s
+compressed size: 219082 B
+compression time=73.241928 s
+
+Begin compression reymont
+train ratio is : 20 
+original size is : 6627202 B
+dynamic compress 1325440 B to 187077 B
+dynamic compression time=166.748779 s
+static compress 5301762 B to 944880 B
+static compression time=459.142914 s
+compressed size: 1131957 B
+compression time=625.891724 s
+
+Begin compression osdb
+train ratio is : 20 
+original size is : 10085684 B
+dynamic compress 2017136 B to 459117 B
+dynamic compression time=249.281815 s
+static compress 8068548 B to 1774611 B
+static compression time=689.616638 s
+compressed size: 2233728 B
+compression time=938.898438 s
+
+Begin compression dickens
+train ratio is : 20 
+original size is : 10192446 B
+dynamic compress 2038489 B to 463138 B
+dynamic compression time=254.627533 s
+static compress 8153957 B to 2035452 B
+static compression time=701.617432 s
+compressed size: 2498590 B
+compression time=956.244934 s
+
+Begin compression nci
+train ratio is : 20 
+original size is : 33553445 B
+dynamic compress 6710689 B to 261672 B
+dynamic compression time=796.276550 s
+static compress 26842756 B to 1378237 B
+static compression time=2166.391846 s
+compressed size: 1639909 B
+compression time=2962.668457 s
+
+Begin compression webster
+train ratio is : 20 
+original size is : 41458703 B
+dynamic compress 8291740 B to 1297407 B
+dynamic compression time=1040.712036 s
+static compress 33166963 B to 6111071 B
+static compression time=2849.127930 s
+compressed size: 7408478 B
+compression time=3889.840088 s
+
+Begin compression enwik8
+train ratio is : 20 
+original size is : 100000000 B
+dynamic compress 20000000 B to 4326487 B
+dynamic compression time=2499.974121 s
+static compress 80000000 B to 20437811 B
+static compression time=6805.899414 s
+compressed size: 24764298 B
+compression time=9305.873047 s
+
+*****************************************************
+
+Begin compression book2
+train ratio is : 30 
+original size is : 610856 B
+dynamic compress 183256 B to 43059 B
+dynamic compression time=22.973438 s
+static compress 427600 B to 106868 B
+static compression time=37.062729 s
+compressed size: 149927 B
+compression time=60.036175 s
+
+Begin compression book1
+train ratio is : 30 
+original size is : 768771 B
+dynamic compress 230631 B to 66436 B
+dynamic compression time=29.245668 s
+static compress 538140 B to 147712 B
+static compression time=46.892883 s
+compressed size: 214148 B
+compression time=76.138557 s
+
+Begin compression reymont
+train ratio is : 30 
+original size is : 6627202 B
+dynamic compress 1988160 B to 275956 B
+dynamic compression time=248.455765 s
+static compress 4639042 B to 825564 B
+static compression time=397.037018 s
+compressed size: 1101520 B
+compression time=645.492798 s
+
+Begin compression osdb
+train ratio is : 30 
+original size is : 10085684 B
+dynamic compress 3025705 B to 679990 B
+dynamic compression time=373.738525 s
+static compress 7059979 B to 1552181 B
+static compression time=601.407410 s
+compressed size: 2232171 B
+compression time=975.145996 s
+
+Begin compression dickens
+train ratio is : 30 
+original size is : 10192446 B
+dynamic compress 3057733 B to 689368 B
+dynamic compression time=383.982208 s
+static compress 7134713 B to 1781772 B
+static compression time=613.034668 s
+compressed size: 2471140 B
+compression time=997.016907 s
+
+Begin compression nci
+train ratio is : 30 
+original size is : 33553445 B
+dynamic compress 10066033 B to 376178 B
+dynamic compression time=1212.647583 s
+static compress 23487412 B to 1131795 B
+static compression time=1938.602295 s
+compressed size: 1507973 B
+compression time=3151.250000 s
+
+Begin compression webster
+train ratio is : 30 
+original size is : 41458703 B
+dynamic compress 12437610 B to 1910591 B
+dynamic compression time=1554.537598 s
+static compress 29021093 B to 5384183 B
+static compression time=2482.496094 s
+compressed size: 7294774 B
+compression time=4037.033691 s
+
+Begin compression enwik8
+train ratio is : 30 
+original size is : 100000000 B
+dynamic compress 30000000 B to 6482420 B
+dynamic compression time=3754.921631 s
+static compress 70000000 B to 18332382 B
+static compression time=5947.214355 s
+compressed size: 24814802 B
+compression time=9702.135742 s
+
+*****************************************************
+
+Begin compression book2
 train ratio is : 40 
 original size is : 610856 B
 dynamic compress 244342 B to 55193 B
@@ -77,6 +554,8 @@ static compress 60000000 B to 16938438 B
 static compression time=5082.041992 s
 compressed size: 25517491 B
 compression time=10094.606445 s
+
+*****************************************************
 
 Begin compression book2
 train ratio is : 50 
@@ -158,6 +637,8 @@ static compression time=7907.394043 s
 compressed size: 25773038 B
 compression time=8792.926758 s
 
+*****************************************************
+
 Begin compression book2
 train ratio is : 60 
 original size is : 610856 B
@@ -237,4 +718,270 @@ static compress 82949673 B to 21579530 B
 static compression time=7033.797852 s
 compressed size: 25288047 B
 compression time=9152.128906 s
+
+*****************************************************
+
+Begin compression book2
+train ratio is : 100 
+original size is : 610856 B
+dynamic compress 610856 B to 128984 B
+dynamic compression time=46.958172 s
+static compress 0 B to 0 B
+static compression time=0.000169 s
+compressed size: 128984 B
+compression time=46.958347 s
+
+Begin compression book1
+train ratio is : 100 
+original size is : 768771 B
+dynamic compress 768771 B to 203191 B
+dynamic compression time=59.133965 s
+static compress 0 B to 0 B
+static compression time=0.000171 s
+compressed size: 203191 B
+compression time=59.134144 s
+
+Begin compression reymont
+train ratio is : 100 
+original size is : 6627202 B
+dynamic compress 6627202 B to 906029 B
+dynamic compression time=508.422180 s
+static compress 0 B to 0 B
+static compression time=0.000366 s
+compressed size: 906029 B
+compression time=508.422516 s
+
+Begin compression osdb
+train ratio is : 100 
+original size is : 10085684 B
+dynamic compress 10085684 B to 2210425 B
+dynamic compression time=763.392761 s
+static compress 0 B to 0 B
+static compression time=0.000416 s
+compressed size: 2210425 B
+compression time=763.393127 s
+
+Begin compression dickens
+train ratio is : 100 
+original size is : 10192446 B
+dynamic compress 10192446 B to 2249835 B
+dynamic compression time=788.760376 s
+static compress 0 B to 0 B
+static compression time=0.000307 s
+compressed size: 2249835 B
+compression time=788.760681 s
+
+Begin compression nci
+train ratio is : 100 
+original size is : 33553445 B
+dynamic compress 33553445 B to 1181740 B
+dynamic compression time=2366.013184 s
+static compress 0 B to 0 B
+static compression time=0.000277 s
+compressed size: 1181740 B
+compression time=2366.013428 s
+
+Begin compression webster
+train ratio is : 100 
+original size is : 41458703 B
+dynamic compress 41458703 B to 6327586 B
+dynamic compression time=3182.317383 s
+static compress 0 B to 0 B
+static compression time=0.000267 s
+compressed size: 6327586 B
+compression time=3182.317627 s
+
+Begin compression enwik8
+train ratio is : 100 
+original size is : 100000000 B
+dynamic compress 14100654 B to 3070481 B
+dynamic compression time=1087.968628 s
+static compress 85899346 B to 22462887 B
+static compression time=3298.688965 s
+compressed size: 25533368 B
+compression time=4386.657715 s
+
+*****************************************************
+
+验证了压缩和解压正确的paq8test，1MB分块，10%的块作为训练块
+
+Begin compressing book2
+file size: 610856
+block size : 610856 B, block num: 1
+train block: 1
+compressed size: 128987 B
+compress ratio: 4.735795
+dynamic compresse ratio: 4.735795
+compression time=47.760609 s
+train time=47.760609 s
+static compress time=0.000000 s
+
+Begin compressing book1
+file size: 768771
+block size : 768771 B, block num: 1
+train block: 1
+compressed size: 203194 B
+compress ratio: 3.783434
+dynamic compresse ratio: 3.783434
+compression time=60.142952 s
+train time=60.142948 s
+static compress time=0.000004 s
+
+Begin compressing reymont
+file size: 6627202
+block size : 1048576 B, block num: 7
+train block: 1
+compressed size: 1221704 B
+compress ratio: 5.424556
+dynamic compresse ratio: 7.008729
+compression time=287.023438 s
+train time=81.869095 s
+static compress time=205.154343 s
+
+Begin compressing osdb
+file size: 10085684
+block size : 1048576 B, block num: 10
+train block: 1
+compressed size: 2260223 B
+compress ratio: 4.462252
+dynamic compresse ratio: 4.287217
+compression time=408.022369 s
+train time=79.698891 s
+static compress time=328.323486 s
+
+Begin compressing dickens
+file size: 10192446
+block size : 1048576 B, block num: 10
+train block: 1
+compressed size: 2647028 B
+compress ratio: 3.850524
+dynamic compresse ratio: 4.417028
+compression time=421.307709 s
+train time=81.946671 s
+static compress time=339.361023 s
+
+Begin compressing nci
+file size: 33553445
+block size : 1048576 B, block num: 32
+train block: 3
+compressed size: 1832434 B
+compress ratio: 18.310861
+dynamic compresse ratio: 25.403807
+compression time=1209.150635 s
+train time=227.436493 s
+static compress time=981.714111 s
+
+Begin compressing webster
+file size: 41458703
+block size : 1048576 B, block num: 40
+train block: 4
+compressed size: 7677193 B
+compress ratio: 5.400242
+dynamic compresse ratio: 6.299163
+compression time=1684.713135 s
+train time=328.639404 s
+static compress time=1356.073730 s
+
+Begin compressing enwik8
+file size: 100000000
+block size : 1048576 B, block num: 96
+train block: 9
+compressed size: 25314916 B
+compress ratio: 3.950240
+dynamic compresse ratio: 4.598482
+compression time=3978.367920 s
+train time=737.343445 s
+static compress time=3241.024414 s
+
+*****************************************************
+
+1MB分块，100%的块作为训练块
+
+Begin compressing book2
+file size: 610856
+block size : 610856 B, block num: 1
+train block: 1
+compressed size: 128987 B
+compress ratio: 4.735795
+dynamic compresse ratio: 4.735795
+compression time=47.682587 s
+train time=47.682587 s
+static compress time=0.000000 s
+
+Begin compressing book1
+file size: 768771
+block size : 768771 B, block num: 1
+train block: 1
+compressed size: 203194 B
+compress ratio: 3.783434
+dynamic compresse ratio: 3.783434
+compression time=59.942390 s
+train time=59.942387 s
+static compress time=0.000004 s
+
+Begin compressing reymont
+file size: 6627202
+block size : 1048576 B, block num: 7
+train block: 7
+compressed size: 906032 B
+compress ratio: 7.314534
+dynamic compresse ratio: 7.314534
+compression time=512.301758 s
+train time=512.301758 s
+static compress time=0.000000 s
+
+Begin compressing osdb
+file size: 10085684
+block size : 1048576 B, block num: 10
+train block: 10
+compressed size: 2210428 B
+compress ratio: 4.562774
+dynamic compresse ratio: 4.562774
+compression time=770.149597 s
+train time=770.149597 s
+static compress time=0.000000 s
+
+Begin compressing dickens
+file size: 10192446
+block size : 1048576 B, block num: 10
+train block: 10
+compressed size: 2249838 B
+compress ratio: 4.530302
+dynamic compresse ratio: 4.530302
+compression time=796.950562 s
+train time=796.950562 s
+static compress time=0.000000 s
+
+Begin compressing nci
+file size: 33553445
+block size : 1048576 B, block num: 32
+train block: 32
+compressed size: 1181743 B
+compress ratio: 28.393183
+dynamic compresse ratio: 28.393183
+compression time=2419.140869 s
+train time=2419.140869 s
+static compress time=0.000000 s
+
+Begin compressing webster
+file size: 41458703
+block size : 1048576 B, block num: 40
+train block: 40
+compressed size: 6327589 B
+compress ratio: 6.552054
+dynamic compresse ratio: 6.552054
+compression time=3240.635986 s
+train time=3240.635986 s
+static compress time=0.000000 s
+
+Begin compressing enwik8
+file size: 100000000
+block size : 1048576 B, block num: 96
+train block: 96
+compressed size: 21387731 B
+compress ratio: 4.675578
+dynamic compresse ratio: 4.675578
+compression time=7766.946777 s
+train time=7766.946777 s
+static compress time=0.000000 s
 

@@ -84,6 +84,8 @@ public:
     void dynamicPara();
     void staticPara();
     bool getUpdateState();
+    
+    // bool getInfo = false;
 
 private:
 

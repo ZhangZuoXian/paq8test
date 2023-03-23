@@ -16,16 +16,15 @@ private:
     ArithmeticEncoder ari;
     const Mode mode; /**< Compress or decompress? */
     // FILE* archive;
-    const Shared * const shared;
+    Shared * shared;
+
     
 public:
     explicit Encoder(Shared * const sh,Mode m,FILE* f);
-    explicit Encoder(Shared * const sh,Mode m,FILE* f, const Encoder &train_en);
+    // explicit Encoder(Shared * const sh,Mode m,FILE* f, const Encoder &train_en);
     void compressByte(uint8_t c);
-    void compressByteParallel(uint8_t c);
     auto decompressByte() ->uint8_t;
     void flush();
-    //Statistics
-    // clock_t modelTimeCost;
-    // clock_t mapUpdateCost;
+    void reset();
+
 };
