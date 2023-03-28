@@ -1,0 +1,14 @@
+nohup: ignoring input
+File "ne" no exist
+nohup: ignoring input
+Begin compressing ne
+file size: 133553458
+block size : 1048576 B, block num: 128
+train block: 12
+compressed size: 60165614 B
+compress ratio: 2.219764
+dynamic compresse ratio: 26.871291
+compression time=4848.053223 s
+train time=929.508301 s
+static compress time=3918.544922 s
+

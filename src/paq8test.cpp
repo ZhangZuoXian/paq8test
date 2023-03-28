@@ -36,18 +36,8 @@ int main(int argc,char **argv){
     FILE* fout = NULL;
     sprintf(metaPath, "/home/zzx/paq8test/output/%s.meta", argv[2]);
     if(mode == COMPRESS) {
-        if(strcmp(argv[2], "enwik8") == 0){ //根据第二个参数选择文件
-            sprintf(filePath, "/home/zzx/data/enwik8");
-        }
-        else if(strcmp(argv[2], "enwik9") == 0){
-            sprintf(filePath, "/home/zzx/data/enwik9");
-        }
-        else if(strcmp(argv[2], "book1") == 0 || strcmp(argv[2], "book2") == 0){
-            sprintf(filePath, "/home/zzx/data/calgary/%s", argv[2]);
-        }
-        else{
-            sprintf(filePath, "/home/zzx/data/silesia/%s", argv[2]);
-        }
+        //根据第二个参数选择文件
+        sprintf(filePath, "/home/zzx/data/%s", argv[2]);
         sprintf(foutPath, "/home/zzx/paq8test/output/%s.p8t", argv[2]); // p8t = paq8test
         metaData = fopen(metaPath, "w");
     }

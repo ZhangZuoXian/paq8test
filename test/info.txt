@@ -985,3 +985,198 @@ compression time=7766.946777 s
 train time=7766.946777 s
 static compress time=0.000000 s
 
+*****************************************************
+
+不分块，100%的块作为训练块
+
+Begin compressing book2
+file size: 610856
+block size : 610856 B, block num: 1
+train block: 1
+compressed size: 128987 B
+compress ratio: 4.735795
+dynamic compresse ratio: 4.735795
+compression time=47.705799 s
+train time=47.705799 s
+static compress time=0.000000 s
+
+Begin compressing book1
+file size: 768771
+block size : 768771 B, block num: 1
+train block: 1
+compressed size: 203194 B
+compress ratio: 3.783434
+dynamic compresse ratio: 3.783434
+compression time=59.960594 s
+train time=59.960590 s
+static compress time=0.000004 s
+
+Begin compressing reymont
+file size: 6627202
+block size : 6627202 B, block num: 1
+train block: 1
+compressed size: 906032 B
+compress ratio: 7.314534
+dynamic compresse ratio: 7.314534
+compression time=522.351013 s
+train time=522.351013 s
+static compress time=0.000000 s
+
+Begin compressing osdb
+file size: 10085684
+block size : 10085684 B, block num: 1
+train block: 1
+compressed size: 2210428 B
+compress ratio: 4.562774
+dynamic compresse ratio: 4.562774
+compression time=777.645752 s
+train time=777.645691 s
+static compress time=0.000064 s
+
+Begin compressing dickens
+file size: 10192446
+block size : 10192446 B, block num: 1
+train block: 1
+compressed size: 2249838 B
+compress ratio: 4.530302
+dynamic compresse ratio: 4.530302
+compression time=802.620178 s
+train time=802.620178 s
+static compress time=0.000000 s
+
+Begin compressing nci
+file size: 33553445
+block size : 33553445 B, block num: 1
+train block: 1
+compressed size: 1181743 B
+compress ratio: 28.393183
+dynamic compresse ratio: 28.393183
+compression time=2445.162598 s
+train time=2445.162598 s
+static compress time=0.000000 s
+
+Begin compressing webster
+file size: 41458703
+block size : 41458703 B, block num: 1
+train block: 1
+compressed size: 6327589 B
+compress ratio: 6.552054
+dynamic compresse ratio: 6.552054
+compression time=3286.487793 s
+train time=3286.487793 s
+static compress time=0.000000 s
+
+Begin compressing enwik8
+file size: 100000000
+block size : 100000000 B, block num: 1
+train block: 1
+compressed size: 21387731 B
+compress ratio: 4.675578
+dynamic compresse ratio: 4.675578
+compression time=7847.242676 s
+train time=7847.242676 s
+static compress time=0.000000 s
+
+*****************************************************
+
+混合数据输入，1MB分块，10%训练
+
+Begin compressing ne
+file size: 133553458
+block size : 1048576 B, block num: 128
+train block: 12
+compressed size: 60165614 B
+compress ratio: 2.219764
+dynamic compresse ratio: 26.871291
+compression time=4848.053223 s
+train time=929.508301 s
+static compress time=3918.544922 s
+
+Begin compressing reymont
+file size: 6627202
+block size : 1048576 B, block num: 7
+train block: 1
+compressed size: 1221704 B
+compress ratio: 5.424556
+dynamic compresse ratio: 7.008729
+compression time=289.318970 s
+train time=82.487251 s
+static compress time=206.831726 s
+
+Begin compressing osdb
+file size: 10085684
+block size : 1048576 B, block num: 10
+train block: 1
+compressed size: 2260223 B
+compress ratio: 4.462252
+dynamic compresse ratio: 4.287217
+compression time=413.082214 s
+train time=80.798820 s
+static compress time=332.283386 s
+
+Begin compressing dickens
+file size: 10192446
+block size : 1048576 B, block num: 10
+train block: 1
+compressed size: 2647028 B
+compress ratio: 3.850524
+dynamic compresse ratio: 4.417028
+compression time=426.688934 s
+train time=83.000786 s
+static compress time=343.688141 s
+
+Begin compressing nci
+file size: 33553445
+block size : 1048576 B, block num: 32
+train block: 1
+compressed size: 1851352 B
+compress ratio: 18.123752
+dynamic compresse ratio: 22.960848
+compression time=1135.604248 s
+train time=76.530083 s
+static compress time=1059.074219 s
+
+Begin compressing webster
+file size: 41458703
+block size : 1048576 B, block num: 40
+train block: 1
+compressed size: 8133774 B
+compress ratio: 5.097105
+dynamic compresse ratio: 5.991452
+compression time=1597.297485 s
+train time=82.961288 s
+static compress time=1514.336304 s
+
+Begin compressing enwik8
+file size: 100000000
+block size : 1048576 B, block num: 96
+train block: 1
+compressed size: 27136944 B
+compress ratio: 3.685013
+dynamic compresse ratio: 4.507038
+compression time=3717.487549 s
+train time=82.744942 s
+static compress time=3634.742676 s
+
+Begin compressing ne
+file size: 133553458
+block size : 1048576 B, block num: 128
+train block: 1
+compressed size: 73050711 B
+compress ratio: 1.828229
+dynamic compresse ratio: 22.950294
+compression time=4407.251953 s
+train time=76.856079 s
+static compress time=4330.395508 s
+
+Begin compressing ne
+file size: 133553458
+block size : 1048576 B, block num: 128
+train block: 128
+compressed size: 23100122 B
+compress ratio: 5.781504
+dynamic compresse ratio: 5.781504
+compression time=10460.551758 s
+train time=10460.551758 s
+static compress time=0.000000 s
+

@@ -1,12 +1,15 @@
 #!/bin/bash
 rm -f /home/zzx/paq8test/output/*
-BLOCKSIZE=60
+BLOCKSIZE=1024
+TRAINRATIO=100
+RUNPATH="/home/zzx/paq8test/build/paq8test"
 INFOPATH="/home/zzx/paq8test/test/info.txt"
-nohup ./paq8test ${BLOCKSIZE} book1   >> ${INFOPATH} 2>&1 &
-nohup ./paq8test ${BLOCKSIZE} book2   >> ${INFOPATH} 2>&1 &
-nohup ./paq8test ${BLOCKSIZE} enwik8  >> ${INFOPATH} 2>&1 &
-nohup ./paq8test ${BLOCKSIZE} dickens >> ${INFOPATH} 2>&1 &
-nohup ./paq8test ${BLOCKSIZE} osdb    >> ${INFOPATH} 2>&1 &
-nohup ./paq8test ${BLOCKSIZE} nci     >> ${INFOPATH} 2>&1 &
-nohup ./paq8test ${BLOCKSIZE} reymont >> ${INFOPATH} 2>&1 &
-nohup ./paq8test ${BLOCKSIZE} webster >> ${INFOPATH} 2>&1 &
+
+nohup ${RUNPATH} ${BLOCKSIZE} book1   ${TRAINRATIO} >> ${INFOPATH} 2>&1 &
+nohup ${RUNPATH} ${BLOCKSIZE} book2   ${TRAINRATIO} >> ${INFOPATH} 2>&1 &
+nohup ${RUNPATH} ${BLOCKSIZE} enwik8  ${TRAINRATIO} >> ${INFOPATH} 2>&1 &
+nohup ${RUNPATH} ${BLOCKSIZE} dickens ${TRAINRATIO} >> ${INFOPATH} 2>&1 &
+nohup ${RUNPATH} ${BLOCKSIZE} osdb    ${TRAINRATIO} >> ${INFOPATH} 2>&1 &
+nohup ${RUNPATH} ${BLOCKSIZE} nci     ${TRAINRATIO} >> ${INFOPATH} 2>&1 &
+nohup ${RUNPATH} ${BLOCKSIZE} reymont ${TRAINRATIO} >> ${INFOPATH} 2>&1 &
+nohup ${RUNPATH} ${BLOCKSIZE} webster ${TRAINRATIO} >> ${INFOPATH} 2>&1 &
