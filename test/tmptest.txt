@@ -1,0 +1,259 @@
+本文件用于记录使用不正确的重训练方案的测试数据，该方案存在两个问题：
+1、没有清空模型中的上下文信息，使得静态压缩的数据块之间存在依赖；
+2、由于model中使用了单例模式，即三个模型都是static的，同时重训练的实现方式是delete编码器（包括了model），这使得重训练后使用的模型中的参数并未清空，导致了不同重训练之间存在依赖。
+测试本数据仅供中期和参考使用！
+
+
+nohup: ignoring input
+Begin compressing de
+file size: 110192463
+block size : 4096 B, block num: 26903
+train block: 269
+re train: average compress ration is 3.527173
+re train: average compress ration is 3.576498
+re train: average compress ration is 3.425052
+re train: average compress ration is 3.492650
+re train: average compress ration is 3.536794
+re train: average compress ration is 3.594703
+re train: average compress ration is 3.633347
+re train: average compress ration is 3.674057
+re train: average compress ration is 3.622616
+re train: average compress ration is 3.857259
+re train: average compress ration is 3.693198
+re train: average compress ration is 3.603350
+re train: average compress ration is 3.596316
+re train: average compress ration is 3.619607
+re train: average compress ration is 3.709446
+re train: average compress ration is 3.709794
+re train: average compress ration is 3.627732
+re train: average compress ration is 3.646243
+re train: average compress ration is 3.419902
+re train: average compress ration is 3.587559
+re train: average compress ration is 3.517971
+re train: average compress ration is 3.610088
+re train: average compress ration is 3.586192
+compressed size: 28748775 B
+compress ratio: 3.832945
+compression time=5180.643555 s
+
+Begin compressing bb
+file size: 1379641
+block size : 4096 B, block num: 337
+train block: 3
+re train: average compress ration is 2.071075
+re train: average compress ration is 2.744522
+re train: average compress ration is 3.045012
+re train: average compress ration is 3.064601
+re train: average compress ration is 3.383059
+re train: average compress ration is 3.371809
+re train: average compress ration is 3.293970
+re train: average compress ration is 2.840634
+re train: average compress ration is 3.276699
+re train: average compress ration is 3.181433
+compressed size: 464844 B
+compress ratio: 2.967966
+compression time=56.024246 s
+
+Begin compressing de
+file size: 110192463
+block size : 4096 B, block num: 26903
+train block: 26
+k:26 theta: 0.70
+compressed size: 33061687 B
+compress ratio: 3.332935
+compression time=4183.993164 s
+train 7 times
+
+Begin compressing de
+file size: 110192463
+block size : 4096 B, block num: 26903
+train block: 269
+k:269 theta: 0.70
+compressed size: 31504679 B
+compress ratio: 3.497654
+compression time=4220.341797 s
+train 2 times
+
+Begin compressing de
+file size: 110192463
+block size : 4096 B, block num: 26903
+train block: 269
+k:26 theta: 0.70
+compressed size: 30319610 B
+compress ratio: 3.634363
+compression time=4320.286133 s
+train 4 times
+
+Begin compressing de
+file size: 110192463
+block size : 4096 B, block num: 26903
+train block: 26
+k:26 theta: 0.80
+compressed size: 30891469 B
+compress ratio: 3.567084
+compression time=4531.600098 s
+train 87 times
+
+Begin compressing de
+file size: 110192463
+block size : 4096 B, block num: 26903
+train block: 269
+k:269 theta: 0.80
+compressed size: 29423004 B
+compress ratio: 3.745113
+compression time=4888.526367 s
+train 17 times
+
+Begin compressing de
+file size: 110192463
+block size : 4096 B, block num: 26903
+train block: 269
+k:26 theta: 0.80
+compressed size: 25517193 B
+compress ratio: 4.318361
+compression time=7394.697266 s
+train 74 times
+
+*******************************************************
+训练量和k为2%、1%、0.5%
+
+Begin compressing de
+file size: 110192463
+block size : 4096 B, block num: 26903
+train block: 134
+k:538 theta: 0.80
+compressed size: 30843120 B
+compress ratio: 3.572676
+compression time=4217.872070 s
+train 7 times
+
+Begin compressing de
+file size: 110192463
+block size : 4096 B, block num: 26903
+train block: 134
+k:269 theta: 0.80
+compressed size: 30295009 B
+compress ratio: 3.637314
+compression time=4283.602539 s
+train 11 times
+
+Begin compressing de
+file size: 110192463
+block size : 4096 B, block num: 26903
+train block: 538
+k:538 theta: 0.80
+compressed size: 29539325 B
+compress ratio: 3.730365
+compression time=4403.004395 s
+train 4 times
+
+Begin compressing de
+file size: 110192463
+block size : 4096 B, block num: 26903
+train block: 134
+k:134 theta: 0.80
+compressed size: 30252710 B
+compress ratio: 3.642400
+compression time=4491.212402 s
+train 16 times
+
+Begin compressing de
+file size: 110192463
+block size : 4096 B, block num: 26903
+train block: 269
+k:538 theta: 0.80
+compressed size: 30106253 B
+compress ratio: 3.660119
+compression time=4560.432617 s
+train 9 times
+
+Begin compressing de
+file size: 110192463
+block size : 4096 B, block num: 26903
+train block: 269
+k:269 theta: 0.80
+compressed size: 29423004 B
+compress ratio: 3.745113
+compression time=4817.736328 s
+train 17 times
+
+Begin compressing de
+file size: 110192463
+block size : 4096 B, block num: 26903
+train block: 269
+k:134 theta: 0.80
+compressed size: 28135398 B
+compress ratio: 3.916506
+compression time=5714.561523 s
+train 35 times
+
+Begin compressing de
+file size: 110192463
+block size : 4096 B, block num: 26903
+train block: 538
+k:134 theta: 0.80
+compressed size: 27173143 B
+compress ratio: 4.055198
+compression time=6152.402344 s
+train 23 times
+
+Begin compressing de
+file size: 110192463
+block size : 4096 B, block num: 26903
+train block: 538
+k:269 theta: 0.80
+compressed size: 27270361 B
+compress ratio: 4.040741
+compression time=6163.238281 s
+train 23 times
+
+Begin compressing de
+file size: 110192463
+block size : 4096 B, block num: 26903
+train block: 26
+k:269 theta: 0.80
+compressed size: 32441017 B
+compress ratio: 3.396702
+compression time=4163.596680 s
+train 10 times
+
+Begin compressing de
+file size: 110192463
+block size : 4096 B, block num: 26903
+train block: 26
+k:134 theta: 0.80
+compressed size: 32540933 B
+compress ratio: 3.386272
+compression time=4189.798828 s
+train 9 times
+
+Begin compressing de
+file size: 110192463
+block size : 4096 B, block num: 26903
+train block: 26
+k:538 theta: 0.80
+compressed size: 33515425 B
+compress ratio: 3.287813
+compression time=4238.997559 s
+train 8 times
+
+Begin compressing de
+file size: 110192463
+block size : 4096 B, block num: 26903
+train block: 134
+k:26 theta: 0.80
+compressed size: 26805739 B
+compress ratio: 4.110779
+compression time=6568.329590 s
+train 110 times
+
+Begin compressing de
+file size: 110192463
+block size : 4096 B, block num: 26903
+train block: 538
+k:26 theta: 0.80
+compressed size: 24751878 B
+compress ratio: 4.451883
+compression time=7902.630859 s
+train 43 times
+

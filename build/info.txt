@@ -1,14 +1,385 @@
+Begin compressing bb
+file size: 1379641
+block size : 4096 B, block num: 337
+train block: 3
+Dynamic compress 12288 B to 4700 B	compress ratio: 2.614468
+Static compress 4096 B to 1455 B	compress ratio: 2.815120
+Static compress 4096 B to 1456 B	compress ratio: 2.813187
+Static compress 4096 B to 1485 B	compress ratio: 2.758249
+Static compress 4096 B to 1440 B	compress ratio: 2.844444
+Static compress 4096 B to 1401 B	compress ratio: 2.923626
+Static compress 4096 B to 1487 B	compress ratio: 2.754539
+Static compress 4096 B to 1451 B	compress ratio: 2.822881
+Static compress 4096 B to 1520 B	compress ratio: 2.694737
+Static compress 4096 B to 1481 B	compress ratio: 2.765699
+Static compress 4096 B to 1562 B	compress ratio: 2.622279
+Static compress 4096 B to 1558 B	compress ratio: 2.629012
+Static compress 4096 B to 1574 B	compress ratio: 2.602287
+Static compress 4096 B to 1456 B	compress ratio: 2.813187
+Static compress 4096 B to 1436 B	compress ratio: 2.852368
+Static compress 4096 B to 1463 B	compress ratio: 2.799727
+Static compress 4096 B to 1518 B	compress ratio: 2.698287
+Static compress 4096 B to 1485 B	compress ratio: 2.758249
+Static compress 4096 B to 1489 B	compress ratio: 2.750839
+Static compress 4096 B to 1511 B	compress ratio: 2.710788
+Static compress 4096 B to 1527 B	compress ratio: 2.682384
+Static compress 4096 B to 1504 B	compress ratio: 2.723404
+Static compress 4096 B to 1534 B	compress ratio: 2.670143
+Static compress 4096 B to 1561 B	compress ratio: 2.623959
+Static compress 4096 B to 1629 B	compress ratio: 2.514426
+Static compress 4096 B to 1572 B	compress ratio: 2.605598
+Static compress 4096 B to 1622 B	compress ratio: 2.525277
+Static compress 4096 B to 1583 B	compress ratio: 2.587492
+Static compress 4096 B to 1589 B	compress ratio: 2.577722
+Static compress 4096 B to 1609 B	compress ratio: 2.545681
+Static compress 4096 B to 1541 B	compress ratio: 2.658014
+Static compress 4096 B to 1577 B	compress ratio: 2.597337
+Static compress 4096 B to 1626 B	compress ratio: 2.519065
+Static compress 4096 B to 1654 B	compress ratio: 2.476421
+Static compress 4096 B to 1656 B	compress ratio: 2.473430
+Static compress 4096 B to 1591 B	compress ratio: 2.574481
+Static compress 4096 B to 1433 B	compress ratio: 2.858339
+Static compress 4096 B to 1601 B	compress ratio: 2.558401
+Static compress 4096 B to 1493 B	compress ratio: 2.743470
+Static compress 4096 B to 1469 B	compress ratio: 2.788291
+Static compress 4096 B to 1543 B	compress ratio: 2.654569
+Static compress 4096 B to 1576 B	compress ratio: 2.598985
+Static compress 4096 B to 1492 B	compress ratio: 2.745308
+Static compress 4096 B to 1497 B	compress ratio: 2.736139
+Static compress 4096 B to 1490 B	compress ratio: 2.748993
+Static compress 4096 B to 1620 B	compress ratio: 2.528395
+Static compress 4096 B to 1587 B	compress ratio: 2.580970
+Static compress 4096 B to 1570 B	compress ratio: 2.608917
+Static compress 4096 B to 1559 B	compress ratio: 2.627325
+Static compress 4096 B to 1474 B	compress ratio: 2.778833
+Static compress 4096 B to 1500 B	compress ratio: 2.730667
+Static compress 4096 B to 1477 B	compress ratio: 2.773189
+Static compress 4096 B to 1466 B	compress ratio: 2.793997
+Static compress 4096 B to 1463 B	compress ratio: 2.799727
+Static compress 4096 B to 1471 B	compress ratio: 2.784500
+Static compress 4096 B to 1529 B	compress ratio: 2.678875
+Static compress 4096 B to 1575 B	compress ratio: 2.600635
+Static compress 4096 B to 1470 B	compress ratio: 2.786395
+Static compress 4096 B to 1497 B	compress ratio: 2.736139
+Static compress 4096 B to 1569 B	compress ratio: 2.610580
+Static compress 4096 B to 1586 B	compress ratio: 2.582598
+Static compress 4096 B to 1530 B	compress ratio: 2.677124
+Static compress 4096 B to 1492 B	compress ratio: 2.745308
+Static compress 4096 B to 1505 B	compress ratio: 2.721595
+Static compress 4096 B to 1462 B	compress ratio: 2.801642
+Static compress 4096 B to 1486 B	compress ratio: 2.756393
+Static compress 4096 B to 1599 B	compress ratio: 2.561601
+Static compress 4096 B to 1560 B	compress ratio: 2.625641
+Static compress 4096 B to 1649 B	compress ratio: 2.483930
+Static compress 4096 B to 1424 B	compress ratio: 2.876404
+Static compress 4096 B to 1505 B	compress ratio: 2.721595
+Static compress 4096 B to 1530 B	compress ratio: 2.677124
+Static compress 4096 B to 1504 B	compress ratio: 2.723404
+Static compress 4096 B to 1573 B	compress ratio: 2.603942
+Static compress 4096 B to 1473 B	compress ratio: 2.780720
+Static compress 4096 B to 1551 B	compress ratio: 2.640877
+Static compress 4096 B to 1553 B	compress ratio: 2.637476
+Static compress 4096 B to 1553 B	compress ratio: 2.637476
+Static compress 4096 B to 1585 B	compress ratio: 2.584227
+Static compress 4096 B to 1592 B	compress ratio: 2.572864
+Static compress 4096 B to 1543 B	compress ratio: 2.654569
+Static compress 4096 B to 1567 B	compress ratio: 2.613912
+Static compress 4096 B to 1567 B	compress ratio: 2.613912
+Static compress 4096 B to 1599 B	compress ratio: 2.561601
+Static compress 4096 B to 1474 B	compress ratio: 2.778833
+Static compress 4096 B to 1575 B	compress ratio: 2.600635
+Static compress 4096 B to 1575 B	compress ratio: 2.600635
+Static compress 4096 B to 1489 B	compress ratio: 2.750839
+Static compress 4096 B to 1706 B	compress ratio: 2.400938
+Static compress 4096 B to 1566 B	compress ratio: 2.615581
+Static compress 4096 B to 1543 B	compress ratio: 2.654569
+Static compress 4096 B to 1581 B	compress ratio: 2.590765
+Static compress 4096 B to 1636 B	compress ratio: 2.503667
+Static compress 4096 B to 1516 B	compress ratio: 2.701847
+Static compress 4096 B to 1492 B	compress ratio: 2.745308
+Static compress 4096 B to 1543 B	compress ratio: 2.654569
+Static compress 4096 B to 1541 B	compress ratio: 2.658014
+Static compress 4096 B to 1536 B	compress ratio: 2.666667
+Static compress 4096 B to 1615 B	compress ratio: 2.536223
+Static compress 4096 B to 1583 B	compress ratio: 2.587492
+Static compress 4096 B to 1597 B	compress ratio: 2.564809
+Static compress 4096 B to 1544 B	compress ratio: 2.652850
+Static compress 4096 B to 1521 B	compress ratio: 2.692965
+Static compress 4096 B to 1589 B	compress ratio: 2.577722
+Static compress 4096 B to 1660 B	compress ratio: 2.467470
+Static compress 4096 B to 1689 B	compress ratio: 2.425104
+Static compress 4096 B to 1487 B	compress ratio: 2.754539
+Static compress 4096 B to 1536 B	compress ratio: 2.666667
+Static compress 4096 B to 1506 B	compress ratio: 2.719788
+Static compress 4096 B to 1478 B	compress ratio: 2.771313
+Static compress 4096 B to 1507 B	compress ratio: 2.717983
+Static compress 4096 B to 1499 B	compress ratio: 2.732488
+Static compress 4096 B to 1498 B	compress ratio: 2.734312
+Static compress 4096 B to 1432 B	compress ratio: 2.860335
+Static compress 4096 B to 1488 B	compress ratio: 2.752688
+Static compress 4096 B to 1482 B	compress ratio: 2.763833
+Static compress 4096 B to 1526 B	compress ratio: 2.684142
+Static compress 4096 B to 1572 B	compress ratio: 2.605598
+Static compress 4096 B to 1541 B	compress ratio: 2.658014
+Static compress 4096 B to 1464 B	compress ratio: 2.797814
+Static compress 4096 B to 1475 B	compress ratio: 2.776949
+Static compress 4096 B to 1413 B	compress ratio: 2.898797
+Static compress 4096 B to 1514 B	compress ratio: 2.705416
+Static compress 4096 B to 1617 B	compress ratio: 2.533086
+Static compress 4096 B to 1475 B	compress ratio: 2.776949
+Static compress 4096 B to 1594 B	compress ratio: 2.569636
+Static compress 4096 B to 1556 B	compress ratio: 2.632391
+Static compress 4096 B to 1460 B	compress ratio: 2.805479
+Static compress 4096 B to 1510 B	compress ratio: 2.712583
+Static compress 4096 B to 1626 B	compress ratio: 2.519065
+Static compress 4096 B to 1565 B	compress ratio: 2.617252
+Static compress 4096 B to 1491 B	compress ratio: 2.747150
+Static compress 4096 B to 1561 B	compress ratio: 2.623959
+Static compress 4096 B to 1460 B	compress ratio: 2.805479
+Static compress 4096 B to 1434 B	compress ratio: 2.856346
+Static compress 4096 B to 1489 B	compress ratio: 2.750839
+Static compress 4096 B to 1506 B	compress ratio: 2.719788
+Static compress 4096 B to 1523 B	compress ratio: 2.689429
+Static compress 4096 B to 1483 B	compress ratio: 2.761969
+Static compress 4096 B to 1589 B	compress ratio: 2.577722
+Static compress 4096 B to 1580 B	compress ratio: 2.592405
+Static compress 4096 B to 1455 B	compress ratio: 2.815120
+Static compress 4096 B to 1481 B	compress ratio: 2.765699
+Static compress 4096 B to 1418 B	compress ratio: 2.888575
+Static compress 4096 B to 1407 B	compress ratio: 2.911158
+Static compress 4096 B to 1473 B	compress ratio: 2.780720
+Static compress 4096 B to 1475 B	compress ratio: 2.776949
+Static compress 4096 B to 1470 B	compress ratio: 2.786395
+Static compress 4096 B to 1458 B	compress ratio: 2.809328
+Static compress 4096 B to 1451 B	compress ratio: 2.822881
+Static compress 4096 B to 1466 B	compress ratio: 2.793997
+Static compress 4096 B to 1485 B	compress ratio: 2.758249
+Static compress 4096 B to 1537 B	compress ratio: 2.664932
+Static compress 4096 B to 1461 B	compress ratio: 2.803559
+Static compress 4096 B to 1523 B	compress ratio: 2.689429
+Static compress 4096 B to 1480 B	compress ratio: 2.767568
+Static compress 4096 B to 1503 B	compress ratio: 2.725216
+Static compress 4096 B to 1510 B	compress ratio: 2.712583
+Static compress 4096 B to 1487 B	compress ratio: 2.754539
+Static compress 4096 B to 1495 B	compress ratio: 2.739799
+Static compress 4096 B to 1492 B	compress ratio: 2.745308
+Static compress 4096 B to 1527 B	compress ratio: 2.682384
+Static compress 4096 B to 1575 B	compress ratio: 2.600635
+Static compress 4096 B to 1590 B	compress ratio: 2.576101
+Static compress 4096 B to 1518 B	compress ratio: 2.698287
+Static compress 4096 B to 1581 B	compress ratio: 2.590765
+Static compress 4096 B to 1566 B	compress ratio: 2.615581
+Static compress 4096 B to 1622 B	compress ratio: 2.525277
+Static compress 4096 B to 1524 B	compress ratio: 2.687664
+Static compress 4096 B to 1564 B	compress ratio: 2.618926
+Static compress 4096 B to 1516 B	compress ratio: 2.701847
+Static compress 4096 B to 1527 B	compress ratio: 2.682384
+Static compress 4096 B to 1570 B	compress ratio: 2.608917
+Static compress 4096 B to 1543 B	compress ratio: 2.654569
+Static compress 4096 B to 1511 B	compress ratio: 2.710788
+Static compress 4096 B to 1438 B	compress ratio: 2.848401
+Static compress 4096 B to 1497 B	compress ratio: 2.736139
+Static compress 4096 B to 1507 B	compress ratio: 2.717983
+Static compress 4096 B to 1532 B	compress ratio: 2.673629
+Static compress 4096 B to 1497 B	compress ratio: 2.736139
+Static compress 4096 B to 1525 B	compress ratio: 2.685902
+Static compress 4096 B to 1451 B	compress ratio: 2.822881
+Static compress 4096 B to 1593 B	compress ratio: 2.571249
+Static compress 4096 B to 1568 B	compress ratio: 2.612245
+Static compress 4096 B to 1540 B	compress ratio: 2.659740
+Static compress 4096 B to 1614 B	compress ratio: 2.537794
+Static compress 4096 B to 1656 B	compress ratio: 2.473430
+Static compress 4096 B to 1616 B	compress ratio: 2.534653
+Static compress 4096 B to 1818 B	compress ratio: 2.253025
+Static compress 4096 B to 1939 B	compress ratio: 2.112429
+Static compress 4096 B to 2024 B	compress ratio: 2.023715
+Static compress 4096 B to 1972 B	compress ratio: 2.077079
+re train: average compress ration is 2.071075
+Dynamic compress 12288 B to 3571 B	compress ratio: 3.441053
+Static compress 4096 B to 1188 B	compress ratio: 3.447811
+Static compress 4096 B to 1232 B	compress ratio: 3.324675
+Static compress 4096 B to 1391 B	compress ratio: 2.944644
+Static compress 4096 B to 1322 B	compress ratio: 3.098336
+Static compress 4096 B to 1442 B	compress ratio: 2.840499
+Static compress 4096 B to 1373 B	compress ratio: 2.983248
+Static compress 4096 B to 1273 B	compress ratio: 3.217596
+Static compress 4096 B to 1373 B	compress ratio: 2.983248
+Static compress 4096 B to 1535 B	compress ratio: 2.668404
+Static compress 4096 B to 1508 B	compress ratio: 2.716180
+Static compress 4096 B to 1357 B	compress ratio: 3.018423
+Static compress 4096 B to 1338 B	compress ratio: 3.061286
+Static compress 4096 B to 1342 B	compress ratio: 3.052161
+Static compress 4096 B to 1456 B	compress ratio: 2.813187
+Static compress 4096 B to 1367 B	compress ratio: 2.996342
+Static compress 4096 B to 1406 B	compress ratio: 2.913229
+Static compress 4096 B to 1438 B	compress ratio: 2.848401
+Static compress 4096 B to 1657 B	compress ratio: 2.471937
+re train: average compress ration is 2.744522
+Dynamic compress 12288 B to 3206 B	compress ratio: 3.832813
+Static compress 4096 B to 1027 B	compress ratio: 3.988315
+Static compress 4096 B to 1257 B	compress ratio: 3.258552
+Static compress 4096 B to 1176 B	compress ratio: 3.482993
+Static compress 4096 B to 1254 B	compress ratio: 3.266348
+Static compress 4096 B to 1145 B	compress ratio: 3.577293
+Static compress 4096 B to 1319 B	compress ratio: 3.105383
+Static compress 4096 B to 1279 B	compress ratio: 3.202502
+Static compress 4096 B to 1345 B	compress ratio: 3.045353
+Static compress 4096 B to 1290 B	compress ratio: 3.175194
+Static compress 4096 B to 1274 B	compress ratio: 3.215071
+Static compress 4096 B to 1383 B	compress ratio: 2.961678
+Static compress 4096 B to 1261 B	compress ratio: 3.248216
+Static compress 4096 B to 1271 B	compress ratio: 3.222659
+Static compress 4096 B to 1201 B	compress ratio: 3.410491
+Static compress 4096 B to 1257 B	compress ratio: 3.258552
+Static compress 4096 B to 1225 B	compress ratio: 3.343673
+Static compress 4096 B to 1235 B	compress ratio: 3.316599
+Static compress 4096 B to 1254 B	compress ratio: 3.266348
+Static compress 4096 B to 1340 B	compress ratio: 3.056716
+Static compress 4096 B to 1155 B	compress ratio: 3.546320
+Static compress 4096 B to 1142 B	compress ratio: 3.586690
+Static compress 4096 B to 1373 B	compress ratio: 2.983248
+Static compress 4096 B to 1200 B	compress ratio: 3.413333
+Static compress 4096 B to 1394 B	compress ratio: 2.938307
+Static compress 4096 B to 1326 B	compress ratio: 3.088989
+Static compress 4096 B to 1318 B	compress ratio: 3.107739
+re train: average compress ration is 3.045012
+Dynamic compress 12288 B to 2923 B	compress ratio: 4.203900
+Static compress 4096 B to 974 B	compress ratio: 4.205339
+Static compress 4096 B to 1087 B	compress ratio: 3.768169
+Static compress 4096 B to 1074 B	compress ratio: 3.813780
+Static compress 4096 B to 1126 B	compress ratio: 3.637655
+Static compress 4096 B to 1139 B	compress ratio: 3.596137
+Static compress 4096 B to 1005 B	compress ratio: 4.075622
+Static compress 4096 B to 1049 B	compress ratio: 3.904671
+Static compress 4096 B to 1178 B	compress ratio: 3.477080
+Static compress 4096 B to 1429 B	compress ratio: 2.866340
+Static compress 4096 B to 1437 B	compress ratio: 2.850383
+re train: average compress ration is 3.064601
+Dynamic compress 12288 B to 2751 B	compress ratio: 4.466739
+Static compress 4096 B to 662 B	compress ratio: 6.187311
+Static compress 4096 B to 825 B	compress ratio: 4.964848
+Static compress 4096 B to 940 B	compress ratio: 4.357447
+Static compress 4096 B to 1045 B	compress ratio: 3.919617
+Static compress 4096 B to 997 B	compress ratio: 4.108325
+Static compress 4096 B to 1279 B	compress ratio: 3.202502
+Static compress 4096 B to 1196 B	compress ratio: 3.424749
+Static compress 4096 B to 1163 B	compress ratio: 3.521926
+re train: average compress ration is 3.383059
+Dynamic compress 12288 B to 2885 B	compress ratio: 4.259272
+Static compress 4096 B to 1060 B	compress ratio: 3.864151
+Static compress 4096 B to 1045 B	compress ratio: 3.919617
+Static compress 4096 B to 1152 B	compress ratio: 3.555556
+Static compress 4096 B to 1124 B	compress ratio: 3.644128
+Static compress 4096 B to 1241 B	compress ratio: 3.300564
+Static compress 4096 B to 1126 B	compress ratio: 3.637655
+Static compress 4096 B to 1131 B	compress ratio: 3.621574
+Static compress 4096 B to 1083 B	compress ratio: 3.782087
+Static compress 4096 B to 1064 B	compress ratio: 3.849624
+Static compress 4096 B to 1176 B	compress ratio: 3.482993
+Static compress 4096 B to 1148 B	compress ratio: 3.567944
+Static compress 4096 B to 1090 B	compress ratio: 3.757798
+Static compress 4096 B to 1177 B	compress ratio: 3.480034
+Static compress 4096 B to 1168 B	compress ratio: 3.506849
+Static compress 4096 B to 1148 B	compress ratio: 3.567944
+Static compress 4096 B to 1055 B	compress ratio: 3.882464
+Static compress 4096 B to 1003 B	compress ratio: 4.083749
+Static compress 4096 B to 1086 B	compress ratio: 3.771639
+Static compress 4096 B to 1059 B	compress ratio: 3.867800
+Static compress 4096 B to 1097 B	compress ratio: 3.733820
+Static compress 4096 B to 1055 B	compress ratio: 3.882464
+Static compress 4096 B to 1178 B	compress ratio: 3.477080
+Static compress 4096 B to 1168 B	compress ratio: 3.506849
+Static compress 4096 B to 1308 B	compress ratio: 3.131498
+re train: average compress ration is 3.371809
+Dynamic compress 12288 B to 2838 B	compress ratio: 4.329810
+Static compress 4096 B to 1048 B	compress ratio: 3.908397
+Static compress 4096 B to 1268 B	compress ratio: 3.230284
+Static compress 4096 B to 1018 B	compress ratio: 4.023576
+Static compress 4096 B to 1054 B	compress ratio: 3.886148
+Static compress 4096 B to 1408 B	compress ratio: 2.909091
+Static compress 4096 B to 1063 B	compress ratio: 3.853246
+Static compress 4096 B to 1313 B	compress ratio: 3.119573
+re train: average compress ration is 3.293970
+Dynamic compress 12288 B to 2987 B	compress ratio: 4.113827
+Static compress 4096 B to 1317 B	compress ratio: 3.110099
+Static compress 4096 B to 1736 B	compress ratio: 2.359447
+Static compress 4096 B to 1378 B	compress ratio: 2.972424
+Static compress 4096 B to 1284 B	compress ratio: 3.190031
+re train: average compress ration is 2.840634
+Dynamic compress 12288 B to 2925 B	compress ratio: 4.201026
+Static compress 4096 B to 1044 B	compress ratio: 3.923372
+Static compress 4096 B to 1263 B	compress ratio: 3.243072
+Static compress 4096 B to 1068 B	compress ratio: 3.835206
+Static compress 4096 B to 1205 B	compress ratio: 3.399170
+Static compress 4096 B to 1060 B	compress ratio: 3.864151
+Static compress 4096 B to 937 B	compress ratio: 4.371398
+Static compress 4096 B to 1009 B	compress ratio: 4.059465
+Static compress 4096 B to 1099 B	compress ratio: 3.727025
+Static compress 4096 B to 1480 B	compress ratio: 2.767568
+Static compress 4096 B to 1228 B	compress ratio: 3.335505
+re train: average compress ration is 3.276699
+Dynamic compress 12288 B to 2786 B	compress ratio: 4.410625
+Static compress 4096 B to 1042 B	compress ratio: 3.930902
+Static compress 4096 B to 963 B	compress ratio: 4.253375
+Static compress 4096 B to 1154 B	compress ratio: 3.549393
+Static compress 4096 B to 1170 B	compress ratio: 3.500855
+Static compress 4096 B to 1071 B	compress ratio: 3.824463
+Static compress 4096 B to 1007 B	compress ratio: 4.067527
+Static compress 4096 B to 1053 B	compress ratio: 3.889839
+Static compress 4096 B to 1192 B	compress ratio: 3.436242
+Static compress 3385 B to 1526 B	compress ratio: 2.218218
+re train: average compress ration is 3.181433
+compressed size: 464844 B
+compress ratio: 2.967966
+compression time=56.351810 s
+
 nohup: ignoring input
-File "ne" no exist
-nohup: ignoring input
-Begin compressing ne
-file size: 133553458
-block size : 1048576 B, block num: 128
-train block: 12
-compressed size: 60165614 B
-compress ratio: 2.219764
-dynamic compresse ratio: 26.871291
-compression time=4848.053223 s
-train time=929.508301 s
-static compress time=3918.544922 s
+Begin compressing de
+file size: 110192463
+block size : 4096 B, block num: 26903
+train block: 269
+re train: average compress ration is 3.527173
+re train: average compress ration is 3.576498
+re train: average compress ration is 3.425052
+re train: average compress ration is 3.492650
+re train: average compress ration is 3.536794
+re train: average compress ration is 3.594703
+re train: average compress ration is 3.633347
+re train: average compress ration is 3.674057
+re train: average compress ration is 3.622616
+re train: average compress ration is 3.857259
+re train: average compress ration is 3.693198
+re train: average compress ration is 3.603350
+re train: average compress ration is 3.596316
+re train: average compress ration is 3.619607
+re train: average compress ration is 3.709446
+re train: average compress ration is 3.709794
+re train: average compress ration is 3.627732
+re train: average compress ration is 3.646243
+re train: average compress ration is 3.419902
+re train: average compress ration is 3.587559
+re train: average compress ration is 3.517971
+re train: average compress ration is 3.610088
+re train: average compress ration is 3.586192
+compressed size: 28748775 B
+compress ratio: 3.832945
+compression time=5180.643555 s
+
+Begin compressing bb
+file size: 1379641
+block size : 4096 B, block num: 337
+train block: 3
+re train: average compress ration is 2.071075
+re train: average compress ration is 2.744522
+re train: average compress ration is 3.045012
+re train: average compress ration is 3.064601
+re train: average compress ration is 3.383059
+re train: average compress ration is 3.371809
+re train: average compress ration is 3.293970
+re train: average compress ration is 2.840634
+re train: average compress ration is 3.276699
+re train: average compress ration is 3.181433
+compressed size: 464844 B
+compress ratio: 2.967966
+compression time=56.024246 s
 

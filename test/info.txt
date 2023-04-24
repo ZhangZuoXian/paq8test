@@ -1079,18 +1079,7 @@ static compress time=0.000000 s
 
 *****************************************************
 
-混合数据输入，1MB分块，10%训练
-
-Begin compressing ne
-file size: 133553458
-block size : 1048576 B, block num: 128
-train block: 12
-compressed size: 60165614 B
-compress ratio: 2.219764
-dynamic compresse ratio: 26.871291
-compression time=4848.053223 s
-train time=929.508301 s
-static compress time=3918.544922 s
+1MB分块，1%的块作为训练块
 
 Begin compressing reymont
 file size: 6627202
@@ -1158,6 +1147,10 @@ compression time=3717.487549 s
 train time=82.744942 s
 static compress time=3634.742676 s
 
+*****************************************************
+
+混合数据输入，1MB分块
+
 Begin compressing ne
 file size: 133553458
 block size : 1048576 B, block num: 128
@@ -1172,6 +1165,17 @@ static compress time=4330.395508 s
 Begin compressing ne
 file size: 133553458
 block size : 1048576 B, block num: 128
+train block: 12
+compressed size: 60165614 B
+compress ratio: 2.219764
+dynamic compresse ratio: 26.871291
+compression time=4848.053223 s
+train time=929.508301 s
+static compress time=3918.544922 s
+
+Begin compressing ne
+file size: 133553458
+block size : 1048576 B, block num: 128
 train block: 128
 compressed size: 23100122 B
 compress ratio: 5.781504
@@ -1179,4 +1183,119 @@ dynamic compresse ratio: 5.781504
 compression time=10460.551758 s
 train time=10460.551758 s
 static compress time=0.000000 s
+
+Begin compressing bbe
+file size: 101379648
+block size : 1048576 B, block num: 97
+train block: 1
+compressed size: 35618366 B
+compress ratio: 2.846275
+dynamic compresse ratio: 3.993951
+compression time=3727.824463 s
+train time=82.535667 s
+static compress time=3645.288818 s
+
+Begin compressing bbe
+file size: 101379648
+block size : 1048576 B, block num: 97
+train block: 9
+compressed size: 25831260 B
+compress ratio: 3.924688
+dynamic compresse ratio: 4.511050
+compression time=4120.562500 s
+train time=742.077332 s
+static compress time=3378.485352 s
+
+Begin compressing bbe
+file size: 101379648
+block size : 1048576 B, block num: 97
+train block: 97
+compressed size: 21730952 B
+compress ratio: 4.665219
+dynamic compresse ratio: 4.665219
+compression time=7947.212402 s
+train time=7947.212402 s
+static compress time=0.000000 s
+
+Begin compressing de
+file size: 110192463
+block size : 1048576 B, block num: 106
+train block: 1
+compressed size: 38686173 B
+compress ratio: 2.848368
+dynamic compresse ratio: 4.416786
+compression time=4094.037598 s
+train time=82.799774 s
+static compress time=4011.237549 s
+
+Begin compressing de
+file size: 110192463
+block size : 1048576 B, block num: 106
+train block: 10
+compressed size: 31559519 B
+compress ratio: 3.491576
+dynamic compresse ratio: 4.528054
+compression time=4481.736328 s
+train time=823.941162 s
+static compress time=3657.795166 s
+
+Begin compressing de
+file size: 110192463
+block size : 1048576 B, block num: 106
+train block: 106
+compressed size: 23778327 B
+compress ratio: 4.634155
+dynamic compresse ratio: 4.634155
+compression time=8644.078125 s
+train time=8644.078125 s
+static compress time=0.000000 s
+
+Begin compressing ne
+file size: 133553458
+block size : 1048576 B, block num: 128
+train block: 1
+compressed size: 73050711 B
+compress ratio: 1.828229
+dynamic compresse ratio: 22.950294
+compression time=4382.482422 s
+train time=76.222771 s
+static compress time=4306.259277 s
+
+Begin compressing ne
+file size: 133553458
+block size : 1048576 B, block num: 128
+train block: 12
+compressed size: 60165614 B
+compress ratio: 2.219764
+dynamic compresse ratio: 26.871291
+compression time=4824.891602 s
+train time=913.190857 s
+static compress time=3911.700439 s
+
+Begin compressing ne
+file size: 133553458
+block size : 1048576 B, block num: 128
+train block: 128
+compressed size: 23100122 B
+compress ratio: 5.781504
+dynamic compresse ratio: 5.781504
+compression time=10242.755859 s
+train time=10242.755859 s
+static compress time=0.000000 s
+
+*****************************************************
+
+混合数据输入，4KB分块，不同训练量、超参数k和θ
+
+baseline：单次训练1%
+Begin compressing de
+file size: 110192463
+block size : 4096 B, block num: 26903
+train block: 269
+compressed size: 41673726 B
+compress ratio: 2.644171
+dynamic compresse ratio: 4.413493
+compression time=4013.021484 s
+train time=86.436989 s
+static compress time=3926.584229 s
 

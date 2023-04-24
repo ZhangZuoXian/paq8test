@@ -46,7 +46,8 @@ auto ContextModel::pWPar(uint8_t c) -> int*{
   
     
 
-  return pr;
+  // return pr;
+  return nullptr;
 }
 
 ContextModel::~ContextModel() {
