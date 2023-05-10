@@ -1,7 +1,7 @@
 #include "StateMap.hpp"
 
 StateMap::StateMap(const Shared* const sh, const int s, const int n, const int lim, const StateMap::MAPTYPE mapType) :
-  AdaptiveMap(sh, n * s, lim), numContextSets(s), numContextsPerSet(n), numContexts(0), cxt(s) {
+  AdaptiveMap(sh, n * s, lim), numContextSets(s), numContextsPerSet(n), numContexts(0), cxt(s), StateMapType(mapType) {
 #ifdef VERBOSE
   printf("Created StateMap with s = %d, n = %d, lim = %d, maptype = %d\n", s, n, lim, mapType);
 #endif
@@ -42,6 +42,40 @@ StateMap::StateMap(const Shared* const sh, const int s, const int n, const int l
 void StateMap::reset(const int rate) {
   for( uint32_t i = 0; i < numContextsPerSet * numContextSets; ++i ) {
     t[i] = (t[i] & 0xfffffc00U) | min(rate, t[i] & 0x3FFU);
+  }
+}
+
+void StateMap::reset() {
+  numContexts = 0;
+  
+  if( StateMapType == BitHistory ) { // when the context is a bit history byte, we have a-priory for p
+    for( uint32_t cx = 0; cx < numContextsPerSet; ++cx ) {
+      auto state = uint8_t(cx & 255U);
+      uint32_t n0 = StateTable::next(state, 2) * 3 + 1;
+      uint32_t n1 = StateTable::next(state, 3) * 3 + 1;
+      for( uint32_t s = 0; s < numContextSets; ++s ) {
+        t[s * numContextsPerSet + cx] = ((n1 << 20U) / (n0 + n1)) << 12U; //定义在adaptivemap中, t中一个元素32bit
+      }
+    }
+  } else if( StateMapType == Run ) { // when the context is a run count: we have a-priory for p
+    for( uint32_t cx = 0; cx < numContextsPerSet; ++cx ) {
+      const int predictedBit = (cx) & 1U;
+      const int uncertainty = (cx >> 1U) & 1U;
+      //const int bp = (cx>>2)&1; // unused in calculation - a-priory does not seem to depend on bitPosition in the general case
+      const int runCount = (cx >> 4U); // 0..254
+      uint32_t n0 = uncertainty * 16 + 16;
+      uint32_t n1 = runCount * 128 + 16;
+      if( predictedBit == 0 ) {
+        std::swap(n0, n1);
+      }
+      for( uint32_t s = 0; s < numContextSets; ++s ) {
+        t[s * numContextsPerSet + cx] = ((n1 << 20U) / (n0 + n1)) << 12U | min(runCount, limit);
+      }
+    }
+  } else { // no a-priory
+    for( uint32_t i = 0; i < numContextsPerSet * numContextSets; ++i ) {
+      t[i] = (1U << 31U) + 0; //initial p=0.5, initial count=0
+    }
   }
 }
 

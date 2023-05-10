@@ -32,7 +32,7 @@ int main(int argc,char **argv) {
 
     fout = fopen(foutPath.c_str(), "w");
     filename += "\n\n";
-    fwrite(filename.c_str(), 1, filename.size(), fout);
+    // fwrite(filename.c_str(), 1, filename.size(), fout);
 
     char buf[257];
     size_t r_size, w_size;

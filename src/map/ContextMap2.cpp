@@ -26,25 +26,28 @@ void ContextMap2::set(const uint64_t ctx) {
   uint8_t *base = bitState[index] = bitState0[index] = table[ctx0].find(chk0);
   byteHistory[index] = &base[3];
   const uint8_t runCount = base[3];
-  if( shared->updateState && runCount == 255 ) { // pending
-    // update pending bit histories for bits 2-7
-    // in case of a collision updating (mixing) is slightly better (but slightly slower) then resetting, so we update
-    const int c = base[4] + 256;
-    uint8_t *p1A = table[(ctx0 + (c >> 6U)) & mask].find(chk0);
-    StateTable::update(p1A, ((c >> 5U) & 1), rnd);
-    StateTable::update(p1A + 1 + ((c >> 5) & 1), ((c >> 4) & 1), rnd);
-    StateTable::update(p1A + 3 + ((c >> 4U) & 3), ((c >> 3) & 1), rnd);
-    uint8_t *p1B = table[(ctx0 + (c >> 3)) & mask].find(chk0);
-    StateTable::update(p1B, (c >> 2) & 1, rnd);
-    StateTable::update(p1B + 1 + ((c >> 2) & 1), (c >> 1) & 1, rnd);
-    StateTable::update(p1B + 3 + ((c >> 1) & 3), c & 1, rnd);
-    base[3] = 1; // runCount: flag for having completed storing all the 8 bits of the first byte
-  } else {
-    const uint8_t byteState = base[0];
-    if( shared->updateState && byteState == 0 ) { // empty slot, new context
-      base[3] = 255; // runCount: flag for skipping updating bits 2..7
+  if(shared->updateState) {
+    if( runCount == 255 ) { // pending
+      // update pending bit histories for bits 2-7
+      // in case of a collision updating (mixing) is slightly better (but slightly slower) then resetting, so we update
+      const int c = base[4] + 256;
+      uint8_t *p1A = table[(ctx0 + (c >> 6U)) & mask].find(chk0);
+      StateTable::update(p1A, ((c >> 5U) & 1), rnd);
+      StateTable::update(p1A + 1 + ((c >> 5) & 1), ((c >> 4) & 1), rnd);
+      StateTable::update(p1A + 3 + ((c >> 4U) & 3), ((c >> 3) & 1), rnd);
+      uint8_t *p1B = table[(ctx0 + (c >> 3)) & mask].find(chk0);
+      StateTable::update(p1B, (c >> 2) & 1, rnd);
+      StateTable::update(p1B + 1 + ((c >> 2) & 1), (c >> 1) & 1, rnd);
+      StateTable::update(p1B + 3 + ((c >> 1) & 3), c & 1, rnd);
+      base[3] = 1; // runCount: flag for having completed storing all the 8 bits of the first byte
+    } else {
+      const uint8_t byteState = base[0];
+      if( byteState == 0 ) { // empty slot, new context
+        base[3] = 255; // runCount: flag for skipping updating bits 2..7
+      }
     }
   }
+
   index++;
   validFlags = (validFlags << 1U) + 1;
 }
@@ -76,21 +79,23 @@ void ContextMap2::update() {
           case 0: {
             // update byte history
             const auto byteState = byteHistoryPtr[-3];
-            if( shared->updateState && byteState < 3 ) { // 1st byte has just become known
-              byteHistoryPtr[1] = byteHistoryPtr[2] = byteHistoryPtr[3] = c1; // set all byte candidates to c1
-            } else { // 2nd byte is known
-              const auto isMatch = byteHistoryPtr[1] == c1;
-              if( isMatch ) {
-                if( shared->updateState && runCount < 253 ) {
-                  byteHistoryPtr[0] = runCount + 1;
+            if(shared->updateState) {
+              if( byteState < 3 ) { // 1st byte has just become known
+                byteHistoryPtr[1] = byteHistoryPtr[2] = byteHistoryPtr[3] = c1; // set all byte candidates to c1
+              } else { // 2nd byte is known
+                const auto isMatch = byteHistoryPtr[1] == c1;
+                if( isMatch ) {
+                  if( runCount < 253 ) {
+                    byteHistoryPtr[0] = runCount + 1;
+                  }
+                } else {
+                  byteHistoryPtr[0] = 1; //runCount
+                  // scroll byte candidates
+                  byteHistoryPtr[3] = byteHistoryPtr[2];
+                  byteHistoryPtr[2] = byteHistoryPtr[1];
+                  byteHistoryPtr[1] = c1;
                 }
-              } else if(shared->updateState){
-                byteHistoryPtr[0] = 1; //runCount
-                // scroll byte candidates
-                byteHistoryPtr[3] = byteHistoryPtr[2];
-                byteHistoryPtr[2] = byteHistoryPtr[1];
-                byteHistoryPtr[1] = c1;
-              }
+              }              
             }
             break;
           }
@@ -240,3 +245,16 @@ void ContextMap2::mix(Mixer &m) {
 }
 
 // int ContextMap2::getType() { return 3; }
+
+void ContextMap2::reset() {
+  for( uint32_t i = 0; i < C; i++ ) {
+    bitState[i] = bitState0[i] = &table[i].bitState[0][0];
+    byteHistory[i] = bitState[i] + 3;
+  }
+  validFlags = 0;
+  index = 0;
+  runMap.reset();
+  stateMap.reset();
+  bhMap8B.reset();
+  bhMap12B.reset();
+}

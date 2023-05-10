@@ -20,6 +20,8 @@ public:
         Generic, BitHistory, Run
     };
 
+    const MAPTYPE StateMapType;
+
     /**
      * Creates a @ref StateMap with @ref n contexts using 4*n bytes memory.
      * @param s
@@ -30,6 +32,11 @@ public:
     StateMap(const Shared* const sh, int s, int n, int lim, MAPTYPE mapType);
 
     void reset(int rate);
+
+    /**
+     * resets the stateMap, initializes the value according to the type
+     */    
+    void reset();
 
     void update() override;
 

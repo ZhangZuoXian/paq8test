@@ -11,6 +11,10 @@ NormalModel::NormalModel(Shared* const sh, const uint64_t cmSize) :
 
 void NormalModel::reset() {
   memset(&cxt[0], 0, sizeof(cxt));
+  cm.reset();
+  smOrder0Slow.reset();
+  smOrder1Slow.reset();
+  smOrder1Fast.reset();
 }
 
 void NormalModel::updateHashes() {

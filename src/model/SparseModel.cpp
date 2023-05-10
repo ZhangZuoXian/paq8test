@@ -35,3 +35,7 @@ void SparseModel::mix(Mixer &m) {
   }
   cm.mix(m);
 }
+
+void SparseModel::reset() {
+  cm.reset();
+}

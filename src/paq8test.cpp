@@ -116,8 +116,8 @@ int main(int argc,char **argv){
         printf("Begin compressing %s\n", argv[2]);
         printf("file size: %u\n", fsize);
         printf("block size : %u B, block num: %u\n", block_size, block_num);
-        printf("train block: %u(%.3lf%%)\n", update_block_num, update_ratio);
-        printf("k: %u(%.3lf%%) theta: %.2lf\n", para_k, para_k_ratio, para_theta);
+        printf("train block: %u(%.2lf%%)\n", update_block_num, update_ratio);
+        printf("k: %u(%.2lf%%) theta: %.2lf\n", para_k, para_k_ratio, para_theta);
         
         // 写入元数据
         fwU32(metaData, fsize);
@@ -211,8 +211,8 @@ int main(int argc,char **argv){
                 if(static_block >= para_k &&
                      ratio_sum / para_k < train_ratio * para_theta) {
                     // retrain
-                    delete en;
-                    en = new Encoder(&shared, COMPRESS, fout);
+                    // delete en;
+                    // en = new Encoder(&shared, COMPRESS, fout);
                     // TODO：真正的参数reset
                     shared.dynamicPara();
                     train_block = 0;

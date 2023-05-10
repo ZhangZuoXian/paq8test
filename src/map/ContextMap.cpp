@@ -150,4 +150,11 @@ void ContextMap::mix(Mixer &m) {
   }
 }
 
+void ContextMap::reset() {
+  t.reset();
+  sm.reset();
+  cn = 0;
+  validFlags = 0;
+}
+
 // int ContextMap::getType() { return 2; }

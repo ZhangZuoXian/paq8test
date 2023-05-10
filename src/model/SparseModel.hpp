@@ -21,4 +21,5 @@ public:
     static constexpr int MIXERCONTEXTSETS = 0;
     explicit SparseModel(const Shared* const sh, uint64_t size);
     void mix(Mixer &m);
+    void reset();
 };

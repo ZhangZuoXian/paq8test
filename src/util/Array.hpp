@@ -92,6 +92,12 @@ public:
      * @param x the element to append
      */
     void pushBack(const T &x);
+
+    /**
+     * resets the array and initializes the allocated memory to 0s.
+     */
+    void reset();
+
     /**
      * Prevent copying
      * Remark: GCC complains if this member is private, so it is public
@@ -153,6 +159,11 @@ void Array<T, Align>::pushBack(const T &x) {
     usedSize = oldSize;
   }
   data[usedSize++] = x;
+}
+
+template<class T, const int Align>
+void Array<T, Align>::reset() {
+  memset(ptr, 0, allocatedBytes());
 }
 
 template<class T, const int Align>
