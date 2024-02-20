@@ -63,3 +63,40 @@ TODO：
 
 2023.4.20
 对上述的规划做出补充：按模型的顺序，一个一个解决更新控制、reset的问题，同时要区分模型的reset，是只reset上下文信息，还是需要reset映射表的信息
+
+2023.5.15
+再次确定应该逐比特更新的参数和可以自适应更新的参数。所有参数都要设置reset以便于在重训练时reset，部分参数需要blockReset，在压缩一个数据块后就reset（比如上下文信息）
+对模型的所有参数进行抽象，认为部分参数是从上下文中抽取的、用于计算索引的，这部分必须逐比特更新。其他参数都可以自适应更新。
+对share，所有参数都应当逐比特更新
+**特别注意bucket的find函数会导致bucket中的条目被替换！这也是参数更新**
+
+2023.5.15
+现在开始检查reset函数是否包含了所有的参数，并实现自适应更新参数的更新控制
+SparseModel - contextmap - statemap - adaptivemap done
+NormalModel - contextmap2 done
+MatchModel - indirectcontext - stataionarymap - smallstationmap done
+
+2023.5.18
+关于indirectContext到底应该逐比特更新还是自适应更新的问题。
+indirectContext本质上是将输入数据看成比特流，获得当前比特的上下文hash值。
+目前认为把它当成映射表信息、让其自适应更新较好，后面也可以对比一下当成上下文信息、逐比特更新。
+
+2023.5.18
+进一步明确重训练时的操作。
+动态训练：updatestate为true，所有参数正常的逐比特更新。结束后blockReset。
+静态压缩：上下文参数逐比特更新，其他参数停止更新。压缩一个数据块后blockReset
+重训练：所有参数全部reset
+逐比特更新的上下文参数包括：normalModel中的cxt即上下文的hash值；matchmodel中length、index及二者的bak，mismatch的标志delta；stationaryMap和smallstationaryMap中的b（和上下文hash一起用于索引对应的概率）；混合器中的参数
+自适应更新的参数包括：contextmap、contextmap2中的bucket；indirectContext的data和ctx；statemap和adaptivemap的t；stationaryMap和smallstationaryMap中的data
+
+TODO：mixer和shared的参数控制和reset
+一点点小忧虑：重训练发生reset时可能需要进行大量的参数计算和读写，静态参数带来的时间节省真的能大过重训练的开销吗？
+
+2023.5.25
+决定混合器中的参数采用逐比特更新的方式，不再自适应更新。原因在于我不了解其内部结构，后续了解的话可以对比看看。
+其实想来混合器本来就不能用静态参数，否则动态模型选择咋整？
+
+2023.10.6
+重新梳理：现在把方案分成了两个点：自适应和解压优化。自适应就是自适应参数更新和自适应模型选择，解压优化就是重训练。
+给解压优化想了一个新的动机，就是一堆小数据或者小文件，我们想把他们打包在一起去压缩，这样能够提高压缩比。但这里存在两个问题：一是上下文混合压缩中压缩比和数据量不一定成正相关；二是打包的越大，我们读取的时候解压时延就越高。所以我们需要权衡后确定一个较为合适的打包大小，这里提出以压缩比为判定依据，设置上下限的方式。场景可以是增量备份的场景：增量备份后把本次备份剩余的增量全都打包到一起，如果某个文件损坏了，那就得把所有压缩包全部解开，才能依次获得增量和base文件。如果用来这个方案，就可以每个压缩包只解压部分数据
+这种思路下面，自适应参数更新其实就是做分块统计当前压缩比、根据压缩比控制参数更新、做并行压缩的

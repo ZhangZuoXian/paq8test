@@ -39,13 +39,16 @@ void StationaryMap::reset(const int rate) {
 
 void StationaryMap::update() {
   INJECT_SHARED_y
+  b += static_cast<uint32_t>((y != 0) && b > 0);
+  if(shared->updateState == false) {
+    return;
+  }
   uint32_t count = min(min(limit, 0x3FF), ((*cp) & 0x3FF) + 1);
   int prediction = (*cp) >> 10; // 22 bit p
   int error = (y << 22) - prediction; // 22 bit error
   error = ((error / 8) * dt[count]) / 1024; // error = error *  1.0/(count+1.5)
   prediction = min(0x3FFFFF, max(0, prediction + error));
   *cp = (prediction << 10) | count;
-  b += static_cast<uint32_t>((y != 0) && b > 0);
 }
 
 void StationaryMap::mix(Mixer &m) {

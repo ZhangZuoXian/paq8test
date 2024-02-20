@@ -105,8 +105,10 @@ void MatchModel::update() {
     }
     // update position information in hashtable
     INJECT_SHARED_pos
-    for( uint32_t i = 0; i < numHashes; i++ ) {
-      table[hashes[i]] = pos;
+    if(shared->updateState == true) {
+      for( uint32_t i = 0; i < numHashes; i++ ) {
+        table[hashes[i]] = pos;
+      }
     }
     shared->State.Match.expectedByte = expectedByte = (length != 0 ? buf[index] : 0);
   }
@@ -182,8 +184,10 @@ void MatchModel::mix(Mixer &m) {
   //bitwise contexts
   {
     maps[0].set(hash(expectedByte, c0, c4 & 0xffffu, length3Rm));
-    INJECT_SHARED_y
-    iCtx += y;
+    if(shared->updateState) {
+      INJECT_SHARED_y
+      iCtx += y;      
+    }
     const uint8_t c = length3Rm << 1U | expectedBit; // 4 bits
     iCtx = (bpos << 11U) | (c1 << 3U) | c;
     maps[1].setDirect(iCtx());
@@ -203,4 +207,33 @@ void MatchModel::mix(Mixer &m) {
 
   m.set(min(lengthC, 7), 8);
   shared->State.Match.length3 = min(lengthC, 3);
+}
+
+void MatchModel::reset() {
+  table.reset();
+  for(int i = 0; i < nST; i++) {
+    stateMaps[i].reset();
+  }
+  cm.reset();
+
+  SCM.reset();
+
+  for(int i = 0; i < nSM; i++) {
+    maps[i].reset(0);
+  }
+
+  iCtx.reset();
+  // blockReset();
+}
+
+// 静态压缩时每压缩一个数据块都得reset上下文信息
+void MatchModel::blockReset() {
+  length = lengthBak = index = indexBak = expectedByte = 0;
+  delta = false;
+
+  SCM.set(0);
+
+  for(int i = 0; i < nSM; i++) {
+    maps[i].set(0);
+  }  
 }

@@ -100,6 +100,9 @@ private:
     uint64_t validFlags;
     Ilog *ilog = Ilog::getInstance();
 
+    // 若bucket find缺失的时候，就指向这个全零的条目
+    uint8_t cm_bitState[7];
+
 public:
     /**
      * Construct using @ref m bytes of memory for @ref contexts contexts

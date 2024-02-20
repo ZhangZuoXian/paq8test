@@ -17,13 +17,17 @@ ContextMap2::ContextMap2(const Shared* const sh, const uint64_t size, const uint
     bitState[i] = bitState0[i] = &table[i].bitState[0][0];
     byteHistory[i] = bitState[i] + 3;
   }
+  memset(cm_bitState, 0, 7);
 }
 
 void ContextMap2::set(const uint64_t ctx) {
   assert(index >= 0 && index < C);
   const uint32_t ctx0 = contexts[index] = finalize64(ctx, hashBits);
   const uint16_t chk0 = checksums[index] = checksum16(ctx, hashBits);
-  uint8_t *base = bitState[index] = bitState0[index] = table[ctx0].find(chk0);
+  uint8_t *base = bitState[index] = bitState0[index] = table[ctx0].find(chk0, shared);
+  if(base == NULL) {
+    base = bitState[index] = bitState0[index] = cm_bitState;
+  }
   byteHistory[index] = &base[3];
   const uint8_t runCount = base[3];
   if(shared->updateState) {
@@ -31,11 +35,11 @@ void ContextMap2::set(const uint64_t ctx) {
       // update pending bit histories for bits 2-7
       // in case of a collision updating (mixing) is slightly better (but slightly slower) then resetting, so we update
       const int c = base[4] + 256;
-      uint8_t *p1A = table[(ctx0 + (c >> 6U)) & mask].find(chk0);
+      uint8_t *p1A = table[(ctx0 + (c >> 6U)) & mask].find(chk0, shared);
       StateTable::update(p1A, ((c >> 5U) & 1), rnd);
       StateTable::update(p1A + 1 + ((c >> 5) & 1), ((c >> 4) & 1), rnd);
       StateTable::update(p1A + 3 + ((c >> 4U) & 3), ((c >> 3) & 1), rnd);
-      uint8_t *p1B = table[(ctx0 + (c >> 3)) & mask].find(chk0);
+      uint8_t *p1B = table[(ctx0 + (c >> 3)) & mask].find(chk0, shared);
       StateTable::update(p1B, (c >> 2) & 1, rnd);
       StateTable::update(p1B + 1 + ((c >> 2) & 1), (c >> 1) & 1, rnd);
       StateTable::update(p1B + 3 + ((c >> 1) & 3), c & 1, rnd);
@@ -103,7 +107,10 @@ void ContextMap2::update() {
           case 5: {
             const uint32_t ctx = contexts[i];
             const uint16_t chk = checksums[i];
-            bitState[i] = bitState0[i] = table[(ctx + c0) & mask].find(chk);
+            bitState[i] = bitState0[i] = table[(ctx + c0) & mask].find(chk, shared);
+            if(bitState[i] == NULL) {
+              bitState[i] = bitState0[i] = cm_bitState;
+            }
             break;
           }
           case 1:
@@ -247,6 +254,7 @@ void ContextMap2::mix(Mixer &m) {
 // int ContextMap2::getType() { return 3; }
 
 void ContextMap2::reset() {
+  table.reset();
   for( uint32_t i = 0; i < C; i++ ) {
     bitState[i] = bitState0[i] = &table[i].bitState[0][0];
     byteHistory[i] = bitState[i] + 3;

@@ -38,6 +38,11 @@ public:
     auto operator()() -> T & {
       return *ctx;
     };
+
+    void reset() {
+      data.reset();
+      ctx = &data[0];
+    }
 };
 
 #endif //PAQ8PX_INDIRECTCONTEXT_HPP

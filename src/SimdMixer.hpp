@@ -56,7 +56,7 @@ public:
     void update() override {
       INJECT_SHARED_y
       const int target = y << 12;
-      if( shared->updateState && nx > 0 ) {
+      if( nx > 0 ) {
         for( uint64_t i = 0; i < numContexts; ++i ) {
           if (cxt[i] != UINT32_MAX) {
             const int err = target - pr[i];
@@ -158,5 +158,17 @@ public:
       dp = (dp * scaleFactor) >> 16;
       
       return pr[0] = squash(dp);
+    }
+
+    void mixerReset() {
+      for( uint64_t i = 0; i < s; ++i ) {
+        pr[i] = 2048; //initial p=0.5
+        rates[i] = DEFAULT_LEARNING_RATE;
+        info[i].reset();
+      }
+      reset();
+      if(mp) {
+        mp->mixerReset();
+      }
     }
 };

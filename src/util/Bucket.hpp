@@ -53,7 +53,7 @@ public:
      * @return
      */
 
-    inline auto find(const uint16_t checksum) -> uint8_t* {
+    inline auto find(const uint16_t checksum, const Shared * const shared) -> uint8_t* {
       if( checksums[mostRecentlyUsed & 15] == checksum ) {
         return &bitState[mostRecentlyUsed & 15][0];
       }
@@ -67,6 +67,9 @@ public:
           worst = bitState[i][0];
           idx = i;
         }
+      }
+      if(shared->updateState == false) {
+        return NULL;
       }
       mostRecentlyUsed = 0xF0 | idx;
       checksums[idx] = checksum;

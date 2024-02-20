@@ -28,8 +28,11 @@ void SmallStationaryContextMap::reset() {
 
 void SmallStationaryContextMap::update() {
   INJECT_SHARED_y
-  *cp += ((y << 16U) - (*cp) + (1 << (rate - 1))) >> rate;
   b += static_cast<uint32_t>((y != 0U) && b > 0);
+  if(shared->updateState == false) {
+    return;
+  }  
+  *cp += ((y << 16U) - (*cp) + (1 << (rate - 1))) >> rate;
 }
 
 void SmallStationaryContextMap::mix(Mixer &m) {

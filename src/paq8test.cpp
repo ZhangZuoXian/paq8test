@@ -105,7 +105,7 @@ int main(int argc,char **argv){
         sscanf(argv[4], "%lf", &para_k_ratio);
         para_k = block_num * para_k_ratio / 100;
         if(para_k <= 0) {
-            update_block_num = 1;
+            para_k = 1;
         }
         if(para_k > block_num) {
             para_k = block_num;
@@ -145,8 +145,6 @@ int main(int argc,char **argv){
         double comp_ratio;
         double train_ratio;
 
-
-
         double comp_ratios[para_k]; // TODO：确定一下检测的数据量要是多少
         for(int i = 0; i < para_k; i++) {
             comp_ratios[i] = 0.0;
@@ -171,8 +169,8 @@ int main(int argc,char **argv){
             }
 
             en->flush();
-            shared.reset();
-            en->reset();
+            // shared.reset();
+            // en->blockReset();
 
             //将压缩前、后大小保存至元数据
             in_size = ftell(fin) - in_pos;
@@ -195,6 +193,10 @@ int main(int argc,char **argv){
                 in_size, out_size, comp_ratio);
 #endif
 
+            // block reset
+            shared.reset();
+            en->blockReset();
+            
             if(shared.getUpdateState() == true) { 
                 shared.staticPara();
                 // train_t = clock() - t;
@@ -210,10 +212,11 @@ int main(int argc,char **argv){
                 
                 if(static_block >= para_k &&
                      ratio_sum / para_k < train_ratio * para_theta) {
+                    // block reset
+                    // shared.reset();
+                    // en->blockReset();
                     // retrain
-                    // delete en;
-                    // en = new Encoder(&shared, COMPRESS, fout);
-                    // TODO：真正的参数reset
+                    en->reset();
                     shared.dynamicPara();
                     train_block = 0;
 #ifdef INFO
@@ -244,16 +247,22 @@ int main(int argc,char **argv){
         delete en;
     }
     else {
-        U32 fsize, block_size, block_num, update_block_num;
+        U32 fsize, block_size, block_num, update_block_num, para_k;
+        double para_theta = 0.8;
         frU32(metaData, fsize);
         frU32(metaData, block_size);
         frU32(metaData, block_num); //这个block_num是把动态压缩看成一个数据块的
         frU32(metaData, update_block_num);
-        // TODO：读取k和theta两个参数，注意theta要除100
+        frU32(metaData, para_k);
+        U32 theta_U32;
+        frU32(metaData, theta_U32);
+        para_theta = (double)theta_U32 / 100;
+
         printf("Begin decompressing %s\n", argv[2]);
         printf("file size: %u\n", fsize);
         printf("block size : %u B, block num: %u\n", block_size, block_num);
         printf("train block: %u\n", update_block_num);
+        printf("k: %u theta: %.2lf\n", para_k, para_theta);
 
         //解压处理
         Encoder *en = NULL;
@@ -264,6 +273,17 @@ int main(int argc,char **argv){
         U32 after_comp_size = 0;
         U32 in_pos = 0;
         U32 out_pos = 0;
+        U32 train_times = 0;
+        double comp_ratio;
+        double train_ratio;
+        U32 static_block = 0;
+
+        double comp_ratios[para_k]; // TODO：确定一下检测的数据量要是多少
+        for(int i = 0; i < para_k; i++) {
+            comp_ratios[i] = 0.0;
+        }
+        // U32 ratios_index = 0;
+        double ratio_sum = 0.0;
 
         en = new Encoder(&shared, DECOMPRESS, fin);
         t = clock();
@@ -285,6 +305,13 @@ int main(int argc,char **argv){
             blockCount++;
             // fseek(fin, -3, SEEK_CUR); // 文件回退3字节
 
+            // 检查数据长度
+            if(ftell(fin) - in_pos != after_comp_size) {
+                printf("Decompress size error on block %d\n", blockCount);
+                return -1;
+            }
+            in_pos = ftell(fin);
+
 #ifdef INFO
             if(shared.getUpdateState()) {
                 printf("Dynamic ");
@@ -293,20 +320,34 @@ int main(int argc,char **argv){
                 printf("Static ");
             }
             printf("decompress %ld B to %u B\n", 
-                ftell(fin) - in_pos, before_comp_size);
+                after_comp_size, before_comp_size);
 #endif
 
-            // 检查数据长度
-            if(ftell(fin) - in_pos != after_comp_size) {
-                printf("Decompress size error on block %d\n", blockCount);
-                return -1;
-            }
-            in_pos = ftell(fin);
-
             shared.reset();
-            en->reset();
+            en->blockReset();
             if(shared.getUpdateState() == true) { 
                 shared.staticPara();
+                train_times += 1;
+                train_ratio = ((double)before_comp_size) / after_comp_size;
+                static_block = 0;
+            }
+            else {
+                int i = static_block % para_k;
+                comp_ratio = ((double)before_comp_size) / after_comp_size;
+                ratio_sum += comp_ratio - comp_ratios[i];
+                comp_ratios[i] = comp_ratio;
+                
+                if(static_block >= para_k &&
+                     ratio_sum / para_k < train_ratio * para_theta) {
+                    // retrain
+                    en->reset();
+                    shared.dynamicPara();
+#ifdef INFO
+                    printf("re train: train ration is %.2lf, and average compress ration is %.2lf\n", 
+                        train_ratio, ratio_sum / para_k);
+#endif
+                }
+                static_block++;                
             }
         }
 
@@ -314,6 +355,7 @@ int main(int argc,char **argv){
         t = clock() - t;
         printf("Decompress Done\n");
         printf("compression time=%lf s\n",((float) t)/ CLOCKS_PER_SEC);
+        printf("train %d times\n", train_times);
 
         delete en;
     }

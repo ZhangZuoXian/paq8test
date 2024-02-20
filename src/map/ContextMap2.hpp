@@ -61,6 +61,9 @@ private:
     int scale;
     uint32_t useWhat;
 
+    // 若bucket find缺失的时候，就指向这个全零的条目
+    uint8_t cm_bitState[7];    
+
 public:
     int order = 0; // is set after mix()
     /**

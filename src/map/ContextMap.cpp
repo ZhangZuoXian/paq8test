@@ -10,22 +10,26 @@ ContextMap::ContextMap(const Shared* const sh, uint64_t m, const int contexts) :
   assert(m >= 64 && isPowerOf2(m));
   static_assert(sizeof(Bucket) == 64, "Size of Bucket should be 64!");
   assert(C <= (int) sizeof(validFlags) * 8); // validFlags is 64 bits - it can't support more than 64 contexts
+  memset(cm_bitState, 0, 7);
 }
 
 void ContextMap::set(const uint64_t cx) {
   assert(cn >= 0 && cn < C);
   const uint32_t ctx = cxt[cn] = finalize64(cx, hashBits);
   const uint16_t checksum = chk[cn] = checksum16(cx, hashBits);
-  uint8_t* base = cp0[cn] = cp[cn] = t[ctx].find(checksum);
+  uint8_t* base = cp0[cn] = cp[cn] = t[ctx].find(checksum, shared);
+  if(base == NULL) {
+    base = cp0[cn] = cp[cn] = cm_bitState;
+  }
   runP[cn] = base + 3;
   // update pending bit histories for bits 2-7
   if( shared->updateState && base[3] == 2 ) {
     const int c = base[4] + 256;
-    uint8_t *p = t[(ctx + (c >> 6U)) & mask].find(checksum);
+    uint8_t *p = t[(ctx + (c >> 6U)) & mask].find(checksum, shared);
     p[0] = 1 + ((c >> 5U) & 1U);
     p[1 + ((c >> 5U) & 1U)] = 1 + ((c >> 4U) & 1U);
     p[3 + ((c >> 4U) & 3U)] = 1 + ((c >> 3U) & 1U);
-    p = t[(ctx + (c >> 3U)) & mask].find(checksum);
+    p = t[(ctx + (c >> 3U)) & mask].find(checksum, shared);
     p[0] = 1 + ((c >> 2U) & 1U);
     p[1 + ((c >> 2U) & 1U)] = 1 + ((c >> 1U) & 1U);
     p[3 + ((c >> 1U) & 3U)] = 1 + (c & 1U);
@@ -72,7 +76,10 @@ void ContextMap::update() {
           case 5: {
             const uint16_t checksum = chk[i];
             const uint32_t ctx = cxt[i];
-            cp0[i] = cp[i] = t[(ctx + c0) & mask].find(checksum);
+            cp0[i] = cp[i] = t[(ctx + c0) & mask].find(checksum, shared);
+            if(cp0[i] == NULL) {
+              cp0[i] = cp[i] = cm_bitState;
+            }
             break;
           }
           case 0: {

@@ -54,3 +54,25 @@ ContextModel::~ContextModel() {
   delete m;
 }
 
+void ContextModel::blockReset() {
+  MatchModel &matchModel = models.matchModel();
+  matchModel.blockReset();
+
+  NormalModel &normalModel = models.normalModel();
+  normalModel.blockReset();
+
+  // SparseModel不需要blockReset
+
+  m->mixerReset();
+}
+
+void ContextModel::reset() {
+  MatchModel &matchModel = models.matchModel();
+  matchModel.reset();
+
+  NormalModel &normalModel = models.normalModel();
+  normalModel.reset();  
+
+  SparseModel &sparseModel = models.sparseModel();
+  sparseModel.reset();
+}

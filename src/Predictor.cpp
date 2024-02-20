@@ -35,3 +35,11 @@ void Predictor::update(uint8_t y) {
   //下述用于用于SSE，暂时不考虑
   // shared->State.misses = shared->State.misses<<1 | static_cast<uint64_t>((pr >> 11U) != y);
 }
+
+void Predictor::blockReset() {
+  contextModel.blockReset();
+}
+
+void Predictor::reset() {
+  contextModel.reset();
+}

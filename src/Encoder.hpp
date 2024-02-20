@@ -26,5 +26,6 @@ public:
     auto decompressByte() ->uint8_t;
     void flush();
     void reset();
+    void blockReset();
 
 };

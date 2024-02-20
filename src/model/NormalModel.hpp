@@ -26,6 +26,7 @@ public:
     static constexpr int MIXERCONTEXTSETS = 7;
     NormalModel(Shared* const sh, uint64_t cmSize);
     void reset();
+    void blockReset();
 
     /**
      * update order 1..14 context hashes.

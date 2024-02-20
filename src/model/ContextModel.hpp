@@ -28,6 +28,9 @@ public:
     auto pWPar(uint8_t c) -> int*;
     ~ContextModel();
 
+    void blockReset();
+    void reset();
+
     // std::thread tds[8];
 
 private:

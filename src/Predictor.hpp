@@ -14,8 +14,6 @@ private:
     
     ContextModel contextModel;
     int pr;
-
-    
 public:
     Predictor(Shared* const sh);
     // Predictor(Shared* const sh, const Predictor &train_p);
@@ -23,4 +21,7 @@ public:
     [[nodiscard]] auto p() -> int;
     
     [[nodiscard]] auto pWPar(uint8_t c) -> int*;
+
+    void blockReset();
+    void reset();
 };

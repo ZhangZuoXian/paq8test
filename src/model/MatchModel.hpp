@@ -52,6 +52,9 @@ public:
     MatchModel(Shared* const sh, const uint64_t buffermemorysize, const uint64_t mapmemorysize);
     void update();
     void mix(Mixer &m);
+
+    void reset();
+    void blockReset();
 };
 
 #endif //PAQ8PX_MATCHMODEL_HPP

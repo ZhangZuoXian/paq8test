@@ -10,11 +10,15 @@ NormalModel::NormalModel(Shared* const sh, const uint64_t cmSize) :
 }
 
 void NormalModel::reset() {
-  memset(&cxt[0], 0, sizeof(cxt));
+  // memset(cxt, 0, sizeof(cxt));
   cm.reset();
   smOrder0Slow.reset();
   smOrder1Slow.reset();
   smOrder1Fast.reset();
+}
+
+void NormalModel::blockReset() {
+  memset(cxt, 0, sizeof(cxt));
 }
 
 void NormalModel::updateHashes() {
@@ -41,7 +45,7 @@ void NormalModel::mix(Mixer &m) {
   m.add((stretch(smOrder1Fast.p1((c0 - 1) << 8U | c1))) >> 2U); //order 1
   m.add((stretch(smOrder1Slow.p1((c0 - 1) << 8U | c1))) >> 2U); //order 1
 
-  const int order = max(0, cm.order - (nCM - 7)); //0-7
+  const int order = max(0, cm.order - (nCM - 7)); //0-7 // 这个order是在cm.mix中根据bitState计算出来的，不依赖于其他参数
   assert(0 <= order && order <= 7);
   m.set(order << 3U | bpos, 64);
   shared->State.order = order;

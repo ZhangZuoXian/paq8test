@@ -1,0 +1,320 @@
+Begin compressing silesia-all
+file size: 211938580
+block size : 4096 B, block num: 51743
+train block: 51(0.10%)
+k: 517(1.00%) theta: 1.00
+compressed size: 81968230 B
+compress ratio: 2.585619
+compression time = 14234.696289 s
+train 9 times
+
+Begin compressing silesia-all
+file size: 211938580
+block size : 4096 B, block num: 51743
+train block: 517(1.00%)
+k: 517(1.00%) theta: 1.00
+compressed size: 67899171 B
+compress ratio: 3.121372
+compression time = 14534.683594 s
+train 8 times
+
+Begin compressing silesia-all
+file size: 211938580
+block size : 4096 B, block num: 51743
+train block: 51(0.10%)
+k: 51(0.10%) theta: 1.00
+compressed size: 77360778 B
+compress ratio: 2.739613
+compression time = 14672.661133 s
+train 103 times
+
+Begin compressing silesia-all
+file size: 211938580
+block size : 4096 B, block num: 51743
+train block: 1034(2.00%)
+k: 258(0.50%) theta: 1.00
+compressed size: 55035569 B
+compress ratio: 3.850938
+compression time = 15046.888672 s
+train 12 times
+
+Begin compressing silesia-all
+file size: 211938580
+block size : 4096 B, block num: 51743
+train block: 1034(2.00%)
+k: 51(0.10%) theta: 1.00
+compressed size: 43693590 B
+compress ratio: 4.850565
+compression time = 15906.231445 s
+train 28 times
+
+Begin compressing silesia-all
+file size: 211938580
+block size : 4096 B, block num: 51743
+train block: 1034(2.00%)
+k: 1034(2.00%) theta: 1.00
+compressed size: 61311032 B
+compress ratio: 3.456777
+compression time = 15917.594727 s
+train 7 times
+
+Begin compressing silesia-all
+file size: 211938580
+block size : 4096 B, block num: 51743
+train block: 258(0.50%)
+k: 258(0.50%) theta: 1.00
+compressed size: 63609154 B
+compress ratio: 3.331888
+compression time = 18217.921875 s
+train 34 times
+
+Begin compressing silesia-all
+file size: 211938580
+block size : 4096 B, block num: 51743
+train block: 258(0.50%)
+k: 517(1.00%) theta: 1.00
+compressed size: 82335386 B
+compress ratio: 2.574089
+compression time = 19427.607422 s
+train 8 times
+
+Begin compressing silesia-all
+file size: 211938580
+block size : 4096 B, block num: 51743
+train block: 51(0.10%)
+k: 1034(2.00%) theta: 1.00
+compressed size: 73467747 B
+compress ratio: 2.884784
+compression time = 19796.796875 s
+train 12 times
+
+Begin compressing silesia-all
+file size: 211938580
+block size : 4096 B, block num: 51743
+train block: 51(0.10%)
+k: 258(0.50%) theta: 1.00
+compressed size: 75145235 B
+compress ratio: 2.820386
+compression time = 20495.941406 s
+train 33 times
+
+Begin compressing silesia-all
+file size: 211938580
+block size : 4096 B, block num: 51743
+train block: 258(0.50%)
+k: 1034(2.00%) theta: 1.00
+compressed size: 55691020 B
+compress ratio: 3.805615
+compression time = 20616.306641 s
+train 28 times
+
+Begin compressing silesia-all
+file size: 211938580
+block size : 4096 B, block num: 51743
+train block: 258(0.50%)
+k: 51(0.10%) theta: 1.00
+compressed size: 58082328 B
+compress ratio: 3.648934
+compression time = 20639.175781 s
+train 33 times
+
+Begin compressing silesia-all
+file size: 211938580
+block size : 4096 B, block num: 51743
+train block: 517(1.00%)
+k: 258(0.50%) theta: 1.00
+compressed size: 49730326 B
+compress ratio: 4.261757
+compression time = 20804.250000 s
+train 40 times
+
+Begin compressing silesia-all
+file size: 211938580
+block size : 4096 B, block num: 51743
+train block: 1034(2.00%)
+k: 517(1.00%) theta: 1.00
+compressed size: 50523545 B
+compress ratio: 4.194848
+compression time = 20847.121094 s
+train 13 times
+
+Begin compressing silesia-all
+file size: 211938580
+block size : 4096 B, block num: 51743
+train block: 517(1.00%)
+k: 1034(2.00%) theta: 1.00
+compressed size: 56166117 B
+compress ratio: 3.773424
+compression time = 20925.925781 s
+train 19 times
+
+Begin compressing silesia-all
+file size: 211938580
+block size : 4096 B, block num: 51743
+train block: 517(1.00%)
+k: 51(0.10%) theta: 1.00
+compressed size: 44783612 B
+compress ratio: 4.732503
+compression time = 21914.398438 s
+train 65 times
+
+Begin compressing silesia-all
+file size: 211938580
+block size : 4096 B, block num: 51743
+train block: 51(0.10%)
+k: 517(1.00%) theta: 1.00
+compressed size: 81968230 B
+compress ratio: 2.585619
+compression time = 13960.209961 s
+train 9 times
+
+Begin compressing silesia-all
+file size: 211938580
+block size : 4096 B, block num: 51743
+train block: 51(0.10%)
+k: 1034(2.00%) theta: 1.00
+compressed size: 73467747 B
+compress ratio: 2.884784
+compression time = 13983.904297 s
+train 12 times
+
+Begin compressing silesia-all
+file size: 211938580
+block size : 4096 B, block num: 51743
+train block: 258(0.50%)
+k: 517(1.00%) theta: 1.00
+compressed size: 82335386 B
+compress ratio: 2.574089
+compression time = 14029.341797 s
+train 8 times
+
+Begin compressing silesia-all
+file size: 211938580
+block size : 4096 B, block num: 51743
+train block: 51(0.10%)
+k: 258(0.50%) theta: 1.00
+compressed size: 75145235 B
+compress ratio: 2.820386
+compression time = 14135.914062 s
+train 33 times
+
+Begin compressing silesia-all
+file size: 211938580
+block size : 4096 B, block num: 51743
+train block: 517(1.00%)
+k: 517(1.00%) theta: 1.00
+compressed size: 67899171 B
+compress ratio: 3.121372
+compression time = 14189.761719 s
+train 8 times
+
+Begin compressing silesia-all
+file size: 211938580
+block size : 4096 B, block num: 51743
+train block: 51(0.10%)
+k: 51(0.10%) theta: 1.00
+compressed size: 77360778 B
+compress ratio: 2.739613
+compression time = 14199.100586 s
+train 103 times
+
+Begin compressing silesia-all
+file size: 211938580
+block size : 4096 B, block num: 51743
+train block: 1034(2.00%)
+k: 1034(2.00%) theta: 1.00
+compressed size: 61311032 B
+compress ratio: 3.456777
+compression time = 14428.474609 s
+train 7 times
+
+Begin compressing silesia-all
+file size: 211938580
+block size : 4096 B, block num: 51743
+train block: 258(0.50%)
+k: 258(0.50%) theta: 1.00
+compressed size: 63609154 B
+compress ratio: 3.331888
+compression time = 14477.511719 s
+train 34 times
+
+Begin compressing silesia-all
+file size: 211938580
+block size : 4096 B, block num: 51743
+train block: 517(1.00%)
+k: 1034(2.00%) theta: 1.00
+compressed size: 56166117 B
+compress ratio: 3.773424
+compression time = 14506.414062 s
+train 19 times
+
+Begin compressing silesia-all
+file size: 211938580
+block size : 4096 B, block num: 51743
+train block: 258(0.50%)
+k: 1034(2.00%) theta: 1.00
+compressed size: 55691020 B
+compress ratio: 3.805615
+compression time = 14535.176758 s
+train 28 times
+
+Begin compressing silesia-all
+file size: 211938580
+block size : 4096 B, block num: 51743
+train block: 258(0.50%)
+k: 51(0.10%) theta: 1.00
+compressed size: 58082328 B
+compress ratio: 3.648934
+compression time = 14545.810547 s
+train 33 times
+
+Begin compressing silesia-all
+file size: 211938580
+block size : 4096 B, block num: 51743
+train block: 1034(2.00%)
+k: 258(0.50%) theta: 1.00
+compressed size: 55035569 B
+compress ratio: 3.850938
+compression time = 14643.078125 s
+train 12 times
+
+Begin compressing silesia-all
+file size: 211938580
+block size : 4096 B, block num: 51743
+train block: 1034(2.00%)
+k: 517(1.00%) theta: 1.00
+compressed size: 50523545 B
+compress ratio: 4.194848
+compression time = 14763.238281 s
+train 13 times
+
+Begin compressing silesia-all
+file size: 211938580
+block size : 4096 B, block num: 51743
+train block: 517(1.00%)
+k: 258(0.50%) theta: 1.00
+compressed size: 49730326 B
+compress ratio: 4.261757
+compression time = 15004.633789 s
+train 40 times
+
+Begin compressing silesia-all
+file size: 211938580
+block size : 4096 B, block num: 51743
+train block: 1034(2.00%)
+k: 51(0.10%) theta: 1.00
+compressed size: 43693590 B
+compress ratio: 4.850565
+compression time = 15298.427734 s
+train 28 times
+
+Begin compressing silesia-all
+file size: 211938580
+block size : 4096 B, block num: 51743
+train block: 517(1.00%)
+k: 51(0.10%) theta: 1.00
+compressed size: 44783612 B
+compress ratio: 4.732503
+compression time = 15469.620117 s
+train 65 times
+
