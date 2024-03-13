@@ -10,344 +10,337 @@ typedef unsigned char  U8;
 typedef unsigned short U16;
 typedef unsigned int   U32;
 
+#define MAX_FILE_NAME 256
+
 // #define INFO
 
 // 针对元数据的U32类型的读写
-size_t frU32(FILE *f, U32 &data) {
-    return fread(&data, sizeof(U32), 1, f);
-}
-size_t fwU32(FILE *f, U32 &data) {
-    // printf("[META] write %u to meta data file\n", data);
-    return fwrite(&data, sizeof(U32), 1, f);
-}
+// size_t frU32(FILE *f, U32 &data) {
+//     return fread(&data, sizeof(U32), 1, f);
+// }
+// size_t fwU32(FILE *f, U32 &data) {
+//     // printf("[META] write %u to meta data file\n", data);
+//     return fwrite(&data, sizeof(U32), 1, f);
+// }
+
+typedef struct _COMP_INFO {
+    U32 uncomp_byte;
+    U32 comped_byte;
+    clock_t comp_t;
+} COMP_INFO;
 
 int main(int argc,char **argv){
-        
-    // 模式选择：压缩、解压
-    Mode mode(COMPRESS);
-    mode = (strcmp(argv[1], "-d")) ? COMPRESS : DECOMPRESS;
 
-    // 输入、输、元数据文件
-    char filePath[128];
-    char metaPath[128];
-    char foutPath[128];
-    FILE* fin = NULL;
-    FILE* metaData = NULL;
-    FILE* fout = NULL;
-    sprintf(metaPath, "/home/zzx/paq8test/output/%s.meta", argv[2]);
-    if(mode == COMPRESS) {
-        //根据第二个参数选择文件
-        sprintf(filePath, "/home/zzx/data/%s", argv[2]);
-        sprintf(foutPath, "/home/zzx/paq8test/output/%s.p8t", argv[2]); // p8t = paq8test
-        metaData = fopen(metaPath, "w");
+    /* 1. 检查输入参数 */
+    if (argc!=7 && argv[1][0]!='d') {
+        printf(
+            "lpaq1 file compressor (C) 2007, Matt Mahoney\n"
+            "Licensed under GPL, http://www.gnu.org/copyleft/gpl.html\n"
+            "\n"
+            // "To compress:     lpaq1 N input output    (N=0..9, uses 3+3*2^N MB)\n"
+            // "To decompress: lpaq1 d input output    (needs same memory)\n");
+            "To compress:     lpaq1 N input blockSize trainBlock k θ (N=0..9, uses 3+3*2^N MB)\n"
+            "To decompress: lpaq1 d input (needs same memory)\n"); // 所需的其他信息都从压缩数据头中获取
+        return 1;
     }
-    else {
-        sprintf(filePath, "/home/zzx/paq8test/output/%s.p8t", argv[2]);
-        sprintf(foutPath, "/home/zzx/paq8test/output/%s", argv[2]);
-        metaData = fopen(metaPath, "r");
-        if(metaData == NULL){
-            printf("Meta file \"%s.meta\" no exist\n", argv[2]);
-            return 0;
-        }
-    }
-    fin = fopen(filePath, "r");
-    if(fin == NULL){
-        printf("File \"%s\" no exist\n", argv[2]);
-        fclose(metaData);
-        return 0;
-    }
-    fout = fopen(foutPath, "w");
 
-    // 初始化
+    /* 2. 初始化 */
+    clock_t start_t = clock();
     Shared shared;
-    shared.init(2);
+    char filePath[MAX_FILE_NAME];
+    FILE *in = NULL;
+    FILE *out = NULL;  
+    U32 block_size = 0;         // 数据块长度（目前只是用来计算压缩比）
+    U32 block_num = 0;          // 文件包含的数据块数量（目前不需要使用）
+    U32 train_block = 0;        // 每次训练使用的数据块数量
+    U32 para_k = 0;             // 参数k，即判断是否需要重训练时数据块的数量
+    double para_theta = 0.0;    // 参数θ，即判断是否需要重训练时压缩比的阈值  
+    U32 fsize = 0;              // 初始文件大小
+    U8 comp_lv = 0;             // 压缩等级，0~12
+    COMP_INFO dynamic_info = {0, 0, 0};
+    COMP_INFO static_info = {0, 0, 0};
     clock_t t;
+        
+    /* 3. 获得模式（压缩/解压） */
+    Mode mode;
+    mode = (strcmp(argv[1], "d")) ? COMPRESS : DECOMPRESS;
 
+    /* 4. 输入输出文件处理 */
     if(mode == COMPRESS) {
-        // 统计文件大小
-        fseek(fin, 0, SEEK_END);
-        U32 fsize = ftell(fin);
-        fseek(fin, 0, SEEK_SET);
+        sprintf(filePath, "/home/zzx/data/%s", argv[2]);
+        in = fopen(filePath, "rb");
+        sprintf(filePath, "../output/%s.p8t", argv[2]);
+        out = fopen(filePath, "wb");
+    } else {
+        sprintf(filePath, "../output/%s.p8t", argv[2]);
+        in = fopen(filePath, "rb");
+        sprintf(filePath, "../output/%s.decmp", argv[2]);
+        out = fopen(filePath, "wb");
+    }
+    if (!in || !out) perror(argv[2]), exit(1);    
+
+    /* 5. 压缩、解压处理 */
+    // Compress
+    if(mode == COMPRESS) {
+        /* 5.1 获得并写入元数据信息 */
+        sscanf(argv[1], "%hhu", &comp_lv);
+        assert(comp_lv >= 0 && comp_lv <= 12);
+        fwrite(&(comp_lv), sizeof(U8), 1, out);
+        shared.init(comp_lv);
+
+        fseek(in, 0, SEEK_END);
+        fsize = ftell(in);
+        fseek(in, 0, SEEK_SET);
+        fwrite(&(fsize), sizeof(U32), 1, out);
+
         // 计算分块数量
-        U32 block_size;
-        sscanf(argv[1], "%u", &block_size); //单位为KB
+        sscanf(argv[3], "%u", &block_size); //单位为KB
+        fwrite(&(block_size), sizeof(U32), 1, out);
         block_size *= 1024; //单位换算为Byte
         if(block_size == 0 || block_size > fsize) { //0代表不分块
             block_size = fsize;
         }
         // 计算数据块数量
-        U32 block_num;
         block_num = fsize / block_size;
         if(fsize % block_size > 0){
             block_num++;
         }
         // 计算训练数据量
         double update_ratio; 
-        sscanf(argv[3], "%lf", &update_ratio);
-        U32 update_block_num; 
-        // 训练量有两种，一种是指定训练的数据块数量，一种是指定训练数据占比
-        // 指定训练数据块数量
-        // update_block_num = update_ratio;
+        sscanf(argv[4], "%lf", &update_ratio);
         // 指定训练数据占比（向下取整）
-        update_block_num = block_num * update_ratio / 100;
-
-        if(update_block_num <= 0) {
-            update_block_num = 1; // update_block必须是正数
+        train_block = block_num * update_ratio / 100;
+        if(train_block <= 0) {
+            train_block = 1; // update_block必须是正数
+        } else if(train_block > block_num) {
+            train_block = block_num;
         }
-        if(update_block_num > block_num) {
-            update_block_num = block_num;
-        }
-
         // 重训练的超参数k和θ
         double para_k_ratio;
-        U32 para_k = update_block_num;
         double para_theta = 0.8;
-        sscanf(argv[4], "%lf", &para_k_ratio);
+        sscanf(argv[5], "%lf", &para_k_ratio);
         para_k = block_num * para_k_ratio / 100;
         if(para_k <= 0) {
             para_k = 1;
-        }
-        if(para_k > block_num) {
+        } else if(para_k > block_num) {
             para_k = block_num;
         }
-        sscanf(argv[5], "%lf", &para_theta);
-
+        sscanf(argv[6], "%lf", &para_theta);
         // 输出统计信息
-        printf("Begin compressing %s\n", argv[2]);
+        printf("compress level: %d\n", comp_lv);
+        printf("input file: %s\n", argv[2]);
         printf("file size: %u\n", fsize);
         printf("block size : %u B, block num: %u\n", block_size, block_num);
-        printf("train block: %u(%.2lf%%)\n", update_block_num, update_ratio);
+        printf("train block: %u(%.2lf%%)\n", train_block, update_ratio);
         printf("k: %u(%.2lf%%) theta: %.2lf\n", para_k, para_k_ratio, para_theta);
-        
         // 写入元数据
-        fwU32(metaData, fsize);
-        fwU32(metaData, block_size);
-        fwU32(metaData, block_num);
-        fwU32(metaData, update_block_num);
-        fwU32(metaData, para_k);
-        U32 theta_U32 = (U32)(para_theta * 100);
-        fwU32(metaData, theta_U32);
+        fwrite(&(train_block), sizeof(U32), 1, out);
+        fwrite(&(para_k), sizeof(U32), 1, out);
+        fwrite(&(para_theta), sizeof(double), 1, out);
 
-
-        //压缩处理
-        Encoder *en = NULL;
+        /* 5.2 生成动态压缩器、压缩 */
         char c;
-        U32 byteCount = 0;
-        U32 train_block = 0;
-        U32 static_block = 0;
-        U32 block_count = 0; //这是将动态训练的多个数据块看作一个数据块的块计数
-        U32 in_size = 0;
-        U32 out_size = 0;
+        U32 block_size_uncomp = 0;
+        U32 block_size_comped = 0;
         U32 in_pos = 0;
         U32 out_pos = 0;
-        // clock_t train_t;
-        U32 train_times = 0;
+        U32 byteCount = 0;
+        U32 dynamic_block = 0;
+        U32 static_block = 0;
+        U32 train_times = 1;
         double comp_ratio;
-        double train_ratio;
-
-        double comp_ratios[para_k]; // TODO：确定一下检测的数据量要是多少
+        double dynamic_ratio;
+        double static_ratios[para_k];
         for(int i = 0; i < para_k; i++) {
-            comp_ratios[i] = 0.0;
+            static_ratios[i] = 0.0;
         }
-        // U32 ratios_index = 0;
-        double ratio_sum = 0.0;
+        double static_r_sum = 0.0;
 
-        en = new Encoder(&shared, COMPRESS, fout);
+        Encoder en(&shared, COMPRESS, out);
         t = clock();
-
         while(byteCount < fsize) {
             for(int i = 0; i < block_size && byteCount < fsize; i++) {
-                c=getc(fin);
-                en->compressByte(c);
+                c=getc(in);
+                en.compressByte(c);
                 byteCount++;
             }
-            train_block++;
+            dynamic_block++;
 
-            if(byteCount < fsize && shared.getUpdateState() == true && 
-                train_block < update_block_num) {
+            // 动态数据块没压完，继续压
+            if(byteCount < fsize && shared.updateState == true && 
+                dynamic_block < train_block) {
                     continue;
             }
 
-            en->flush();
-            // shared.reset();
-            // en->blockReset();
+            en.flush(); 
+            en.blockReset();
 
             //将压缩前、后大小保存至元数据
-            in_size = ftell(fin) - in_pos;
-            in_pos = ftell(fin);
-            out_size = ftell(fout) - out_pos;
-            out_pos = ftell(fout);
-            fwU32(metaData, in_size);
-            fwU32(metaData, out_size);
-            block_count++;
+            block_size_uncomp = ftell(in) - in_pos;
+            in_pos = ftell(in);
+            block_size_comped = ftell(out) - out_pos;
+            out_pos = ftell(out);
+            comp_ratio = ((double)block_size_uncomp) / block_size_comped;
 
 #ifdef INFO
-            if(shared.getUpdateState()) {
+            if(shared.updateState) {
                 printf("Dynamic ");
-            }
-            else{
+            } else {
                 printf("Static ");
             }
-            comp_ratio = ((double)in_size) / out_size;
             printf("compress %u B to %u B\tcompress ratio: %lf\n", 
-                in_size, out_size, comp_ratio);
+                block_size_uncomp, block_size_comped, comp_ratio);
 #endif
 
-            // block reset
-            shared.reset();
-            en->blockReset();
-            
-            if(shared.getUpdateState() == true) { 
-                shared.staticPara();
-                // train_t = clock() - t;
-                train_times += 1;
-                train_ratio = ((double)in_size) / out_size;
+            if(shared.updateState == true) { 
+                dynamic_info.uncomp_byte += block_size_uncomp;
+                dynamic_info.comped_byte += block_size_comped;
+                shared.updateState = false;
+                dynamic_ratio = comp_ratio;
                 static_block = 0;
+                dynamic_info.comp_t += clock() - t;
+                t = clock();
             }
             else {
                 int i = static_block % para_k;
-                comp_ratio = ((double)in_size) / out_size;
-                ratio_sum += comp_ratio - comp_ratios[i];
-                comp_ratios[i] = comp_ratio;
+                static_r_sum += comp_ratio - static_ratios[i];
+                static_ratios[i] = comp_ratio;
+                static_block++;
                 
                 if(static_block >= para_k &&
-                     ratio_sum / para_k < train_ratio * para_theta) {
-                    // block reset
-                    // shared.reset();
-                    // en->blockReset();
-                    // retrain
-                    en->reset();
-                    shared.dynamicPara();
-                    train_block = 0;
-#ifdef INFO
-                    printf("re train: train ration is %.2lf, and average compress ration is %.2lf\n", 
-                        train_ratio, ratio_sum / para_k);
-#endif
+                     static_r_sum / para_k < dynamic_ratio * para_theta) {
+                    train_times += 1;
+                    shared.updateState = true;
+                    dynamic_block = 0;
+                    for(U32 j = 0; j < para_k; j++) {
+                        static_ratios[j] = 0.0;
+                    }
+                    static_r_sum = 0.0;
+                    static_info.comp_t += clock() - t;
+                    t = clock();
                 }
-                static_block++;
             }
+        }
+
+        if(shared.updateState == false) {
+            static_info.comp_t += clock() - t;
         }
 
         //输出压缩统计信息
-        t = clock() - t;
-        out_size = ftell(fout);
-        comp_ratio = ((double)fsize) / out_size;
-        // double train_comp_ratio = ((double)train_size) / train_comp_size;
-        printf("compressed size: %u B\ncompress ratio: %lf\n", out_size, comp_ratio);
-        // printf("dynamic compresse ratio: %lf\n", train_comp_ratio);
-        printf("compression time = %lf s\n",((float) t)/ CLOCKS_PER_SEC);
         printf("train %d times\n", train_times);
-        // printf("train time=%lf s\n",((float) train_t)/ CLOCKS_PER_SEC);
-        // printf("static compress time=%lf s\n",((float) t-train_t)/ CLOCKS_PER_SEC);
+        double comp_t = (double)(clock() - start_t)/CLOCKS_PER_SEC;
+        printf("%ld -> %ld in %1.2lf sec\n", ftell(in), ftell(out), comp_t);
+        printf("compress ratio = %.6lf, thoughtout = %.6lf KB/s.\n", 
+            ((double)(ftell(in))) / ftell(out), ftell(in) / comp_t / 1024);
+        static_info.uncomp_byte = ftell(in) - dynamic_info.uncomp_byte;
+        static_info.comped_byte = ftell(out) - dynamic_info.comped_byte;
 
-        //修改元数据中block数量
-        fseek(metaData, sizeof(U32)*2, SEEK_SET);
-        fwU32(metaData, block_count);
+        comp_t = (double)dynamic_info.comp_t/CLOCKS_PER_SEC;
+        // printf("%u %u %.2lf\n", dynamic_info.uncomp_byte, dynamic_info.comped_byte, comp_t);
+        printf("dynamic compress %u to %u in %.2lf sec\n\tratio = %.6lf, thoughtout = %.6lf KB/s.\n", 
+            dynamic_info.uncomp_byte, dynamic_info.comped_byte, comp_t, 
+            (double)(dynamic_info.uncomp_byte) / dynamic_info.comped_byte,
+            dynamic_info.uncomp_byte / comp_t / 1024);
 
-        delete en;
+        comp_t = (double)static_info.comp_t/CLOCKS_PER_SEC;
+        // printf("%u %u %.2lf\n", static_info.uncomp_byte, static_info.comped_byte, comp_t);
+        printf("static compress %u to %u in %.2lf sec\n\tratio = %.6lf, thoughtout = %.6lf KB/s.\n\n", 
+            static_info.uncomp_byte, static_info.comped_byte, comp_t,
+            (double)(static_info.uncomp_byte) / static_info.comped_byte,
+            static_info.uncomp_byte / comp_t / 1024);
     }
     else {
-        U32 fsize, block_size, block_num, update_block_num, para_k;
-        double para_theta = 0.8;
-        frU32(metaData, fsize);
-        frU32(metaData, block_size);
-        frU32(metaData, block_num); //这个block_num是把动态压缩看成一个数据块的
-        frU32(metaData, update_block_num);
-        frU32(metaData, para_k);
-        U32 theta_U32;
-        frU32(metaData, theta_U32);
-        para_theta = (double)theta_U32 / 100;
-
-        printf("Begin decompressing %s\n", argv[2]);
+        /* 5.1 获得并输出元数据信息 */
+        fread(&(comp_lv), sizeof(U8), 1, in);
+        shared.init(comp_lv);
+        fread(&(fsize), sizeof(U32), 1, in);
+        fread(&(block_size), sizeof(U32), 1, in);
+        block_size *= 1024;
+        fread(&(train_block), sizeof(U32), 1, in);
+        fread(&(para_k), sizeof(U32), 1, in);
+        fread(&(para_theta), sizeof(double), 1, in);
+        // 输出统计信息
+        printf("compress level: %d\n", comp_lv);
+        printf("input file: %s\n", argv[2]);
         printf("file size: %u\n", fsize);
-        printf("block size : %u B, block num: %u\n", block_size, block_num);
-        printf("train block: %u\n", update_block_num);
+        printf("block size : %u B\n", block_size);
+        printf("train block: %u\n", train_block);
         printf("k: %u theta: %.2lf\n", para_k, para_theta);
 
-        //解压处理
-        Encoder *en = NULL;
+        if(block_size == 0) {
+            block_size = fsize;
+        }
+
+        /* 5.2 生成动态压缩器、解压 */
         char c;
-        U32 byteCount = 0;
-        U32 blockCount = 0;
-        U32 before_comp_size = 0;
-        U32 after_comp_size = 0;
+        U32 byte_count = 0;
+        U32 block_size_uncomp = 0;
+        U32 block_size_comped = 0;
         U32 in_pos = 0;
         U32 out_pos = 0;
         U32 train_times = 0;
+        // 重训练阈值相关
         double comp_ratio;
-        double train_ratio;
+        double dynamic_ratio;
         U32 static_block = 0;
-
-        double comp_ratios[para_k]; // TODO：确定一下检测的数据量要是多少
+        double static_ratios[para_k]; 
         for(int i = 0; i < para_k; i++) {
-            comp_ratios[i] = 0.0;
+            static_ratios[i] = 0.0;
         }
-        // U32 ratios_index = 0;
-        double ratio_sum = 0.0;
+        double static_r_sum = 0.0;
 
-        en = new Encoder(&shared, DECOMPRESS, fin);
+        Encoder en(&shared, DECOMPRESS, in);
         t = clock();
 
-        while(byteCount < fsize) {
-            frU32(metaData, before_comp_size);
-            frU32(metaData, after_comp_size);
+        while(byte_count < fsize) {
+            U32 cur_blk_size = block_size;
+            if(shared.updateState) {
+                cur_blk_size *=  train_block;
+            }
+            for(U32 i = 0; i < cur_blk_size && byte_count < fsize; i++) {
+                c = en.decompressByte();
+                putc(c, out);
+                byte_count++;
+            }
+            en.blockReset();
+
+            // 计算压缩比，这里的压缩前后大小与压缩时正好相反
+            block_size_comped = ftell(in) - in_pos;
+            in_pos = ftell(in);
+            block_size_uncomp = ftell(out) - out_pos;
+            out_pos = ftell(out);
+            comp_ratio = ((double)block_size_uncomp) / block_size_comped;            
 
 #ifdef INFO
-            printf("origin block size: %u, compressed block size: %u, ", 
-                before_comp_size, after_comp_size);
-#endif
-
-            for(int i = 0; i < before_comp_size; i++) {
-                c = en->decompressByte();
-                putc(c, fout);
-                byteCount++;
-            }
-            blockCount++;
-            // fseek(fin, -3, SEEK_CUR); // 文件回退3字节
-
-            // 检查数据长度
-            if(ftell(fin) - in_pos != after_comp_size) {
-                printf("Decompress size error on block %d\n", blockCount);
-                return -1;
-            }
-            in_pos = ftell(fin);
-
-#ifdef INFO
-            if(shared.getUpdateState()) {
+            if(shared.updateState) {
                 printf("Dynamic ");
             }
             else{
                 printf("Static ");
             }
-            printf("decompress %ld B to %u B\n", 
-                after_comp_size, before_comp_size);
+            printf("compress %u B to %u B\tcompress ratio: %lf\n", 
+                block_size_uncomp, block_size_comped, comp_ratio);
 #endif
 
-            shared.reset();
-            en->blockReset();
-            if(shared.getUpdateState() == true) { 
-                shared.staticPara();
-                train_times += 1;
-                train_ratio = ((double)before_comp_size) / after_comp_size;
+            if(shared.updateState == true) { 
+                shared.updateState = false;
+                dynamic_ratio = comp_ratio;
                 static_block = 0;
             }
             else {
-                int i = static_block % para_k;
-                comp_ratio = ((double)before_comp_size) / after_comp_size;
-                ratio_sum += comp_ratio - comp_ratios[i];
-                comp_ratios[i] = comp_ratio;
+                U32 i = static_block % para_k;
+                static_r_sum += comp_ratio - static_ratios[i];
+                static_ratios[i] = comp_ratio;
+                static_block++;
                 
                 if(static_block >= para_k &&
-                     ratio_sum / para_k < train_ratio * para_theta) {
-                    // retrain
-                    en->reset();
-                    shared.dynamicPara();
-#ifdef INFO
-                    printf("re train: train ration is %.2lf, and average compress ration is %.2lf\n", 
-                        train_ratio, ratio_sum / para_k);
-#endif
+                     static_r_sum / para_k < dynamic_ratio * para_theta) {
+                    shared.updateState = true;
+                    for(U32 j = 0; j < para_k; j++) {
+                        static_ratios[j] = 0.0;
+                    }
+                    static_r_sum = 0.0;                    
                 }
-                static_block++;                
             }
         }
 
@@ -357,13 +350,55 @@ int main(int argc,char **argv){
         printf("compression time=%lf s\n",((float) t)/ CLOCKS_PER_SEC);
         printf("train %d times\n", train_times);
 
-        delete en;
     }
 
-    fclose(fin);
-    fclose(fout);
-    fclose(metaData);
+    fclose(in);
+    fclose(out);
 
-    printf("\n"); // 为了重定向的输出分割开，方便查看
+    // 检查解压后文件和原文件是否相同
+    if(mode == DECOMPRESS) {
+        printf("Checking files\n");
+        sprintf(filePath, "/home/zzx/data/%s", argv[2]);
+        printf("Origin file: %s\n", filePath);
+        FILE *origin_file = fopen(filePath, "rb");
+        sprintf(filePath, "../output/%s.decmp", argv[2]);
+        printf("Decompressed file: %s\n", filePath);
+        FILE *decomp_file = fopen(filePath, "rb");
+
+        fseek(origin_file, 0, SEEK_END);
+        U32 len_origin=ftell(origin_file);
+        fseek(origin_file, 0, SEEK_SET);
+        fseek(decomp_file, 0, SEEK_END);
+        U32 len_decomp=ftell(decomp_file);
+        fseek(decomp_file, 0, SEEK_SET);
+        
+        bool is_same = true;
+        U32 error_line = 1;
+        char c;
+        if(len_origin != len_decomp) {
+            is_same = false;
+            error_line = 0;
+        }
+        else {
+            for(U32 i = 0; i < len_origin; i++) {
+                c = getc(origin_file);
+                if(c != getc(decomp_file)) {
+                    is_same = false;
+                    break;
+                }
+                if(c == '\n') {
+                    error_line += 1;
+                }                
+            }
+        }
+        fclose(origin_file);
+        fclose(decomp_file);
+        if(is_same) {
+            printf("success!\n");
+        } else {
+            printf("ERROR! file different in line %u\n", error_line);
+        }
+    }
+
     return 0;
 }

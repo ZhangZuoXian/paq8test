@@ -105,10 +105,8 @@ void MatchModel::update() {
     }
     // update position information in hashtable
     INJECT_SHARED_pos
-    if(shared->updateState == true) {
-      for( uint32_t i = 0; i < numHashes; i++ ) {
-        table[hashes[i]] = pos;
-      }
+    for( uint32_t i = 0; i < numHashes; i++ ) {
+      table[hashes[i]] = pos;
     }
     shared->State.Match.expectedByte = expectedByte = (length != 0 ? buf[index] : 0);
   }
@@ -184,10 +182,8 @@ void MatchModel::mix(Mixer &m) {
   //bitwise contexts
   {
     maps[0].set(hash(expectedByte, c0, c4 & 0xffffu, length3Rm));
-    if(shared->updateState) {
-      INJECT_SHARED_y
-      iCtx += y;      
-    }
+    INJECT_SHARED_y
+    iCtx += y;      
     const uint8_t c = length3Rm << 1U | expectedBit; // 4 bits
     iCtx = (bpos << 11U) | (c1 << 3U) | c;
     maps[1].setDirect(iCtx());

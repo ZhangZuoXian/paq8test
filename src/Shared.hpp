@@ -15,10 +15,6 @@
 #define INJECT_SHARED_c4    const uint32_t c4=shared->State.c4;
 #define INJECT_SHARED_c8    const uint32_t c8=shared->State.c8;
 
-#define INJECT_SHARED_blockType const uint32_t blockType=shared->State.blockType;
-#define INJECT_SHARED_blockPos const uint32_t blockPos=shared->State.blockPos;
-
-
 struct Shared {
 private:
     UpdateBroadcaster updateBroadcaster;
@@ -33,9 +29,6 @@ public:
     uint64_t mem = 0; /**< pre-calculated value of 65536 * 2^level */
     bool toScreen = true;
 
-    //predictions output
-    // clock_t MatchModelCostTime;
-    // clock_t NormalModelCostTime;
 
     struct {
 
@@ -51,7 +44,6 @@ public:
       uint32_t c8 = 0; /**< Another 4 bytes (buf(8)..buf(5)) */
       uint64_t misses{}; //updated by the Predictor, used by SSE stage
 
-      BlockType blockType{}; //used by wordModel, recordModel, SSE stage
       uint32_t blockPos{}; //relative position in block, used by many models
 
       //
@@ -70,9 +62,7 @@ public:
 
     } State{};
 
-    Shared() {
-      toScreen = !isOutputDirected();
-    }
+    Shared() {}
     
     void init(uint8_t level);
     void update(int y);
@@ -81,11 +71,6 @@ public:
 
     //update control, if updateState is true, update byte by byte
     bool updateState = true;
-    void dynamicPara();
-    void staticPara();
-    bool getUpdateState();
-    
-    // bool getInfo = false;
 
 private:
 
@@ -99,11 +84,4 @@ private:
      */
     auto operator=(Shared const & /*unused*/) -> Shared & { return *this; }
 
-    /**
-     * Determine if output is redirected
-     * @return
-     */
-    static auto isOutputDirected() -> bool;
-
-    static Shared *mPInstance;
 };

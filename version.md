@@ -87,7 +87,7 @@ indirectContext本质上是将输入数据看成比特流，获得当前比特�
 静态压缩：上下文参数逐比特更新，其他参数停止更新。压缩一个数据块后blockReset
 重训练：所有参数全部reset
 逐比特更新的上下文参数包括：normalModel中的cxt即上下文的hash值；matchmodel中length、index及二者的bak，mismatch的标志delta；stationaryMap和smallstationaryMap中的b（和上下文hash一起用于索引对应的概率）；混合器中的参数
-自适应更新的参数包括：contextmap、contextmap2中的bucket；indirectContext的data和ctx；statemap和adaptivemap的t；stationaryMap和smallstationaryMap中的data
+自适应更新的参数包括：contextmap、contextmap2中的bucket；~~indirectContext的data和ctx~~；statemap和adaptivemap的t；stationaryMap和smallstationaryMap中的data
 
 TODO：mixer和shared的参数控制和reset
 一点点小忧虑：重训练发生reset时可能需要进行大量的参数计算和读写，静态参数带来的时间节省真的能大过重训练的开销吗？
@@ -100,3 +100,6 @@ TODO：mixer和shared的参数控制和reset
 重新梳理：现在把方案分成了两个点：自适应和解压优化。自适应就是自适应参数更新和自适应模型选择，解压优化就是重训练。
 给解压优化想了一个新的动机，就是一堆小数据或者小文件，我们想把他们打包在一起去压缩，这样能够提高压缩比。但这里存在两个问题：一是上下文混合压缩中压缩比和数据量不一定成正相关；二是打包的越大，我们读取的时候解压时延就越高。所以我们需要权衡后确定一个较为合适的打包大小，这里提出以压缩比为判定依据，设置上下限的方式。场景可以是增量备份的场景：增量备份后把本次备份剩余的增量全都打包到一起，如果某个文件损坏了，那就得把所有压缩包全部解开，才能依次获得增量和base文件。如果用来这个方案，就可以每个压缩包只解压部分数据
 这种思路下面，自适应参数更新其实就是做分块统计当前压缩比、根据压缩比控制参数更新、做并行压缩的
+
+2024.2.20
+* 最大level貌似是12，根据关键词“level”在github的changelog中找到的

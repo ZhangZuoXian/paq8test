@@ -37,7 +37,7 @@ void Encoder::flush(){
 }
 
 void Encoder::blockReset() {
-  predictor.blockReset();
+  // predictor.blockReset();
   ari.reset();
   if(mode == DECOMPRESS) {
     ari.prefetch();

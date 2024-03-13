@@ -1,10 +1,7 @@
 #include "Predictor.hpp"
 
 Predictor::Predictor(Shared* const sh):shared(sh),
-  models(sh), contextModel(sh,models){
-  shared->reset();
-
-}
+  models(sh), contextModel(sh,models){}
 
 // Predictor::Predictor(Shared* const sh, const Predictor &train_p) : shared(sh),
 //   models(sh),contextModel(sh,models){
