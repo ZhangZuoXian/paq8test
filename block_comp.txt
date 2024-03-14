@@ -1,0 +1,15 @@
+Wed Mar 13 05:02:08 PM CST 2024
+open file "silesia_all", size: 211938580 divide into 103486 (block size = 2)
+211938580 -> 78304167 in 33253.37 sec, in level 12.
+compress ratio = 2.706607
+copmress time with init: 33253.37 sec, thoughtout = 6.224069 KB/s.
+compress time: 33236.75 sec, thoughtout = 6.227180 KB/s.
+all time: 35831.17 sec, thoughtout = 5.776291 KB/s.
+
+open file "silesia_all", size: 211938580 divide into 51743 (block size = 4)
+211938580 -> 68849988 in 29120.29 sec, in level 12.
+compress ratio = 3.078266
+copmress time with init: 29120.29 sec, thoughtout = 7.107458 KB/s.
+compress time: 29112.49 sec, thoughtout = 7.109363 KB/s.
+all time: 30858.03 sec, thoughtout = 6.707210 KB/s.
+
