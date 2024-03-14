@@ -1,3 +1,0 @@
-/home/zzx/paq8_ghj/build/CMakeFiles/paq8test.dir
-/home/zzx/paq8_ghj/build/CMakeFiles/edit_cache.dir
-/home/zzx/paq8_ghj/build/CMakeFiles/rebuild_cache.dir
