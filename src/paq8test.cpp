@@ -227,13 +227,6 @@ int main(int argc,char **argv){
         }
 
         //输出压缩统计信息
-        printf("train %d times\n", train_times);
-        double comp_t = (double)(clock() - start_t)/CLOCKS_PER_SEC;
-        printf("%ld -> %ld in %1.2lf sec\n", ftell(in), ftell(out), comp_t);
-        printf("compress ratio = %.6lf, thoughtout = %.6lf KB/s.\n", 
-            ((double)(ftell(in))) / ftell(out), ftell(in) / comp_t / 1024);
-        static_info.uncomp_byte = ftell(in) - dynamic_info.uncomp_byte;
-        static_info.comped_byte = ftell(out) - dynamic_info.comped_byte;
 
         comp_t = (double)dynamic_info.comp_t/CLOCKS_PER_SEC;
         // printf("%u %u %.2lf\n", dynamic_info.uncomp_byte, dynamic_info.comped_byte, comp_t);
