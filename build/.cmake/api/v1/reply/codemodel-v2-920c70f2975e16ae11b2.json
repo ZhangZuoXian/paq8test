@@ -6,6 +6,7 @@
 			[
 				{
 					"build" : ".",
+					"jsonFile" : "directory-.-Release-f5ebdc15457944623624.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.10"
@@ -38,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "paq8test::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-paq8test-Release-fd47ee2d7e9bbaacaab6.json",
+					"jsonFile" : "target-paq8test-Release-b2c871b634c868f1fedb.json",
 					"name" : "paq8test",
 					"projectIndex" : 0
 				}
@@ -48,12 +49,12 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/zzx/paq8test/originPaq8test/build",
-		"source" : "/home/zzx/paq8test/originPaq8test"
+		"build" : "/home/zzx/paq8_ghj/build",
+		"source" : "/home/zzx/paq8_ghj"
 	},
 	"version" : 
 	{
 		"major" : 2,
-		"minor" : 1
+		"minor" : 3
 	}
 }

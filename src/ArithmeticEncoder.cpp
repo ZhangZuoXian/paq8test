@@ -4,7 +4,7 @@ void ArithmeticEncoder::prefetch() {
   for (int i = 0; i < 4; ++i) {
     x = (x << 8) + (getc(archive) & 255);
   }
-  printf("prefetch x: %x\n",x);
+  // printf("prefetch x: %x\n",x);
 }
 
 void ArithmeticEncoder::encodeBit(int p, int bit,int bpos) {
@@ -44,4 +44,7 @@ int ArithmeticEncoder::decodeBit(int p){
 
 void ArithmeticEncoder::flush(){
   putc(x1 >> 24,archive);
+  putc(x1 >> 16,archive);
+  putc(x1 >> 8,archive);
+  putc(x1,archive);
 }

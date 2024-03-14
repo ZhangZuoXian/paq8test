@@ -1,38 +1,36 @@
+
+# Consider dependencies only in project.
+set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
+
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
-  "CXX"
   )
-# The set of files for implicit dependencies of each language:
-set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/zzx/paq8test/originPaq8test/src/ArithmeticEncoder.cpp" "/home/zzx/paq8test/originPaq8test/build/CMakeFiles/paq8test.dir/src/ArithmeticEncoder.cpp.o"
-  "/home/zzx/paq8test/originPaq8test/src/Encoder.cpp" "/home/zzx/paq8test/originPaq8test/build/CMakeFiles/paq8test.dir/src/Encoder.cpp.o"
-  "/home/zzx/paq8test/originPaq8test/src/Mixer.cpp" "/home/zzx/paq8test/originPaq8test/build/CMakeFiles/paq8test.dir/src/Mixer.cpp.o"
-  "/home/zzx/paq8test/originPaq8test/src/Models.cpp" "/home/zzx/paq8test/originPaq8test/build/CMakeFiles/paq8test.dir/src/Models.cpp.o"
-  "/home/zzx/paq8test/originPaq8test/src/Predictor.cpp" "/home/zzx/paq8test/originPaq8test/build/CMakeFiles/paq8test.dir/src/Predictor.cpp.o"
-  "/home/zzx/paq8test/originPaq8test/src/Shared.cpp" "/home/zzx/paq8test/originPaq8test/build/CMakeFiles/paq8test.dir/src/Shared.cpp.o"
-  "/home/zzx/paq8test/originPaq8test/src/UpdateBroadcaster.cpp" "/home/zzx/paq8test/originPaq8test/build/CMakeFiles/paq8test.dir/src/UpdateBroadcaster.cpp.o"
-  "/home/zzx/paq8test/originPaq8test/src/map/AdaptiveMap.cpp" "/home/zzx/paq8test/originPaq8test/build/CMakeFiles/paq8test.dir/src/map/AdaptiveMap.cpp.o"
-  "/home/zzx/paq8test/originPaq8test/src/map/ContextMap.cpp" "/home/zzx/paq8test/originPaq8test/build/CMakeFiles/paq8test.dir/src/map/ContextMap.cpp.o"
-  "/home/zzx/paq8test/originPaq8test/src/map/ContextMap2.cpp" "/home/zzx/paq8test/originPaq8test/build/CMakeFiles/paq8test.dir/src/map/ContextMap2.cpp.o"
-  "/home/zzx/paq8test/originPaq8test/src/map/SmallStationaryContextMap.cpp" "/home/zzx/paq8test/originPaq8test/build/CMakeFiles/paq8test.dir/src/map/SmallStationaryContextMap.cpp.o"
-  "/home/zzx/paq8test/originPaq8test/src/map/StateMap.cpp" "/home/zzx/paq8test/originPaq8test/build/CMakeFiles/paq8test.dir/src/map/StateMap.cpp.o"
-  "/home/zzx/paq8test/originPaq8test/src/map/StateTable.cpp" "/home/zzx/paq8test/originPaq8test/build/CMakeFiles/paq8test.dir/src/map/StateTable.cpp.o"
-  "/home/zzx/paq8test/originPaq8test/src/map/StationaryMap.cpp" "/home/zzx/paq8test/originPaq8test/build/CMakeFiles/paq8test.dir/src/map/StationaryMap.cpp.o"
-  "/home/zzx/paq8test/originPaq8test/src/model/ContextModel.cpp" "/home/zzx/paq8test/originPaq8test/build/CMakeFiles/paq8test.dir/src/model/ContextModel.cpp.o"
-  "/home/zzx/paq8test/originPaq8test/src/model/IndirectModel.cpp" "/home/zzx/paq8test/originPaq8test/build/CMakeFiles/paq8test.dir/src/model/IndirectModel.cpp.o"
-  "/home/zzx/paq8test/originPaq8test/src/model/MatchModel.cpp" "/home/zzx/paq8test/originPaq8test/build/CMakeFiles/paq8test.dir/src/model/MatchModel.cpp.o"
-  "/home/zzx/paq8test/originPaq8test/src/model/NormalModel.cpp" "/home/zzx/paq8test/originPaq8test/build/CMakeFiles/paq8test.dir/src/model/NormalModel.cpp.o"
-  "/home/zzx/paq8test/originPaq8test/src/model/SparseModel.cpp" "/home/zzx/paq8test/originPaq8test/build/CMakeFiles/paq8test.dir/src/model/SparseModel.cpp.o"
-  "/home/zzx/paq8test/originPaq8test/src/paq8test.cpp" "/home/zzx/paq8test/originPaq8test/build/CMakeFiles/paq8test.dir/src/paq8test.cpp.o"
-  "/home/zzx/paq8test/originPaq8test/src/util/Ilog.cpp" "/home/zzx/paq8test/originPaq8test/build/CMakeFiles/paq8test.dir/src/util/Ilog.cpp.o"
-  "/home/zzx/paq8test/originPaq8test/src/util/ProgramChecker.cpp" "/home/zzx/paq8test/originPaq8test/build/CMakeFiles/paq8test.dir/src/util/ProgramChecker.cpp.o"
-  "/home/zzx/paq8test/originPaq8test/src/util/Random.cpp" "/home/zzx/paq8test/originPaq8test/build/CMakeFiles/paq8test.dir/src/util/Random.cpp.o"
-  )
-set(CMAKE_CXX_COMPILER_ID "GNU")
 
-# The include file search paths:
-set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "../src"
+# The set of dependency files which are needed:
+set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/zzx/paq8_ghj/src/ArithmeticEncoder.cpp" "CMakeFiles/paq8test.dir/src/ArithmeticEncoder.cpp.o" "gcc" "CMakeFiles/paq8test.dir/src/ArithmeticEncoder.cpp.o.d"
+  "/home/zzx/paq8_ghj/src/Encoder.cpp" "CMakeFiles/paq8test.dir/src/Encoder.cpp.o" "gcc" "CMakeFiles/paq8test.dir/src/Encoder.cpp.o.d"
+  "/home/zzx/paq8_ghj/src/Mixer.cpp" "CMakeFiles/paq8test.dir/src/Mixer.cpp.o" "gcc" "CMakeFiles/paq8test.dir/src/Mixer.cpp.o.d"
+  "/home/zzx/paq8_ghj/src/Models.cpp" "CMakeFiles/paq8test.dir/src/Models.cpp.o" "gcc" "CMakeFiles/paq8test.dir/src/Models.cpp.o.d"
+  "/home/zzx/paq8_ghj/src/Predictor.cpp" "CMakeFiles/paq8test.dir/src/Predictor.cpp.o" "gcc" "CMakeFiles/paq8test.dir/src/Predictor.cpp.o.d"
+  "/home/zzx/paq8_ghj/src/Shared.cpp" "CMakeFiles/paq8test.dir/src/Shared.cpp.o" "gcc" "CMakeFiles/paq8test.dir/src/Shared.cpp.o.d"
+  "/home/zzx/paq8_ghj/src/UpdateBroadcaster.cpp" "CMakeFiles/paq8test.dir/src/UpdateBroadcaster.cpp.o" "gcc" "CMakeFiles/paq8test.dir/src/UpdateBroadcaster.cpp.o.d"
+  "/home/zzx/paq8_ghj/src/map/AdaptiveMap.cpp" "CMakeFiles/paq8test.dir/src/map/AdaptiveMap.cpp.o" "gcc" "CMakeFiles/paq8test.dir/src/map/AdaptiveMap.cpp.o.d"
+  "/home/zzx/paq8_ghj/src/map/ContextMap.cpp" "CMakeFiles/paq8test.dir/src/map/ContextMap.cpp.o" "gcc" "CMakeFiles/paq8test.dir/src/map/ContextMap.cpp.o.d"
+  "/home/zzx/paq8_ghj/src/map/ContextMap2.cpp" "CMakeFiles/paq8test.dir/src/map/ContextMap2.cpp.o" "gcc" "CMakeFiles/paq8test.dir/src/map/ContextMap2.cpp.o.d"
+  "/home/zzx/paq8_ghj/src/map/SmallStationaryContextMap.cpp" "CMakeFiles/paq8test.dir/src/map/SmallStationaryContextMap.cpp.o" "gcc" "CMakeFiles/paq8test.dir/src/map/SmallStationaryContextMap.cpp.o.d"
+  "/home/zzx/paq8_ghj/src/map/StateMap.cpp" "CMakeFiles/paq8test.dir/src/map/StateMap.cpp.o" "gcc" "CMakeFiles/paq8test.dir/src/map/StateMap.cpp.o.d"
+  "/home/zzx/paq8_ghj/src/map/StateTable.cpp" "CMakeFiles/paq8test.dir/src/map/StateTable.cpp.o" "gcc" "CMakeFiles/paq8test.dir/src/map/StateTable.cpp.o.d"
+  "/home/zzx/paq8_ghj/src/map/StationaryMap.cpp" "CMakeFiles/paq8test.dir/src/map/StationaryMap.cpp.o" "gcc" "CMakeFiles/paq8test.dir/src/map/StationaryMap.cpp.o.d"
+  "/home/zzx/paq8_ghj/src/model/ContextModel.cpp" "CMakeFiles/paq8test.dir/src/model/ContextModel.cpp.o" "gcc" "CMakeFiles/paq8test.dir/src/model/ContextModel.cpp.o.d"
+  "/home/zzx/paq8_ghj/src/model/IndirectModel.cpp" "CMakeFiles/paq8test.dir/src/model/IndirectModel.cpp.o" "gcc" "CMakeFiles/paq8test.dir/src/model/IndirectModel.cpp.o.d"
+  "/home/zzx/paq8_ghj/src/model/MatchModel.cpp" "CMakeFiles/paq8test.dir/src/model/MatchModel.cpp.o" "gcc" "CMakeFiles/paq8test.dir/src/model/MatchModel.cpp.o.d"
+  "/home/zzx/paq8_ghj/src/model/NormalModel.cpp" "CMakeFiles/paq8test.dir/src/model/NormalModel.cpp.o" "gcc" "CMakeFiles/paq8test.dir/src/model/NormalModel.cpp.o.d"
+  "/home/zzx/paq8_ghj/src/model/SparseModel.cpp" "CMakeFiles/paq8test.dir/src/model/SparseModel.cpp.o" "gcc" "CMakeFiles/paq8test.dir/src/model/SparseModel.cpp.o.d"
+  "/home/zzx/paq8_ghj/src/paq8test.cpp" "CMakeFiles/paq8test.dir/src/paq8test.cpp.o" "gcc" "CMakeFiles/paq8test.dir/src/paq8test.cpp.o.d"
+  "/home/zzx/paq8_ghj/src/util/Ilog.cpp" "CMakeFiles/paq8test.dir/src/util/Ilog.cpp.o" "gcc" "CMakeFiles/paq8test.dir/src/util/Ilog.cpp.o.d"
+  "/home/zzx/paq8_ghj/src/util/ProgramChecker.cpp" "CMakeFiles/paq8test.dir/src/util/ProgramChecker.cpp.o" "gcc" "CMakeFiles/paq8test.dir/src/util/ProgramChecker.cpp.o.d"
+  "/home/zzx/paq8_ghj/src/util/Random.cpp" "CMakeFiles/paq8test.dir/src/util/Random.cpp.o" "gcc" "CMakeFiles/paq8test.dir/src/util/Random.cpp.o.d"
   )
 
 # Targets to which this target links.

@@ -1,5 +1,3 @@
-
-#include<iostream>
 #include<memory>
 #include<unistd.h>
 #include<fstream>
@@ -8,120 +6,168 @@
 #include<getopt.h>
 #include<time.h>
 
-using namespace std;
-
 typedef unsigned char  U8;
 typedef unsigned short U16;
 typedef unsigned int   U32;
 
-U32 x1=0, x2=0xffffffff;
+#define MAX_FILE_NAME 256
 
-long BLOCK_SIZE;
-FILE* fp = NULL;
-FILE* deCom = fopen("/home/zzx/paq8test/originPaq8test/decomress.txt","w");
+// #define INFO
 
 int main(int argc,char **argv){
 
+    /* 1. 检查输入参数 */
+    if (argc!=3 && argv[1][0]!='d') {
+        printf(
+            "To compress:   paq8test N input\n"
+            "To decompress: paq8test d input\n"); // 所需的其他信息都从压缩数据头中获取
+        return 1;
+    }
+
+    /* 2. 初始化 */
+    clock_t start_t = clock();
+    clock_t comp_t;
     Shared shared;
-    clock_t t;
+    char filePath[MAX_FILE_NAME];
+    FILE *in = NULL;
+    FILE *out = NULL;  
+    FILE* deCom = fopen("../decomress.txt", "w");
+    U32 fsize = 0;              // 初始文件大小
+    U8 comp_lv = 0;             // 压缩等级，0~12
+        
+    /* 3. 获得模式（压缩/解压） */
+    Mode mode;
+    mode = (strcmp(argv[1], "d")) ? COMPRESS : DECOMPRESS;
 
-    // shared.level = 2;
-    shared.init(2);
-    // static const struct option longopts[] = {
-    //     {"decompress",  0,  NULL,   'd'},
-    //     {"compress",    0,  NULL,   'c'},
-    // };
-
-    sscanf(argv[1], "%ld", &BLOCK_SIZE); //第一个参数为分块大小，单位为KB
-    BLOCK_SIZE *= 1024; //单位换算为Byte
-    char filePath[128];
-    if(strcmp(argv[2], "enwik8") == 0){ //根据第二个参数选择文件
-        sprintf(filePath, "/home/zzx/paq8test/data/enwik8/enwik8");
+    /* 4. 输入输出文件处理 */
+    if(mode == COMPRESS) {
+        sprintf(filePath, "/home/zzx/data/%s", argv[2]);
+        in = fopen(filePath, "rb");
+        sprintf(filePath, "../output/%s.p8t", argv[2]);
+        out = fopen(filePath, "wb");
+    } else {
+        sprintf(filePath, "../output/%s.p8t", argv[2]);
+        in = fopen(filePath, "rb");
+        sprintf(filePath, "../output/%s.decmp", argv[2]);
+        out = fopen(filePath, "wb");
     }
-    else if(strcmp(argv[2], "enwik9") == 0){
-        sprintf(filePath, "/home/zzx/paq8test/data/enwik9");
-    }
-    else if(strcmp(argv[2], "book1") == 0 || strcmp(argv[2], "book2") == 0){
-        sprintf(filePath, "/home/zzx/paq8test/data/calgarycorpus/%s", argv[2]);
-    }
-    else{
-        sprintf(filePath, "/home/zzx/paq8test/data/silesia/%s", argv[2]);
-    }
-    fp = fopen(filePath, "r");
-    if(fp == NULL){
-        printf("File \"%s\" no exist\n", argv[2]);
-        return 0;
-    }
-    
-    Mode mode(COMPRESS);
-    mode = (argc == 3) ? COMPRESS : DECOMPRESS;
+    if (!in || !out) perror(argv[2]), exit(1);   
 
-    //生成压缩器
-    //使用压缩器编码，并统计信息
-    if(mode == COMPRESS){
-        char foutPath[128];
-        sprintf(foutPath, "/home/zzx/paq8test/originPaq8test/output/%s", argv[2]);
-        FILE* out = fopen(foutPath, "w");
+    /* 5. 压缩、解压处理 */
+    // Compress
+    if(mode == COMPRESS) {
+        /* 5.1 获得并写入元数据信息 */
+        sscanf(argv[1], "%hhu", &comp_lv);
+        assert(comp_lv >= 0 && comp_lv <= 12);
+        fwrite(&(comp_lv), sizeof(U8), 1, out);
+        shared.init(comp_lv);
 
-        printf("Begin compression %s\n", argv[2]);
-        std::cout << "block size is : " << BLOCK_SIZE/1024 << " KB\n";
-        Encoder *en = NULL;
+        fseek(in, 0, SEEK_END);
+        fsize = ftell(in);
+        fseek(in, 0, SEEK_SET);
+        fwrite(&(fsize), sizeof(U32), 1, out);
 
-        //统计文件大小
-        fseek(fp, 0, SEEK_END);
-        long fsize = ftell(fp);
-        std::cout << "original size is : " << fsize << " B\n";
-        fseek(fp, 0, SEEK_SET);
+        // 输出统计信息
+        printf("compress level: %d\n", comp_lv);
+        printf("input file: %s\n", argv[2]);
+        printf("file size: %u\n", fsize);
 
-        //压缩处理
+        /* 5.2 生成动态压缩器、压缩 */
         char c;
-        t = clock();
+        U32 byteCount = 0;
 
-        long byteCount = 0;
-        bool notEnd = 1;
-        long csize = 0;
-        long sizeTmp = 0;
-        while(notEnd){
-            // printf("%x\t",c);
-            en = new Encoder(&shared, COMPRESS, out, deCom);
-            for(int i = 0; BLOCK_SIZE == 0 || i < BLOCK_SIZE; i++){
-                c=getc(fp);
-                byteCount++;
-                en->compressByte(c);
-                if(byteCount >= fsize){
-                    notEnd = 0;
+        Encoder en(&shared, COMPRESS, out, deCom);
+        comp_t = clock();
+        while(byteCount < fsize) {
+            c=getc(in);
+            en.compressByte(c);
+            byteCount++;
+        }
+        en.flush(); 
+        comp_t = clock() - comp_t;
+
+
+        //输出压缩统计信息
+        double t = (double)(clock() - start_t)/CLOCKS_PER_SEC;
+        double c_t = (double)(comp_t)/CLOCKS_PER_SEC;
+        printf("%ld %ld %.6lf %.6f\n", ftell(in), ftell(out), t, c_t);
+        printf("all thoughtout: %.2lf KB/s, comp thoughtout: %.2lf KB/s\n", fsize / t / 1024, fsize / c_t / 1024);
+    }
+    else {
+        /* 5.1 获得并输出元数据信息 */
+        fread(&(comp_lv), sizeof(U8), 1, in);
+        shared.init(comp_lv);
+        fread(&(fsize), sizeof(U32), 1, in);
+
+        // 输出统计信息
+        printf("compress level: %d\n", comp_lv);
+        printf("input file: %s\n", argv[2]);
+        printf("file size: %u\n", fsize);
+
+        /* 5.2 生成动态压缩器、解压 */
+        char c;
+        U32 byte_count = 0;
+
+        Encoder en(&shared, DECOMPRESS, in, deCom);
+        while(byte_count < fsize) {
+            c = en.decompressByte();
+            putc(c, out);
+            byte_count++;
+        }
+
+        //输出压缩统计信息
+        start_t = clock() - start_t;
+        printf("Decompress Done\n");
+        printf("Decompression time=%lf s\n",((double) start_t)/ CLOCKS_PER_SEC);
+    }
+
+    fclose(in);
+    fclose(out);
+
+    // 检查解压后文件和原文件是否相同
+    if(mode == DECOMPRESS) {
+        printf("Checking files\n");
+        sprintf(filePath, "/home/zzx/data/%s", argv[2]);
+        printf("Origin file: %s\n", filePath);
+        FILE *origin_file = fopen(filePath, "rb");
+        sprintf(filePath, "../output/%s.decmp", argv[2]);
+        printf("Decompressed file: %s\n", filePath);
+        FILE *decomp_file = fopen(filePath, "rb");
+
+        fseek(origin_file, 0, SEEK_END);
+        U32 len_origin=ftell(origin_file);
+        fseek(origin_file, 0, SEEK_SET);
+        fseek(decomp_file, 0, SEEK_END);
+        U32 len_decomp=ftell(decomp_file);
+        fseek(decomp_file, 0, SEEK_SET);
+        
+        bool is_same = true;
+        U32 error_line = 1;
+        char c;
+        if(len_origin != len_decomp) {
+            is_same = false;
+            error_line = 0;
+        }
+        else {
+            for(U32 i = 0; i < len_origin; i++) {
+                c = getc(origin_file);
+                if(c != getc(decomp_file)) {
+                    is_same = false;
                     break;
                 }
+                if(c == '\n') {
+                    error_line += 1;
+                }                
             }
-            //多余小数刷新回压缩文件中
-            en->flush();
-            delete en;
-
-            sizeTmp = csize;
-            csize = ftell(out);
-            // std::cout<<"Block compressed size: "<<size - sizeTmp<<"B"<<std::endl;
         }
-        
-        t = clock()-t;
-        
-        //输出压缩统计信息
-        csize = ftell(out);
-        std::cout<<"compressed size: "<<csize<<" B"<<std::endl;
-        printf("compression time=%lf s\n\n",((float) t)/ CLOCKS_PER_SEC);
-        fclose(out);
-    } else {
-        FILE* out = fopen("/home/zzx/paq8test/originPaq8test/output.txt","r");
-        Encoder en(&shared, DECOMPRESS,out,deCom);
-        printf("Begin decompression:....\n");
-        for(int i=0;i<4;i++){
-            putc(en.decompressByte(),deCom);
-            // cout<<en.decompressByte();
+        fclose(origin_file);
+        fclose(decomp_file);
+        if(is_same) {
+            printf("success!\n");
+        } else {
+            printf("ERROR! file different in line %u\n", error_line);
         }
-        // uint8_t a = 'a';
-        // putc(a,deCom);
-        fclose(out);
     }
 
-    fclose(fp);
-    fclose(deCom);
+    return 0;
 }

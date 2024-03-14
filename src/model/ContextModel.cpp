@@ -21,9 +21,9 @@ auto ContextModel::p() -> int {
 
   MatchModel &matchModel = models.matchModel();
   matchModel.mix(*m);
-  shared->MatchModelCostTime +=  clock()-t;
+  // shared->MatchModelCostTime +=  clock()-t;
 
-  t = clock();
+  // t = clock();
   NormalModel &normalModel = models.normalModel();
   normalModel.mix(*m);
   normalModel.mixPost(*m);
@@ -39,14 +39,15 @@ auto ContextModel::p() -> int {
 }
 
 auto ContextModel::pWPar(uint8_t c) -> int*{
-  int pr[8]={2048};
+  // int pr[8]={2048};
   //model的set、update、以及mix处理
   
   //map的mix、update以及update处理
   
     
 
-  return pr;
+  // return pr;
+  return nullptr;
 }
 
 ContextModel::~ContextModel() {
