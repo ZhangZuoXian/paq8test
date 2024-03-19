@@ -14,21 +14,6 @@ typedef unsigned int   U32;
 
 // #define INFO
 
-// 针对元数据的U32类型的读写
-// size_t frU32(FILE *f, U32 &data) {
-//     return fread(&data, sizeof(U32), 1, f);
-// }
-// size_t fwU32(FILE *f, U32 &data) {
-//     // printf("[META] write %u to meta data file\n", data);
-//     return fwrite(&data, sizeof(U32), 1, f);
-// }
-
-typedef struct _COMP_INFO {
-    U32 uncomp_byte;
-    U32 comped_byte;
-    clock_t comp_t;
-} COMP_INFO;
-
 int main(int argc,char **argv){
 
     /* 1. 检查输入参数 */
@@ -46,6 +31,7 @@ int main(int argc,char **argv){
 
     /* 2. 初始化 */
     clock_t start_t = clock();
+    clock_t comp_time;
     Shared shared;
     char filePath[MAX_FILE_NAME];
     FILE *in = NULL;
@@ -57,8 +43,6 @@ int main(int argc,char **argv){
     double para_theta = 0.0;    // 参数θ，即判断是否需要重训练时压缩比的阈值  
     U32 fsize = 0;              // 初始文件大小
     U8 comp_lv = 0;             // 压缩等级，0~12
-    COMP_INFO dynamic_info = {0, 0, 0};
-    COMP_INFO static_info = {0, 0, 0};
     clock_t t;
         
     /* 3. 获得模式（压缩/解压） */
@@ -158,6 +142,7 @@ int main(int argc,char **argv){
 
         Encoder en(&shared, COMPRESS, out);
         t = clock();
+        comp_time = t;
         while(byteCount < fsize) {
             for(int i = 0; i < block_size && byteCount < fsize; i++) {
                 c=getc(in);
@@ -171,9 +156,6 @@ int main(int argc,char **argv){
                 dynamic_block < train_block) {
                     continue;
             }
-
-            en.flush(); 
-            en.blockReset();
 
             //将压缩前、后大小保存至元数据
             block_size_uncomp = ftell(in) - in_pos;
@@ -193,13 +175,9 @@ int main(int argc,char **argv){
 #endif
 
             if(shared.updateState == true) { 
-                dynamic_info.uncomp_byte += block_size_uncomp;
-                dynamic_info.comped_byte += block_size_comped;
                 shared.updateState = false;
                 dynamic_ratio = comp_ratio;
                 static_block = 0;
-                dynamic_info.comp_t += clock() - t;
-                t = clock();
             }
             else {
                 int i = static_block % para_k;
@@ -216,38 +194,23 @@ int main(int argc,char **argv){
                         static_ratios[j] = 0.0;
                     }
                     static_r_sum = 0.0;
-                    static_info.comp_t += clock() - t;
-                    t = clock();
                 }
             }
         }
-
-        if(shared.updateState == false) {
-            static_info.comp_t += clock() - t;
-        }
+        en.flush();
+        comp_time = clock() - comp_time;
 
         //输出压缩统计信息
-        printf("train %d times\n", train_times);
+        printf("Train %d times\n", train_times);
         double comp_t = (double)(clock() - start_t)/CLOCKS_PER_SEC;
-        printf("%ld -> %ld in %1.2lf sec\n", ftell(in), ftell(out), comp_t);
-        printf("compress ratio = %.6lf, thoughtout = %.6lf KB/s.\n", 
-            ((double)(ftell(in))) / ftell(out), ftell(in) / comp_t / 1024);
-        static_info.uncomp_byte = ftell(in) - dynamic_info.uncomp_byte;
-        static_info.comped_byte = ftell(out) - dynamic_info.comped_byte;
-
-        comp_t = (double)dynamic_info.comp_t/CLOCKS_PER_SEC;
-        // printf("%u %u %.2lf\n", dynamic_info.uncomp_byte, dynamic_info.comped_byte, comp_t);
-        printf("dynamic compress %u to %u in %.2lf sec\n\tratio = %.6lf, thoughtout = %.6lf KB/s.\n", 
-            dynamic_info.uncomp_byte, dynamic_info.comped_byte, comp_t, 
-            (double)(dynamic_info.uncomp_byte) / dynamic_info.comped_byte,
-            dynamic_info.uncomp_byte / comp_t / 1024);
-
-        comp_t = (double)static_info.comp_t/CLOCKS_PER_SEC;
-        // printf("%u %u %.2lf\n", static_info.uncomp_byte, static_info.comped_byte, comp_t);
-        printf("static compress %u to %u in %.2lf sec\n\tratio = %.6lf, thoughtout = %.6lf KB/s.\n\n", 
-            static_info.uncomp_byte, static_info.comped_byte, comp_t,
-            (double)(static_info.uncomp_byte) / static_info.comped_byte,
-            static_info.uncomp_byte / comp_t / 1024);
+        printf("%ld -> %ld , compress ratio = %.6lf .\n", 
+            ftell(in), ftell(out), ((double)(ftell(in))) / ftell(out));
+        double time = double(clock()-start_t)/CLOCKS_PER_SEC;
+        printf("all time = %.2lf sec, thoughtout = %.6lf KB/s.\n",
+            time, ftell(in) / time / 1024);
+        time = double(comp_time) / CLOCKS_PER_SEC;
+        printf("compress time = %.2lf sec, thoughtout = %.6lf KB/s.\n\n",
+            time, ftell(in) / time / 1024); 
     }
     else {
         /* 5.1 获得并输出元数据信息 */
@@ -302,7 +265,6 @@ int main(int argc,char **argv){
                 putc(c, out);
                 byte_count++;
             }
-            en.blockReset();
 
             // 计算压缩比，这里的压缩前后大小与压缩时正好相反
             block_size_comped = ftell(in) - in_pos;

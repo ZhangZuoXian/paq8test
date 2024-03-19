@@ -103,3 +103,8 @@ TODO：mixer和shared的参数控制和reset
 
 2024.2.20
 * 最大level貌似是12，根据关键词“level”在github的changelog中找到的
+
+2024.3.19
+* 发现predictor的构造中share的初始化被删了，改了
+* 感觉smallstationarymap中的更新计算量很小。所以让他逐比特更新了
+  * 测试一下看看效果。发现这个部分几乎没用，对压缩比、吞吐量都没啥影响，还是用自适应更新吧，这样方案好说一点

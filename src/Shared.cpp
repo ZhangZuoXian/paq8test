@@ -19,7 +19,7 @@ void Shared::update(int y) {
   }
   
   // Broadcast to all current subscribers: y (and c0, c1, c4, etc) is known
-  updateBroadcaster.broadcastUpdate(updateState);
+  updateBroadcaster.broadcastUpdate();
 }
 
 void Shared::reset() {

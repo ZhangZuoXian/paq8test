@@ -39,9 +39,6 @@ int ArithmeticEncoder::decodeBit(int p){
 
 void ArithmeticEncoder::flush(){
   putc(x1 >> 24,archive);
-  putc(x1 >> 16,archive);
-  putc(x1 >> 8,archive);
-  putc(x1,archive);
 }
 
 void ArithmeticEncoder::reset() {
