@@ -194,6 +194,7 @@ public:
      * the outputs of these neural networks are combined using another
      * neural network (with arguments s, 1, 1). If s = 1 then the
      * output is direct. The weights are initially w (+-32K).
+     * n是输入，m是权重组数量
      * @param n
      * @param m
      * @param s
