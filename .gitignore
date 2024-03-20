@@ -1,2 +1,4 @@
 /output
-/build
+/build/
+!/build/*.txt
+!/build/*.sh
