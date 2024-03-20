@@ -1,0 +1,3325 @@
+Wed Feb 21 08:12:14 PM CST 2024
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 517(2.00%)
+k: 517(2.00%) theta: 0.80
+211938580 -> 51380979 in 13820.76 sec, in level 12.
+compress ratio = 4.124845, thoughtout = 0.014624 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 517(2.00%)
+k: 258(1.00%) theta: 0.80
+211938580 -> 51119780 in 13859.33 sec, in level 12.
+compress ratio = 4.145921, thoughtout = 0.014584 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 517(2.00%)
+k: 129(0.50%) theta: 0.80
+211938580 -> 51771556 in 13987.09 sec, in level 12.
+compress ratio = 4.093726, thoughtout = 0.014450 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 517(2.00%)
+k: 25(0.10%) theta: 0.80
+211938580 -> 52407184 in 13937.22 sec, in level 12.
+compress ratio = 4.044075, thoughtout = 0.014502 MB/s.
+
+Thu Feb 22 02:26:35 PM CST 2024
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 258(1.00%)
+k: 517(2.00%) theta: 0.80
+211938580 -> 51380979 in 13994.31 sec, in level 12.
+compress ratio = 4.124845, thoughtout = 0.014443 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 517(2.00%)
+k: 258(1.00%) theta: 0.80
+211938580 -> 51119780 in 14016.24 sec, in level 12.
+compress ratio = 4.145921, thoughtout = 0.014420 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 25(0.10%)
+k: 517(2.00%) theta: 0.80
+211938580 -> 51380979 in 14064.06 sec, in level 12.
+compress ratio = 4.124845, thoughtout = 0.014371 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 517(2.00%)
+k: 517(2.00%) theta: 0.80
+211938580 -> 51380979 in 14088.82 sec, in level 12.
+compress ratio = 4.124845, thoughtout = 0.014346 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 129(0.50%)
+k: 258(1.00%) theta: 0.80
+211938580 -> 51119780 in 14091.90 sec, in level 12.
+compress ratio = 4.145921, thoughtout = 0.014343 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 258(1.00%)
+k: 258(1.00%) theta: 0.80
+211938580 -> 51119780 in 14116.47 sec, in level 12.
+compress ratio = 4.145921, thoughtout = 0.014318 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 129(0.50%)
+k: 517(2.00%) theta: 0.80
+211938580 -> 51380979 in 14136.21 sec, in level 12.
+compress ratio = 4.124845, thoughtout = 0.014298 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 25(0.10%)
+k: 258(1.00%) theta: 0.80
+211938580 -> 51119780 in 14146.01 sec, in level 12.
+compress ratio = 4.145921, thoughtout = 0.014288 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 25(0.10%)
+k: 129(0.50%) theta: 0.80
+211938580 -> 51771556 in 14200.37 sec, in level 12.
+compress ratio = 4.093726, thoughtout = 0.014233 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 25(0.10%)
+k: 25(0.10%) theta: 0.80
+211938580 -> 52407184 in 14232.45 sec, in level 12.
+compress ratio = 4.044075, thoughtout = 0.014201 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 258(1.00%)
+k: 25(0.10%) theta: 0.80
+211938580 -> 52407184 in 14251.02 sec, in level 12.
+compress ratio = 4.044075, thoughtout = 0.014183 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 517(2.00%)
+k: 129(0.50%) theta: 0.80
+211938580 -> 51771556 in 14271.91 sec, in level 12.
+compress ratio = 4.093726, thoughtout = 0.014162 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 129(0.50%)
+k: 25(0.10%) theta: 0.80
+211938580 -> 52407184 in 14274.22 sec, in level 12.
+compress ratio = 4.044075, thoughtout = 0.014160 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 129(0.50%)
+k: 129(0.50%) theta: 0.80
+211938580 -> 51771556 in 14277.90 sec, in level 12.
+compress ratio = 4.093726, thoughtout = 0.014156 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 258(1.00%)
+k: 129(0.50%) theta: 0.80
+211938580 -> 51771556 in 14301.20 sec, in level 12.
+compress ratio = 4.093726, thoughtout = 0.014133 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 517(2.00%)
+k: 25(0.10%) theta: 0.80
+211938580 -> 52407184 in 14309.59 sec, in level 12.
+compress ratio = 4.044075, thoughtout = 0.014125 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 211938580 B, block num: 1
+train block: 1(1.00%)
+k: 1(1.00%) theta: 1.00
+211938580 -> 37266593 in 16358.86 sec, in level 12.
+compress ratio = 5.687093, thoughtout = 0.012355 MB/s.
+
+Thu Feb 22 06:59:16 PM CST 2024
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 25(0.10%)
+k: 517(2.00%) theta: 0.90
+211938580 -> 51394305 in 14102.53 sec, in level 12.
+compress ratio = 4.123776, thoughtout = 0.014332 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 517(2.00%)
+k: 517(2.00%) theta: 0.90
+211938580 -> 51394305 in 14103.08 sec, in level 12.
+compress ratio = 4.123776, thoughtout = 0.014332 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 517(2.00%)
+k: 258(1.00%) theta: 0.90
+211938580 -> 50955503 in 14112.86 sec, in level 12.
+compress ratio = 4.159287, thoughtout = 0.014322 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 258(1.00%)
+k: 517(2.00%) theta: 0.90
+211938580 -> 51394305 in 14134.49 sec, in level 12.
+compress ratio = 4.123776, thoughtout = 0.014300 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 129(0.50%)
+k: 258(1.00%) theta: 0.90
+211938580 -> 50955503 in 14146.42 sec, in level 12.
+compress ratio = 4.159287, thoughtout = 0.014288 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 129(0.50%)
+k: 517(2.00%) theta: 0.90
+211938580 -> 51394305 in 14168.72 sec, in level 12.
+compress ratio = 4.123776, thoughtout = 0.014265 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 258(1.00%)
+k: 258(1.00%) theta: 0.90
+211938580 -> 50955503 in 14195.79 sec, in level 12.
+compress ratio = 4.159287, thoughtout = 0.014238 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 25(0.10%)
+k: 258(1.00%) theta: 0.90
+211938580 -> 50955503 in 14203.34 sec, in level 12.
+compress ratio = 4.159287, thoughtout = 0.014230 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 517(2.00%)
+k: 25(0.10%) theta: 0.90
+211938580 -> 52407184 in 14238.79 sec, in level 12.
+compress ratio = 4.044075, thoughtout = 0.014195 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 129(0.50%)
+k: 25(0.10%) theta: 0.90
+211938580 -> 52407184 in 14267.14 sec, in level 12.
+compress ratio = 4.044075, thoughtout = 0.014167 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 25(0.10%)
+k: 129(0.50%) theta: 0.90
+211938580 -> 51697597 in 14294.14 sec, in level 12.
+compress ratio = 4.099583, thoughtout = 0.014140 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 129(0.50%)
+k: 129(0.50%) theta: 0.90
+211938580 -> 51697597 in 14297.29 sec, in level 12.
+compress ratio = 4.099583, thoughtout = 0.014137 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 517(2.00%)
+k: 129(0.50%) theta: 0.90
+211938580 -> 51697597 in 14298.87 sec, in level 12.
+compress ratio = 4.099583, thoughtout = 0.014135 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 25(0.10%)
+k: 25(0.10%) theta: 0.90
+211938580 -> 52407184 in 14309.42 sec, in level 12.
+compress ratio = 4.044075, thoughtout = 0.014125 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 258(1.00%)
+k: 25(0.10%) theta: 0.90
+211938580 -> 52407184 in 14315.64 sec, in level 12.
+compress ratio = 4.044075, thoughtout = 0.014119 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 258(1.00%)
+k: 129(0.50%) theta: 0.90
+211938580 -> 51697597 in 14318.32 sec, in level 12.
+compress ratio = 4.099583, thoughtout = 0.014116 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 211938580 B, block num: 1
+train block: 1(1.00%)
+k: 1(1.00%) theta: 1.00
+211938580 -> 37266593 in 16357.77 sec, in level 12.
+compress ratio = 5.687093, thoughtout = 0.012356 MB/s.
+
+Thu Feb 22 11:31:55 PM CST 2024
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 258(1.00%)
+k: 258(1.00%) theta: 1.00
+211938580 -> 50970241 in 14056.22 sec, in level 12.
+compress ratio = 4.158085, thoughtout = 0.014379 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 129(0.50%)
+k: 517(2.00%) theta: 1.00
+211938580 -> 51324024 in 14101.77 sec, in level 12.
+compress ratio = 4.129423, thoughtout = 0.014333 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 25(0.10%)
+k: 517(2.00%) theta: 1.00
+211938580 -> 51324024 in 14131.56 sec, in level 12.
+compress ratio = 4.129423, thoughtout = 0.014303 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 517(2.00%)
+k: 517(2.00%) theta: 1.00
+211938580 -> 51324024 in 14134.97 sec, in level 12.
+compress ratio = 4.129423, thoughtout = 0.014299 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 129(0.50%)
+k: 258(1.00%) theta: 1.00
+211938580 -> 50970241 in 14146.21 sec, in level 12.
+compress ratio = 4.158085, thoughtout = 0.014288 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 517(2.00%)
+k: 258(1.00%) theta: 1.00
+211938580 -> 50970241 in 14159.06 sec, in level 12.
+compress ratio = 4.158085, thoughtout = 0.014275 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 517(2.00%)
+k: 25(0.10%) theta: 1.00
+211938580 -> 52407184 in 14163.18 sec, in level 12.
+compress ratio = 4.044075, thoughtout = 0.014271 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 258(1.00%)
+k: 517(2.00%) theta: 1.00
+211938580 -> 51324024 in 14170.45 sec, in level 12.
+compress ratio = 4.129423, thoughtout = 0.014264 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 25(0.10%)
+k: 258(1.00%) theta: 1.00
+211938580 -> 50970241 in 14175.65 sec, in level 12.
+compress ratio = 4.158085, thoughtout = 0.014258 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 25(0.10%)
+k: 129(0.50%) theta: 1.00
+211938580 -> 51583610 in 14212.41 sec, in level 12.
+compress ratio = 4.108642, thoughtout = 0.014221 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 258(1.00%)
+k: 25(0.10%) theta: 1.00
+211938580 -> 52407184 in 14258.61 sec, in level 12.
+compress ratio = 4.044075, thoughtout = 0.014175 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 129(0.50%)
+k: 25(0.10%) theta: 1.00
+211938580 -> 52407184 in 14277.83 sec, in level 12.
+compress ratio = 4.044075, thoughtout = 0.014156 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 25(0.10%)
+k: 25(0.10%) theta: 1.00
+211938580 -> 52407184 in 14283.48 sec, in level 12.
+compress ratio = 4.044075, thoughtout = 0.014151 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 258(1.00%)
+k: 129(0.50%) theta: 1.00
+211938580 -> 51583610 in 14286.62 sec, in level 12.
+compress ratio = 4.108642, thoughtout = 0.014148 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 129(0.50%)
+k: 129(0.50%) theta: 1.00
+211938580 -> 51583610 in 14287.47 sec, in level 12.
+compress ratio = 4.108642, thoughtout = 0.014147 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 517(2.00%)
+k: 129(0.50%) theta: 1.00
+211938580 -> 51583610 in 14321.29 sec, in level 12.
+compress ratio = 4.108642, thoughtout = 0.014113 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 211938580 B, block num: 1
+train block: 1(1.00%)
+k: 1(1.00%) theta: 1.00
+211938580 -> 37266593 in 16407.39 sec, in level 12.
+compress ratio = 5.687093, thoughtout = 0.012319 MB/s.
+
+Fri Feb 23 04:05:24 AM CST 2024
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 25(0.10%)
+k: 517(2.00%) theta: 1.10
+211938580 -> 51346104 in 14131.22 sec, in level 12.
+compress ratio = 4.127647, thoughtout = 0.014303 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 517(2.00%)
+k: 517(2.00%) theta: 1.10
+211938580 -> 51346104 in 14150.15 sec, in level 12.
+compress ratio = 4.127647, thoughtout = 0.014284 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 129(0.50%)
+k: 517(2.00%) theta: 1.10
+211938580 -> 51346104 in 14156.39 sec, in level 12.
+compress ratio = 4.127647, thoughtout = 0.014278 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 258(1.00%)
+k: 517(2.00%) theta: 1.10
+211938580 -> 51346104 in 14173.66 sec, in level 12.
+compress ratio = 4.127647, thoughtout = 0.014260 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 517(2.00%)
+k: 258(1.00%) theta: 1.10
+211938580 -> 50899170 in 14174.92 sec, in level 12.
+compress ratio = 4.163891, thoughtout = 0.014259 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 25(0.10%)
+k: 258(1.00%) theta: 1.10
+211938580 -> 50899170 in 14198.98 sec, in level 12.
+compress ratio = 4.163891, thoughtout = 0.014235 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 129(0.50%)
+k: 258(1.00%) theta: 1.10
+211938580 -> 50899170 in 14204.97 sec, in level 12.
+compress ratio = 4.163891, thoughtout = 0.014229 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 258(1.00%)
+k: 258(1.00%) theta: 1.10
+211938580 -> 50899170 in 14255.61 sec, in level 12.
+compress ratio = 4.163891, thoughtout = 0.014178 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 517(2.00%)
+k: 129(0.50%) theta: 1.10
+211938580 -> 51526143 in 14269.94 sec, in level 12.
+compress ratio = 4.113224, thoughtout = 0.014164 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 129(0.50%)
+k: 129(0.50%) theta: 1.10
+211938580 -> 51526143 in 14325.51 sec, in level 12.
+compress ratio = 4.113224, thoughtout = 0.014109 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 258(1.00%)
+k: 129(0.50%) theta: 1.10
+211938580 -> 51526143 in 14344.55 sec, in level 12.
+compress ratio = 4.113224, thoughtout = 0.014090 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 25(0.10%)
+k: 129(0.50%) theta: 1.10
+211938580 -> 51526143 in 14376.53 sec, in level 12.
+compress ratio = 4.113224, thoughtout = 0.014059 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 517(2.00%)
+k: 25(0.10%) theta: 1.10
+211938580 -> 51844356 in 14575.31 sec, in level 12.
+compress ratio = 4.087978, thoughtout = 0.013867 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 129(0.50%)
+k: 25(0.10%) theta: 1.10
+211938580 -> 51844356 in 14615.57 sec, in level 12.
+compress ratio = 4.087978, thoughtout = 0.013829 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 258(1.00%)
+k: 25(0.10%) theta: 1.10
+211938580 -> 51844356 in 14630.49 sec, in level 12.
+compress ratio = 4.087978, thoughtout = 0.013815 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 25(0.10%)
+k: 25(0.10%) theta: 1.10
+211938580 -> 51844356 in 14635.59 sec, in level 12.
+compress ratio = 4.087978, thoughtout = 0.013810 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 211938580 B, block num: 1
+train block: 1(1.00%)
+k: 1(1.00%) theta: 1.00
+211938580 -> 37266593 in 16396.87 sec, in level 12.
+compress ratio = 5.687093, thoughtout = 0.012327 MB/s.
+
+Fri Feb 23 08:38:43 AM CST 2024
+
+**********************************************
+之前测试数据存在问题，训练的数据严重不足
+**********************************************
+
+Fri Feb 23 03:56:01 PM CST 2024
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 25(0.10%)
+k: 25(0.10%) theta: 0.80
+train 2 times
+211938580 -> 51979002 in 17546.45 sec, in level 12.
+compress ratio = 4.077388, thoughtout = 0.011519 MB/s.
+dynamic compress ratio = 1.608539, thoughtout = 0.005867 MB/s.
+static compress ratio = 4.089543, thoughtout = 0.011541 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 258(1.00%)
+k: 517(2.00%) theta: 0.80
+train 3 times
+211938580 -> 48702816 in 17671.99 sec, in level 12.
+compress ratio = 4.351670, thoughtout = 0.011437 MB/s.
+dynamic compress ratio = 2.883126, thoughtout = 0.008846 MB/s.
+static compress ratio = 4.421119, thoughtout = 0.011542 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 25(0.10%)
+k: 129(0.50%) theta: 0.80
+train 2 times
+211938580 -> 50330461 in 17789.10 sec, in level 12.
+compress ratio = 4.210941, thoughtout = 0.011362 MB/s.
+dynamic compress ratio = 1.935088, thoughtout = 0.007254 MB/s.
+static compress ratio = 4.220552, thoughtout = 0.011375 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 129(0.50%)
+k: 517(2.00%) theta: 0.80
+211938580 -> 49176050 in 17865.67 sec, in level 12.
+compress ratio = 4.309793, thoughtout = 0.011313 MB/s.
+dynamic compress ratio = 2.731685, thoughtout = 0.010084 MB/s.
+static compress ratio = 4.347937, thoughtout = 0.011334 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 25(0.10%)
+k: 517(2.00%) theta: 0.80
+train 3 times
+211938580 -> 49817076 in 17825.59 sec, in level 12.
+compress ratio = 4.254336, thoughtout = 0.011339 MB/s.
+dynamic compress ratio = 2.538916, thoughtout = 0.008182 MB/s.
+static compress ratio = 4.262710, thoughtout = 0.011352 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 129(0.50%)
+k: 129(0.50%) theta: 0.80
+train 2 times
+211938580 -> 49499511 in 17846.47 sec, in level 12.
+compress ratio = 4.281630, thoughtout = 0.011326 MB/s.
+dynamic compress ratio = 2.069301, thoughtout = 0.007392 MB/s.
+static compress ratio = 4.328241, thoughtout = 0.011387 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 25(0.10%)
+k: 258(1.00%) theta: 0.80
+211938580 -> 47962551 in 18158.68 sec, in level 12.
+compress ratio = 4.418835, thoughtout = 0.011131 MB/s.
+dynamic compress ratio = 2.905360, thoughtout = 0.009304 MB/s.
+static compress ratio = 4.430039, thoughtout = 0.011141 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 25(0.10%)
+k: 517(2.00%) theta: 0.80
+211938580 -> 49817076 in 18185.80 sec, in level 12.
+compress ratio = 4.254336, thoughtout = 0.011114 MB/s.
+dynamic compress ratio = 2.538916, thoughtout = 0.008916 MB/s.
+static compress ratio = 4.262710, thoughtout = 0.011122 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 25(0.10%)
+k: 258(1.00%) theta: 0.80
+train 5 times
+211938580 -> 47962551 in 17999.87 sec, in level 12.
+compress ratio = 4.418835, thoughtout = 0.011229 MB/s.
+dynamic compress ratio = 2.905360, thoughtout = 0.006686 MB/s.
+static compress ratio = 4.430039, thoughtout = 0.011266 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 258(1.00%)
+k: 258(1.00%) theta: 0.80
+train 6 times
+211938580 -> 44822777 in 17963.84 sec, in level 12.
+compress ratio = 4.728368, thoughtout = 0.011252 MB/s.
+dynamic compress ratio = 3.609245, thoughtout = 0.009957 MB/s.
+static compress ratio = 4.823554, thoughtout = 0.011345 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 129(0.50%)
+k: 129(0.50%) theta: 0.80
+211938580 -> 49499511 in 18197.65 sec, in level 12.
+compress ratio = 4.281630, thoughtout = 0.011107 MB/s.
+dynamic compress ratio = 2.069301, thoughtout = 0.010942 MB/s.
+static compress ratio = 4.328241, thoughtout = 0.011109 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 25(0.10%)
+k: 129(0.50%) theta: 0.80
+211938580 -> 50330461 in 18302.10 sec, in level 12.
+compress ratio = 4.210941, thoughtout = 0.011044 MB/s.
+dynamic compress ratio = 1.935088, thoughtout = 0.007884 MB/s.
+static compress ratio = 4.220552, thoughtout = 0.011052 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 25(0.10%)
+k: 25(0.10%) theta: 0.80
+211938580 -> 51979002 in 18508.86 sec, in level 12.
+compress ratio = 4.077388, thoughtout = 0.010920 MB/s.
+dynamic compress ratio = 1.608539, thoughtout = 0.009961 MB/s.
+static compress ratio = 4.089543, thoughtout = 0.010922 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 258(1.00%)
+k: 258(1.00%) theta: 0.80
+211938580 -> 44822777 in 18311.89 sec, in level 12.
+compress ratio = 4.728368, thoughtout = 0.011038 MB/s.
+dynamic compress ratio = 3.609245, thoughtout = 0.009345 MB/s.
+static compress ratio = 4.823554, thoughtout = 0.011166 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 258(1.00%)
+k: 129(0.50%) theta: 0.80
+211938580 -> 50446332 in 18435.68 sec, in level 12.
+compress ratio = 4.201268, thoughtout = 0.010964 MB/s.
+dynamic compress ratio = 2.019764, thoughtout = 0.010109 MB/s.
+static compress ratio = 4.295689, thoughtout = 0.010982 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 258(1.00%)
+k: 517(2.00%) theta: 0.80
+211938580 -> 48702816 in 18548.93 sec, in level 12.
+compress ratio = 4.351670, thoughtout = 0.010897 MB/s.
+dynamic compress ratio = 2.883126, thoughtout = 0.009673 MB/s.
+static compress ratio = 4.421119, thoughtout = 0.010939 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 258(1.00%)
+k: 129(0.50%) theta: 0.80
+train 2 times
+211938580 -> 50446332 in 18386.92 sec, in level 12.
+compress ratio = 4.201268, thoughtout = 0.010993 MB/s.
+dynamic compress ratio = 2.019764, thoughtout = 0.007705 MB/s.
+static compress ratio = 4.295689, thoughtout = 0.011089 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 517(2.00%)
+k: 25(0.10%) theta: 0.80
+train 6 times
+211938580 -> 45303661 in 18378.55 sec, in level 12.
+compress ratio = 4.678178, thoughtout = 0.010998 MB/s.
+dynamic compress ratio = 3.008790, thoughtout = 0.009175 MB/s.
+static compress ratio = 5.060709, thoughtout = 0.011303 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 517(2.00%)
+k: 129(0.50%) theta: 0.80
+211938580 -> 45019920 in 18510.46 sec, in level 12.
+compress ratio = 4.707662, thoughtout = 0.010919 MB/s.
+dynamic compress ratio = 2.763850, thoughtout = 0.009875 MB/s.
+static compress ratio = 5.014026, thoughtout = 0.011021 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 517(2.00%)
+k: 258(1.00%) theta: 0.80
+211938580 -> 43993909 in 18622.66 sec, in level 12.
+compress ratio = 4.817453, thoughtout = 0.010853 MB/s.
+dynamic compress ratio = 3.823579, thoughtout = 0.008662 MB/s.
+static compress ratio = 4.994312, thoughtout = 0.011241 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 517(2.00%)
+k: 517(2.00%) theta: 0.80
+train 3 times
+211938580 -> 46993107 in 18723.79 sec, in level 12.
+compress ratio = 4.509993, thoughtout = 0.010795 MB/s.
+dynamic compress ratio = 3.073604, thoughtout = 0.009038 MB/s.
+static compress ratio = 4.648535, thoughtout = 0.010930 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 129(0.50%)
+k: 517(2.00%) theta: 0.80
+train 3 times
+211938580 -> 49176050 in 18820.43 sec, in level 12.
+compress ratio = 4.309793, thoughtout = 0.010739 MB/s.
+dynamic compress ratio = 2.731685, thoughtout = 0.009544 MB/s.
+static compress ratio = 4.347937, thoughtout = 0.010760 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 517(2.00%)
+k: 258(1.00%) theta: 0.80
+train 6 times
+211938580 -> 43993909 in 18811.42 sec, in level 12.
+compress ratio = 4.817453, thoughtout = 0.010745 MB/s.
+dynamic compress ratio = 3.823579, thoughtout = 0.009737 MB/s.
+static compress ratio = 4.994312, thoughtout = 0.010898 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 129(0.50%)
+k: 258(1.00%) theta: 0.80
+train 6 times
+211938580 -> 45790366 in 18920.19 sec, in level 12.
+compress ratio = 4.628454, thoughtout = 0.010683 MB/s.
+dynamic compress ratio = 3.538116, thoughtout = 0.009108 MB/s.
+static compress ratio = 4.672864, thoughtout = 0.010740 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 129(0.50%)
+k: 25(0.10%) theta: 0.80
+train 15 times
+211938580 -> 44919680 in 19095.06 sec, in level 12.
+compress ratio = 4.718168, thoughtout = 0.010585 MB/s.
+dynamic compress ratio = 3.110720, thoughtout = 0.008493 MB/s.
+static compress ratio = 4.923853, thoughtout = 0.010800 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 258(1.00%)
+k: 25(0.10%) theta: 0.80
+train 20 times
+211938580 -> 42975126 in 19389.37 sec, in level 12.
+compress ratio = 4.931657, thoughtout = 0.010424 MB/s.
+dynamic compress ratio = 3.935329, thoughtout = 0.008909 MB/s.
+static compress ratio = 5.263666, thoughtout = 0.010886 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 211938580 B, block num: 1
+train block: 1(1.00%)
+k: 1(1.00%) theta: 1.00
+train 1 times
+211938580 -> 37266593 in 20957.62 sec, in level 12.
+compress ratio = 5.687093, thoughtout = 0.009644 MB/s.
+dynamic compress ratio = 5.687093, thoughtout = 0.009644 MB/s.
+static compress ratio = -nan, thoughtout = 0.000000 MB/s.
+
+Fri Feb 23 09:55:46 PM CST 2024
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 25(0.10%)
+k: 517(2.00%) theta: 0.90
+train 3 times
+211938580 -> 49916926 in 14544.20 sec, in level 12.
+compress ratio = 4.245826, thoughtout = 0.013897 MB/s.
+dynamic compress ratio = 2.565987, thoughtout = 0.010395 MB/s.
+static compress ratio = 4.253923, thoughtout = 0.013911 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 25(0.10%)
+k: 25(0.10%) theta: 0.90
+train 2 times
+211938580 -> 51979002 in 14815.92 sec, in level 12.
+compress ratio = 4.077388, thoughtout = 0.013642 MB/s.
+dynamic compress ratio = 1.608539, thoughtout = 0.010106 MB/s.
+static compress ratio = 4.089543, thoughtout = 0.013651 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 25(0.10%)
+k: 129(0.50%) theta: 0.90
+train 2 times
+211938580 -> 49569787 in 14850.30 sec, in level 12.
+compress ratio = 4.275560, thoughtout = 0.013611 MB/s.
+dynamic compress ratio = 1.899850, thoughtout = 0.010160 MB/s.
+static compress ratio = 4.285938, thoughtout = 0.013619 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 129(0.50%)
+k: 258(1.00%) theta: 0.90
+train 2 times
+211938580 -> 49822497 in 14900.51 sec, in level 12.
+compress ratio = 4.253873, thoughtout = 0.013565 MB/s.
+dynamic compress ratio = 2.177570, thoughtout = 0.011194 MB/s.
+static compress ratio = 4.295125, thoughtout = 0.013594 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 258(1.00%)
+k: 129(0.50%) theta: 0.90
+train 2 times
+211938580 -> 50348695 in 14906.98 sec, in level 12.
+compress ratio = 4.209416, thoughtout = 0.013559 MB/s.
+dynamic compress ratio = 2.019550, thoughtout = 0.011374 MB/s.
+static compress ratio = 4.304400, thoughtout = 0.013612 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 129(0.50%)
+k: 129(0.50%) theta: 0.90
+train 4 times
+211938580 -> 48965698 in 14913.20 sec, in level 12.
+compress ratio = 4.328307, thoughtout = 0.013553 MB/s.
+dynamic compress ratio = 2.205443, thoughtout = 0.011420 MB/s.
+static compress ratio = 4.414787, thoughtout = 0.013605 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 129(0.50%)
+k: 517(2.00%) theta: 0.90
+train 6 times
+211938580 -> 46734498 in 14942.56 sec, in level 12.
+compress ratio = 4.534949, thoughtout = 0.013526 MB/s.
+dynamic compress ratio = 3.692888, thoughtout = 0.011689 MB/s.
+static compress ratio = 4.567066, thoughtout = 0.013592 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 25(0.10%)
+k: 258(1.00%) theta: 0.90
+train 7 times
+211938580 -> 46527415 in 14949.07 sec, in level 12.
+compress ratio = 4.555133, thoughtout = 0.013521 MB/s.
+dynamic compress ratio = 3.350370, thoughtout = 0.011040 MB/s.
+static compress ratio = 4.566316, thoughtout = 0.013541 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 258(1.00%)
+k: 258(1.00%) theta: 0.90
+train 2 times
+211938580 -> 46745592 in 15018.43 sec, in level 12.
+compress ratio = 4.533873, thoughtout = 0.013458 MB/s.
+dynamic compress ratio = 2.105742, thoughtout = 0.011410 MB/s.
+static compress ratio = 4.642823, thoughtout = 0.013508 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 517(2.00%)
+k: 129(0.50%) theta: 0.90
+train 4 times
+211938580 -> 45084852 in 15067.28 sec, in level 12.
+compress ratio = 4.700882, thoughtout = 0.013415 MB/s.
+dynamic compress ratio = 2.746092, thoughtout = 0.011777 MB/s.
+static compress ratio = 5.010767, thoughtout = 0.013579 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 258(1.00%)
+k: 517(2.00%) theta: 0.90
+train 6 times
+211938580 -> 46027769 in 15079.38 sec, in level 12.
+compress ratio = 4.604581, thoughtout = 0.013404 MB/s.
+dynamic compress ratio = 3.869769, thoughtout = 0.011869 MB/s.
+static compress ratio = 4.660907, thoughtout = 0.013515 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 517(2.00%)
+k: 258(1.00%) theta: 0.90
+train 3 times
+211938580 -> 45297886 in 15088.23 sec, in level 12.
+compress ratio = 4.678774, thoughtout = 0.013396 MB/s.
+dynamic compress ratio = 2.425837, thoughtout = 0.011634 MB/s.
+static compress ratio = 4.973336, thoughtout = 0.013527 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 517(2.00%)
+k: 25(0.10%) theta: 0.90
+train 4 times
+211938580 -> 45617532 in 15105.52 sec, in level 12.
+compress ratio = 4.645990, thoughtout = 0.013381 MB/s.
+dynamic compress ratio = 2.205411, thoughtout = 0.011659 MB/s.
+static compress ratio = 5.140178, thoughtout = 0.013554 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 517(2.00%)
+k: 517(2.00%) theta: 0.90
+train 5 times
+211938580 -> 44498316 in 15107.42 sec, in level 12.
+compress ratio = 4.762845, thoughtout = 0.013379 MB/s.
+dynamic compress ratio = 3.678666, thoughtout = 0.011921 MB/s.
+static compress ratio = 4.923940, thoughtout = 0.013563 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 129(0.50%)
+k: 25(0.10%) theta: 0.90
+train 24 times
+211938580 -> 43731519 in 15179.69 sec, in level 12.
+compress ratio = 4.846358, thoughtout = 0.013315 MB/s.
+dynamic compress ratio = 3.438956, thoughtout = 0.011863 MB/s.
+static compress ratio = 5.131854, thoughtout = 0.013541 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 258(1.00%)
+k: 25(0.10%) theta: 0.90
+train 29 times
+211938580 -> 41464337 in 15491.50 sec, in level 12.
+compress ratio = 5.111346, thoughtout = 0.013047 MB/s.
+dynamic compress ratio = 4.233795, thoughtout = 0.012039 MB/s.
+static compress ratio = 5.582095, thoughtout = 0.013508 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 211938580 B, block num: 1
+train block: 1(1.00%)
+k: 1(1.00%) theta: 1.00
+train 1 times
+211938580 -> 37266593 in 16546.25 sec, in level 12.
+compress ratio = 5.687093, thoughtout = 0.012215 MB/s.
+dynamic compress ratio = 5.687093, thoughtout = 0.012215 MB/s.
+static compress ratio = -nan, thoughtout = 0.000000 MB/s.
+
+Sat Feb 24 02:31:34 AM CST 2024
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 25(0.10%)
+k: 517(2.00%) theta: 1.00
+train 3 times
+211938580 -> 49891551 in 14559.60 sec, in level 12.
+compress ratio = 4.247985, thoughtout = 0.013882 MB/s.
+dynamic compress ratio = 2.563996, thoughtout = 0.010372 MB/s.
+static compress ratio = 4.256113, thoughtout = 0.013896 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 129(0.50%)
+k: 258(1.00%) theta: 1.00
+train 6 times
+211938580 -> 49039415 in 14852.97 sec, in level 12.
+compress ratio = 4.321801, thoughtout = 0.013608 MB/s.
+dynamic compress ratio = 2.464429, thoughtout = 0.011586 MB/s.
+static compress ratio = 4.424643, thoughtout = 0.013682 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 25(0.10%)
+k: 129(0.50%) theta: 1.00
+train 2 times
+211938580 -> 49576346 in 14885.88 sec, in level 12.
+compress ratio = 4.274994, thoughtout = 0.013578 MB/s.
+dynamic compress ratio = 1.664560, thoughtout = 0.010067 MB/s.
+static compress ratio = 4.288015, thoughtout = 0.013587 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 25(0.10%)
+k: 258(1.00%) theta: 1.00
+train 9 times
+211938580 -> 46482051 in 14915.63 sec, in level 12.
+compress ratio = 4.559579, thoughtout = 0.013551 MB/s.
+dynamic compress ratio = 2.772050, thoughtout = 0.011074 MB/s.
+static compress ratio = 4.585521, thoughtout = 0.013578 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 258(1.00%)
+k: 129(0.50%) theta: 1.00
+train 5 times
+211938580 -> 48833190 in 14964.55 sec, in level 12.
+compress ratio = 4.340052, thoughtout = 0.013507 MB/s.
+dynamic compress ratio = 2.143293, thoughtout = 0.011529 MB/s.
+static compress ratio = 4.586764, thoughtout = 0.013629 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 129(0.50%)
+k: 517(2.00%) theta: 1.00
+train 6 times
+211938580 -> 45648117 in 15019.17 sec, in level 12.
+compress ratio = 4.642877, thoughtout = 0.013457 MB/s.
+dynamic compress ratio = 3.547936, thoughtout = 0.011580 MB/s.
+static compress ratio = 4.687490, thoughtout = 0.013525 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 129(0.50%)
+k: 129(0.50%) theta: 1.00
+train 10 times
+211938580 -> 47596932 in 15035.49 sec, in level 12.
+compress ratio = 4.452778, thoughtout = 0.013443 MB/s.
+dynamic compress ratio = 2.690991, thoughtout = 0.011640 MB/s.
+static compress ratio = 4.611209, thoughtout = 0.013553 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 258(1.00%)
+k: 517(2.00%) theta: 1.00
+train 8 times
+211938580 -> 44763751 in 15071.70 sec, in level 12.
+compress ratio = 4.734603, thoughtout = 0.013411 MB/s.
+dynamic compress ratio = 4.150147, thoughtout = 0.011868 MB/s.
+static compress ratio = 4.793123, thoughtout = 0.013563 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 258(1.00%)
+k: 258(1.00%) theta: 1.00
+train 2 times
+211938580 -> 47110118 in 15121.35 sec, in level 12.
+compress ratio = 4.498791, thoughtout = 0.013367 MB/s.
+dynamic compress ratio = 2.088284, thoughtout = 0.011462 MB/s.
+static compress ratio = 4.607014, thoughtout = 0.013412 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 25(0.10%)
+k: 25(0.10%) theta: 1.00
+train 66 times
+211938580 -> 44148495 in 15165.26 sec, in level 12.
+compress ratio = 4.800584, thoughtout = 0.013328 MB/s.
+dynamic compress ratio = 2.747111, thoughtout = 0.011647 MB/s.
+static compress ratio = 5.058151, thoughtout = 0.013460 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 517(2.00%)
+k: 258(1.00%) theta: 1.00
+train 4 times
+211938580 -> 44527588 in 15171.95 sec, in level 12.
+compress ratio = 4.759714, thoughtout = 0.013322 MB/s.
+dynamic compress ratio = 2.640944, thoughtout = 0.011652 MB/s.
+static compress ratio = 5.116324, thoughtout = 0.013490 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 517(2.00%)
+k: 517(2.00%) theta: 1.00
+train 8 times
+211938580 -> 42923014 in 15241.04 sec, in level 12.
+compress ratio = 4.937644, thoughtout = 0.013262 MB/s.
+dynamic compress ratio = 4.383442, thoughtout = 0.011909 MB/s.
+static compress ratio = 5.059364, thoughtout = 0.013554 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 517(2.00%)
+k: 129(0.50%) theta: 1.00
+train 16 times
+211938580 -> 40679560 in 15611.63 sec, in level 12.
+compress ratio = 5.209953, thoughtout = 0.012947 MB/s.
+dynamic compress ratio = 4.047674, thoughtout = 0.011950 MB/s.
+static compress ratio = 6.022815, thoughtout = 0.013475 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 129(0.50%)
+k: 25(0.10%) theta: 1.00
+train 77 times
+211938580 -> 40854496 in 15617.08 sec, in level 12.
+compress ratio = 5.187644, thoughtout = 0.012942 MB/s.
+dynamic compress ratio = 4.283145, thoughtout = 0.012023 MB/s.
+static compress ratio = 5.973847, thoughtout = 0.013590 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 517(2.00%)
+k: 25(0.10%) theta: 1.00
+train 25 times
+211938580 -> 39010365 in 15754.41 sec, in level 12.
+compress ratio = 5.432879, thoughtout = 0.012829 MB/s.
+dynamic compress ratio = 4.047596, thoughtout = 0.012078 MB/s.
+static compress ratio = 8.252672, thoughtout = 0.013679 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 258(1.00%)
+k: 25(0.10%) theta: 1.00
+train 50 times
+211938580 -> 39010850 in 15838.58 sec, in level 12.
+compress ratio = 5.432811, thoughtout = 0.012761 MB/s.
+dynamic compress ratio = 4.393937, thoughtout = 0.012014 MB/s.
+static compress ratio = 7.102938, thoughtout = 0.013602 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 211938580 B, block num: 1
+train block: 1(1.00%)
+k: 1(1.00%) theta: 1.00
+train 1 times
+211938580 -> 37266593 in 16607.14 sec, in level 12.
+compress ratio = 5.687093, thoughtout = 0.012171 MB/s.
+dynamic compress ratio = 5.687093, thoughtout = 0.012171 MB/s.
+static compress ratio = -nan, thoughtout = 0.000000 MB/s.
+
+Sat Feb 24 07:08:23 AM CST 2024
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 25(0.10%)
+k: 129(0.50%) theta: 1.10
+train 8 times
+211938580 -> 50719540 in 14982.47 sec, in level 12.
+compress ratio = 4.178638, thoughtout = 0.013490 MB/s.
+dynamic compress ratio = 3.166859, thoughtout = 0.011243 MB/s.
+static compress ratio = 4.189065, thoughtout = 0.013512 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 25(0.10%)
+k: 258(1.00%) theta: 1.10
+train 5 times
+211938580 -> 50840972 in 14991.01 sec, in level 12.
+compress ratio = 4.168657, thoughtout = 0.013483 MB/s.
+dynamic compress ratio = 2.841130, thoughtout = 0.010951 MB/s.
+static compress ratio = 4.178135, thoughtout = 0.013498 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 25(0.10%)
+k: 25(0.10%) theta: 1.10
+train 32 times
+211938580 -> 49585846 in 15026.43 sec, in level 12.
+compress ratio = 4.274175, thoughtout = 0.013451 MB/s.
+dynamic compress ratio = 2.450457, thoughtout = 0.011687 MB/s.
+static compress ratio = 4.378146, thoughtout = 0.013516 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 129(0.50%)
+k: 129(0.50%) theta: 1.10
+train 13 times
+211938580 -> 48208754 in 15060.47 sec, in level 12.
+compress ratio = 4.396268, thoughtout = 0.013421 MB/s.
+dynamic compress ratio = 2.681090, thoughtout = 0.011731 MB/s.
+static compress ratio = 4.600252, thoughtout = 0.013556 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 25(0.10%)
+k: 517(2.00%) theta: 1.10
+train 6 times
+211938580 -> 46548611 in 15066.34 sec, in level 12.
+compress ratio = 4.553059, thoughtout = 0.013415 MB/s.
+dynamic compress ratio = 3.228858, thoughtout = 0.010932 MB/s.
+static compress ratio = 4.563975, thoughtout = 0.013433 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 129(0.50%)
+k: 258(1.00%) theta: 1.10
+train 8 times
+211938580 -> 49087556 in 15094.35 sec, in level 12.
+compress ratio = 4.317562, thoughtout = 0.013390 MB/s.
+dynamic compress ratio = 2.589399, thoughtout = 0.011606 MB/s.
+static compress ratio = 4.440696, thoughtout = 0.013477 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 129(0.50%)
+k: 517(2.00%) theta: 1.10
+train 9 times
+211938580 -> 44926341 in 15107.48 sec, in level 12.
+compress ratio = 4.717468, thoughtout = 0.013379 MB/s.
+dynamic compress ratio = 3.848784, thoughtout = 0.011710 MB/s.
+static compress ratio = 4.768031, thoughtout = 0.013469 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 517(2.00%)
+k: 517(2.00%) theta: 1.10
+train 5 times
+211938580 -> 45693118 in 15174.67 sec, in level 12.
+compress ratio = 4.638304, thoughtout = 0.013320 MB/s.
+dynamic compress ratio = 2.907343, thoughtout = 0.011730 MB/s.
+static compress ratio = 4.966554, thoughtout = 0.013523 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 517(2.00%)
+k: 258(1.00%) theta: 1.10
+train 5 times
+211938580 -> 44269989 in 15192.98 sec, in level 12.
+compress ratio = 4.787410, thoughtout = 0.013304 MB/s.
+dynamic compress ratio = 2.919164, thoughtout = 0.011755 MB/s.
+static compress ratio = 5.153543, thoughtout = 0.013501 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 258(1.00%)
+k: 517(2.00%) theta: 1.10
+train 20 times
+211938580 -> 41940916 in 15302.26 sec, in level 12.
+compress ratio = 5.053265, thoughtout = 0.013209 MB/s.
+dynamic compress ratio = 4.888765, thoughtout = 0.012027 MB/s.
+static compress ratio = 5.095986, thoughtout = 0.013540 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 517(2.00%)
+k: 129(0.50%) theta: 1.10
+train 8 times
+211938580 -> 43607744 in 15308.67 sec, in level 12.
+compress ratio = 4.860113, thoughtout = 0.013203 MB/s.
+dynamic compress ratio = 2.883972, thoughtout = 0.011810 MB/s.
+static compress ratio = 5.588834, thoughtout = 0.013506 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 258(1.00%)
+k: 258(1.00%) theta: 1.10
+train 23 times
+211938580 -> 41491856 in 15313.96 sec, in level 12.
+compress ratio = 5.107956, thoughtout = 0.013198 MB/s.
+dynamic compress ratio = 4.122351, thoughtout = 0.012018 MB/s.
+static compress ratio = 5.499286, thoughtout = 0.013596 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 258(1.00%)
+k: 129(0.50%) theta: 1.10
+train 29 times
+211938580 -> 41943923 in 15482.69 sec, in level 12.
+compress ratio = 5.052903, thoughtout = 0.013055 MB/s.
+dynamic compress ratio = 4.216583, thoughtout = 0.011911 MB/s.
+static compress ratio = 5.496455, thoughtout = 0.013585 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 517(2.00%)
+k: 25(0.10%) theta: 1.10
+train 25 times
+211938580 -> 39369963 in 15716.09 sec, in level 12.
+compress ratio = 5.383256, thoughtout = 0.012861 MB/s.
+dynamic compress ratio = 3.936648, thoughtout = 0.012062 MB/s.
+static compress ratio = 8.502531, thoughtout = 0.013771 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 258(1.00%)
+k: 25(0.10%) theta: 1.10
+train 54 times
+211938580 -> 39050993 in 15959.25 sec, in level 12.
+compress ratio = 5.427226, thoughtout = 0.012665 MB/s.
+dynamic compress ratio = 4.289832, thoughtout = 0.011949 MB/s.
+static compress ratio = 7.858558, thoughtout = 0.013617 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 129(0.50%)
+k: 25(0.10%) theta: 1.10
+train 118 times
+211938580 -> 39270774 in 16002.99 sec, in level 12.
+compress ratio = 5.396853, thoughtout = 0.012630 MB/s.
+dynamic compress ratio = 4.995948, thoughtout = 0.012158 MB/s.
+static compress ratio = 6.096083, thoughtout = 0.013373 MB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 211938580 B, block num: 1
+train block: 1(1.00%)
+k: 1(1.00%) theta: 1.00
+train 1 times
+211938580 -> 37266593 in 16617.11 sec, in level 12.
+compress ratio = 5.687093, thoughtout = 0.012163 MB/s.
+dynamic compress ratio = 5.687093, thoughtout = 0.012163 MB/s.
+static compress ratio = -nan, thoughtout = 0.000000 MB/s.
+
+Sat Feb 24 11:45:23 AM CST 2024
+
+**********************************************
+感觉上面测试的数据还是有点问题，再测一次
+**********************************************
+
+Mon Feb 26 03:17:39 PM CST 2024
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 25(0.10%)
+k: 517(2.00%) theta: 0.80
+train 3 times
+211938580 -> 49817076 in 14478.44 sec
+compress ratio = 4.254336, thoughtout = 14.295139 KB/s.
+dynamic compress 614400 to 241993 in 55.70 sec
+	ratio = 2.538916, thoughtout = 10.771239 KB/s.
+static compress 211324180 to 49575083 in 14422.72 sec
+	ratio = 4.262710, thoughtout = 14.308759 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 258(1.00%)
+k: 517(2.00%) theta: 0.80
+train 3 times
+211938580 -> 48702816 in 14752.18 sec
+compress ratio = 4.351670, thoughtout = 14.029878 KB/s.
+dynamic compress 6340608 to 2199213 in 524.70 sec
+	ratio = 2.883126, thoughtout = 11.801069 KB/s.
+static compress 205597972 to 46503603 in 14227.47 sec
+	ratio = 4.421119, thoughtout = 14.112085 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 129(0.50%)
+k: 517(2.00%) theta: 0.80
+train 3 times
+211938580 -> 49176050 in 14765.67 sec
+compress ratio = 4.309793, thoughtout = 14.017056 KB/s.
+dynamic compress 3170304 to 1160567 in 269.24 sec
+	ratio = 2.731685, thoughtout = 11.498909 KB/s.
+static compress 208768276 to 48015483 in 14496.42 sec
+	ratio = 4.347937, thoughtout = 14.063836 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 517(2.00%)
+k: 517(2.00%) theta: 0.80
+train 3 times
+211938580 -> 46993107 in 14830.47 sec
+compress ratio = 4.509993, thoughtout = 13.955814 KB/s.
+dynamic compress 12705792 to 4133841 in 1045.30 sec
+	ratio = 3.073604, thoughtout = 11.870299 KB/s.
+static compress 199232788 to 42859266 in 13785.16 sec
+	ratio = 4.648535, thoughtout = 14.113964 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 25(0.10%)
+k: 129(0.50%) theta: 0.80
+train 2 times
+211938580 -> 50330461 in 14952.29 sec
+compress ratio = 4.210941, thoughtout = 13.842113 KB/s.
+dynamic compress 409600 to 211670 in 38.43 sec
+	ratio = 1.935088, thoughtout = 10.408779 KB/s.
+static compress 211528980 to 50118791 in 14913.85 sec
+	ratio = 4.220552, thoughtout = 13.850969 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 258(1.00%)
+k: 258(1.00%) theta: 0.80
+train 6 times
+211938580 -> 44822777 in 14961.56 sec
+compress ratio = 4.728368, thoughtout = 13.833536 KB/s.
+dynamic compress 12681216 to 3513537 in 1021.72 sec
+	ratio = 3.609245, thoughtout = 12.120783 KB/s.
+static compress 199257364 to 41309240 in 13939.83 sec
+	ratio = 4.823554, thoughtout = 13.959082 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 25(0.10%)
+k: 25(0.10%) theta: 0.80
+train 2 times
+211938580 -> 51979002 in 14963.80 sec
+compress ratio = 4.077388, thoughtout = 13.831460 KB/s.
+dynamic compress 409600 to 254641 in 39.13 sec
+	ratio = 1.608539, thoughtout = 10.222262 KB/s.
+static compress 211528980 to 51724361 in 14924.66 sec
+	ratio = 4.089543, thoughtout = 13.840932 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 25(0.10%)
+k: 258(1.00%) theta: 0.80
+train 5 times
+211938580 -> 47962551 in 14968.02 sec
+compress ratio = 4.418835, thoughtout = 13.827566 KB/s.
+dynamic compress 1024000 to 352452 in 91.60 sec
+	ratio = 2.905360, thoughtout = 10.916621 KB/s.
+static compress 210914580 to 47610099 in 14876.41 sec
+	ratio = 4.430039, thoughtout = 13.845499 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 258(1.00%)
+k: 129(0.50%) theta: 0.80
+train 2 times
+211938580 -> 50446332 in 14983.43 sec
+compress ratio = 4.201268, thoughtout = 13.813345 KB/s.
+dynamic compress 4227072 to 2092854 in 353.66 sec
+	ratio = 2.019764, thoughtout = 11.672277 KB/s.
+static compress 207711508 to 48353478 in 14629.76 sec
+	ratio = 4.295689, thoughtout = 13.865113 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 129(0.50%)
+k: 258(1.00%) theta: 0.80
+train 6 times
+211938580 -> 45790366 in 14990.85 sec
+compress ratio = 4.628454, thoughtout = 13.806506 KB/s.
+dynamic compress 6340608 to 1792086 in 526.43 sec
+	ratio = 3.538116, thoughtout = 11.762290 KB/s.
+static compress 205597972 to 43998280 in 14464.41 sec
+	ratio = 4.672864, thoughtout = 13.880914 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 129(0.50%)
+k: 129(0.50%) theta: 0.80
+train 2 times
+211938580 -> 49499511 in 14999.56 sec
+compress ratio = 4.281630, thoughtout = 13.798488 KB/s.
+dynamic compress 2113536 to 1021377 in 180.56 sec
+	ratio = 2.069301, thoughtout = 11.431102 KB/s.
+static compress 209825044 to 48478134 in 14818.99 sec
+	ratio = 4.328241, thoughtout = 13.827343 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 129(0.50%)
+k: 25(0.10%) theta: 0.80
+train 15 times
+211938580 -> 44919680 in 15031.37 sec
+compress ratio = 4.718168, thoughtout = 13.769286 KB/s.
+dynamic compress 15851520 to 5095772 in 1267.79 sec
+	ratio = 3.110720, thoughtout = 12.210249 KB/s.
+static compress 196087060 to 39823908 in 13763.58 sec
+	ratio = 4.923853, thoughtout = 13.912901 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 517(2.00%)
+k: 129(0.50%) theta: 0.80
+train 4 times
+211938580 -> 45019920 in 15065.58 sec
+compress ratio = 4.707662, thoughtout = 13.738026 KB/s.
+dynamic compress 16941056 to 6129514 in 1369.15 sec
+	ratio = 2.763850, thoughtout = 12.083423 KB/s.
+static compress 194997524 to 38890406 in 13696.42 sec
+	ratio = 5.014026, thoughtout = 13.903439 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 517(2.00%)
+k: 258(1.00%) theta: 0.80
+train 6 times
+211938580 -> 43993909 in 15186.32 sec
+compress ratio = 4.817453, thoughtout = 13.628796 KB/s.
+dynamic compress 25411584 to 6646020 in 2061.24 sec
+	ratio = 3.823579, thoughtout = 12.039347 KB/s.
+static compress 186526996 to 37347889 in 13125.07 sec
+	ratio = 4.994312, thoughtout = 13.878423 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 517(2.00%)
+k: 25(0.10%) theta: 0.80
+train 6 times
+211938580 -> 45303661 in 15307.67 sec
+compress ratio = 4.678178, thoughtout = 13.520755 KB/s.
+dynamic compress 25411584 to 8445782 in 2064.94 sec
+	ratio = 3.008790, thoughtout = 12.017800 KB/s.
+static compress 186526996 to 36857879 in 13242.72 sec
+	ratio = 5.060709, thoughtout = 13.755121 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 258(1.00%)
+k: 25(0.10%) theta: 0.80
+train 20 times
+211938580 -> 42975126 in 15331.28 sec
+compress ratio = 4.931657, thoughtout = 13.499938 KB/s.
+dynamic compress 42270720 to 10741344 in 3370.96 sec
+	ratio = 3.935329, thoughtout = 12.245774 KB/s.
+static compress 169667860 to 32233782 in 11960.31 sec
+	ratio = 5.263666, thoughtout = 13.853429 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 211938580 B, block num: 1
+train block: 1(1.00%)
+k: 1(1.00%) theta: 1.00
+train 1 times
+211938580 -> 37266593 in 16656.10 sec
+compress ratio = 5.687093, thoughtout = 12.426154 KB/s.
+dynamic compress 211938580 to 37266593 in 16656.09 sec
+	ratio = 5.687093, thoughtout = 12.426162 KB/s.
+static compress 0 to 0 in 0.00 sec
+	ratio = -nan, thoughtout = -nan KB/s.
+
+Mon Feb 26 07:55:17 PM CST 2024
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 25(0.10%)
+k: 517(2.00%) theta: 0.90
+train 3 times
+211938580 -> 49916926 in 14617.27 sec
+compress ratio = 4.245826, thoughtout = 14.159368 KB/s.
+dynamic compress 614400 to 239440 in 56.38 sec
+	ratio = 2.565987, thoughtout = 10.641383 KB/s.
+static compress 211324180 to 49677486 in 14560.87 sec
+	ratio = 4.253923, thoughtout = 14.173001 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 129(0.50%)
+k: 129(0.50%) theta: 0.90
+train 4 times
+211938580 -> 48965698 in 14906.94 sec
+compress ratio = 4.328307, thoughtout = 13.884218 KB/s.
+dynamic compress 4227072 to 1916654 in 353.41 sec
+	ratio = 2.205443, thoughtout = 11.680327 KB/s.
+static compress 207711508 to 47049044 in 14553.52 sec
+	ratio = 4.414787, thoughtout = 13.937747 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 129(0.50%)
+k: 258(1.00%) theta: 0.90
+train 2 times
+211938580 -> 49822497 in 14913.71 sec
+compress ratio = 4.253873, thoughtout = 13.877919 KB/s.
+dynamic compress 2113536 to 970594 in 181.61 sec
+	ratio = 2.177570, thoughtout = 11.364769 KB/s.
+static compress 209825044 to 48851903 in 14732.09 sec
+	ratio = 4.295125, thoughtout = 13.908911 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 129(0.50%)
+k: 517(2.00%) theta: 0.90
+train 6 times
+211938580 -> 46734498 in 14914.86 sec
+compress ratio = 4.534949, thoughtout = 13.876851 KB/s.
+dynamic compress 6340608 to 1716978 in 513.59 sec
+	ratio = 3.692888, thoughtout = 12.056361 KB/s.
+static compress 205597972 to 45017520 in 14401.26 sec
+	ratio = 4.567066, thoughtout = 13.941785 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 25(0.10%)
+k: 129(0.50%) theta: 0.90
+train 2 times
+211938580 -> 49569787 in 14927.04 sec
+compress ratio = 4.275560, thoughtout = 13.865523 KB/s.
+dynamic compress 409600 to 215596 in 39.23 sec
+	ratio = 1.899850, thoughtout = 10.195991 KB/s.
+static compress 211528980 to 49354191 in 14887.80 sec
+	ratio = 4.285938, thoughtout = 13.875201 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 25(0.10%)
+k: 25(0.10%) theta: 0.90
+train 2 times
+211938580 -> 51979002 in 14961.26 sec
+compress ratio = 4.077388, thoughtout = 13.833813 KB/s.
+dynamic compress 409600 to 254641 in 43.04 sec
+	ratio = 1.608539, thoughtout = 9.293237 KB/s.
+static compress 211528980 to 51724361 in 14918.21 sec
+	ratio = 4.089543, thoughtout = 13.846922 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 25(0.10%)
+k: 258(1.00%) theta: 0.90
+train 7 times
+211938580 -> 46527415 in 14984.35 sec
+compress ratio = 4.555133, thoughtout = 13.812497 KB/s.
+dynamic compress 1433600 to 427893 in 124.94 sec
+	ratio = 3.350370, thoughtout = 11.205643 KB/s.
+static compress 210504980 to 46099522 in 14859.40 sec
+	ratio = 4.566316, thoughtout = 13.834424 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 517(2.00%)
+k: 517(2.00%) theta: 0.90
+train 5 times
+211938580 -> 44498316 in 14999.51 sec
+compress ratio = 4.762845, thoughtout = 13.798534 KB/s.
+dynamic compress 21176320 to 5756522 in 1690.55 sec
+	ratio = 3.678666, thoughtout = 12.232670 KB/s.
+static compress 190762260 to 38741794 in 13308.94 sec
+	ratio = 4.923940, thoughtout = 13.997450 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 258(1.00%)
+k: 129(0.50%) theta: 0.90
+train 2 times
+211938580 -> 50348695 in 15011.68 sec
+compress ratio = 4.209416, thoughtout = 13.787352 KB/s.
+dynamic compress 4227072 to 2093076 in 366.26 sec
+	ratio = 2.019550, thoughtout = 11.270744 KB/s.
+static compress 207711508 to 48255619 in 14645.41 sec
+	ratio = 4.304400, thoughtout = 13.850299 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 517(2.00%)
+k: 258(1.00%) theta: 0.90
+train 3 times
+211938580 -> 45297886 in 15050.17 sec
+compress ratio = 4.678774, thoughtout = 13.752090 KB/s.
+dynamic compress 12705792 to 5237693 in 1042.05 sec
+	ratio = 2.425837, thoughtout = 11.907329 KB/s.
+static compress 199232788 to 40060193 in 14008.11 sec
+	ratio = 4.973336, thoughtout = 13.889332 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 258(1.00%)
+k: 258(1.00%) theta: 0.90
+train 2 times
+211938580 -> 46745592 in 15051.72 sec
+compress ratio = 4.533873, thoughtout = 13.750676 KB/s.
+dynamic compress 4227072 to 2007403 in 353.66 sec
+	ratio = 2.105742, thoughtout = 11.672139 KB/s.
+static compress 207711508 to 44738189 in 14698.04 sec
+	ratio = 4.642823, thoughtout = 13.800700 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 517(2.00%)
+k: 129(0.50%) theta: 0.90
+train 4 times
+211938580 -> 45084852 in 15056.08 sec
+compress ratio = 4.700882, thoughtout = 13.746693 KB/s.
+dynamic compress 16941056 to 6169152 in 1370.58 sec
+	ratio = 2.746092, thoughtout = 12.070805 KB/s.
+static compress 194997524 to 38915700 in 13685.48 sec
+	ratio = 5.010767, thoughtout = 13.914544 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 258(1.00%)
+k: 517(2.00%) theta: 0.90
+train 6 times
+211938580 -> 46027769 in 15067.08 sec
+compress ratio = 4.604581, thoughtout = 13.736658 KB/s.
+dynamic compress 12681216 to 3276996 in 1023.18 sec
+	ratio = 3.869769, thoughtout = 12.103481 KB/s.
+static compress 199257364 to 42750773 in 14043.89 sec
+	ratio = 4.660907, thoughtout = 13.855657 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 517(2.00%)
+k: 25(0.10%) theta: 0.90
+train 4 times
+211938580 -> 45617532 in 15163.41 sec
+compress ratio = 4.645990, thoughtout = 13.649393 KB/s.
+dynamic compress 16941056 to 7681587 in 1393.93 sec
+	ratio = 2.205411, thoughtout = 11.868616 KB/s.
+static compress 194997524 to 37935945 in 13769.46 sec
+	ratio = 5.140178, thoughtout = 13.829679 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 129(0.50%)
+k: 25(0.10%) theta: 0.90
+train 24 times
+211938580 -> 43731519 in 15208.36 sec
+compress ratio = 4.846358, thoughtout = 13.609042 KB/s.
+dynamic compress 25362432 to 7375038 in 2048.57 sec
+	ratio = 3.438956, thoughtout = 12.090366 KB/s.
+static compress 186576148 to 36356481 in 13159.78 sec
+	ratio = 5.131854, thoughtout = 13.845463 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 258(1.00%)
+k: 25(0.10%) theta: 0.90
+train 29 times
+211938580 -> 41464337 in 15437.50 sec
+compress ratio = 5.111346, thoughtout = 13.407048 KB/s.
+dynamic compress 61292544 to 14476974 in 4854.58 sec
+	ratio = 4.233795, thoughtout = 12.329793 KB/s.
+static compress 150646036 to 26987363 in 10582.90 sec
+	ratio = 5.582095, thoughtout = 13.901219 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 211938580 B, block num: 1
+train block: 1(1.00%)
+k: 1(1.00%) theta: 1.00
+train 1 times
+211938580 -> 37266593 in 16497.65 sec
+compress ratio = 5.687093, thoughtout = 12.545503 KB/s.
+dynamic compress 211938580 to 37266593 in 16497.64 sec
+	ratio = 5.687093, thoughtout = 12.545511 KB/s.
+static compress 0 to 0 in 0.00 sec
+	ratio = -nan, thoughtout = 0.000000 KB/s.
+
+Tue Feb 27 12:30:17 AM CST 2024
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 25(0.10%)
+k: 517(2.00%) theta: 1.00
+train 3 times
+211938580 -> 49891551 in 14572.16 sec
+compress ratio = 4.247985, thoughtout = 14.203196 KB/s.
+dynamic compress 614400 to 239626 in 56.52 sec
+	ratio = 2.563996, thoughtout = 10.615467 KB/s.
+static compress 211324180 to 49651925 in 14515.63 sec
+	ratio = 4.256113, thoughtout = 14.217177 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 25(0.10%)
+k: 129(0.50%) theta: 1.00
+train 2 times
+211938580 -> 49576346 in 14940.91 sec
+compress ratio = 4.274994, thoughtout = 13.852655 KB/s.
+dynamic compress 409600 to 246071 in 39.42 sec
+	ratio = 1.664560, thoughtout = 10.146046 KB/s.
+static compress 211528980 to 49330275 in 14901.47 sec
+	ratio = 4.288015, thoughtout = 13.862473 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 129(0.50%)
+k: 129(0.50%) theta: 1.00
+train 10 times
+211938580 -> 47596932 in 14943.22 sec
+compress ratio = 4.452778, thoughtout = 13.850515 KB/s.
+dynamic compress 10567680 to 3927059 in 861.31 sec
+	ratio = 2.690991, thoughtout = 11.981788 KB/s.
+static compress 201370900 to 43669873 in 14081.90 sec
+	ratio = 4.611209, thoughtout = 13.964827 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 129(0.50%)
+k: 258(1.00%) theta: 1.00
+train 6 times
+211938580 -> 49039415 in 14988.08 sec
+compress ratio = 4.321801, thoughtout = 13.809059 KB/s.
+dynamic compress 6340608 to 2572851 in 528.15 sec
+	ratio = 2.464429, thoughtout = 11.724012 KB/s.
+static compress 205597972 to 46466564 in 14459.92 sec
+	ratio = 4.424643, thoughtout = 13.885228 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 25(0.10%)
+k: 258(1.00%) theta: 1.00
+train 9 times
+211938580 -> 46482051 in 15019.23 sec
+compress ratio = 4.559579, thoughtout = 13.780420 KB/s.
+dynamic compress 1843200 to 664923 in 159.12 sec
+	ratio = 2.772050, thoughtout = 11.312318 KB/s.
+static compress 210095380 to 45817128 in 14860.10 sec
+	ratio = 4.585521, thoughtout = 13.806859 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 258(1.00%)
+k: 129(0.50%) theta: 1.00
+train 5 times
+211938580 -> 48833190 in 15019.52 sec
+compress ratio = 4.340052, thoughtout = 13.780149 KB/s.
+dynamic compress 10567680 to 4930582 in 875.83 sec
+	ratio = 2.143293, thoughtout = 11.783117 KB/s.
+static compress 201370900 to 43902608 in 14143.68 sec
+	ratio = 4.586764, thoughtout = 13.903826 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 258(1.00%)
+k: 258(1.00%) theta: 1.00
+train 2 times
+211938580 -> 47110118 in 15028.40 sec
+compress ratio = 4.498791, thoughtout = 13.772009 KB/s.
+dynamic compress 4227072 to 2024184 in 353.18 sec
+	ratio = 2.088284, thoughtout = 11.688000 KB/s.
+static compress 207711508 to 45085934 in 14675.20 sec
+	ratio = 4.607014, thoughtout = 13.822177 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 258(1.00%)
+k: 517(2.00%) theta: 1.00
+train 8 times
+211938580 -> 44763751 in 15075.72 sec
+compress ratio = 4.734603, thoughtout = 13.728784 KB/s.
+dynamic compress 16908288 to 4074142 in 1359.26 sec
+	ratio = 4.150147, thoughtout = 12.147760 KB/s.
+static compress 195030292 to 40689609 in 13716.44 sec
+	ratio = 4.793123, thoughtout = 13.885474 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 25(0.10%)
+k: 25(0.10%) theta: 1.00
+train 66 times
+211938580 -> 44148495 in 15084.27 sec
+compress ratio = 4.800584, thoughtout = 13.720999 KB/s.
+dynamic compress 13516800 to 4920369 in 1107.49 sec
+	ratio = 2.747111, thoughtout = 11.918815 KB/s.
+static compress 198421780 to 39228126 in 13976.77 sec
+	ratio = 5.058151, thoughtout = 13.863812 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 129(0.50%)
+k: 517(2.00%) theta: 1.00
+train 6 times
+211938580 -> 45648117 in 15097.26 sec
+compress ratio = 4.642877, thoughtout = 13.709193 KB/s.
+dynamic compress 6340608 to 1787126 in 533.46 sec
+	ratio = 3.547936, thoughtout = 11.607171 KB/s.
+static compress 205597972 to 43860991 in 14563.78 sec
+	ratio = 4.687490, thoughtout = 13.786201 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 517(2.00%)
+k: 258(1.00%) theta: 1.00
+train 4 times
+211938580 -> 44527588 in 15191.91 sec
+compress ratio = 4.759714, thoughtout = 13.623783 KB/s.
+dynamic compress 16941056 to 6414773 in 1388.79 sec
+	ratio = 2.640944, thoughtout = 11.912561 KB/s.
+static compress 194997524 to 38112815 in 13803.11 sec
+	ratio = 5.116324, thoughtout = 13.795970 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 517(2.00%)
+k: 517(2.00%) theta: 1.00
+train 8 times
+211938580 -> 42923014 in 15213.64 sec
+compress ratio = 4.937644, thoughtout = 13.604325 KB/s.
+dynamic compress 33882112 to 7729568 in 2696.81 sec
+	ratio = 4.383442, thoughtout = 12.269315 KB/s.
+static compress 178056468 to 35193446 in 12516.81 sec
+	ratio = 5.059364, thoughtout = 13.891976 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 517(2.00%)
+k: 129(0.50%) theta: 1.00
+train 16 times
+211938580 -> 40679560 in 15553.77 sec
+compress ratio = 5.209953, thoughtout = 13.306821 KB/s.
+dynamic compress 67764224 to 16741524 in 5419.10 sec
+	ratio = 4.047674, thoughtout = 12.211624 KB/s.
+static compress 144174356 to 23938036 in 10134.66 sec
+	ratio = 6.022815, thoughtout = 13.892452 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 129(0.50%)
+k: 25(0.10%) theta: 1.00
+train 77 times
+211938580 -> 40854496 in 15569.56 sec
+compress ratio = 5.187644, thoughtout = 13.293327 KB/s.
+dynamic compress 81371136 to 18997988 in 6442.75 sec
+	ratio = 4.283145, thoughtout = 12.333868 KB/s.
+static compress 130567444 to 21856508 in 9126.80 sec
+	ratio = 5.973847, thoughtout = 13.970643 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 517(2.00%)
+k: 25(0.10%) theta: 1.00
+train 25 times
+211938580 -> 39010365 in 15710.06 sec
+compress ratio = 5.432879, thoughtout = 13.174446 KB/s.
+dynamic compress 105881600 to 26159135 in 8372.24 sec
+	ratio = 4.047596, thoughtout = 12.350342 KB/s.
+static compress 106056980 to 12851230 in 7337.80 sec
+	ratio = 8.252672, thoughtout = 14.114751 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 258(1.00%)
+k: 25(0.10%) theta: 1.00
+train 50 times
+211938580 -> 39010850 in 15781.56 sec
+compress ratio = 5.432811, thoughtout = 13.114755 KB/s.
+dynamic compress 105676800 to 24050593 in 8388.72 sec
+	ratio = 4.393937, thoughtout = 12.302232 KB/s.
+static compress 106261780 to 14960257 in 7392.82 sec
+	ratio = 7.102938, thoughtout = 14.036759 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 211938580 B, block num: 1
+train block: 1(1.00%)
+k: 1(1.00%) theta: 1.00
+train 1 times
+211938580 -> 37266593 in 16547.72 sec
+compress ratio = 5.687093, thoughtout = 12.507538 KB/s.
+dynamic compress 211938580 to 37266593 in 16547.71 sec
+	ratio = 5.687093, thoughtout = 12.507547 KB/s.
+static compress 0 to 0 in 0.00 sec
+	ratio = -nan, thoughtout = 0.000000 KB/s.
+
+Tue Feb 27 05:06:06 AM CST 2024
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 25(0.10%)
+k: 25(0.10%) theta: 1.10
+train 32 times
+211938580 -> 49585846 in 14894.06 sec
+compress ratio = 4.274175, thoughtout = 13.896230 KB/s.
+dynamic compress 6553600 to 2674440 in 532.94 sec
+	ratio = 2.450457, thoughtout = 12.008800 KB/s.
+static compress 205384980 to 46911406 in 14361.10 sec
+	ratio = 4.378146, thoughtout = 13.966285 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 25(0.10%)
+k: 517(2.00%) theta: 1.10
+train 6 times
+211938580 -> 46548611 in 14953.05 sec
+compress ratio = 4.553059, thoughtout = 13.841406 KB/s.
+dynamic compress 1228800 to 380568 in 106.79 sec
+	ratio = 3.228858, thoughtout = 11.237473 KB/s.
+static compress 210709780 to 46168043 in 14846.25 sec
+	ratio = 4.563975, thoughtout = 13.860148 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 25(0.10%)
+k: 129(0.50%) theta: 1.10
+train 8 times
+211938580 -> 50719540 in 14967.34 sec
+compress ratio = 4.178638, thoughtout = 13.828192 KB/s.
+dynamic compress 1638400 to 517358 in 138.54 sec
+	ratio = 3.166859, thoughtout = 11.548870 KB/s.
+static compress 210300180 to 50202182 in 14828.79 sec
+	ratio = 4.189065, thoughtout = 13.849500 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 129(0.50%)
+k: 517(2.00%) theta: 1.10
+train 9 times
+211938580 -> 44926341 in 14987.74 sec
+compress ratio = 4.717468, thoughtout = 13.809375 KB/s.
+dynamic compress 9510912 to 2471147 in 770.71 sec
+	ratio = 3.848784, thoughtout = 12.051174 KB/s.
+static compress 202427668 to 42455194 in 14217.01 sec
+	ratio = 4.768031, thoughtout = 13.904703 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 25(0.10%)
+k: 258(1.00%) theta: 1.10
+train 5 times
+211938580 -> 50840972 in 15012.30 sec
+compress ratio = 4.168657, thoughtout = 13.786781 KB/s.
+dynamic compress 1024000 to 360420 in 89.31 sec
+	ratio = 2.841130, thoughtout = 11.196501 KB/s.
+static compress 210914580 to 50480552 in 14922.97 sec
+	ratio = 4.178135, thoughtout = 13.802297 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 129(0.50%)
+k: 129(0.50%) theta: 1.10
+train 13 times
+211938580 -> 48208754 in 15057.45 sec
+compress ratio = 4.396268, thoughtout = 13.745438 KB/s.
+dynamic compress 13737984 to 5124030 in 1116.17 sec
+	ratio = 2.681090, thoughtout = 12.019683 KB/s.
+static compress 198200596 to 43084724 in 13941.27 sec
+	ratio = 4.600252, thoughtout = 13.883620 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 517(2.00%)
+k: 517(2.00%) theta: 1.10
+train 5 times
+211938580 -> 45693118 in 15113.57 sec
+compress ratio = 4.638304, thoughtout = 13.694401 KB/s.
+dynamic compress 21176320 to 7283737 in 1734.28 sec
+	ratio = 2.907343, thoughtout = 11.924261 KB/s.
+static compress 190762260 to 38409381 in 13379.27 sec
+	ratio = 4.966554, thoughtout = 13.923872 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 129(0.50%)
+k: 258(1.00%) theta: 1.10
+train 8 times
+211938580 -> 49087556 in 15131.90 sec
+compress ratio = 4.317562, thoughtout = 13.677809 KB/s.
+dynamic compress 8454144 to 3264906 in 694.84 sec
+	ratio = 2.589399, thoughtout = 11.881887 KB/s.
+static compress 203484436 to 45822650 in 14437.05 sec
+	ratio = 4.440696, thoughtout = 13.764259 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 517(2.00%)
+k: 129(0.50%) theta: 1.10
+train 8 times
+211938580 -> 43607744 in 15150.50 sec
+compress ratio = 4.860113, thoughtout = 13.661015 KB/s.
+dynamic compress 33882112 to 11748420 in 2710.77 sec
+	ratio = 2.883972, thoughtout = 12.206120 KB/s.
+static compress 178056468 to 31859324 in 12439.72 sec
+	ratio = 5.588834, thoughtout = 13.978072 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 517(2.00%)
+k: 258(1.00%) theta: 1.10
+train 5 times
+211938580 -> 44269989 in 15210.15 sec
+compress ratio = 4.787410, thoughtout = 13.607446 KB/s.
+dynamic compress 21176320 to 7254241 in 1724.15 sec
+	ratio = 2.919164, thoughtout = 11.994292 KB/s.
+static compress 190762260 to 37015748 in 13485.98 sec
+	ratio = 5.153543, thoughtout = 13.813701 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 258(1.00%)
+k: 517(2.00%) theta: 1.10
+train 20 times
+211938580 -> 41940916 in 15314.46 sec
+compress ratio = 5.053265, thoughtout = 13.514758 KB/s.
+dynamic compress 42270720 to 8646503 in 3370.14 sec
+	ratio = 4.888765, thoughtout = 12.248742 KB/s.
+static compress 169667860 to 33294413 in 11944.31 sec
+	ratio = 5.095986, thoughtout = 13.871987 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 258(1.00%)
+k: 258(1.00%) theta: 1.10
+train 23 times
+211938580 -> 41491856 in 15351.53 sec
+compress ratio = 5.107956, thoughtout = 13.482126 KB/s.
+dynamic compress 48611328 to 11792137 in 3876.10 sec
+	ratio = 4.122351, thoughtout = 12.247351 KB/s.
+static compress 163327252 to 29699719 in 11475.41 sec
+	ratio = 5.499286, thoughtout = 13.899220 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 258(1.00%)
+k: 129(0.50%) theta: 1.10
+train 29 times
+211938580 -> 41943923 in 15471.01 sec
+compress ratio = 5.052903, thoughtout = 13.378004 KB/s.
+dynamic compress 61292544 to 14536071 in 4900.28 sec
+	ratio = 4.216583, thoughtout = 12.214823 KB/s.
+static compress 150646036 to 27407852 in 10570.72 sec
+	ratio = 5.496455, thoughtout = 13.917240 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 258(1.00%)
+k: 25(0.10%) theta: 1.10
+train 54 times
+211938580 -> 39050993 in 15746.70 sec
+compress ratio = 5.427226, thoughtout = 13.143783 KB/s.
+dynamic compress 114130944 to 26604990 in 9012.68 sec
+	ratio = 4.289832, thoughtout = 12.366574 KB/s.
+static compress 97807636 to 12446003 in 6734.01 sec
+	ratio = 7.858558, thoughtout = 14.184017 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 517(2.00%)
+k: 25(0.10%) theta: 1.10
+train 25 times
+211938580 -> 39369963 in 15841.20 sec
+compress ratio = 5.383256, thoughtout = 13.065382 KB/s.
+dynamic compress 105881600 to 26896386 in 8487.84 sec
+	ratio = 3.936648, thoughtout = 12.182128 KB/s.
+static compress 106056980 to 12473577 in 7353.34 sec
+	ratio = 8.502531, thoughtout = 14.084937 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 129(0.50%)
+k: 25(0.10%) theta: 1.10
+train 118 times
+211938580 -> 39270774 in 15907.46 sec
+compress ratio = 5.396853, thoughtout = 13.010960 KB/s.
+dynamic compress 124698624 to 24959953 in 9746.34 sec
+	ratio = 4.995948, thoughtout = 12.494532 KB/s.
+static compress 87239956 to 14310821 in 6161.10 sec
+	ratio = 6.096083, thoughtout = 13.827938 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 211938580 B, block num: 1
+train block: 1(1.00%)
+k: 1(1.00%) theta: 1.00
+train 1 times
+211938580 -> 37266593 in 16486.32 sec
+compress ratio = 5.687093, thoughtout = 12.554123 KB/s.
+dynamic compress 211938580 to 37266593 in 16486.31 sec
+	ratio = 5.687093, thoughtout = 12.554133 KB/s.
+static compress 0 to 0 in 0.00 sec
+	ratio = -nan, thoughtout = -nan KB/s.
+
+Tue Feb 27 09:40:54 AM CST 2024
+
+# 测一下calgary，用于论文中对比测试说明paq8lite的优化幅度更大
+
+Tue Mar 19 11:13:26 AM CST 2024
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 7(2.00%)
+k: 7(2.00%) theta: 0.80
+Train 3 times
+3141622 -> 779005 , compress ratio = 4.032865 .
+all time = 223.63 sec, thoughtout = 13.718821 KB/s.
+compress time = 222.57 sec, thoughtout = 13.784609 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 7(2.00%)
+k: 3(1.00%) theta: 0.80
+Train 3 times
+3141622 -> 776563 , compress ratio = 4.045547 .
+all time = 228.42 sec, thoughtout = 13.431514 KB/s.
+compress time = 227.35 sec, thoughtout = 13.494837 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 7(2.00%)
+k: 1(0.50%) theta: 0.80
+Train 4 times
+3141622 -> 758394 , compress ratio = 4.142467 .
+all time = 224.59 sec, thoughtout = 13.660577 KB/s.
+compress time = 223.52 sec, thoughtout = 13.726091 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 7(2.00%)
+k: 1(0.10%) theta: 0.80
+Train 4 times
+3141622 -> 758394 , compress ratio = 4.142467 .
+all time = 225.35 sec, thoughtout = 13.614237 KB/s.
+compress time = 224.28 sec, thoughtout = 13.679159 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 3(1.00%)
+k: 7(2.00%) theta: 0.80
+Train 3 times
+3141622 -> 798769 , compress ratio = 3.933080 .
+all time = 216.86 sec, thoughtout = 14.147147 KB/s.
+compress time = 215.79 sec, thoughtout = 14.217405 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 3(1.00%)
+k: 3(1.00%) theta: 0.80
+Train 3 times
+3141622 -> 794375 , compress ratio = 3.954835 .
+all time = 221.46 sec, thoughtout = 13.853184 KB/s.
+compress time = 220.40 sec, thoughtout = 13.920301 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 3(1.00%)
+k: 1(0.50%) theta: 0.80
+Train 4 times
+3141622 -> 780044 , compress ratio = 4.027493 .
+all time = 222.21 sec, thoughtout = 13.806742 KB/s.
+compress time = 221.14 sec, thoughtout = 13.873571 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 3(1.00%)
+k: 1(0.10%) theta: 0.80
+Train 4 times
+3141622 -> 780044 , compress ratio = 4.027493 .
+all time = 221.40 sec, thoughtout = 13.857133 KB/s.
+compress time = 220.33 sec, thoughtout = 13.924742 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 1(0.50%)
+k: 7(2.00%) theta: 0.80
+Train 2 times
+3141622 -> 850802 , compress ratio = 3.692542 .
+all time = 217.52 sec, thoughtout = 14.104209 KB/s.
+compress time = 216.45 sec, thoughtout = 14.173901 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 1(0.50%)
+k: 3(1.00%) theta: 0.80
+Train 2 times
+3141622 -> 850436 , compress ratio = 3.694131 .
+all time = 217.99 sec, thoughtout = 14.074282 KB/s.
+compress time = 216.91 sec, thoughtout = 14.143744 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 1(0.50%)
+k: 1(0.50%) theta: 0.80
+Train 3 times
+3141622 -> 820312 , compress ratio = 3.829789 .
+all time = 219.32 sec, thoughtout = 13.988345 KB/s.
+compress time = 218.25 sec, thoughtout = 14.057192 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 1(0.50%)
+k: 1(0.10%) theta: 0.80
+Train 3 times
+3141622 -> 820312 , compress ratio = 3.829789 .
+all time = 218.70 sec, thoughtout = 14.028450 KB/s.
+compress time = 217.63 sec, thoughtout = 14.097266 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 1(0.10%)
+k: 7(2.00%) theta: 0.80
+Train 2 times
+3141622 -> 850802 , compress ratio = 3.692542 .
+all time = 218.04 sec, thoughtout = 14.070585 KB/s.
+compress time = 216.97 sec, thoughtout = 14.140037 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 1(0.10%)
+k: 3(1.00%) theta: 0.80
+Train 2 times
+3141622 -> 850436 , compress ratio = 3.694131 .
+all time = 216.71 sec, thoughtout = 14.157188 KB/s.
+compress time = 215.63 sec, thoughtout = 14.227732 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 1(0.10%)
+k: 1(0.50%) theta: 0.80
+Train 3 times
+3141622 -> 820312 , compress ratio = 3.829789 .
+all time = 218.81 sec, thoughtout = 14.021547 KB/s.
+compress time = 217.74 sec, thoughtout = 14.090431 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 1(0.10%)
+k: 1(0.10%) theta: 0.80
+Train 3 times
+3141622 -> 820312 , compress ratio = 3.829789 .
+all time = 218.86 sec, thoughtout = 14.017955 KB/s.
+compress time = 217.80 sec, thoughtout = 14.086579 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 3141622 B, block num: 1
+train block: 1(1.00%)
+k: 1(1.00%) theta: 1.00
+Train 1 times
+3141622 -> 636347 , compress ratio = 4.936964 .
+all time = 264.23 sec, thoughtout = 11.611268 KB/s.
+compress time = 263.15 sec, thoughtout = 11.658611 KB/s.
+
+Tue Mar 19 12:16:48 PM CST 2024
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 7(2.00%)
+k: 7(2.00%) theta: 0.90
+Train 3 times
+3141622 -> 777548 , compress ratio = 4.040422 .
+all time = 223.19 sec, thoughtout = 13.746321 KB/s.
+compress time = 222.12 sec, thoughtout = 13.812437 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 7(2.00%)
+k: 3(1.00%) theta: 0.90
+Train 10 times
+3141622 -> 744467 , compress ratio = 4.219961 .
+all time = 224.62 sec, thoughtout = 13.658775 KB/s.
+compress time = 223.55 sec, thoughtout = 13.724156 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 7(2.00%)
+k: 1(0.50%) theta: 0.90
+Train 4 times
+3141622 -> 759543 , compress ratio = 4.136200 .
+all time = 225.53 sec, thoughtout = 13.603379 KB/s.
+compress time = 224.46 sec, thoughtout = 13.668286 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 7(2.00%)
+k: 1(0.10%) theta: 0.90
+Train 4 times
+3141622 -> 759543 , compress ratio = 4.136200 .
+all time = 225.41 sec, thoughtout = 13.610670 KB/s.
+compress time = 224.34 sec, thoughtout = 13.675670 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 3(1.00%)
+k: 7(2.00%) theta: 0.90
+Train 3 times
+3141622 -> 797015 , compress ratio = 3.941735 .
+all time = 222.48 sec, thoughtout = 13.789773 KB/s.
+compress time = 221.41 sec, thoughtout = 13.856561 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 3(1.00%)
+k: 3(1.00%) theta: 0.90
+Train 11 times
+3141622 -> 770021 , compress ratio = 4.079917 .
+all time = 223.89 sec, thoughtout = 13.702900 KB/s.
+compress time = 222.82 sec, thoughtout = 13.768759 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 3(1.00%)
+k: 1(0.50%) theta: 0.90
+Train 5 times
+3141622 -> 778202 , compress ratio = 4.037026 .
+all time = 224.10 sec, thoughtout = 13.690247 KB/s.
+compress time = 223.03 sec, thoughtout = 13.756156 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 3(1.00%)
+k: 1(0.10%) theta: 0.90
+Train 5 times
+3141622 -> 778202 , compress ratio = 4.037026 .
+all time = 222.08 sec, thoughtout = 13.814645 KB/s.
+compress time = 221.01 sec, thoughtout = 13.881625 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 1(0.50%)
+k: 7(2.00%) theta: 0.90
+Train 3 times
+3141622 -> 821117 , compress ratio = 3.826035 .
+all time = 217.85 sec, thoughtout = 14.083324 KB/s.
+compress time = 216.77 sec, thoughtout = 14.152949 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 1(0.50%)
+k: 3(1.00%) theta: 0.90
+Train 3 times
+3141622 -> 819930 , compress ratio = 3.831573 .
+all time = 220.91 sec, thoughtout = 13.887731 KB/s.
+compress time = 219.84 sec, thoughtout = 13.955588 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 1(0.50%)
+k: 1(0.50%) theta: 0.90
+Train 5 times
+3141622 -> 814910 , compress ratio = 3.855177 .
+all time = 217.93 sec, thoughtout = 14.077868 KB/s.
+compress time = 216.86 sec, thoughtout = 14.147170 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 1(0.50%)
+k: 1(0.10%) theta: 0.90
+Train 5 times
+3141622 -> 814910 , compress ratio = 3.855177 .
+all time = 219.13 sec, thoughtout = 14.001068 KB/s.
+compress time = 218.06 sec, thoughtout = 14.069598 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 1(0.10%)
+k: 7(2.00%) theta: 0.90
+Train 3 times
+3141622 -> 821117 , compress ratio = 3.826035 .
+all time = 218.53 sec, thoughtout = 14.039196 KB/s.
+compress time = 217.45 sec, thoughtout = 14.108636 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 1(0.10%)
+k: 3(1.00%) theta: 0.90
+Train 3 times
+3141622 -> 819930 , compress ratio = 3.831573 .
+all time = 215.51 sec, thoughtout = 14.236184 KB/s.
+compress time = 214.43 sec, thoughtout = 14.307482 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 1(0.10%)
+k: 1(0.50%) theta: 0.90
+Train 5 times
+3141622 -> 814910 , compress ratio = 3.855177 .
+all time = 218.84 sec, thoughtout = 14.019137 KB/s.
+compress time = 217.77 sec, thoughtout = 14.088032 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 1(0.10%)
+k: 1(0.10%) theta: 0.90
+Train 5 times
+3141622 -> 814910 , compress ratio = 3.855177 .
+all time = 220.23 sec, thoughtout = 13.930978 KB/s.
+compress time = 219.15 sec, thoughtout = 13.999199 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 3141622 B, block num: 1
+train block: 1(1.00%)
+k: 1(1.00%) theta: 1.00
+Train 1 times
+3141622 -> 636347 , compress ratio = 4.936964 .
+all time = 259.83 sec, thoughtout = 11.807694 KB/s.
+compress time = 258.75 sec, thoughtout = 11.856758 KB/s.
+
+Tue Mar 19 01:20:17 PM CST 2024
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 7(2.00%)
+k: 7(2.00%) theta: 1.00
+Train 3 times
+3141622 -> 777080 , compress ratio = 4.042855 .
+all time = 226.69 sec, thoughtout = 13.533607 KB/s.
+compress time = 225.62 sec, thoughtout = 13.597777 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 7(2.00%)
+k: 3(1.00%) theta: 1.00
+Train 6 times
+3141622 -> 748801 , compress ratio = 4.195537 .
+all time = 229.85 sec, thoughtout = 13.347839 KB/s.
+compress time = 228.78 sec, thoughtout = 13.410163 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 7(2.00%)
+k: 1(0.50%) theta: 1.00
+Train 23 times
+3141622 -> 703212 , compress ratio = 4.467532 .
+all time = 235.94 sec, thoughtout = 13.003353 KB/s.
+compress time = 234.87 sec, thoughtout = 13.062517 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 7(2.00%)
+k: 1(0.10%) theta: 1.00
+Train 23 times
+3141622 -> 703212 , compress ratio = 4.467532 .
+all time = 237.23 sec, thoughtout = 12.932612 KB/s.
+compress time = 236.16 sec, thoughtout = 12.991377 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 3(1.00%)
+k: 7(2.00%) theta: 1.00
+Train 3 times
+3141622 -> 793946 , compress ratio = 3.956972 .
+all time = 220.94 sec, thoughtout = 13.886074 KB/s.
+compress time = 219.86 sec, thoughtout = 13.953977 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 3(1.00%)
+k: 3(1.00%) theta: 1.00
+Train 14 times
+3141622 -> 766840 , compress ratio = 4.096842 .
+all time = 225.79 sec, thoughtout = 13.588070 KB/s.
+compress time = 224.71 sec, thoughtout = 13.652945 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 3(1.00%)
+k: 1(0.50%) theta: 1.00
+Train 21 times
+3141622 -> 748028 , compress ratio = 4.199872 .
+all time = 229.59 sec, thoughtout = 13.362911 KB/s.
+compress time = 228.52 sec, thoughtout = 13.425557 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 3(1.00%)
+k: 1(0.10%) theta: 1.00
+Train 21 times
+3141622 -> 748028 , compress ratio = 4.199872 .
+all time = 235.47 sec, thoughtout = 13.029126 KB/s.
+compress time = 234.40 sec, thoughtout = 13.088757 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 1(0.50%)
+k: 7(2.00%) theta: 1.00
+Train 3 times
+3141622 -> 819966 , compress ratio = 3.831405 .
+all time = 219.10 sec, thoughtout = 14.002396 KB/s.
+compress time = 218.03 sec, thoughtout = 14.071308 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 1(0.50%)
+k: 3(1.00%) theta: 1.00
+Train 8 times
+3141622 -> 802627 , compress ratio = 3.914174 .
+all time = 222.90 sec, thoughtout = 13.764033 KB/s.
+compress time = 221.82 sec, thoughtout = 13.830764 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 1(0.50%)
+k: 1(0.50%) theta: 1.00
+Train 5 times
+3141622 -> 814608 , compress ratio = 3.856606 .
+all time = 214.76 sec, thoughtout = 14.285851 KB/s.
+compress time = 213.68 sec, thoughtout = 14.357656 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 1(0.50%)
+k: 1(0.10%) theta: 1.00
+Train 5 times
+3141622 -> 814608 , compress ratio = 3.856606 .
+all time = 220.24 sec, thoughtout = 13.929950 KB/s.
+compress time = 219.17 sec, thoughtout = 13.998151 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 1(0.10%)
+k: 7(2.00%) theta: 1.00
+Train 3 times
+3141622 -> 819966 , compress ratio = 3.831405 .
+all time = 221.63 sec, thoughtout = 13.842792 KB/s.
+compress time = 220.56 sec, thoughtout = 13.910242 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 1(0.10%)
+k: 3(1.00%) theta: 1.00
+Train 8 times
+3141622 -> 802627 , compress ratio = 3.914174 .
+all time = 221.09 sec, thoughtout = 13.876350 KB/s.
+compress time = 220.02 sec, thoughtout = 13.944163 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 1(0.10%)
+k: 1(0.50%) theta: 1.00
+Train 5 times
+3141622 -> 814608 , compress ratio = 3.856606 .
+all time = 214.98 sec, thoughtout = 14.271111 KB/s.
+compress time = 213.91 sec, thoughtout = 14.342141 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 1(0.10%)
+k: 1(0.10%) theta: 1.00
+Train 5 times
+3141622 -> 814608 , compress ratio = 3.856606 .
+all time = 220.18 sec, thoughtout = 13.933786 KB/s.
+compress time = 219.11 sec, thoughtout = 14.001825 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 3141622 B, block num: 1
+train block: 1(1.00%)
+k: 1(1.00%) theta: 1.00
+Train 1 times
+3141622 -> 636347 , compress ratio = 4.936964 .
+all time = 255.60 sec, thoughtout = 12.002979 KB/s.
+compress time = 254.53 sec, thoughtout = 12.053573 KB/s.
+
+Tue Mar 19 02:24:39 PM CST 2024
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 7(2.00%)
+k: 7(2.00%) theta: 1.10
+Train 22 times
+3141622 -> 707963 , compress ratio = 4.437551 .
+all time = 235.94 sec, thoughtout = 13.003155 KB/s.
+compress time = 234.87 sec, thoughtout = 13.062417 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 7(2.00%)
+k: 3(1.00%) theta: 1.10
+Train 32 times
+3141622 -> 671789 , compress ratio = 4.676501 .
+all time = 249.45 sec, thoughtout = 12.298909 KB/s.
+compress time = 248.38 sec, thoughtout = 12.352127 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 7(2.00%)
+k: 1(0.50%) theta: 1.10
+Train 44 times
+3141622 -> 655808 , compress ratio = 4.790460 .
+all time = 259.65 sec, thoughtout = 11.815676 KB/s.
+compress time = 258.57 sec, thoughtout = 11.864997 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 7(2.00%)
+k: 1(0.10%) theta: 1.10
+Train 44 times
+3141622 -> 655808 , compress ratio = 4.790460 .
+all time = 254.05 sec, thoughtout = 12.076371 KB/s.
+compress time = 252.97 sec, thoughtout = 12.127699 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 3(1.00%)
+k: 7(2.00%) theta: 1.10
+Train 25 times
+3141622 -> 726074 , compress ratio = 4.326862 .
+all time = 234.87 sec, thoughtout = 13.062418 KB/s.
+compress time = 233.80 sec, thoughtout = 13.122528 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 3(1.00%)
+k: 3(1.00%) theta: 1.10
+Train 55 times
+3141622 -> 691718 , compress ratio = 4.541767 .
+all time = 241.95 sec, thoughtout = 12.680145 KB/s.
+compress time = 240.87 sec, thoughtout = 12.736918 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 3(1.00%)
+k: 1(0.50%) theta: 1.10
+Train 48 times
+3141622 -> 704182 , compress ratio = 4.461378 .
+all time = 237.64 sec, thoughtout = 12.910329 KB/s.
+compress time = 236.55 sec, thoughtout = 12.969496 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 3(1.00%)
+k: 1(0.10%) theta: 1.10
+Train 48 times
+3141622 -> 704182 , compress ratio = 4.461378 .
+all time = 233.59 sec, thoughtout = 13.134104 KB/s.
+compress time = 232.52 sec, thoughtout = 13.194800 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 1(0.50%)
+k: 7(2.00%) theta: 1.10
+Train 32 times
+3141622 -> 753824 , compress ratio = 4.167580 .
+all time = 225.29 sec, thoughtout = 13.618049 KB/s.
+compress time = 224.22 sec, thoughtout = 13.683156 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 1(0.50%)
+k: 3(1.00%) theta: 1.10
+Train 76 times
+3141622 -> 722717 , compress ratio = 4.346960 .
+all time = 230.10 sec, thoughtout = 13.333098 KB/s.
+compress time = 229.03 sec, thoughtout = 13.395509 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 1(0.50%)
+k: 1(0.50%) theta: 1.10
+Train 85 times
+3141622 -> 735139 , compress ratio = 4.273507 .
+all time = 228.17 sec, thoughtout = 13.446045 KB/s.
+compress time = 227.09 sec, thoughtout = 13.509761 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 1(0.50%)
+k: 1(0.10%) theta: 1.10
+Train 85 times
+3141622 -> 735139 , compress ratio = 4.273507 .
+all time = 231.41 sec, thoughtout = 13.257912 KB/s.
+compress time = 230.34 sec, thoughtout = 13.319608 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 1(0.10%)
+k: 7(2.00%) theta: 1.10
+Train 32 times
+3141622 -> 753824 , compress ratio = 4.167580 .
+all time = 227.44 sec, thoughtout = 13.489130 KB/s.
+compress time = 226.37 sec, thoughtout = 13.553142 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 1(0.10%)
+k: 3(1.00%) theta: 1.10
+Train 76 times
+3141622 -> 722717 , compress ratio = 4.346960 .
+all time = 230.42 sec, thoughtout = 13.314532 KB/s.
+compress time = 229.35 sec, thoughtout = 13.376928 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 1(0.10%)
+k: 1(0.50%) theta: 1.10
+Train 85 times
+3141622 -> 735139 , compress ratio = 4.273507 .
+all time = 231.93 sec, thoughtout = 13.228163 KB/s.
+compress time = 230.86 sec, thoughtout = 13.289604 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 1(0.10%)
+k: 1(0.10%) theta: 1.10
+Train 85 times
+3141622 -> 735139 , compress ratio = 4.273507 .
+all time = 232.33 sec, thoughtout = 13.205360 KB/s.
+compress time = 231.26 sec, thoughtout = 13.266581 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 3141622 B, block num: 1
+train block: 1(1.00%)
+k: 1(1.00%) theta: 1.00
+Train 1 times
+3141622 -> 636347 , compress ratio = 4.936964 .
+all time = 252.31 sec, thoughtout = 12.159456 KB/s.
+compress time = 251.24 sec, thoughtout = 12.211306 KB/s.
+
+Tue Mar 19 03:32:13 PM CST 2024
+
