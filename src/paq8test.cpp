@@ -90,8 +90,11 @@ int main(int argc,char **argv){
         //输出压缩统计信息
         double t = (double)(clock() - start_t)/CLOCKS_PER_SEC;
         double c_t = (double)(comp_t)/CLOCKS_PER_SEC;
-        printf("%ld %ld %.6lf %.6f\n", ftell(in), ftell(out), t, c_t);
-        printf("all thoughtout: %.2lf KB/s, comp thoughtout: %.2lf KB/s\n", fsize / t / 1024, fsize / c_t / 1024);
+        printf("%u -> %ld, compress ration = %.2lf\n", 
+            fsize, ftell(out), ((double)fsize) / ftell(out));
+        // printf("%ld %ld %.6lf %.6f\n", ftell(in), ftell(out), t, c_t);
+        printf("time: %.2lf, comp time: %.2lf\n", t, c_t);
+        printf("all thoughtout: %.2lf KB/s, comp thoughtout: %.2lf KB/s\n\n", fsize / t / 1024, fsize / c_t / 1024);
     }
     else {
         /* 5.1 获得并输出元数据信息 */
