@@ -3323,3 +3323,741 @@ compress time = 251.24 sec, thoughtout = 12.211306 KB/s.
 
 Tue Mar 19 03:32:13 PM CST 2024
 
+# calgary第二组
+
+Wed Mar 20 11:06:35 AM CST 2024
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 3141622 B, block num: 1
+train block: 1(1.00%)
+k: 1(1.00%) theta: 1.00
+Train 1 times
+3141622 -> 636347 , compress ratio = 4.936964 .
+all time = 252.41 sec, thoughtout = 12.154677 KB/s.
+compress time = 251.36 sec, thoughtout = 12.205747 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 7(2.00%)
+k: 7(2.00%) theta: 0.80
+Train 3 times
+3141622 -> 779005 , compress ratio = 4.032865 .
+all time = 222.61 sec, thoughtout = 13.781768 KB/s.
+compress time = 221.55 sec, thoughtout = 13.848014 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 7(2.00%)
+k: 3(1.00%) theta: 0.80
+Train 3 times
+3141622 -> 776563 , compress ratio = 4.045547 .
+all time = 222.86 sec, thoughtout = 13.766396 KB/s.
+compress time = 221.80 sec, thoughtout = 13.832441 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 7(2.00%)
+k: 1(0.50%) theta: 0.80
+Train 4 times
+3141622 -> 758394 , compress ratio = 4.142467 .
+all time = 224.25 sec, thoughtout = 13.680841 KB/s.
+compress time = 223.19 sec, thoughtout = 13.746298 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 7(2.00%)
+k: 1(0.10%) theta: 0.80
+Train 4 times
+3141622 -> 758394 , compress ratio = 4.142467 .
+all time = 224.34 sec, thoughtout = 13.675364 KB/s.
+compress time = 223.28 sec, thoughtout = 13.740556 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 3(1.00%)
+k: 7(2.00%) theta: 0.80
+Train 3 times
+3141622 -> 798769 , compress ratio = 3.933080 .
+all time = 219.74 sec, thoughtout = 13.961659 KB/s.
+compress time = 218.68 sec, thoughtout = 14.029576 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 3(1.00%)
+k: 3(1.00%) theta: 0.80
+Train 3 times
+3141622 -> 794375 , compress ratio = 3.954835 .
+all time = 220.92 sec, thoughtout = 13.887226 KB/s.
+compress time = 219.86 sec, thoughtout = 13.954488 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 3(1.00%)
+k: 1(0.50%) theta: 0.80
+Train 4 times
+3141622 -> 780044 , compress ratio = 4.027493 .
+all time = 221.79 sec, thoughtout = 13.833033 KB/s.
+compress time = 220.72 sec, thoughtout = 13.899711 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 3(1.00%)
+k: 1(0.10%) theta: 0.80
+Train 4 times
+3141622 -> 780044 , compress ratio = 4.027493 .
+all time = 222.19 sec, thoughtout = 13.807772 KB/s.
+compress time = 221.13 sec, thoughtout = 13.874367 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 1(0.50%)
+k: 7(2.00%) theta: 0.80
+Train 2 times
+3141622 -> 850802 , compress ratio = 3.692542 .
+all time = 217.07 sec, thoughtout = 14.133909 KB/s.
+compress time = 216.00 sec, thoughtout = 14.203501 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 1(0.50%)
+k: 3(1.00%) theta: 0.80
+Train 2 times
+3141622 -> 850436 , compress ratio = 3.694131 .
+all time = 218.82 sec, thoughtout = 14.020763 KB/s.
+compress time = 217.75 sec, thoughtout = 14.089332 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 1(0.50%)
+k: 1(0.50%) theta: 0.80
+Train 3 times
+3141622 -> 820312 , compress ratio = 3.829789 .
+all time = 218.11 sec, thoughtout = 14.066329 KB/s.
+compress time = 217.05 sec, thoughtout = 14.135133 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 1(0.50%)
+k: 1(0.10%) theta: 0.80
+Train 3 times
+3141622 -> 820312 , compress ratio = 3.829789 .
+all time = 218.18 sec, thoughtout = 14.061601 KB/s.
+compress time = 217.11 sec, thoughtout = 14.130736 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 1(0.10%)
+k: 7(2.00%) theta: 0.80
+Train 2 times
+3141622 -> 850802 , compress ratio = 3.692542 .
+all time = 216.87 sec, thoughtout = 14.146837 KB/s.
+compress time = 215.80 sec, thoughtout = 14.216568 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 1(0.10%)
+k: 3(1.00%) theta: 0.80
+Train 2 times
+3141622 -> 850436 , compress ratio = 3.694131 .
+all time = 217.11 sec, thoughtout = 14.131002 KB/s.
+compress time = 216.05 sec, thoughtout = 14.200644 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 1(0.10%)
+k: 1(0.50%) theta: 0.80
+Train 3 times
+3141622 -> 820312 , compress ratio = 3.829789 .
+all time = 217.81 sec, thoughtout = 14.085722 KB/s.
+compress time = 216.74 sec, thoughtout = 14.154864 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 1(0.10%)
+k: 1(0.10%) theta: 0.80
+Train 3 times
+3141622 -> 820312 , compress ratio = 3.829789 .
+all time = 218.53 sec, thoughtout = 14.038928 KB/s.
+compress time = 217.47 sec, thoughtout = 14.107776 KB/s.
+
+Wed Mar 20 12:09:36 PM CST 2024
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 7(2.00%)
+k: 7(2.00%) theta: 0.90
+Train 3 times
+3141622 -> 777548 , compress ratio = 4.040422 .
+all time = 222.12 sec, thoughtout = 13.812245 KB/s.
+compress time = 221.06 sec, thoughtout = 13.878655 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 7(2.00%)
+k: 3(1.00%) theta: 0.90
+Train 10 times
+3141622 -> 744467 , compress ratio = 4.219961 .
+all time = 227.45 sec, thoughtout = 13.488758 KB/s.
+compress time = 226.38 sec, thoughtout = 13.552206 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 7(2.00%)
+k: 1(0.50%) theta: 0.90
+Train 4 times
+3141622 -> 759543 , compress ratio = 4.136200 .
+all time = 224.61 sec, thoughtout = 13.659489 KB/s.
+compress time = 223.54 sec, thoughtout = 13.724480 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 7(2.00%)
+k: 1(0.10%) theta: 0.90
+Train 4 times
+3141622 -> 759543 , compress ratio = 4.136200 .
+all time = 224.51 sec, thoughtout = 13.665382 KB/s.
+compress time = 223.44 sec, thoughtout = 13.730563 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 3(1.00%)
+k: 7(2.00%) theta: 0.90
+Train 3 times
+3141622 -> 797015 , compress ratio = 3.941735 .
+all time = 220.38 sec, thoughtout = 13.921193 KB/s.
+compress time = 219.32 sec, thoughtout = 13.988754 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 3(1.00%)
+k: 3(1.00%) theta: 0.90
+Train 11 times
+3141622 -> 770021 , compress ratio = 4.079917 .
+all time = 223.67 sec, thoughtout = 13.716821 KB/s.
+compress time = 222.60 sec, thoughtout = 13.782447 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 3(1.00%)
+k: 1(0.50%) theta: 0.90
+Train 5 times
+3141622 -> 778202 , compress ratio = 4.037026 .
+all time = 222.08 sec, thoughtout = 13.814603 KB/s.
+compress time = 221.02 sec, thoughtout = 13.881105 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 3(1.00%)
+k: 1(0.10%) theta: 0.90
+Train 5 times
+3141622 -> 778202 , compress ratio = 4.037026 .
+all time = 222.98 sec, thoughtout = 13.759105 KB/s.
+compress time = 221.91 sec, thoughtout = 13.825078 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 1(0.50%)
+k: 7(2.00%) theta: 0.90
+Train 3 times
+3141622 -> 821117 , compress ratio = 3.826035 .
+all time = 218.72 sec, thoughtout = 14.027199 KB/s.
+compress time = 217.65 sec, thoughtout = 14.095941 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 1(0.50%)
+k: 3(1.00%) theta: 0.90
+Train 3 times
+3141622 -> 819930 , compress ratio = 3.831573 .
+all time = 218.32 sec, thoughtout = 14.053015 KB/s.
+compress time = 217.25 sec, thoughtout = 14.121949 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 1(0.50%)
+k: 1(0.50%) theta: 0.90
+Train 5 times
+3141622 -> 814910 , compress ratio = 3.855177 .
+all time = 220.46 sec, thoughtout = 13.916066 KB/s.
+compress time = 219.40 sec, thoughtout = 13.983630 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 1(0.50%)
+k: 1(0.10%) theta: 0.90
+Train 5 times
+3141622 -> 814910 , compress ratio = 3.855177 .
+all time = 219.54 sec, thoughtout = 13.974676 KB/s.
+compress time = 218.47 sec, thoughtout = 14.042771 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 1(0.10%)
+k: 7(2.00%) theta: 0.90
+Train 3 times
+3141622 -> 821117 , compress ratio = 3.826035 .
+all time = 219.34 sec, thoughtout = 13.987517 KB/s.
+compress time = 218.27 sec, thoughtout = 14.055902 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 1(0.10%)
+k: 3(1.00%) theta: 0.90
+Train 3 times
+3141622 -> 819930 , compress ratio = 3.831573 .
+all time = 218.53 sec, thoughtout = 14.039111 KB/s.
+compress time = 217.47 sec, thoughtout = 14.107828 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 1(0.10%)
+k: 1(0.50%) theta: 0.90
+Train 5 times
+3141622 -> 814910 , compress ratio = 3.855177 .
+all time = 219.58 sec, thoughtout = 13.971841 KB/s.
+compress time = 218.52 sec, thoughtout = 14.040092 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 1(0.10%)
+k: 1(0.10%) theta: 0.90
+Train 5 times
+3141622 -> 814910 , compress ratio = 3.855177 .
+all time = 221.17 sec, thoughtout = 13.871925 KB/s.
+compress time = 220.10 sec, thoughtout = 13.938960 KB/s.
+
+Wed Mar 20 01:08:47 PM CST 2024
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 7(2.00%)
+k: 7(2.00%) theta: 1.00
+Train 3 times
+3141622 -> 777080 , compress ratio = 4.042855 .
+all time = 225.21 sec, thoughtout = 13.622687 KB/s.
+compress time = 224.15 sec, thoughtout = 13.687165 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 7(2.00%)
+k: 3(1.00%) theta: 1.00
+Train 6 times
+3141622 -> 748801 , compress ratio = 4.195537 .
+all time = 225.95 sec, thoughtout = 13.578118 KB/s.
+compress time = 224.89 sec, thoughtout = 13.642471 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 7(2.00%)
+k: 1(0.50%) theta: 1.00
+Train 23 times
+3141622 -> 703212 , compress ratio = 4.467532 .
+all time = 235.74 sec, thoughtout = 13.014436 KB/s.
+compress time = 234.67 sec, thoughtout = 13.073462 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 7(2.00%)
+k: 1(0.10%) theta: 1.00
+Train 23 times
+3141622 -> 703212 , compress ratio = 4.467532 .
+all time = 235.92 sec, thoughtout = 13.004185 KB/s.
+compress time = 234.86 sec, thoughtout = 13.063064 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 3(1.00%)
+k: 7(2.00%) theta: 1.00
+Train 3 times
+3141622 -> 793946 , compress ratio = 3.956972 .
+all time = 221.07 sec, thoughtout = 13.877688 KB/s.
+compress time = 220.01 sec, thoughtout = 13.944874 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 3(1.00%)
+k: 3(1.00%) theta: 1.00
+Train 14 times
+3141622 -> 766840 , compress ratio = 4.096842 .
+all time = 225.33 sec, thoughtout = 13.615705 KB/s.
+compress time = 224.26 sec, thoughtout = 13.680410 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 3(1.00%)
+k: 1(0.50%) theta: 1.00
+Train 21 times
+3141622 -> 748028 , compress ratio = 4.199872 .
+all time = 228.19 sec, thoughtout = 13.444743 KB/s.
+compress time = 227.14 sec, thoughtout = 13.507049 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 3(1.00%)
+k: 1(0.10%) theta: 1.00
+Train 21 times
+3141622 -> 748028 , compress ratio = 4.199872 .
+all time = 230.68 sec, thoughtout = 13.300030 KB/s.
+compress time = 229.61 sec, thoughtout = 13.361670 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 1(0.50%)
+k: 7(2.00%) theta: 1.00
+Train 3 times
+3141622 -> 819966 , compress ratio = 3.831405 .
+all time = 218.57 sec, thoughtout = 14.036435 KB/s.
+compress time = 217.51 sec, thoughtout = 14.105035 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 1(0.50%)
+k: 3(1.00%) theta: 1.00
+Train 8 times
+3141622 -> 802627 , compress ratio = 3.914174 .
+all time = 220.45 sec, thoughtout = 13.917237 KB/s.
+compress time = 219.38 sec, thoughtout = 13.984789 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 1(0.50%)
+k: 1(0.50%) theta: 1.00
+Train 5 times
+3141622 -> 814608 , compress ratio = 3.856606 .
+all time = 219.15 sec, thoughtout = 13.999311 KB/s.
+compress time = 218.09 sec, thoughtout = 14.067652 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 1(0.50%)
+k: 1(0.10%) theta: 1.00
+Train 5 times
+3141622 -> 814608 , compress ratio = 3.856606 .
+all time = 220.16 sec, thoughtout = 13.935448 KB/s.
+compress time = 219.09 sec, thoughtout = 14.003111 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 1(0.10%)
+k: 7(2.00%) theta: 1.00
+Train 3 times
+3141622 -> 819966 , compress ratio = 3.831405 .
+all time = 218.22 sec, thoughtout = 14.059419 KB/s.
+compress time = 217.15 sec, thoughtout = 14.128414 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 1(0.10%)
+k: 3(1.00%) theta: 1.00
+Train 8 times
+3141622 -> 802627 , compress ratio = 3.914174 .
+all time = 219.67 sec, thoughtout = 13.966078 KB/s.
+compress time = 218.61 sec, thoughtout = 14.034123 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 1(0.10%)
+k: 1(0.50%) theta: 1.00
+Train 5 times
+3141622 -> 814608 , compress ratio = 3.856606 .
+all time = 219.32 sec, thoughtout = 13.988653 KB/s.
+compress time = 218.25 sec, thoughtout = 14.056998 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 1(0.10%)
+k: 1(0.10%) theta: 1.00
+Train 5 times
+3141622 -> 814608 , compress ratio = 3.856606 .
+all time = 218.22 sec, thoughtout = 14.058864 KB/s.
+compress time = 217.16 sec, thoughtout = 14.127627 KB/s.
+
+Wed Mar 20 02:08:38 PM CST 2024
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 7(2.00%)
+k: 7(2.00%) theta: 1.10
+Train 22 times
+3141622 -> 707963 , compress ratio = 4.437551 .
+all time = 236.60 sec, thoughtout = 12.967029 KB/s.
+compress time = 235.53 sec, thoughtout = 13.025803 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 7(2.00%)
+k: 3(1.00%) theta: 1.10
+Train 32 times
+3141622 -> 671789 , compress ratio = 4.676501 .
+all time = 241.87 sec, thoughtout = 12.684536 KB/s.
+compress time = 240.82 sec, thoughtout = 12.739957 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 7(2.00%)
+k: 1(0.50%) theta: 1.10
+Train 44 times
+3141622 -> 655808 , compress ratio = 4.790460 .
+all time = 247.22 sec, thoughtout = 12.409760 KB/s.
+compress time = 246.16 sec, thoughtout = 12.463427 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 7(2.00%)
+k: 1(0.10%) theta: 1.10
+Train 44 times
+3141622 -> 655808 , compress ratio = 4.790460 .
+all time = 247.56 sec, thoughtout = 12.393052 KB/s.
+compress time = 246.49 sec, thoughtout = 12.446623 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 3(1.00%)
+k: 7(2.00%) theta: 1.10
+Train 25 times
+3141622 -> 726074 , compress ratio = 4.326862 .
+all time = 228.05 sec, thoughtout = 13.453052 KB/s.
+compress time = 226.99 sec, thoughtout = 13.516151 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 3(1.00%)
+k: 3(1.00%) theta: 1.10
+Train 55 times
+3141622 -> 691718 , compress ratio = 4.541767 .
+all time = 246.92 sec, thoughtout = 12.424908 KB/s.
+compress time = 245.86 sec, thoughtout = 12.478491 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 3(1.00%)
+k: 1(0.50%) theta: 1.10
+Train 48 times
+3141622 -> 704182 , compress ratio = 4.461378 .
+all time = 236.24 sec, thoughtout = 12.986603 KB/s.
+compress time = 235.18 sec, thoughtout = 13.045325 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 3(1.00%)
+k: 1(0.10%) theta: 1.10
+Train 48 times
+3141622 -> 704182 , compress ratio = 4.461378 .
+all time = 236.87 sec, thoughtout = 12.952091 KB/s.
+compress time = 235.81 sec, thoughtout = 13.010452 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 1(0.50%)
+k: 7(2.00%) theta: 1.10
+Train 32 times
+3141622 -> 753824 , compress ratio = 4.167580 .
+all time = 224.09 sec, thoughtout = 13.690875 KB/s.
+compress time = 223.02 sec, thoughtout = 13.756383 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 1(0.50%)
+k: 3(1.00%) theta: 1.10
+Train 76 times
+3141622 -> 722717 , compress ratio = 4.346960 .
+all time = 230.24 sec, thoughtout = 13.324976 KB/s.
+compress time = 229.19 sec, thoughtout = 13.386083 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 1(0.50%)
+k: 1(0.50%) theta: 1.10
+Train 85 times
+3141622 -> 735139 , compress ratio = 4.273507 .
+all time = 231.71 sec, thoughtout = 13.240500 KB/s.
+compress time = 230.65 sec, thoughtout = 13.301730 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 1(0.50%)
+k: 1(0.10%) theta: 1.10
+Train 85 times
+3141622 -> 735139 , compress ratio = 4.273507 .
+all time = 232.24 sec, thoughtout = 13.210679 KB/s.
+compress time = 231.17 sec, thoughtout = 13.271809 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 1(0.10%)
+k: 7(2.00%) theta: 1.10
+Train 32 times
+3141622 -> 753824 , compress ratio = 4.167580 .
+all time = 224.08 sec, thoughtout = 13.691360 KB/s.
+compress time = 223.02 sec, thoughtout = 13.756861 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 1(0.10%)
+k: 3(1.00%) theta: 1.10
+Train 76 times
+3141622 -> 722717 , compress ratio = 4.346960 .
+all time = 229.77 sec, thoughtout = 13.352206 KB/s.
+compress time = 228.70 sec, thoughtout = 13.414639 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 1(0.10%)
+k: 1(0.50%) theta: 1.10
+Train 85 times
+3141622 -> 735139 , compress ratio = 4.273507 .
+all time = 231.40 sec, thoughtout = 13.258489 KB/s.
+compress time = 230.33 sec, thoughtout = 13.319697 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 8192 B, block num: 384
+train block: 1(0.10%)
+k: 1(0.10%) theta: 1.10
+Train 85 times
+3141622 -> 735139 , compress ratio = 4.273507 .
+all time = 231.18 sec, thoughtout = 13.270809 KB/s.
+compress time = 230.11 sec, thoughtout = 13.332461 KB/s.
+
+compress level: 12
+input file: calgary
+file size: 3141622
+block size : 3141622 B, block num: 1
+train block: 1(1.00%)
+k: 1(1.00%) theta: 1.00
+Train 1 times
+3141622 -> 636347 , compress ratio = 4.936964 .
+all time = 252.36 sec, thoughtout = 12.157028 KB/s.
+compress time = 251.29 sec, thoughtout = 12.208736 KB/s.
+
+Wed Mar 20 03:15:43 PM CST 2024
+
