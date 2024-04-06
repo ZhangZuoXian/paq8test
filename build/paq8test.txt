@@ -4061,3 +4061,2834 @@ compress time = 251.29 sec, thoughtout = 12.208736 KB/s.
 
 Wed Mar 20 03:15:43 PM CST 2024
 
+# 用nohup测试一下Silesia和enwik8
+
+Mon Apr 1 06:52:26 PM CST 2024
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 25(0.10%)
+k: 517(2.00%) theta: 0.80
+Train 3 times
+211938580 -> 49705018 , compress ratio = 4.263927 .
+all time = 14452.92 sec, thoughtout = 14.320380 KB/s.
+compress time = 14451.66 sec, thoughtout = 14.321628 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 129(0.50%)
+k: 517(2.00%) theta: 0.80
+Train 3 times
+211938580 -> 49076563 , compress ratio = 4.318529 .
+all time = 14612.29 sec, thoughtout = 14.164191 KB/s.
+compress time = 14610.90 sec, thoughtout = 14.165534 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 258(1.00%)
+k: 517(2.00%) theta: 0.80
+Train 3 times
+211938580 -> 48600055 , compress ratio = 4.360871 .
+all time = 14671.03 sec, thoughtout = 14.107480 KB/s.
+compress time = 14669.52 sec, thoughtout = 14.108931 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 25(0.10%)
+k: 25(0.10%) theta: 0.80
+Train 2 times
+211938580 -> 51959534 , compress ratio = 4.078916 .
+all time = 14769.71 sec, thoughtout = 14.013227 KB/s.
+compress time = 14768.44 sec, thoughtout = 14.014427 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 25(0.10%)
+k: 258(1.00%) theta: 0.80
+Train 5 times
+211938580 -> 47841918 , compress ratio = 4.429977 .
+all time = 14795.07 sec, thoughtout = 13.989208 KB/s.
+compress time = 14793.80 sec, thoughtout = 13.990410 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 25(0.10%)
+k: 129(0.50%) theta: 0.80
+Train 2 times
+211938580 -> 50227163 , compress ratio = 4.219601 .
+all time = 14816.50 sec, thoughtout = 13.968976 KB/s.
+compress time = 14814.97 sec, thoughtout = 13.970413 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 517(2.00%)
+k: 517(2.00%) theta: 0.80
+Train 3 times
+211938580 -> 46893725 , compress ratio = 4.519551 .
+all time = 14819.31 sec, thoughtout = 13.966324 KB/s.
+compress time = 14817.86 sec, thoughtout = 13.967688 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 258(1.00%)
+k: 129(0.50%) theta: 0.80
+Train 2 times
+211938580 -> 50344898 , compress ratio = 4.209733 .
+all time = 14829.79 sec, thoughtout = 13.956453 KB/s.
+compress time = 14828.53 sec, thoughtout = 13.957640 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 258(1.00%)
+k: 258(1.00%) theta: 0.80
+Train 6 times
+211938580 -> 44721659 , compress ratio = 4.739059 .
+all time = 14899.61 sec, thoughtout = 13.891057 KB/s.
+compress time = 14898.19 sec, thoughtout = 13.892378 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 129(0.50%)
+k: 258(1.00%) theta: 0.80
+Train 6 times
+211938580 -> 45689948 , compress ratio = 4.638626 .
+all time = 14919.53 sec, thoughtout = 13.872502 KB/s.
+compress time = 14918.09 sec, thoughtout = 13.873841 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 129(0.50%)
+k: 129(0.50%) theta: 0.80
+Train 2 times
+211938580 -> 49397045 , compress ratio = 4.290511 .
+all time = 14923.08 sec, thoughtout = 13.869210 KB/s.
+compress time = 14921.81 sec, thoughtout = 13.870391 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 517(2.00%)
+k: 129(0.50%) theta: 0.80
+Train 4 times
+211938580 -> 44932239 , compress ratio = 4.716849 .
+all time = 14925.89 sec, thoughtout = 13.866591 KB/s.
+compress time = 14924.46 sec, thoughtout = 13.867924 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 129(0.50%)
+k: 25(0.10%) theta: 0.80
+Train 15 times
+211938580 -> 44826286 , compress ratio = 4.727998 .
+all time = 14996.99 sec, thoughtout = 13.800852 KB/s.
+compress time = 14995.72 sec, thoughtout = 13.802018 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 517(2.00%)
+k: 258(1.00%) theta: 0.80
+Train 6 times
+211938580 -> 43900400 , compress ratio = 4.827714 .
+all time = 15067.03 sec, thoughtout = 13.736704 KB/s.
+compress time = 15065.58 sec, thoughtout = 13.738020 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 517(2.00%)
+k: 25(0.10%) theta: 0.80
+Train 6 times
+211938580 -> 45212555 , compress ratio = 4.687605 .
+all time = 15102.59 sec, thoughtout = 13.704359 KB/s.
+compress time = 15101.33 sec, thoughtout = 13.705500 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 258(1.00%)
+k: 25(0.10%) theta: 0.80
+Train 20 times
+211938580 -> 42902110 , compress ratio = 4.940050 .
+all time = 15159.82 sec, thoughtout = 13.652616 KB/s.
+compress time = 15158.31 sec, thoughtout = 13.653983 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 211938580 B, block num: 1
+train block: 1(1.00%)
+k: 1(1.00%) theta: 1.00
+Train 1 times
+211938580 -> 37266587 , compress ratio = 5.687094 .
+all time = 16414.17 sec, thoughtout = 12.609308 KB/s.
+compress time = 16412.72 sec, thoughtout = 12.610419 KB/s.
+
+Mon Apr 1 11:26:02 PM CST 2024
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 25(0.10%)
+k: 517(2.00%) theta: 0.90
+Train 3 times
+211938580 -> 49810895 , compress ratio = 4.254864 .
+all time = 14552.96 sec, thoughtout = 14.221933 KB/s.
+compress time = 14551.87 sec, thoughtout = 14.223004 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 25(0.10%)
+k: 25(0.10%) theta: 0.90
+Train 2 times
+211938580 -> 51875704 , compress ratio = 4.085508 .
+all time = 14878.26 sec, thoughtout = 13.910984 KB/s.
+compress time = 14877.15 sec, thoughtout = 13.912021 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 258(1.00%)
+k: 129(0.50%) theta: 0.90
+Train 2 times
+211938580 -> 50247261 , compress ratio = 4.217913 .
+all time = 14890.58 sec, thoughtout = 13.899479 KB/s.
+compress time = 14889.47 sec, thoughtout = 13.900512 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 25(0.10%)
+k: 258(1.00%) theta: 0.90
+Train 7 times
+211938580 -> 46427515 , compress ratio = 4.564935 .
+all time = 14919.80 sec, thoughtout = 13.872258 KB/s.
+compress time = 14918.69 sec, thoughtout = 13.873286 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 129(0.50%)
+k: 517(2.00%) theta: 0.90
+Train 6 times
+211938580 -> 46795872 , compress ratio = 4.529002 .
+all time = 14927.31 sec, thoughtout = 13.865273 KB/s.
+compress time = 14926.21 sec, thoughtout = 13.866297 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 517(2.00%)
+k: 258(1.00%) theta: 0.90
+Train 3 times
+211938580 -> 45112789 , compress ratio = 4.697971 .
+all time = 14958.71 sec, thoughtout = 13.836167 KB/s.
+compress time = 14957.61 sec, thoughtout = 13.837188 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 129(0.50%)
+k: 129(0.50%) theta: 0.90
+Train 4 times
+211938580 -> 48864256 , compress ratio = 4.337293 .
+all time = 14972.75 sec, thoughtout = 13.823196 KB/s.
+compress time = 14971.65 sec, thoughtout = 13.824215 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 517(2.00%)
+k: 517(2.00%) theta: 0.90
+Train 5 times
+211938580 -> 44405481 , compress ratio = 4.772802 .
+all time = 14981.10 sec, thoughtout = 13.815494 KB/s.
+compress time = 14980.00 sec, thoughtout = 13.816510 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 25(0.10%)
+k: 129(0.50%) theta: 0.90
+Train 2 times
+211938580 -> 49466489 , compress ratio = 4.284488 .
+all time = 14986.41 sec, thoughtout = 13.810601 KB/s.
+compress time = 14985.31 sec, thoughtout = 13.811611 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 129(0.50%)
+k: 258(1.00%) theta: 0.90
+Train 2 times
+211938580 -> 49720031 , compress ratio = 4.262640 .
+all time = 15010.94 sec, thoughtout = 13.788027 KB/s.
+compress time = 15009.84 sec, thoughtout = 13.789043 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 258(1.00%)
+k: 517(2.00%) theta: 0.90
+Train 7 times
+211938580 -> 45875931 , compress ratio = 4.619821 .
+all time = 15016.73 sec, thoughtout = 13.782709 KB/s.
+compress time = 15015.65 sec, thoughtout = 13.783705 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 258(1.00%)
+k: 258(1.00%) theta: 0.90
+Train 2 times
+211938580 -> 46644158 , compress ratio = 4.543733 .
+all time = 15032.40 sec, thoughtout = 13.768349 KB/s.
+compress time = 15031.28 sec, thoughtout = 13.769366 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 129(0.50%)
+k: 25(0.10%) theta: 0.90
+Train 24 times
+211938580 -> 43648288 , compress ratio = 4.855599 .
+all time = 15161.56 sec, thoughtout = 13.651049 KB/s.
+compress time = 15160.46 sec, thoughtout = 13.652044 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 517(2.00%)
+k: 25(0.10%) theta: 0.90
+Train 4 times
+211938580 -> 45522298 , compress ratio = 4.655709 .
+all time = 15196.04 sec, thoughtout = 13.620081 KB/s.
+compress time = 15194.93 sec, thoughtout = 13.621078 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 517(2.00%)
+k: 129(0.50%) theta: 0.90
+Train 4 times
+211938580 -> 44989618 , compress ratio = 4.710833 .
+all time = 15222.31 sec, thoughtout = 13.596575 KB/s.
+compress time = 15221.21 sec, thoughtout = 13.597561 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 258(1.00%)
+k: 25(0.10%) theta: 0.90
+Train 29 times
+211938580 -> 41394048 , compress ratio = 5.120025 .
+all time = 15427.63 sec, thoughtout = 13.415627 KB/s.
+compress time = 15426.52 sec, thoughtout = 13.416587 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 211938580 B, block num: 1
+train block: 1(1.00%)
+k: 1(1.00%) theta: 1.00
+Train 1 times
+211938580 -> 37266587 , compress ratio = 5.687094 .
+all time = 16538.64 sec, thoughtout = 12.514410 KB/s.
+compress time = 16537.54 sec, thoughtout = 12.515239 KB/s.
+
+Tue Apr 2 04:01:43 AM CST 2024
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 25(0.10%)
+k: 517(2.00%) theta: 1.00
+Train 3 times
+211938580 -> 49798772 , compress ratio = 4.255900 .
+all time = 14553.55 sec, thoughtout = 14.221363 KB/s.
+compress time = 14552.45 sec, thoughtout = 14.222435 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 25(0.10%)
+k: 129(0.50%) theta: 1.00
+Train 2 times
+211938580 -> 49473048 , compress ratio = 4.283920 .
+all time = 14852.64 sec, thoughtout = 13.934983 KB/s.
+compress time = 14851.54 sec, thoughtout = 13.936012 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 129(0.50%)
+k: 517(2.00%) theta: 1.00
+Train 6 times
+211938580 -> 45599789 , compress ratio = 4.647797 .
+all time = 14864.26 sec, thoughtout = 13.924086 KB/s.
+compress time = 14863.16 sec, thoughtout = 13.925116 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 129(0.50%)
+k: 129(0.50%) theta: 1.00
+Train 10 times
+211938580 -> 47509941 , compress ratio = 4.460931 .
+all time = 14964.11 sec, thoughtout = 13.831177 KB/s.
+compress time = 14963.01 sec, thoughtout = 13.832192 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 25(0.10%)
+k: 258(1.00%) theta: 1.00
+Train 9 times
+211938580 -> 46432962 , compress ratio = 4.564399 .
+all time = 14999.24 sec, thoughtout = 13.798783 KB/s.
+compress time = 14998.15 sec, thoughtout = 13.799786 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 129(0.50%)
+k: 258(1.00%) theta: 1.00
+Train 6 times
+211938580 -> 48986059 , compress ratio = 4.326508 .
+all time = 15005.69 sec, thoughtout = 13.792851 KB/s.
+compress time = 15004.59 sec, thoughtout = 13.793863 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 258(1.00%)
+k: 258(1.00%) theta: 1.00
+Train 2 times
+211938580 -> 46385990 , compress ratio = 4.569021 .
+all time = 15023.46 sec, thoughtout = 13.776536 KB/s.
+compress time = 15022.36 sec, thoughtout = 13.777549 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 258(1.00%)
+k: 129(0.50%) theta: 1.00
+Train 5 times
+211938580 -> 48739496 , compress ratio = 4.348395 .
+all time = 15036.26 sec, thoughtout = 13.764808 KB/s.
+compress time = 15035.16 sec, thoughtout = 13.765821 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 25(0.10%)
+k: 25(0.10%) theta: 1.00
+Train 71 times
+211938580 -> 43963263 , compress ratio = 4.820811 .
+all time = 15050.03 sec, thoughtout = 13.752219 KB/s.
+compress time = 15048.92 sec, thoughtout = 13.753229 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 258(1.00%)
+k: 517(2.00%) theta: 1.00
+Train 8 times
+211938580 -> 44676108 , compress ratio = 4.743891 .
+all time = 15079.09 sec, thoughtout = 13.725715 KB/s.
+compress time = 15077.99 sec, thoughtout = 13.726719 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 517(2.00%)
+k: 258(1.00%) theta: 1.00
+Train 4 times
+211938580 -> 44441949 , compress ratio = 4.768886 .
+all time = 15103.39 sec, thoughtout = 13.703632 KB/s.
+compress time = 15102.29 sec, thoughtout = 13.704632 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 517(2.00%)
+k: 517(2.00%) theta: 1.00
+Train 8 times
+211938580 -> 42858023 , compress ratio = 4.945132 .
+all time = 15185.31 sec, thoughtout = 13.629702 KB/s.
+compress time = 15184.20 sec, thoughtout = 13.630697 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 517(2.00%)
+k: 129(0.50%) theta: 1.00
+Train 16 times
+211938580 -> 40620147 , compress ratio = 5.217573 .
+all time = 15475.95 sec, thoughtout = 13.373734 KB/s.
+compress time = 15474.85 sec, thoughtout = 13.374683 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 129(0.50%)
+k: 25(0.10%) theta: 1.00
+Train 82 times
+211938580 -> 39480254 , compress ratio = 5.368217 .
+all time = 15708.86 sec, thoughtout = 13.175448 KB/s.
+compress time = 15707.77 sec, thoughtout = 13.176365 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 517(2.00%)
+k: 25(0.10%) theta: 1.00
+Train 25 times
+211938580 -> 38961231 , compress ratio = 5.439730 .
+all time = 15746.22 sec, thoughtout = 13.144187 KB/s.
+compress time = 15745.12 sec, thoughtout = 13.145106 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 258(1.00%)
+k: 25(0.10%) theta: 1.00
+Train 50 times
+211938580 -> 38957968 , compress ratio = 5.440186 .
+all time = 15768.36 sec, thoughtout = 13.125736 KB/s.
+compress time = 15767.25 sec, thoughtout = 13.126653 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 211938580 B, block num: 1
+train block: 1(1.00%)
+k: 1(1.00%) theta: 1.00
+Train 1 times
+211938580 -> 37266587 , compress ratio = 5.687094 .
+all time = 16523.83 sec, thoughtout = 12.525620 KB/s.
+compress time = 16522.73 sec, thoughtout = 12.526456 KB/s.
+
+Tue Apr 2 08:37:08 AM CST 2024
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 25(0.10%)
+k: 129(0.50%) theta: 1.10
+Train 8 times
+211938580 -> 50616818 , compress ratio = 4.187118 .
+all time = 14854.58 sec, thoughtout = 13.933165 KB/s.
+compress time = 14853.48 sec, thoughtout = 13.934190 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 25(0.10%)
+k: 25(0.10%) theta: 1.10
+Train 32 times
+211938580 -> 49485428 , compress ratio = 4.282848 .
+all time = 14880.95 sec, thoughtout = 13.908472 KB/s.
+compress time = 14879.85 sec, thoughtout = 13.909502 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 25(0.10%)
+k: 258(1.00%) theta: 1.10
+Train 5 times
+211938580 -> 50737962 , compress ratio = 4.177120 .
+all time = 15000.28 sec, thoughtout = 13.797823 KB/s.
+compress time = 14999.18 sec, thoughtout = 13.798839 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 129(0.50%)
+k: 258(1.00%) theta: 1.10
+Train 8 times
+211938580 -> 48990703 , compress ratio = 4.326098 .
+all time = 15018.91 sec, thoughtout = 13.780710 KB/s.
+compress time = 15017.81 sec, thoughtout = 13.781723 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 129(0.50%)
+k: 517(2.00%) theta: 1.10
+Train 9 times
+211938580 -> 44850344 , compress ratio = 4.725462 .
+all time = 15032.35 sec, thoughtout = 13.768387 KB/s.
+compress time = 15031.25 sec, thoughtout = 13.769396 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 25(0.10%)
+k: 517(2.00%) theta: 1.10
+Train 6 times
+211938580 -> 46580270 , compress ratio = 4.549965 .
+all time = 15090.65 sec, thoughtout = 13.715197 KB/s.
+compress time = 15089.55 sec, thoughtout = 13.716196 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 129(0.50%)
+k: 129(0.50%) theta: 1.10
+Train 12 times
+211938580 -> 48146574 , compress ratio = 4.401945 .
+all time = 15117.80 sec, thoughtout = 13.690566 KB/s.
+compress time = 15116.70 sec, thoughtout = 13.691562 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 517(2.00%)
+k: 129(0.50%) theta: 1.10
+Train 8 times
+211938580 -> 43521328 , compress ratio = 4.869764 .
+all time = 15179.03 sec, thoughtout = 13.635344 KB/s.
+compress time = 15177.93 sec, thoughtout = 13.636334 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 258(1.00%)
+k: 517(2.00%) theta: 1.10
+Train 15 times
+211938580 -> 43440034 , compress ratio = 4.878877 .
+all time = 15181.56 sec, thoughtout = 13.633067 KB/s.
+compress time = 15180.46 sec, thoughtout = 13.634059 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 517(2.00%)
+k: 517(2.00%) theta: 1.10
+Train 5 times
+211938580 -> 45599948 , compress ratio = 4.647781 .
+all time = 15223.16 sec, thoughtout = 13.595812 KB/s.
+compress time = 15222.06 sec, thoughtout = 13.596798 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 258(1.00%)
+k: 129(0.50%) theta: 1.10
+Train 29 times
+211938580 -> 41902217 , compress ratio = 5.057932 .
+all time = 15293.42 sec, thoughtout = 13.533353 KB/s.
+compress time = 15292.32 sec, thoughtout = 13.534331 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 258(1.00%)
+k: 258(1.00%) theta: 1.10
+Train 23 times
+211938580 -> 41411433 , compress ratio = 5.117876 .
+all time = 15369.11 sec, thoughtout = 13.466706 KB/s.
+compress time = 15368.00 sec, thoughtout = 13.467674 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 517(2.00%)
+k: 258(1.00%) theta: 1.10
+Train 16 times
+211938580 -> 41632995 , compress ratio = 5.090640 .
+all time = 15454.08 sec, thoughtout = 13.392663 KB/s.
+compress time = 15452.97 sec, thoughtout = 13.393620 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 517(2.00%)
+k: 25(0.10%) theta: 1.10
+Train 25 times
+211938580 -> 39317212 , compress ratio = 5.390478 .
+all time = 15787.31 sec, thoughtout = 13.109981 KB/s.
+compress time = 15786.20 sec, thoughtout = 13.110896 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 258(1.00%)
+k: 25(0.10%) theta: 1.10
+Train 54 times
+211938580 -> 39005355 , compress ratio = 5.433576 .
+all time = 15852.92 sec, thoughtout = 13.055719 KB/s.
+compress time = 15851.81 sec, thoughtout = 13.056635 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 8192 B, block num: 25872
+train block: 129(0.50%)
+k: 25(0.10%) theta: 1.10
+Train 118 times
+211938580 -> 39227275 , compress ratio = 5.402837 .
+all time = 15944.02 sec, thoughtout = 12.981124 KB/s.
+compress time = 15942.91 sec, thoughtout = 12.982023 KB/s.
+
+compress level: 12
+input file: silesia_all
+file size: 211938580
+block size : 211938580 B, block num: 1
+train block: 1(1.00%)
+k: 1(1.00%) theta: 1.00
+Train 1 times
+211938580 -> 37266587 , compress ratio = 5.687094 .
+all time = 16491.43 sec, thoughtout = 12.550233 KB/s.
+compress time = 16490.33 sec, thoughtout = 12.551068 KB/s.
+
+Tue Apr 2 01:12:01 PM CST 2024
+
+Tue Apr 2 02:18:08 PM CST 2024
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 12(0.10%)
+k: 12(0.10%) theta: 0.80
+Train 1 times
+100000000 -> 23456580 , compress ratio = 4.263196 .
+all time = 7014.93 sec, thoughtout = 13.921206 KB/s.
+compress time = 7013.87 sec, thoughtout = 13.923309 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 12(0.10%)
+k: 61(0.50%) theta: 0.80
+Train 1 times
+100000000 -> 23456580 , compress ratio = 4.263196 .
+all time = 7030.76 sec, thoughtout = 13.889861 KB/s.
+compress time = 7029.69 sec, thoughtout = 13.891975 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 12(0.10%)
+k: 244(2.00%) theta: 0.80
+Train 1 times
+100000000 -> 23456580 , compress ratio = 4.263196 .
+all time = 7035.99 sec, thoughtout = 13.879540 KB/s.
+compress time = 7034.91 sec, thoughtout = 13.881657 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 61(0.50%)
+k: 122(1.00%) theta: 0.80
+Train 1 times
+100000000 -> 22301801 , compress ratio = 4.483943 .
+all time = 7069.86 sec, thoughtout = 13.813032 KB/s.
+compress time = 7068.79 sec, thoughtout = 13.815123 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 244(2.00%)
+k: 122(1.00%) theta: 0.80
+Train 1 times
+100000000 -> 21382389 , compress ratio = 4.676746 .
+all time = 7095.88 sec, thoughtout = 13.762382 KB/s.
+compress time = 7094.80 sec, thoughtout = 13.764474 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 61(0.50%)
+k: 61(0.50%) theta: 0.80
+Train 1 times
+100000000 -> 22301801 , compress ratio = 4.483943 .
+all time = 7105.45 sec, thoughtout = 13.743849 KB/s.
+compress time = 7104.38 sec, thoughtout = 13.745927 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 61(0.50%)
+k: 244(2.00%) theta: 0.80
+Train 1 times
+100000000 -> 22301801 , compress ratio = 4.483943 .
+all time = 7106.23 sec, thoughtout = 13.742345 KB/s.
+compress time = 7105.16 sec, thoughtout = 13.744415 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 122(1.00%)
+k: 122(1.00%) theta: 0.80
+Train 1 times
+100000000 -> 21821715 , compress ratio = 4.582591 .
+all time = 7119.07 sec, thoughtout = 13.717552 KB/s.
+compress time = 7118.00 sec, thoughtout = 13.719619 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 122(1.00%)
+k: 12(0.10%) theta: 0.80
+Train 2 times
+100000000 -> 21543200 , compress ratio = 4.641836 .
+all time = 7120.26 sec, thoughtout = 13.715274 KB/s.
+compress time = 7119.18 sec, thoughtout = 13.717344 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 61(0.50%)
+k: 12(0.10%) theta: 0.80
+Train 2 times
+100000000 -> 22015850 , compress ratio = 4.542182 .
+all time = 7131.88 sec, thoughtout = 13.692919 KB/s.
+compress time = 7130.81 sec, thoughtout = 13.694978 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 244(2.00%)
+k: 12(0.10%) theta: 0.80
+Train 2 times
+100000000 -> 21087632 , compress ratio = 4.742116 .
+all time = 7133.04 sec, thoughtout = 13.690685 KB/s.
+compress time = 7131.97 sec, thoughtout = 13.692746 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 244(2.00%)
+k: 61(0.50%) theta: 0.80
+Train 1 times
+100000000 -> 21382389 , compress ratio = 4.676746 .
+all time = 7135.31 sec, thoughtout = 13.686330 KB/s.
+compress time = 7134.24 sec, thoughtout = 13.688393 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 244(2.00%)
+k: 244(2.00%) theta: 0.80
+Train 1 times
+100000000 -> 21382389 , compress ratio = 4.676746 .
+all time = 7145.52 sec, thoughtout = 13.666780 KB/s.
+compress time = 7144.44 sec, thoughtout = 13.668843 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 122(1.00%)
+k: 61(0.50%) theta: 0.80
+Train 1 times
+100000000 -> 21821715 , compress ratio = 4.582591 .
+all time = 7156.28 sec, thoughtout = 13.646231 KB/s.
+compress time = 7155.21 sec, thoughtout = 13.648280 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 122(1.00%)
+k: 244(2.00%) theta: 0.80
+Train 1 times
+100000000 -> 21821715 , compress ratio = 4.582591 .
+all time = 7158.79 sec, thoughtout = 13.641447 KB/s.
+compress time = 7157.72 sec, thoughtout = 13.643494 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 12(0.10%)
+k: 122(1.00%) theta: 0.80
+Train 1 times
+100000000 -> 23456580 , compress ratio = 4.263196 .
+all time = 7209.55 sec, thoughtout = 13.545405 KB/s.
+compress time = 7208.48 sec, thoughtout = 13.547418 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+100000000 -> 18214395, compress ration = 5.49
+time: 9106.62, comp time: 9105.55
+all thoughtout: 10.72 KB/s, comp thoughtout: 10.72 KB/s
+
+Tue Apr 2 04:49:57 PM CST 2024
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 12(0.10%)
+k: 122(1.00%) theta: 0.90
+Train 1 times
+100000000 -> 23456580 , compress ratio = 4.263196 .
+all time = 7028.75 sec, thoughtout = 13.893821 KB/s.
+compress time = 7027.65 sec, thoughtout = 13.896005 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 12(0.10%)
+k: 244(2.00%) theta: 0.90
+Train 1 times
+100000000 -> 23456580 , compress ratio = 4.263196 .
+all time = 7036.07 sec, thoughtout = 13.879377 KB/s.
+compress time = 7034.98 sec, thoughtout = 13.881534 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 61(0.50%)
+k: 122(1.00%) theta: 0.90
+Train 1 times
+100000000 -> 22301801 , compress ratio = 4.483943 .
+all time = 7058.59 sec, thoughtout = 13.835095 KB/s.
+compress time = 7057.49 sec, thoughtout = 13.837256 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 12(0.10%)
+k: 61(0.50%) theta: 0.90
+Train 1 times
+100000000 -> 23456580 , compress ratio = 4.263196 .
+all time = 7059.12 sec, thoughtout = 13.834046 KB/s.
+compress time = 7058.03 sec, thoughtout = 13.836191 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 244(2.00%)
+k: 61(0.50%) theta: 0.90
+Train 1 times
+100000000 -> 21382389 , compress ratio = 4.676746 .
+all time = 7075.02 sec, thoughtout = 13.802965 KB/s.
+compress time = 7073.92 sec, thoughtout = 13.805107 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 12(0.10%)
+k: 12(0.10%) theta: 0.90
+Train 2 times
+100000000 -> 23302719 , compress ratio = 4.291345 .
+all time = 7075.87 sec, thoughtout = 13.801307 KB/s.
+compress time = 7074.77 sec, thoughtout = 13.803461 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 61(0.50%)
+k: 61(0.50%) theta: 0.90
+Train 1 times
+100000000 -> 22301801 , compress ratio = 4.483943 .
+all time = 7083.70 sec, thoughtout = 13.786058 KB/s.
+compress time = 7082.60 sec, thoughtout = 13.788189 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 122(1.00%)
+k: 122(1.00%) theta: 0.90
+Train 1 times
+100000000 -> 21821715 , compress ratio = 4.582591 .
+all time = 7087.59 sec, thoughtout = 13.778480 KB/s.
+compress time = 7086.49 sec, thoughtout = 13.780633 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 122(1.00%)
+k: 244(2.00%) theta: 0.90
+Train 1 times
+100000000 -> 21821715 , compress ratio = 4.582591 .
+all time = 7093.46 sec, thoughtout = 13.767086 KB/s.
+compress time = 7092.35 sec, thoughtout = 13.769241 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 61(0.50%)
+k: 244(2.00%) theta: 0.90
+Train 1 times
+100000000 -> 22301801 , compress ratio = 4.483943 .
+all time = 7096.69 sec, thoughtout = 13.760824 KB/s.
+compress time = 7095.58 sec, thoughtout = 13.762969 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 244(2.00%)
+k: 122(1.00%) theta: 0.90
+Train 1 times
+100000000 -> 21382389 , compress ratio = 4.676746 .
+all time = 7113.09 sec, thoughtout = 13.729096 KB/s.
+compress time = 7111.99 sec, thoughtout = 13.731214 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 122(1.00%)
+k: 61(0.50%) theta: 0.90
+Train 1 times
+100000000 -> 21821715 , compress ratio = 4.582591 .
+all time = 7141.30 sec, thoughtout = 13.674856 KB/s.
+compress time = 7140.20 sec, thoughtout = 13.676959 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 244(2.00%)
+k: 244(2.00%) theta: 0.90
+Train 1 times
+100000000 -> 21382389 , compress ratio = 4.676746 .
+all time = 7185.66 sec, thoughtout = 13.590442 KB/s.
+compress time = 7184.56 sec, thoughtout = 13.592517 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 61(0.50%)
+k: 12(0.10%) theta: 0.90
+Train 121 times
+100000000 -> 19136455 , compress ratio = 5.225628 .
+all time = 7548.35 sec, thoughtout = 12.937438 KB/s.
+compress time = 7547.24 sec, thoughtout = 12.939333 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 122(1.00%)
+k: 12(0.10%) theta: 0.90
+Train 83 times
+100000000 -> 18630953 , compress ratio = 5.367412 .
+all time = 7761.38 sec, thoughtout = 12.582335 KB/s.
+compress time = 7760.27 sec, thoughtout = 12.584132 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 244(2.00%)
+k: 12(0.10%) theta: 0.90
+Train 46 times
+100000000 -> 18452150 , compress ratio = 5.419423 .
+all time = 7796.92 sec, thoughtout = 12.524972 KB/s.
+compress time = 7795.82 sec, thoughtout = 12.526750 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+100000000 -> 18214395, compress ration = 5.49
+time: 9205.36, comp time: 9204.28
+all thoughtout: 10.61 KB/s, comp thoughtout: 10.61 KB/s
+
+Tue Apr 2 07:23:24 PM CST 2024
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 12(0.10%)
+k: 122(1.00%) theta: 1.00
+Train 1 times
+100000000 -> 23456580 , compress ratio = 4.263196 .
+all time = 7124.37 sec, thoughtout = 13.707350 KB/s.
+compress time = 7123.29 sec, thoughtout = 13.709439 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 61(0.50%)
+k: 122(1.00%) theta: 1.00
+Train 60 times
+100000000 -> 19967723 , compress ratio = 5.008082 .
+all time = 7465.63 sec, thoughtout = 13.080772 KB/s.
+compress time = 7464.55 sec, thoughtout = 13.082677 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 12(0.10%)
+k: 12(0.10%) theta: 1.00
+Train 442 times
+100000000 -> 19572118 , compress ratio = 5.109309 .
+all time = 7602.10 sec, thoughtout = 12.845959 KB/s.
+compress time = 7601.02 sec, thoughtout = 12.847790 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 61(0.50%)
+k: 61(0.50%) theta: 1.00
+Train 95 times
+100000000 -> 19451161 , compress ratio = 5.141081 .
+all time = 7603.28 sec, thoughtout = 12.843962 KB/s.
+compress time = 7602.18 sec, thoughtout = 12.845826 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 12(0.10%)
+k: 244(2.00%) theta: 1.00
+Train 1 times
+100000000 -> 23456580 , compress ratio = 4.263196 .
+all time = 7624.89 sec, thoughtout = 12.807554 KB/s.
+compress time = 7623.81 sec, thoughtout = 12.809382 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 244(2.00%)
+k: 244(2.00%) theta: 1.00
+Train 24 times
+100000000 -> 19451057 , compress ratio = 5.141109 .
+all time = 7644.33 sec, thoughtout = 12.774991 KB/s.
+compress time = 7643.25 sec, thoughtout = 12.776802 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 122(1.00%)
+k: 244(2.00%) theta: 1.00
+Train 32 times
+100000000 -> 19869580 , compress ratio = 5.032819 .
+all time = 7646.81 sec, thoughtout = 12.770852 KB/s.
+compress time = 7645.71 sec, thoughtout = 12.772684 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 61(0.50%)
+k: 244(2.00%) theta: 1.00
+Train 37 times
+100000000 -> 20354560 , compress ratio = 4.912904 .
+all time = 7871.32 sec, thoughtout = 12.406597 KB/s.
+compress time = 7870.22 sec, thoughtout = 12.408318 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 244(2.00%)
+k: 122(1.00%) theta: 1.00
+Train 32 times
+100000000 -> 19016411 , compress ratio = 5.258616 .
+all time = 7898.59 sec, thoughtout = 12.363760 KB/s.
+compress time = 7897.50 sec, thoughtout = 12.365467 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 122(1.00%)
+k: 12(0.10%) theta: 1.00
+Train 91 times
+100000000 -> 18454979 , compress ratio = 5.418592 .
+all time = 7943.24 sec, thoughtout = 12.294260 KB/s.
+compress time = 7942.15 sec, thoughtout = 12.295945 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 122(1.00%)
+k: 61(0.50%) theta: 1.00
+Train 66 times
+100000000 -> 19018881 , compress ratio = 5.257933 .
+all time = 7975.36 sec, thoughtout = 12.244744 KB/s.
+compress time = 7974.28 sec, thoughtout = 12.246399 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 244(2.00%)
+k: 61(0.50%) theta: 1.00
+Train 40 times
+100000000 -> 18679071 , compress ratio = 5.353585 .
+all time = 7981.63 sec, thoughtout = 12.235127 KB/s.
+compress time = 7980.54 sec, thoughtout = 12.236802 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 122(1.00%)
+k: 122(1.00%) theta: 1.00
+Train 48 times
+100000000 -> 19454176 , compress ratio = 5.140285 .
+all time = 8019.20 sec, thoughtout = 12.177809 KB/s.
+compress time = 8018.10 sec, thoughtout = 12.179476 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 244(2.00%)
+k: 12(0.10%) theta: 1.00
+Train 48 times
+100000000 -> 18338479 , compress ratio = 5.453015 .
+all time = 8127.39 sec, thoughtout = 12.015692 KB/s.
+compress time = 8126.30 sec, thoughtout = 12.017308 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 12(0.10%)
+k: 61(0.50%) theta: 1.00
+Train 143 times
+100000000 -> 20687051 , compress ratio = 4.833942 .
+all time = 8148.50 sec, thoughtout = 11.984567 KB/s.
+compress time = 8147.41 sec, thoughtout = 11.986167 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 61(0.50%)
+k: 12(0.10%) theta: 1.00
+Train 165 times
+100000000 -> 18634038 , compress ratio = 5.366523 .
+all time = 8371.76 sec, thoughtout = 11.664966 KB/s.
+compress time = 8370.67 sec, thoughtout = 11.666483 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+100000000 -> 18214395, compress ration = 5.49
+time: 9393.39, comp time: 9392.29
+all thoughtout: 10.40 KB/s, comp thoughtout: 10.40 KB/s
+
+Tue Apr 2 09:59:59 PM CST 2024
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 12(0.10%)
+k: 244(2.00%) theta: 1.10
+Train 47 times
+100000000 -> 21393329 , compress ratio = 4.674354 .
+all time = 7221.90 sec, thoughtout = 13.522232 KB/s.
+compress time = 7220.81 sec, thoughtout = 13.524284 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 61(0.50%)
+k: 244(2.00%) theta: 1.10
+Train 40 times
+100000000 -> 20300279 , compress ratio = 4.926041 .
+all time = 7396.27 sec, thoughtout = 13.203446 KB/s.
+compress time = 7395.18 sec, thoughtout = 13.205399 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 12(0.10%)
+k: 61(0.50%) theta: 1.10
+Train 163 times
+100000000 -> 20512882 , compress ratio = 4.874985 .
+all time = 7403.02 sec, thoughtout = 13.191405 KB/s.
+compress time = 7401.92 sec, thoughtout = 13.193359 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 12(0.10%)
+k: 122(1.00%) theta: 1.10
+Train 88 times
+100000000 -> 20956034 , compress ratio = 4.771895 .
+all time = 7413.08 sec, thoughtout = 13.173507 KB/s.
+compress time = 7412.00 sec, thoughtout = 13.175427 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 122(1.00%)
+k: 122(1.00%) theta: 1.10
+Train 50 times
+100000000 -> 19405062 , compress ratio = 5.153295 .
+all time = 7489.89 sec, thoughtout = 13.038405 KB/s.
+compress time = 7488.76 sec, thoughtout = 13.040376 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 61(0.50%)
+k: 122(1.00%) theta: 1.10
+Train 67 times
+100000000 -> 19843114 , compress ratio = 5.039532 .
+all time = 7609.44 sec, thoughtout = 12.833559 KB/s.
+compress time = 7608.37 sec, thoughtout = 12.835374 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 122(1.00%)
+k: 244(2.00%) theta: 1.10
+Train 34 times
+100000000 -> 19817415 , compress ratio = 5.046067 .
+all time = 7619.99 sec, thoughtout = 12.815794 KB/s.
+compress time = 7618.91 sec, thoughtout = 12.817612 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 244(2.00%)
+k: 244(2.00%) theta: 1.10
+Train 25 times
+100000000 -> 19368521 , compress ratio = 5.163017 .
+all time = 7682.12 sec, thoughtout = 12.712147 KB/s.
+compress time = 7681.02 sec, thoughtout = 12.713961 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 61(0.50%)
+k: 61(0.50%) theta: 1.10
+Train 99 times
+100000000 -> 19406364 , compress ratio = 5.152949 .
+all time = 7702.60 sec, thoughtout = 12.678343 KB/s.
+compress time = 7701.51 sec, thoughtout = 12.680139 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 12(0.10%)
+k: 12(0.10%) theta: 1.10
+Train 495 times
+100000000 -> 19458296 , compress ratio = 5.139196 .
+all time = 7734.23 sec, thoughtout = 12.626497 KB/s.
+compress time = 7733.15 sec, thoughtout = 12.628262 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 244(2.00%)
+k: 122(1.00%) theta: 1.10
+Train 34 times
+100000000 -> 18971111 , compress ratio = 5.271173 .
+all time = 7764.67 sec, thoughtout = 12.576996 KB/s.
+compress time = 7763.58 sec, thoughtout = 12.578766 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 122(1.00%)
+k: 61(0.50%) theta: 1.10
+Train 66 times
+100000000 -> 19010390 , compress ratio = 5.260281 .
+all time = 7834.06 sec, thoughtout = 12.465605 KB/s.
+compress time = 7832.96 sec, thoughtout = 12.467346 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 244(2.00%)
+k: 61(0.50%) theta: 1.10
+Train 40 times
+100000000 -> 18670612 , compress ratio = 5.356011 .
+all time = 7902.77 sec, thoughtout = 12.357224 KB/s.
+compress time = 7901.67 sec, thoughtout = 12.358939 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 61(0.50%)
+k: 12(0.10%) theta: 1.10
+Train 166 times
+100000000 -> 18624322 , compress ratio = 5.369323 .
+all time = 8015.37 sec, thoughtout = 12.183626 KB/s.
+compress time = 8014.29 sec, thoughtout = 12.185268 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 122(1.00%)
+k: 12(0.10%) theta: 1.10
+Train 91 times
+100000000 -> 18439224 , compress ratio = 5.423222 .
+all time = 8105.65 sec, thoughtout = 12.047923 KB/s.
+compress time = 8104.53 sec, thoughtout = 12.049588 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 244(2.00%)
+k: 12(0.10%) theta: 1.10
+Train 48 times
+100000000 -> 18326219 , compress ratio = 5.456663 .
+all time = 8133.70 sec, thoughtout = 12.006371 KB/s.
+compress time = 8132.61 sec, thoughtout = 12.007978 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+100000000 -> 18214395, compress ration = 5.49
+time: 9363.72, comp time: 9362.63
+all thoughtout: 10.43 KB/s, comp thoughtout: 10.43 KB/s
+
+Wed Apr 3 12:36:06 AM CST 2024
+
+# 测试一下检测开销，但silesia的两个测试莫名其妙跑的非常慢，十几个小时没跑完
+
+Thu Apr 4 10:49:29 PM CST 2024
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 100000000 B, block num: 1
+train block: 1(100.00%)
+k: 1(1.00%) theta: 1.00
+Train 1 times
+100000000 -> 18214412 , compress ratio = 5.490158 .
+all time = 7910.84 sec, thoughtout = 12.344611 KB/s.
+compress time = 7909.78 sec, thoughtout = 12.346270 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 12208(100.00%)
+k: 122(1.00%) theta: 1.00
+Train 1 times
+100000000 -> 18214412 , compress ratio = 5.490158 .
+all time = 7972.44 sec, thoughtout = 12.249223 KB/s.
+compress time = 7971.39 sec, thoughtout = 12.250850 KB/s.
+
+# 重测一下enwik8的部分数据，发现这些数据中有的速率比原版速率还慢
+
+Fri Apr 5 03:04:51 PM CST 2024
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 61(0.50%)
+k: 61(0.50%) theta: 0.70
+Train 1 times
+100000000 -> 22301801 , compress ratio = 4.483943 .
+all time = 7270.48 sec, thoughtout = 13.431881 KB/s.
+compress time = 7269.39 sec, thoughtout = 13.433893 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 12(0.10%)
+k: 244(2.00%) theta: 0.70
+Train 1 times
+100000000 -> 23456580 , compress ratio = 4.263196 .
+all time = 7399.31 sec, thoughtout = 13.198022 KB/s.
+compress time = 7398.22 sec, thoughtout = 13.199962 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 12(0.10%)
+k: 122(1.00%) theta: 0.70
+Train 1 times
+100000000 -> 23456580 , compress ratio = 4.263196 .
+all time = 7404.52 sec, thoughtout = 13.188743 KB/s.
+compress time = 7403.43 sec, thoughtout = 13.190673 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 12(0.10%)
+k: 12(0.10%) theta: 0.70
+Train 1 times
+100000000 -> 23456580 , compress ratio = 4.263196 .
+all time = 7442.47 sec, thoughtout = 13.121486 KB/s.
+compress time = 7441.39 sec, thoughtout = 13.123393 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 12(0.10%)
+k: 61(0.50%) theta: 0.70
+Train 1 times
+100000000 -> 23456580 , compress ratio = 4.263196 .
+all time = 7469.53 sec, thoughtout = 13.073945 KB/s.
+compress time = 7468.44 sec, thoughtout = 13.075851 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 244(2.00%)
+k: 244(2.00%) theta: 0.70
+Train 1 times
+100000000 -> 21382389 , compress ratio = 4.676746 .
+all time = 7504.23 sec, thoughtout = 13.013497 KB/s.
+compress time = 7503.14 sec, thoughtout = 13.015381 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 244(2.00%)
+k: 122(1.00%) theta: 0.70
+Train 1 times
+100000000 -> 21382389 , compress ratio = 4.676746 .
+all time = 7541.88 sec, thoughtout = 12.948533 KB/s.
+compress time = 7540.78 sec, thoughtout = 12.950410 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 122(1.00%)
+k: 122(1.00%) theta: 0.70
+Train 1 times
+100000000 -> 21821715 , compress ratio = 4.582591 .
+all time = 7553.18 sec, thoughtout = 12.929161 KB/s.
+compress time = 7552.09 sec, thoughtout = 12.931023 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 244(2.00%)
+k: 12(0.10%) theta: 0.70
+Train 1 times
+100000000 -> 21382389 , compress ratio = 4.676746 .
+all time = 7557.58 sec, thoughtout = 12.921627 KB/s.
+compress time = 7556.50 sec, thoughtout = 12.923469 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 61(0.50%)
+k: 12(0.10%) theta: 0.70
+Train 1 times
+100000000 -> 22301801 , compress ratio = 4.483943 .
+all time = 7558.86 sec, thoughtout = 12.919443 KB/s.
+compress time = 7557.77 sec, thoughtout = 12.921298 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 61(0.50%)
+k: 122(1.00%) theta: 0.70
+Train 1 times
+100000000 -> 22301801 , compress ratio = 4.483943 .
+all time = 7573.89 sec, thoughtout = 12.893811 KB/s.
+compress time = 7572.80 sec, thoughtout = 12.895661 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 122(1.00%)
+k: 244(2.00%) theta: 0.70
+Train 1 times
+100000000 -> 21821715 , compress ratio = 4.582591 .
+all time = 7590.39 sec, thoughtout = 12.865775 KB/s.
+compress time = 7589.30 sec, thoughtout = 12.867618 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 61(0.50%)
+k: 244(2.00%) theta: 0.70
+Train 1 times
+100000000 -> 22301801 , compress ratio = 4.483943 .
+all time = 7610.20 sec, thoughtout = 12.832291 KB/s.
+compress time = 7609.11 sec, thoughtout = 12.834126 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 122(1.00%)
+k: 12(0.10%) theta: 0.70
+Train 1 times
+100000000 -> 21821715 , compress ratio = 4.582591 .
+all time = 7610.90 sec, thoughtout = 12.831107 KB/s.
+compress time = 7609.81 sec, thoughtout = 12.832943 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 244(2.00%)
+k: 61(0.50%) theta: 0.70
+Train 1 times
+100000000 -> 21382389 , compress ratio = 4.676746 .
+all time = 7693.43 sec, thoughtout = 12.693461 KB/s.
+compress time = 7692.35 sec, thoughtout = 12.695251 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 122(1.00%)
+k: 61(0.50%) theta: 0.70
+Train 1 times
+100000000 -> 21821715 , compress ratio = 4.582591 .
+all time = 7779.92 sec, thoughtout = 12.552343 KB/s.
+compress time = 7778.83 sec, thoughtout = 12.554101 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+100000000 -> 18214395, compress ration = 5.49
+time: 9862.98, comp time: 9861.89
+all thoughtout: 9.90 KB/s, comp thoughtout: 9.90 KB/s
+
+Fri Apr 5 05:49:16 PM CST 2024
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 12(0.10%)
+k: 244(2.00%) theta: 1.00
+Train 1 times
+100000000 -> 23456580 , compress ratio = 4.263196 .
+all time = 7043.07 sec, thoughtout = 13.865570 KB/s.
+compress time = 7041.99 sec, thoughtout = 13.867715 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 12(0.10%)
+k: 122(1.00%) theta: 1.00
+Train 1 times
+100000000 -> 23456580 , compress ratio = 4.263196 .
+all time = 7064.82 sec, thoughtout = 13.822887 KB/s.
+compress time = 7063.73 sec, thoughtout = 13.825030 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 122(1.00%)
+k: 244(2.00%) theta: 1.00
+Train 32 times
+100000000 -> 19869580 , compress ratio = 5.032819 .
+all time = 7325.19 sec, thoughtout = 13.331564 KB/s.
+compress time = 7324.09 sec, thoughtout = 13.333567 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 61(0.50%)
+k: 122(1.00%) theta: 1.00
+Train 60 times
+100000000 -> 19967723 , compress ratio = 5.008082 .
+all time = 7338.16 sec, thoughtout = 13.308004 KB/s.
+compress time = 7337.07 sec, thoughtout = 13.309988 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 12(0.10%)
+k: 61(0.50%) theta: 1.00
+Train 143 times
+100000000 -> 20687051 , compress ratio = 4.833942 .
+all time = 7410.46 sec, thoughtout = 13.178163 KB/s.
+compress time = 7409.37 sec, thoughtout = 13.180095 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 61(0.50%)
+k: 244(2.00%) theta: 1.00
+Train 37 times
+100000000 -> 20354560 , compress ratio = 4.912904 .
+all time = 7414.52 sec, thoughtout = 13.170945 KB/s.
+compress time = 7413.43 sec, thoughtout = 13.172883 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 12(0.10%)
+k: 12(0.10%) theta: 1.00
+Train 442 times
+100000000 -> 19572118 , compress ratio = 5.109309 .
+all time = 7449.75 sec, thoughtout = 13.108664 KB/s.
+compress time = 7448.65 sec, thoughtout = 13.110591 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 61(0.50%)
+k: 61(0.50%) theta: 1.00
+Train 95 times
+100000000 -> 19451161 , compress ratio = 5.141081 .
+all time = 7462.15 sec, thoughtout = 13.086878 KB/s.
+compress time = 7461.06 sec, thoughtout = 13.088799 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 244(2.00%)
+k: 244(2.00%) theta: 1.00
+Train 24 times
+100000000 -> 19451057 , compress ratio = 5.141109 .
+all time = 7586.59 sec, thoughtout = 12.872227 KB/s.
+compress time = 7585.49 sec, thoughtout = 12.874080 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 122(1.00%)
+k: 122(1.00%) theta: 1.00
+Train 48 times
+100000000 -> 19454176 , compress ratio = 5.140285 .
+all time = 7586.52 sec, thoughtout = 12.872339 KB/s.
+compress time = 7585.42 sec, thoughtout = 12.874205 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 122(1.00%)
+k: 61(0.50%) theta: 1.00
+Train 66 times
+100000000 -> 19018881 , compress ratio = 5.257933 .
+all time = 7596.98 sec, thoughtout = 12.854622 KB/s.
+compress time = 7595.88 sec, thoughtout = 12.856481 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 244(2.00%)
+k: 122(1.00%) theta: 1.00
+Train 32 times
+100000000 -> 19016411 , compress ratio = 5.258616 .
+all time = 7602.69 sec, thoughtout = 12.844965 KB/s.
+compress time = 7601.60 sec, thoughtout = 12.846805 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 244(2.00%)
+k: 61(0.50%) theta: 1.00
+Train 40 times
+100000000 -> 18679071 , compress ratio = 5.353585 .
+all time = 7740.86 sec, thoughtout = 12.615690 KB/s.
+compress time = 7739.76 sec, thoughtout = 12.617471 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 244(2.00%)
+k: 12(0.10%) theta: 1.00
+Train 48 times
+100000000 -> 18338479 , compress ratio = 5.453015 .
+all time = 7817.68 sec, thoughtout = 12.491713 KB/s.
+compress time = 7816.59 sec, thoughtout = 12.493463 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 61(0.50%)
+k: 12(0.10%) theta: 1.00
+Train 165 times
+100000000 -> 18634038 , compress ratio = 5.366523 .
+all time = 7956.19 sec, thoughtout = 12.274247 KB/s.
+compress time = 7955.09 sec, thoughtout = 12.275940 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 122(1.00%)
+k: 12(0.10%) theta: 1.00
+Train 91 times
+100000000 -> 18454979 , compress ratio = 5.418592 .
+all time = 8104.02 sec, thoughtout = 12.050341 KB/s.
+compress time = 8102.93 sec, thoughtout = 12.051961 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+100000000 -> 18214395, compress ration = 5.49
+time: 9142.53, comp time: 9141.44
+all thoughtout: 10.68 KB/s, comp thoughtout: 10.68 KB/s
+
+Fri Apr 5 08:21:41 PM CST 2024
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 12(0.10%)
+k: 122(1.00%) theta: 1.10
+Train 88 times
+100000000 -> 20956034 , compress ratio = 4.771895 .
+all time = 7288.05 sec, thoughtout = 13.399498 KB/s.
+compress time = 7286.96 sec, thoughtout = 13.401499 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 61(0.50%)
+k: 244(2.00%) theta: 1.10
+Train 40 times
+100000000 -> 20300279 , compress ratio = 4.926041 .
+all time = 7405.89 sec, thoughtout = 13.186295 KB/s.
+compress time = 7404.80 sec, thoughtout = 13.188244 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 12(0.10%)
+k: 61(0.50%) theta: 1.10
+Train 163 times
+100000000 -> 20512882 , compress ratio = 4.874985 .
+all time = 7436.19 sec, thoughtout = 13.132560 KB/s.
+compress time = 7435.10 sec, thoughtout = 13.134490 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 12(0.10%)
+k: 244(2.00%) theta: 1.10
+Train 47 times
+100000000 -> 21393329 , compress ratio = 4.674354 .
+all time = 7480.58 sec, thoughtout = 13.054643 KB/s.
+compress time = 7479.48 sec, thoughtout = 13.056549 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 122(1.00%)
+k: 244(2.00%) theta: 1.10
+Train 34 times
+100000000 -> 19817415 , compress ratio = 5.046067 .
+all time = 7505.40 sec, thoughtout = 13.011459 KB/s.
+compress time = 7504.31 sec, thoughtout = 13.013356 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 244(2.00%)
+k: 244(2.00%) theta: 1.10
+Train 25 times
+100000000 -> 19368521 , compress ratio = 5.163017 .
+all time = 7528.71 sec, thoughtout = 12.971185 KB/s.
+compress time = 7527.61 sec, thoughtout = 12.973076 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 12(0.10%)
+k: 12(0.10%) theta: 1.10
+Train 495 times
+100000000 -> 19458296 , compress ratio = 5.139196 .
+all time = 7623.13 sec, thoughtout = 12.810522 KB/s.
+compress time = 7622.04 sec, thoughtout = 12.812345 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 122(1.00%)
+k: 122(1.00%) theta: 1.10
+Train 50 times
+100000000 -> 19405062 , compress ratio = 5.153295 .
+all time = 7631.65 sec, thoughtout = 12.796219 KB/s.
+compress time = 7630.56 sec, thoughtout = 12.798038 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 122(1.00%)
+k: 61(0.50%) theta: 1.10
+Train 66 times
+100000000 -> 19010390 , compress ratio = 5.260281 .
+all time = 7762.54 sec, thoughtout = 12.580454 KB/s.
+compress time = 7761.45 sec, thoughtout = 12.582217 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 61(0.50%)
+k: 122(1.00%) theta: 1.10
+Train 67 times
+100000000 -> 19843114 , compress ratio = 5.039532 .
+all time = 7800.61 sec, thoughtout = 12.519046 KB/s.
+compress time = 7799.53 sec, thoughtout = 12.520789 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 244(2.00%)
+k: 122(1.00%) theta: 1.10
+Train 34 times
+100000000 -> 18971111 , compress ratio = 5.271173 .
+all time = 7808.32 sec, thoughtout = 12.506694 KB/s.
+compress time = 7807.23 sec, thoughtout = 12.508432 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 122(1.00%)
+k: 12(0.10%) theta: 1.10
+Train 91 times
+100000000 -> 18439224 , compress ratio = 5.423222 .
+all time = 7813.21 sec, thoughtout = 12.498869 KB/s.
+compress time = 7812.12 sec, thoughtout = 12.500609 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 244(2.00%)
+k: 12(0.10%) theta: 1.10
+Train 48 times
+100000000 -> 18326219 , compress ratio = 5.456663 .
+all time = 7877.99 sec, thoughtout = 12.396094 KB/s.
+compress time = 7876.90 sec, thoughtout = 12.397803 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 61(0.50%)
+k: 12(0.10%) theta: 1.10
+Train 166 times
+100000000 -> 18624322 , compress ratio = 5.369323 .
+all time = 7937.65 sec, thoughtout = 12.302919 KB/s.
+compress time = 7936.56 sec, thoughtout = 12.304609 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 244(2.00%)
+k: 61(0.50%) theta: 1.10
+Train 40 times
+100000000 -> 18670612 , compress ratio = 5.356011 .
+all time = 7981.16 sec, thoughtout = 12.235844 KB/s.
+compress time = 7980.07 sec, thoughtout = 12.237521 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 61(0.50%)
+k: 61(0.50%) theta: 1.10
+Train 99 times
+100000000 -> 19406364 , compress ratio = 5.152949 .
+all time = 8230.82 sec, thoughtout = 11.864705 KB/s.
+compress time = 8229.72 sec, thoughtout = 11.866284 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+100000000 -> 18214395, compress ration = 5.49
+time: 9322.67, comp time: 9321.57
+all thoughtout: 10.48 KB/s, comp thoughtout: 10.48 KB/s
+
+Fri Apr 5 10:57:05 PM CST 2024
+
+# 发现enwik8的吞吐量变化较大，再测一组取平均值
+
+Fri Apr 5 11:07:43 PM CST 2024
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 12(0.10%)
+k: 12(0.10%) theta: 0.80
+Train 1 times
+100000000 -> 23456580 , compress ratio = 4.263196 .
+all time = 7051.06 sec, thoughtout = 13.849864 KB/s.
+compress time = 7049.98 sec, thoughtout = 13.851997 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 12(0.10%)
+k: 122(1.00%) theta: 0.80
+Train 1 times
+100000000 -> 23456580 , compress ratio = 4.263196 .
+all time = 7065.17 sec, thoughtout = 13.822208 KB/s.
+compress time = 7064.08 sec, thoughtout = 13.824335 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 12(0.10%)
+k: 61(0.50%) theta: 0.80
+Train 1 times
+100000000 -> 23456580 , compress ratio = 4.263196 .
+all time = 7091.75 sec, thoughtout = 13.770408 KB/s.
+compress time = 7090.66 sec, thoughtout = 13.772513 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 12(0.10%)
+k: 244(2.00%) theta: 0.80
+Train 1 times
+100000000 -> 23456580 , compress ratio = 4.263196 .
+all time = 7102.88 sec, thoughtout = 13.748816 KB/s.
+compress time = 7101.80 sec, thoughtout = 13.750923 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 61(0.50%)
+k: 12(0.10%) theta: 0.80
+Train 2 times
+100000000 -> 22015850 , compress ratio = 4.542182 .
+all time = 7117.29 sec, thoughtout = 13.720996 KB/s.
+compress time = 7116.18 sec, thoughtout = 13.723124 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 61(0.50%)
+k: 244(2.00%) theta: 0.80
+Train 1 times
+100000000 -> 22301801 , compress ratio = 4.483943 .
+all time = 7119.27 sec, thoughtout = 13.717166 KB/s.
+compress time = 7118.18 sec, thoughtout = 13.719274 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 61(0.50%)
+k: 122(1.00%) theta: 0.80
+Train 1 times
+100000000 -> 22301801 , compress ratio = 4.483943 .
+all time = 7135.92 sec, thoughtout = 13.685161 KB/s.
+compress time = 7134.83 sec, thoughtout = 13.687261 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 61(0.50%)
+k: 61(0.50%) theta: 0.80
+Train 1 times
+100000000 -> 22301801 , compress ratio = 4.483943 .
+all time = 7140.93 sec, thoughtout = 13.675566 KB/s.
+compress time = 7139.84 sec, thoughtout = 13.677662 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 122(1.00%)
+k: 61(0.50%) theta: 0.80
+Train 1 times
+100000000 -> 21821715 , compress ratio = 4.582591 .
+all time = 7151.33 sec, thoughtout = 13.655674 KB/s.
+compress time = 7150.23 sec, thoughtout = 13.657772 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 244(2.00%)
+k: 12(0.10%) theta: 0.80
+Train 2 times
+100000000 -> 21087632 , compress ratio = 4.742116 .
+all time = 7158.85 sec, thoughtout = 13.641328 KB/s.
+compress time = 7157.75 sec, thoughtout = 13.643420 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 244(2.00%)
+k: 61(0.50%) theta: 0.80
+Train 1 times
+100000000 -> 21382389 , compress ratio = 4.676746 .
+all time = 7169.51 sec, thoughtout = 13.621048 KB/s.
+compress time = 7168.41 sec, thoughtout = 13.623130 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 122(1.00%)
+k: 244(2.00%) theta: 0.80
+Train 1 times
+100000000 -> 21821715 , compress ratio = 4.582591 .
+all time = 7169.96 sec, thoughtout = 13.620190 KB/s.
+compress time = 7168.87 sec, thoughtout = 13.622261 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 122(1.00%)
+k: 122(1.00%) theta: 0.80
+Train 1 times
+100000000 -> 21821715 , compress ratio = 4.582591 .
+all time = 7176.18 sec, thoughtout = 13.608389 KB/s.
+compress time = 7175.09 sec, thoughtout = 13.610465 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 244(2.00%)
+k: 122(1.00%) theta: 0.80
+Train 1 times
+100000000 -> 21382389 , compress ratio = 4.676746 .
+all time = 7184.63 sec, thoughtout = 13.592376 KB/s.
+compress time = 7183.54 sec, thoughtout = 13.594450 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 244(2.00%)
+k: 244(2.00%) theta: 0.80
+Train 1 times
+100000000 -> 21382389 , compress ratio = 4.676746 .
+all time = 7205.04 sec, thoughtout = 13.553883 KB/s.
+compress time = 7203.95 sec, thoughtout = 13.555930 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 122(1.00%)
+k: 12(0.10%) theta: 0.80
+Train 2 times
+100000000 -> 21543200 , compress ratio = 4.641836 .
+all time = 7221.22 sec, thoughtout = 13.523503 KB/s.
+compress time = 7220.13 sec, thoughtout = 13.525547 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+100000000 -> 18214395, compress ration = 5.49
+time: 9199.86, comp time: 9198.77
+all thoughtout: 10.61 KB/s, comp thoughtout: 10.62 KB/s
+
+Sat Apr 6 01:41:05 AM CST 2024
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 12(0.10%)
+k: 244(2.00%) theta: 0.90
+Train 1 times
+100000000 -> 23456580 , compress ratio = 4.263196 .
+all time = 6980.08 sec, thoughtout = 13.990709 KB/s.
+compress time = 6979.00 sec, thoughtout = 13.992878 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 12(0.10%)
+k: 12(0.10%) theta: 0.90
+Train 2 times
+100000000 -> 23302719 , compress ratio = 4.291345 .
+all time = 7096.71 sec, thoughtout = 13.760770 KB/s.
+compress time = 7095.63 sec, thoughtout = 13.762871 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 12(0.10%)
+k: 122(1.00%) theta: 0.90
+Train 1 times
+100000000 -> 23456580 , compress ratio = 4.263196 .
+all time = 7096.91 sec, thoughtout = 13.760393 KB/s.
+compress time = 7095.82 sec, thoughtout = 13.762512 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 122(1.00%)
+k: 122(1.00%) theta: 0.90
+Train 1 times
+100000000 -> 21821715 , compress ratio = 4.582591 .
+all time = 7098.45 sec, thoughtout = 13.757408 KB/s.
+compress time = 7097.35 sec, thoughtout = 13.759528 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 61(0.50%)
+k: 61(0.50%) theta: 0.90
+Train 1 times
+100000000 -> 22301801 , compress ratio = 4.483943 .
+all time = 7135.97 sec, thoughtout = 13.685071 KB/s.
+compress time = 7134.88 sec, thoughtout = 13.687155 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 61(0.50%)
+k: 244(2.00%) theta: 0.90
+Train 1 times
+100000000 -> 22301801 , compress ratio = 4.483943 .
+all time = 7150.56 sec, thoughtout = 13.657152 KB/s.
+compress time = 7149.46 sec, thoughtout = 13.659242 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 122(1.00%)
+k: 61(0.50%) theta: 0.90
+Train 1 times
+100000000 -> 21821715 , compress ratio = 4.582591 .
+all time = 7155.27 sec, thoughtout = 13.648149 KB/s.
+compress time = 7154.18 sec, thoughtout = 13.650238 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 12(0.10%)
+k: 61(0.50%) theta: 0.90
+Train 1 times
+100000000 -> 23456580 , compress ratio = 4.263196 .
+all time = 7157.59 sec, thoughtout = 13.643741 KB/s.
+compress time = 7156.49 sec, thoughtout = 13.645827 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 244(2.00%)
+k: 61(0.50%) theta: 0.90
+Train 1 times
+100000000 -> 21382389 , compress ratio = 4.676746 .
+all time = 7160.54 sec, thoughtout = 13.638117 KB/s.
+compress time = 7159.45 sec, thoughtout = 13.640187 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 61(0.50%)
+k: 122(1.00%) theta: 0.90
+Train 1 times
+100000000 -> 22301801 , compress ratio = 4.483943 .
+all time = 7172.83 sec, thoughtout = 13.614753 KB/s.
+compress time = 7171.73 sec, thoughtout = 13.616828 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 244(2.00%)
+k: 122(1.00%) theta: 0.90
+Train 1 times
+100000000 -> 21382389 , compress ratio = 4.676746 .
+all time = 7182.85 sec, thoughtout = 13.595748 KB/s.
+compress time = 7181.76 sec, thoughtout = 13.597809 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 122(1.00%)
+k: 244(2.00%) theta: 0.90
+Train 1 times
+100000000 -> 21821715 , compress ratio = 4.582591 .
+all time = 7186.46 sec, thoughtout = 13.588921 KB/s.
+compress time = 7185.37 sec, thoughtout = 13.590991 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 244(2.00%)
+k: 244(2.00%) theta: 0.90
+Train 1 times
+100000000 -> 21382389 , compress ratio = 4.676746 .
+all time = 7198.46 sec, thoughtout = 13.566278 KB/s.
+compress time = 7197.38 sec, thoughtout = 13.568307 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 61(0.50%)
+k: 12(0.10%) theta: 0.90
+Train 121 times
+100000000 -> 19136455 , compress ratio = 5.225628 .
+all time = 7672.89 sec, thoughtout = 12.727441 KB/s.
+compress time = 7671.80 sec, thoughtout = 12.729252 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 122(1.00%)
+k: 12(0.10%) theta: 0.90
+Train 83 times
+100000000 -> 18630953 , compress ratio = 5.367412 .
+all time = 7786.44 sec, thoughtout = 12.541830 KB/s.
+compress time = 7785.35 sec, thoughtout = 12.543599 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 244(2.00%)
+k: 12(0.10%) theta: 0.90
+Train 46 times
+100000000 -> 18452150 , compress ratio = 5.419423 .
+all time = 7855.33 sec, thoughtout = 12.431848 KB/s.
+compress time = 7854.23 sec, thoughtout = 12.433579 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+100000000 -> 18214395, compress ration = 5.49
+time: 9209.63, comp time: 9208.55
+all thoughtout: 10.60 KB/s, comp thoughtout: 10.60 KB/s
+
+Sat Apr 6 04:14:36 AM CST 2024
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 12(0.10%)
+k: 244(2.00%) theta: 1.00
+Train 1 times
+100000000 -> 23456580 , compress ratio = 4.263196 .
+all time = 7067.72 sec, thoughtout = 13.817212 KB/s.
+compress time = 7066.63 sec, thoughtout = 13.819348 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 12(0.10%)
+k: 122(1.00%) theta: 1.00
+Train 1 times
+100000000 -> 23456580 , compress ratio = 4.263196 .
+all time = 7110.99 sec, thoughtout = 13.733136 KB/s.
+compress time = 7109.91 sec, thoughtout = 13.735237 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 61(0.50%)
+k: 244(2.00%) theta: 1.00
+Train 37 times
+100000000 -> 20354560 , compress ratio = 4.912904 .
+all time = 7218.04 sec, thoughtout = 13.529468 KB/s.
+compress time = 7216.95 sec, thoughtout = 13.531512 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 12(0.10%)
+k: 61(0.50%) theta: 1.00
+Train 143 times
+100000000 -> 20687051 , compress ratio = 4.833942 .
+all time = 7302.02 sec, thoughtout = 13.373859 KB/s.
+compress time = 7300.93 sec, thoughtout = 13.375858 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 61(0.50%)
+k: 122(1.00%) theta: 1.00
+Train 60 times
+100000000 -> 19967723 , compress ratio = 5.008082 .
+all time = 7374.16 sec, thoughtout = 13.243040 KB/s.
+compress time = 7373.07 sec, thoughtout = 13.244996 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 122(1.00%)
+k: 244(2.00%) theta: 1.00
+Train 32 times
+100000000 -> 19869580 , compress ratio = 5.032819 .
+all time = 7389.99 sec, thoughtout = 13.214673 KB/s.
+compress time = 7388.89 sec, thoughtout = 13.216634 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 12(0.10%)
+k: 12(0.10%) theta: 1.00
+Train 442 times
+100000000 -> 19572118 , compress ratio = 5.109309 .
+all time = 7409.98 sec, thoughtout = 13.179012 KB/s.
+compress time = 7408.90 sec, thoughtout = 13.180940 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 61(0.50%)
+k: 61(0.50%) theta: 1.00
+Train 95 times
+100000000 -> 19451161 , compress ratio = 5.141081 .
+all time = 7412.50 sec, thoughtout = 13.174528 KB/s.
+compress time = 7411.41 sec, thoughtout = 13.176465 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 122(1.00%)
+k: 122(1.00%) theta: 1.00
+Train 48 times
+100000000 -> 19454176 , compress ratio = 5.140285 .
+all time = 7496.21 sec, thoughtout = 13.027416 KB/s.
+compress time = 7495.12 sec, thoughtout = 13.029312 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 244(2.00%)
+k: 244(2.00%) theta: 1.00
+Train 24 times
+100000000 -> 19451057 , compress ratio = 5.141109 .
+all time = 7526.19 sec, thoughtout = 12.975524 KB/s.
+compress time = 7525.09 sec, thoughtout = 12.977420 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 122(1.00%)
+k: 61(0.50%) theta: 1.00
+Train 66 times
+100000000 -> 19018881 , compress ratio = 5.257933 .
+all time = 7649.98 sec, thoughtout = 12.765559 KB/s.
+compress time = 7648.89 sec, thoughtout = 12.767375 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 244(2.00%)
+k: 122(1.00%) theta: 1.00
+Train 32 times
+100000000 -> 19016411 , compress ratio = 5.258616 .
+all time = 7660.67 sec, thoughtout = 12.747744 KB/s.
+compress time = 7659.58 sec, thoughtout = 12.749564 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 244(2.00%)
+k: 61(0.50%) theta: 1.00
+Train 40 times
+100000000 -> 18679071 , compress ratio = 5.353585 .
+all time = 7726.08 sec, thoughtout = 12.639811 KB/s.
+compress time = 7724.99 sec, thoughtout = 12.641602 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 61(0.50%)
+k: 12(0.10%) theta: 1.00
+Train 165 times
+100000000 -> 18634038 , compress ratio = 5.366523 .
+all time = 7780.42 sec, thoughtout = 12.551532 KB/s.
+compress time = 7779.34 sec, thoughtout = 12.553285 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 122(1.00%)
+k: 12(0.10%) theta: 1.00
+Train 91 times
+100000000 -> 18454979 , compress ratio = 5.418592 .
+all time = 7883.27 sec, thoughtout = 12.387781 KB/s.
+compress time = 7882.18 sec, thoughtout = 12.389502 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 244(2.00%)
+k: 12(0.10%) theta: 1.00
+Train 48 times
+100000000 -> 18338479 , compress ratio = 5.453015 .
+all time = 7906.07 sec, thoughtout = 12.352067 KB/s.
+compress time = 7904.97 sec, thoughtout = 12.353775 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+100000000 -> 18214395, compress ration = 5.49
+time: 9183.32, comp time: 9182.23
+all thoughtout: 10.63 KB/s, comp thoughtout: 10.64 KB/s
+
+Sat Apr 6 06:47:41 AM CST 2024
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 12(0.10%)
+k: 61(0.50%) theta: 1.10
+Train 163 times
+100000000 -> 20512882 , compress ratio = 4.874985 .
+all time = 7228.96 sec, thoughtout = 13.509040 KB/s.
+compress time = 7227.86 sec, thoughtout = 13.511086 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 12(0.10%)
+k: 122(1.00%) theta: 1.10
+Train 88 times
+100000000 -> 20956034 , compress ratio = 4.771895 .
+all time = 7280.45 sec, thoughtout = 13.413499 KB/s.
+compress time = 7279.35 sec, thoughtout = 13.415514 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 61(0.50%)
+k: 244(2.00%) theta: 1.10
+Train 40 times
+100000000 -> 20300279 , compress ratio = 4.926041 .
+all time = 7331.27 sec, thoughtout = 13.320518 KB/s.
+compress time = 7330.17 sec, thoughtout = 13.322510 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 12(0.10%)
+k: 244(2.00%) theta: 1.10
+Train 47 times
+100000000 -> 21393329 , compress ratio = 4.674354 .
+all time = 7369.91 sec, thoughtout = 13.250666 KB/s.
+compress time = 7368.82 sec, thoughtout = 13.252633 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 61(0.50%)
+k: 122(1.00%) theta: 1.10
+Train 67 times
+100000000 -> 19843114 , compress ratio = 5.039532 .
+all time = 7491.29 sec, thoughtout = 13.035965 KB/s.
+compress time = 7490.20 sec, thoughtout = 13.037867 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 122(1.00%)
+k: 244(2.00%) theta: 1.10
+Train 34 times
+100000000 -> 19817415 , compress ratio = 5.046067 .
+all time = 7510.88 sec, thoughtout = 13.001976 KB/s.
+compress time = 7509.79 sec, thoughtout = 13.003864 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 244(2.00%)
+k: 244(2.00%) theta: 1.10
+Train 25 times
+100000000 -> 19368521 , compress ratio = 5.163017 .
+all time = 7589.86 sec, thoughtout = 12.866667 KB/s.
+compress time = 7588.77 sec, thoughtout = 12.868526 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 122(1.00%)
+k: 122(1.00%) theta: 1.10
+Train 50 times
+100000000 -> 19405062 , compress ratio = 5.153295 .
+all time = 7596.09 sec, thoughtout = 12.856128 KB/s.
+compress time = 7595.00 sec, thoughtout = 12.857967 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 61(0.50%)
+k: 61(0.50%) theta: 1.10
+Train 99 times
+100000000 -> 19406364 , compress ratio = 5.152949 .
+all time = 7596.47 sec, thoughtout = 12.855476 KB/s.
+compress time = 7595.38 sec, thoughtout = 12.857330 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 12(0.10%)
+k: 12(0.10%) theta: 1.10
+Train 495 times
+100000000 -> 19458296 , compress ratio = 5.139196 .
+all time = 7629.93 sec, thoughtout = 12.799094 KB/s.
+compress time = 7628.85 sec, thoughtout = 12.800921 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 122(1.00%)
+k: 61(0.50%) theta: 1.10
+Train 66 times
+100000000 -> 19010390 , compress ratio = 5.260281 .
+all time = 7737.99 sec, thoughtout = 12.620371 KB/s.
+compress time = 7736.90 sec, thoughtout = 12.622146 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 244(2.00%)
+k: 122(1.00%) theta: 1.10
+Train 34 times
+100000000 -> 18971111 , compress ratio = 5.271173 .
+all time = 7739.47 sec, thoughtout = 12.617958 KB/s.
+compress time = 7738.37 sec, thoughtout = 12.619747 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 244(2.00%)
+k: 61(0.50%) theta: 1.10
+Train 40 times
+100000000 -> 18670612 , compress ratio = 5.356011 .
+all time = 7858.58 sec, thoughtout = 12.426707 KB/s.
+compress time = 7857.48 sec, thoughtout = 12.428443 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 61(0.50%)
+k: 12(0.10%) theta: 1.10
+Train 166 times
+100000000 -> 18624322 , compress ratio = 5.369323 .
+all time = 7867.30 sec, thoughtout = 12.412937 KB/s.
+compress time = 7866.21 sec, thoughtout = 12.414655 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 244(2.00%)
+k: 12(0.10%) theta: 1.10
+Train 48 times
+100000000 -> 18326219 , compress ratio = 5.456663 .
+all time = 7889.12 sec, thoughtout = 12.378601 KB/s.
+compress time = 7888.02 sec, thoughtout = 12.380326 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+block size : 8192 B, block num: 12208
+train block: 122(1.00%)
+k: 12(0.10%) theta: 1.10
+Train 91 times
+100000000 -> 18439224 , compress ratio = 5.423222 .
+all time = 7934.46 sec, thoughtout = 12.307871 KB/s.
+compress time = 7933.38 sec, thoughtout = 12.309546 KB/s.
+
+compress level: 12
+input file: enwik8
+file size: 100000000
+100000000 -> 18214395, compress ration = 5.49
+time: 9228.96, comp time: 9227.87
+all thoughtout: 10.58 KB/s, comp thoughtout: 10.58 KB/s
+
+Sat Apr 6 09:21:32 AM CST 2024
+
